@@ -30,8 +30,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "185"
-            endingLineNumber = "185"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
             <Locations>
@@ -106,8 +106,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
             <Locations>
@@ -199,8 +199,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -231,8 +231,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "makeShapes(name, object2World, world2Object, paramSet)"
             landmarkType = "9">
          </BreakpointContent>
@@ -247,8 +247,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -263,8 +263,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
             landmarkName = "makeShapes(name, object2World, world2Object, paramSet)"
             landmarkType = "9">
          </BreakpointContent>
@@ -357,8 +357,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "unknown"
             landmarkType = "0">
             <Locations>
@@ -420,8 +420,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -436,8 +436,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "makeShapes(name, object2World, world2Object, paramSet)"
             landmarkType = "9">
             <Locations>
@@ -514,8 +514,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -530,8 +530,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "373"
-            endingLineNumber = "373"
+            startingLineNumber = "378"
+            endingLineNumber = "378"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
             <Locations>
@@ -672,8 +672,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "371"
-            endingLineNumber = "371"
+            startingLineNumber = "376"
+            endingLineNumber = "376"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
             <Locations>
@@ -736,8 +736,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -768,8 +768,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "433"
-            endingLineNumber = "433"
+            startingLineNumber = "438"
+            endingLineNumber = "438"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -879,8 +879,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "259"
-            endingLineNumber = "259"
+            startingLineNumber = "258"
+            endingLineNumber = "258"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -959,8 +959,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "263"
-            endingLineNumber = "263"
+            startingLineNumber = "268"
+            endingLineNumber = "268"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -975,8 +975,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "420"
-            endingLineNumber = "420"
+            startingLineNumber = "425"
+            endingLineNumber = "425"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
             <Locations>
@@ -1023,8 +1023,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "419"
-            endingLineNumber = "419"
+            startingLineNumber = "424"
+            endingLineNumber = "424"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1415,8 +1415,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "364"
-            endingLineNumber = "364"
+            startingLineNumber = "369"
+            endingLineNumber = "369"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1431,10 +1431,10 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "461"
-            endingLineNumber = "461"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "466"
+            endingLineNumber = "466"
+            landmarkName = "closefile(fileName)"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1447,8 +1447,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1479,8 +1479,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "makeShapes(name, object2World, world2Object, paramSet)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1605,8 +1605,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "331"
-            endingLineNumber = "331"
+            startingLineNumber = "341"
+            endingLineNumber = "341"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1621,8 +1621,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "330"
-            endingLineNumber = "330"
+            startingLineNumber = "340"
+            endingLineNumber = "340"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
             <Locations>
@@ -1699,8 +1699,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
             landmarkName = "makeShapes(name, object2World, world2Object, paramSet)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1715,8 +1715,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "429"
-            endingLineNumber = "429"
+            startingLineNumber = "434"
+            endingLineNumber = "434"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1731,8 +1731,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
             landmarkName = "makeShapes(name, object2World, world2Object, paramSet)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1747,8 +1747,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "unknown"
             landmarkType = "0">
             <Locations>
@@ -1795,8 +1795,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "405"
-            endingLineNumber = "405"
+            startingLineNumber = "410"
+            endingLineNumber = "410"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
             <Locations>
@@ -1859,8 +1859,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "415"
-            endingLineNumber = "415"
+            startingLineNumber = "420"
+            endingLineNumber = "420"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
             <Locations>
@@ -1907,8 +1907,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "414"
-            endingLineNumber = "414"
+            startingLineNumber = "419"
+            endingLineNumber = "419"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
             <Locations>
@@ -1955,8 +1955,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "416"
-            endingLineNumber = "416"
+            startingLineNumber = "421"
+            endingLineNumber = "421"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1971,8 +1971,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "361"
-            endingLineNumber = "361"
+            startingLineNumber = "366"
+            endingLineNumber = "366"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1987,8 +1987,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "402"
-            endingLineNumber = "402"
+            startingLineNumber = "407"
+            endingLineNumber = "407"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -2003,8 +2003,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "306"
-            endingLineNumber = "306"
+            startingLineNumber = "311"
+            endingLineNumber = "311"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
             <Locations>
@@ -2067,8 +2067,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "395"
-            endingLineNumber = "395"
+            startingLineNumber = "400"
+            endingLineNumber = "400"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -2083,8 +2083,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "406"
-            endingLineNumber = "406"
+            startingLineNumber = "411"
+            endingLineNumber = "411"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -2099,8 +2099,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "makeShapes(name, object2World, world2Object, paramSet)"
             landmarkType = "9">
             <Locations>
@@ -2303,8 +2303,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "createTransformationMatrix(translate, rotation, axis, scale, i)"
             landmarkType = "9">
          </BreakpointContent>
@@ -2319,8 +2319,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "435"
-            endingLineNumber = "435"
+            startingLineNumber = "440"
+            endingLineNumber = "440"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
             <Locations>
@@ -2633,8 +2633,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "makeShapes(name, object2World, world2Object, paramSet)"
             landmarkType = "9">
             <Locations>
@@ -2696,8 +2696,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "makeShapes(name, object2World, world2Object, paramSet)"
             landmarkType = "9">
             <Locations>
@@ -2835,8 +2835,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "createTransformationMatrix(translate, rotation, axis, scale, i)"
             landmarkType = "9">
             <Locations>
@@ -2991,8 +2991,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "makeShapes(name, object2World, world2Object, paramSet)"
             landmarkType = "9">
             <Locations>
@@ -3100,8 +3100,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "createTransformationMatrix(translate, rotation, axis, scale, i)"
             landmarkType = "9">
          </BreakpointContent>
@@ -3116,8 +3116,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "392"
-            endingLineNumber = "392"
+            startingLineNumber = "397"
+            endingLineNumber = "397"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -3132,8 +3132,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "393"
-            endingLineNumber = "393"
+            startingLineNumber = "398"
+            endingLineNumber = "398"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -3148,8 +3148,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -3210,8 +3210,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "340"
-            endingLineNumber = "340"
+            startingLineNumber = "350"
+            endingLineNumber = "350"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3226,8 +3226,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "337"
-            endingLineNumber = "337"
+            startingLineNumber = "347"
+            endingLineNumber = "347"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3242,8 +3242,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "339"
-            endingLineNumber = "339"
+            startingLineNumber = "349"
+            endingLineNumber = "349"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3258,8 +3258,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "338"
-            endingLineNumber = "338"
+            startingLineNumber = "348"
+            endingLineNumber = "348"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
             <Locations>
@@ -3306,8 +3306,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "335"
-            endingLineNumber = "335"
+            startingLineNumber = "345"
+            endingLineNumber = "345"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3322,8 +3322,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "347"
-            endingLineNumber = "347"
+            startingLineNumber = "352"
+            endingLineNumber = "352"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -3370,8 +3370,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "358"
-            endingLineNumber = "358"
+            startingLineNumber = "363"
+            endingLineNumber = "363"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -3386,8 +3386,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "366"
-            endingLineNumber = "366"
+            startingLineNumber = "371"
+            endingLineNumber = "371"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -3402,8 +3402,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "368"
-            endingLineNumber = "368"
+            startingLineNumber = "373"
+            endingLineNumber = "373"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -3418,8 +3418,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "434"
-            endingLineNumber = "434"
+            startingLineNumber = "439"
+            endingLineNumber = "439"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -3434,8 +3434,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "createTransformationMatrix(translate, rotation, axis, scale, i)"
             landmarkType = "9">
          </BreakpointContent>
@@ -3983,8 +3983,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "311"
-            endingLineNumber = "311"
+            startingLineNumber = "321"
+            endingLineNumber = "321"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
             <Locations>
@@ -4046,8 +4046,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "310"
-            endingLineNumber = "310"
+            startingLineNumber = "320"
+            endingLineNumber = "320"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -4126,8 +4126,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "createTransformationMatrix(translate, rotation, axis, scale, i)"
             landmarkType = "9">
          </BreakpointContent>
@@ -4190,8 +4190,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "307"
-            endingLineNumber = "307"
+            startingLineNumber = "317"
+            endingLineNumber = "317"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
             <Locations>
@@ -4301,8 +4301,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "329"
-            endingLineNumber = "329"
+            startingLineNumber = "339"
+            endingLineNumber = "339"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -4428,8 +4428,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "createTransformationMatrix(translate, rotation, axis, scale, i)"
             landmarkType = "9">
             <Locations>
@@ -4491,8 +4491,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "278"
-            endingLineNumber = "278"
+            startingLineNumber = "288"
+            endingLineNumber = "288"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -4507,8 +4507,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
             landmarkName = "makeShapes(name, object2World, world2Object, paramSet)"
             landmarkType = "9">
             <Locations>
@@ -4635,8 +4635,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "createTransformationMatrix(translate, rotation, axis, scale, i)"
             landmarkType = "9">
          </BreakpointContent>
@@ -4651,8 +4651,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "createTransformationMatrix(translate, rotation, axis, scale, i)"
             landmarkType = "9">
             <Locations>
@@ -4731,8 +4731,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "288"
-            endingLineNumber = "288"
+            startingLineNumber = "298"
+            endingLineNumber = "298"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
             <Locations>
@@ -4779,8 +4779,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "296"
-            endingLineNumber = "296"
+            startingLineNumber = "306"
+            endingLineNumber = "306"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -4799,6 +4799,70 @@
             endingLineNumber = "40"
             landmarkName = "main(argc, argv)"
             landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7DCF88DE-8547-4A22-814D-F33F55707CC1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/geometry/shape.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "createTransformationMatrix(translate, rotation, axis, scale, i)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0DE0F552-C965-465D-803B-0D1139F68C82"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/geometry/shape.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "createTransformationMatrix(translate, rotation, axis, scale, i)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "0DE0F552-C965-465D-803B-0D1139F68C82 - 377429cd750d01f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "createTransformationMatrix(vector3&lt;float&gt; const&amp;, vector3&lt;float&gt; const&amp;, float, vector3&lt;float&gt; const&amp;, int)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/shape.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "0DE0F552-C965-465D-803B-0D1139F68C82 - 377429cd750d01f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "createTransformationMatrix(vector3&lt;float&gt; const&amp;, vector3&lt;float&gt; const&amp;, float, vector3&lt;float&gt; const&amp;, int)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/shape.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "212">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

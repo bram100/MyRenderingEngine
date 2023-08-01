@@ -6,11 +6,10 @@ fileName scene1D.ppm
 size 640 480 
 
 
-#camera -2 -2 2 0 0 0 1 1 2 60
+camera -2 -2 2 0 0 0 1 1 2 60
 #camera +2 +2 2 0 0 0 -1 -1 2 60
 #camera -2 -2 -2 0 0 0 -1 -1 2 60
 
-camera -2 -2 -2 0 0 0 1 0 0 60
 
 
 # lighting/material definitions
