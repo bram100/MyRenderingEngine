@@ -1,0 +1,20 @@
+# CMakeLists.txt in src/geometry
+add_library(GeometryLib
+	localGeo.hpp
+	sphere.cpp
+	aggregate.cpp
+	primative.cpp
+	sphere.hpp
+	aggregate.hpp
+	primitive.cpp
+	triangle.cpp
+	geometricPrimitive.cpp
+	primitive.hpp
+	triangle.hpp
+	geometricPrimitive.hpp
+	shape.cpp
+	localGeo.cpp
+	shape.hpp
+)
+
+target_include_directories(GeometryLib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

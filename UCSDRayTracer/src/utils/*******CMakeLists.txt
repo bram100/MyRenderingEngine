@@ -1,0 +1,36 @@
+# CMakeLists.txt in src/utils
+add_library(UtilsLib
+CMakeLists.txt
+	scene.cpp
+	accelerators.cpp
+	testing.cpp
+	accelerators.hpp
+	testing.hpp
+	math.cpp
+	math.hpp
+	thread.cpp
+	matrix.cpp
+	thread.hpp
+	matrix.hpp
+	transform.cpp
+	memory.cpp
+	transform.hpp
+	memory.hpp	
+	transformationStack.cpp
+	normal.cpp
+	transformationStack.hpp
+	normal.hpp
+	transformedPrimitive.cpp
+	point.cpp
+	transformedPrimitive.hpp
+	point.hpp
+	variables.cpp
+	readCommand.cpp
+	variables.hpp
+	readCommand.hpp	
+	vector.cpp
+	vector.hpp
+)
+
+target_include_directories(UtilsLib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+

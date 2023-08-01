@@ -1,0 +1,11 @@
+# CMakeLists.txt in src/colors
+add_library(ColorsLib
+	BRDF.cpp
+	color.hpp
+	material.hpp
+	BRDF.hpp
+	color.cpp
+	material.cpp
+)
+
+target_include_directories(ColorsLib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

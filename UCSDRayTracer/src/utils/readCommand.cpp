@@ -1,0 +1,561 @@
+//
+//  readCommand.cpp
+//  UCSD_CSE168_HW1
+//
+//  Created by Brendan Mulcahey on 12/14/22.
+//
+
+
+
+#include <thread>
+#include "thread.hpp"
+
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <fstream>
+#include <cmath>
+
+#include "shape.hpp"
+#include "sphere.hpp"
+#include "triangle.hpp"
+
+#include "imageManager.hpp"
+#include "readCommand.hpp"
+#include "CImg.h"
+#include "scene.hpp"
+
+#include "brdf.hpp"
+#include "material.hpp"
+
+#include "primitive.hpp"
+#include "geometricPrimitive.hpp"
+//#include "camera.hpp"
+#include "scene.hpp"
+using namespace std;
+using namespace cimg_library;
+
+//is it proper to init these variables here?
+std::string imageNamePPM = "doggo2.ppm";
+std::shared_ptr<Shapes> aShape;
+std::vector<vector3<int>> triArray;
+std::vector<point3<float>> vertexPointArray;
+
+Camera camera;
+objParamMap params;
+Scene scene;
+
+std::shared_ptr<Material> materialParsed = std::make_shared<Material>();
+int countingj = 0;
+
+
+
+float w, h;
+int maxDepth;
+//int newI;
+bool animatedBool = false;
+
+std::vector<std::shared_ptr<Shapes>> shapesContainer;
+//std::vector<std::shared_ptr<GeometricPrimitive>> prims;
+
+
+transformation tranform;
+
+//extern transformationSet transformationStack;
+
+transformationSet curTransform;
+static transformCache transformCache;
+transformation currentTransform;
+
+int curTransformIndex;
+
+void output2(std::ofstream& outdata)
+{
+    outdata << "does this work?" << endl;
+}
+
+void readfile(const char* fileName)
+{
+    
+    //std::atomic<int> myVariable(0); // Variable to be checked
+    //std::thread checkThread(camera);
+    int newI;
+    int myCounting = 0;
+
+    vector3<float> translateVector;
+    vector3<float> scaleVector(1.f,1.f,1.f);
+    vector3<float> rotationVector;
+    float theta;
+    
+   // VariableChecker variableChecker(camera);
+    string str, cmd;
+    ifstream fileIn;
+    
+    fileIn.open(fileName);
+    
+    if (fileIn.is_open())
+      {
+        std::cout << "File loaded successfully\n";
+      }
+      else
+      {
+        std::cout << "Error opening file";
+        //https://stackoverflow.com/questions/23438393/new-to-xcode-cant-open-files-in-c
+      }
+   // int newI;
+    
+    if (fileIn.is_open()) {
+        getline (fileIn, str);
+
+        while (fileIn) {
+            if ((str.find_first_not_of(" \t\r\n") != string::npos) && (str[0] != '#')) {
+                
+                
+                stringstream s(str);
+                s >> cmd;
+                int i;
+                int valuesi[10];
+                float valuesf[10];
+                bool validinput; // Validity of input
+
+                // Process the light, add it to database.
+                // Lighting Command
+                
+                
+                if (cmd == "fileName") {
+                    str.erase(0, 9);
+                    outdata.open(str);
+                    if( !outdata ) { // file couldn't be opened
+                       cerr << "Error: file could not be opened" << endl;
+                       exit(1);
+                    }
+                    
+                    imageNamePPM = str;
+                    std::cout << "\nimage saved: " << str <<  "\n\n";
+                }
+                
+                if (cmd == "resolution" || cmd == "size") {
+                    str.erase(0, 5);
+                    readValuesFloat(str, 2, valuesf, 3);
+                    w = valuesf[0];
+                    h = valuesf[1];
+                    camera.aspectRatio = w / h;
+                    
+                    //camera.aspectRatio = aspectRatio;
+                    std::cout << "Resolution Set to: X:" << w << " Y:" << h << std::endl;
+                }
+                
+                if (cmd == "resolution") {
+                    throw std::invalid_argument("use 'size' not 'resolution");
+
+                }
+
+               
+                if (cmd == "maxdepth") {
+                    str.erase(0, 8);
+                    readValuesInt(str, 1, valuesi, 3);
+                    maxDepth = valuesi[0];
+                    std::cout << "max depth set: " << maxDepth << std::endl;
+                }
+                
+                //light  defintions: //this stuff is addded to ray
+                if (cmd == "directional") { // x y z r g b
+                    str.erase(0, 11);
+                    readValuesFloat(str, 6, valuesf, 3);
+
+                }
+                
+                if (cmd == "point") { //x y z r g b The location of a point source and the color, as in OpenGL.
+                    str.erase(0, 5);
+                    readValuesFloat(str, 6, valuesf, 3);
+                
+
+                }
+                
+                if (cmd == "attenuation") { //const linear quadratic (Sets the constant, linear and quadratic attenuations (default 1,0,0) as in OpenGL. By default there is no attenuation (the constant term is 1, linear and quadratic are 0; that's what we mean by 1,0,0).
+                    str.erase(0, 11);
+                    readValuesFloat(str, 3, valuesf, 3);
+
+                }
+                
+                
+                if (cmd == "ambient") { //default is .2,.2,.2
+                    str.erase(0, 7);
+                    materialParsed = std::shared_ptr<Material>(new Material());
+
+                    readValuesFloat(str, 3, valuesf, 3);
+                    color3 ambientColor = convertFloatToColor(valuesf);
+
+                    //color3 ambientColor(valuesf[0], valuesf[1], valuesf[2]);
+                    
+                    materialParsed->aBRDF.ambient = ambientColor;
+                    
+                }
+
+                
+                //Note also that if no ambient color or attenuation is specified, you should use the defaults. Note that we allow the ambient value to be changed between objects (so different objects will be rendered with a different ambient term; this is used frequently in the examples).  Finally, note that here and in the materials below, we do not include the alpha term in the color specification.
+                
+                //materials
+                if (cmd == "diffuse") { //r g b
+                    str.erase(0, 7);
+                    readValuesFloat(str, 3, valuesf, 3);
+                    color3 diffuseColor = convertFloatToColor(valuesf);
+                    materialParsed->aBRDF.diffuse = diffuseColor;
+                }
+                if (cmd == "specular") { // r g b
+                    str.erase(0, 8);
+                    readValuesFloat(str, 3, valuesf, 3);
+                    readValuesFloat(str, 3, valuesf, 3);
+                    color3 specularColor = convertFloatToColor(valuesf);
+                    materialParsed->aBRDF.specular = specularColor;
+
+                }
+                if (cmd == "mirror") { // r g b
+                    str.erase(0, 9);
+                    readValuesFloat(str, 3, valuesf, 3);
+                    color3 mirrorColor = convertFloatToColor(valuesf);
+                    materialParsed->aBRDF.mirror = mirrorColor;
+
+                }
+                if (cmd == "specular") { // r g b
+                    str.erase(0, 8);
+                    readValuesFloat(str, 4, valuesf, 3);
+                    readValuesFloat(str, 3, valuesf, 3);
+                    color3 specularColor = convertFloatToColor(valuesf);
+                    materialParsed->aBRDF.specular = specularColor;
+
+                }
+                                
+                
+                if (cmd == "camera") {
+                    str.erase(0, 6);
+                    readValuesFloat(str, 10, valuesf, 3);
+
+                    vector3<float> cameraPositionInit(valuesf[0], valuesf[1], valuesf[2]);
+                    vector3<float> cameraLookAtInit(valuesf[3], valuesf[4], valuesf[5]);
+                    vector3<float> cameraUpInit(valuesf[6], valuesf[7], valuesf[8]);
+                    float fovInit = valuesf[9];
+                    //scale = tan(fov * 0.5f * M_PI / 180.0f);
+                    
+
+                    //camera(cameraPositionInit, cameraLookAtInit, cameraUpInit, fovInit, aspectRatio);
+
+                    
+                    
+                    camera.cameraPosition = cameraPositionInit;
+                    
+                    camera.cameraLookAt = cameraLookAtInit;
+                    camera.cameraUp = cameraUpInit;
+                    camera.fov = fovInit;
+                    //cameraToWorld set here
+                    camera.updateCameraParameters();
+                    
+                    /*
+                    vector3<float> from(cameraPositionInit);
+                    vector3<float> to(cameraLookAtInit);
+                    vector3<float> up(cameraUpInit);
+
+                    cameraViewTransformation =transformation (from, to, up);
+*/
+                    
+                    std::cout << "camera position " << camera.cameraPosition << std::endl;
+                    
+                    std::cout << "Camera set: " << std::endl;
+                    
+                }
+                
+                if (cmd == "popTransform") { //retrive
+                    str.erase(0, 12);
+                    //scene.transformationStack.PopTransform();
+                    //curTransform[curTransformIndex] = scene.transformationStack[scene.transformationStack.stackIndex - 1];
+                    if (curTransformIndex != 0) {
+                        curTransformIndex--;
+                        
+                    }
+                    }
+                       
+                if (cmd == "pushTransform") { //add to stack, current working should be idenity matrix
+                    str.erase(0, 13);
+                    
+                    //scene.transformationStack.PushTransform(curTransform[curTransformIndex]);
+                    
+                    //currentTransform = transformation();
+                    // Call the PushTransform() function on the instance
+                    
+                    curTransformIndex++;
+                    
+
+                    
+                    }
+                      
+                if (animatedBool == true) {
+                    //these will only impact the creation of the tranformationSet in scene creation
+
+                    if (cmd == "gravity") { //gravity [bool]
+                        str.erase(0, 8);
+                        //put it at 9.8 meters per second based off time value
+                    }
+                                  
+                    if (cmd == "bounce") { //have to figure out how bounce should be defiend
+                        str.erase(0, 7);
+                                      
+                    }
+                                  
+                    if (cmd == "node") { //node [parent objectID]
+                        //if object hand and parent object arm, then each tranformation for arm needs to adjust hand by the same
+                        str.erase(0, 5);
+                                      
+                    }
+                }
+                
+                //sphere centerx centery centerz radius
+                if (cmd == "sphere") {
+                    
+                    str.erase(0, 7);
+                    readValuesFloat(str, 10, valuesf, 3);
+    
+                    //eventually ill need to setup a makTranformation() function
+                    
+                    //ok, so whats supposed to happen is i create a transformation stack. Then makeShape just calls the most recent transformation stakc, amybe?
+                    
+                    objParamMap sphereParams;
+                    
+                    vector3<float> positionArray (valuesf[0], valuesf[1], valuesf[2]);
+                    
+                   
+                    params.addOneVector3F("position", positionArray);
+                    params.addOneFloat("radius", valuesf[3]);
+                    //lookup will check if curTranform is in the transformCache, if not it will add it to the stack. Then returns a pointer
+                    //transformation *o2w = transformCache.lookup(curTransform[0]);
+                    //transformation *w2o = transformCache.lookup(inverse(curTransform[0]));
+                    
+                    
+                    
+                    //transformation *o2w = &currentTransform;// transformCache.lookup(currentTranform);
+                    //transformation inversedTransform = inverse(currentTransform);
+                    //transformation *w2o = &inversedTransform;
+
+                    
+                    //transformation *w2o = &curTransform[curTransformIndex];
+                    //transformation *o2w = (&curTransform[curTransformIndex]);
+                   // transformation result = *o2w * cameraViewTransformation;
+                    createTransformationMatrix(translateVector, rotationVector, theta, scaleVector, curTransformIndex);
+
+                    translateVector.clear();
+                    rotationVector.clear();
+                    scaleVector.ones();
+
+                    
+                    string str = "sphere";
+                    //makeShapes(str, o2w, w2o, params);
+                    
+                    
+                    makeShapes(str, &curTransform[curTransformIndex], &curTransform[curTransformIndex], params);
+
+                    countingj++;
+                    std::cout << "sphere number  " << countingj << std::endl;
+                    
+                    shapesContainer.push_back(aShape);
+                    curTransformIndex++;
+
+                    //std::cout << "shape number " << shapesContainer.size() << "set as a " << str << std::endl;
+                    
+                    //sphere.printValues();
+
+                }
+                
+                if (cmd == "maxverts") {
+                    str.erase(0, 8);
+                    readValuesInt(str, 2, valuesi, 3);
+                    maxVertArraySize = valuesi[0];
+
+                    std::cout << "max verts read: " << maxVertArraySize << std::endl;
+
+                }
+
+                if (cmd == "vertex") {
+                    str.erase(0, 6);
+                    readValuesFloat(str, 4, valuesf, 3);
+                    
+                    vertexPointArray.push_back(point3<float> (valuesf[0], valuesf[1], valuesf[2]));
+                    
+                }
+                
+                if (cmd == "tri") {
+                    str.erase(0, 3);
+                    readValuesInt(str, 4, valuesi, 3);
+                    
+                    //transformation *o2w = transformCache.lookup(curTransform[0]);
+                    //transformation *w2o = transformCache.lookup(inverse(curTransform[0]));newI
+
+                    /*
+                    transformation *o2w = &currentTransform;// transformCache.lookup(currentTranform);
+                    transformation inversedTransform = inverse(currentTransform);
+                    transformation *w2o = &inversedTransform;
+*/
+                    
+                    //maybe placing these outside function makes it more efficent?
+
+                    triArray.resize(newI+1);
+
+                    triArray[newI] = vector3<int> (valuesi[0], valuesi[1], valuesi[2]);
+                    
+                    newI++;
+                    std::cout << newI << std::endl;
+                    
+                                        
+                }
+
+                if (cmd == "maxvertnorms") {
+                    str.erase(0, 12);
+
+                }
+                
+                
+                if (cmd == "vertexnormal") {
+                    str.erase(0, 8);
+
+                }
+                                
+                if (cmd == "trinormal") {
+                    
+                }
+                
+                
+                    //this has to move up
+                if (cmd == "translate") {
+                    str.erase(0, 10);
+                    readValuesFloat(str, 4, valuesf, 3);
+                    
+                     //translateVector(valuesf[0], valuesf[1], valuesf[2]);
+
+                    translateVector.x += valuesf[0];
+                    translateVector.y += valuesf[1];
+                    translateVector.z += valuesf[2];
+
+                    //tranform.translation(translateVector);
+                    //currentTransform.translation(translateVector);
+                    //curTransform[curTransformIndex].translation(translateVector);
+                     
+                    
+                }
+                
+                if (cmd == "rotate") {
+                    str.erase(0, 7);
+                    readValuesFloat(str, 4, valuesf, 3);
+                    
+                    rotationVector.x = valuesf[0];
+                    rotationVector.y = valuesf[1];
+                    rotationVector.z = valuesf[2];
+
+                    theta = valuesf[3];
+
+                    
+                    
+                   //currentTransform.rotation(theta, translateVector);
+                    //curTransform[curTransformIndex].rotation(theta, rotationVector);
+                    //transformation rotationMatrix = transformation::rotation(theta, translateVector);
+                    
+                }
+                
+                if (cmd == "scale") {
+                    str.erase(0, 5);
+                    readValuesFloat(str, 4, valuesf, 3);
+                    
+                     //scaleVector(valuesf[0], valuesf[1], valuesf[2]);
+                    
+                    scaleVector.x = valuesf[0];
+                    scaleVector.y = valuesf[1];
+                    scaleVector.z = valuesf[2];
+
+                    //currentTransform.scaling(scaleVector);
+                    
+                    //curTransform[curTransformIndex].scaling(scaleVector);
+
+                }
+                
+                
+                if (cmd == "end") {
+                    goto endParsing;
+                }
+                auto previousCmd = cmd;
+            }
+
+            
+            else if (str[0] != '#') {
+                //std::cout << "empty line" << std::endl;
+                
+                if (triArray.size() > 0) {
+                   string str = "triangleMesh";
+                   
+                    //transformation *o2w = &curTransform[curTransformIndex];// transformCache.lookup(curTransform[0]);
+                    //transformation *w2o = (&curTransform[curTransformIndex]);// transformCache.lookup(inverse(curTransform[0]));
+                    createTransformationMatrix(translateVector, rotationVector, theta, scaleVector, curTransformIndex);
+                    
+                    translateVector.clear();
+                    rotationVector.clear();
+                    scaleVector.ones();
+                    
+                   params.addOneInt("nTriangles", static_cast<int>(triArray.size()));
+                   params.addVector3I("triArray", &triArray[0]);
+                   params.addOneInt("nVertices", maxVertArraySize);
+                   params.addPoint3F("vertexArray", &vertexPointArray[0]);
+                    
+                    
+                               
+                    makeShapes(str, &curTransform[curTransformIndex], &curTransform[curTransformIndex], params);
+                    
+                    curTransformIndex++;
+                    
+                    
+                    triArray.clear();
+                    triArray.resize(0);
+                    newI = 0;
+
+                    //params.clear();
+
+               }
+                //this
+
+                //newI = 0;
+
+            }
+            
+                getline (fileIn, str);
+            
+        }
+
+        endParsing:
+        outdata << "P3\n" << w << ' ' << h << "\n255\n";
+
+        
+        scene.renderer();
+    }
+
+    triArray.clear();
+    triArray.resize(0);
+    fileIn.close();
+
+
+}
+
+void closefile(const char* fileName) {
+    
+    char *imageNameChar = new char[imageNamePPM.size()+1]; // +1 to account for \0 byte
+        std::strncpy(imageNameChar, imageNamePPM.c_str(), imageNamePPM.size());
+
+    CImg<unsigned char> im(imageNameChar); //save at CImg file
+    imageNameChar[strlen(imageNameChar)-3] = '\0'; //remove "ppm'
+    //std::cout<< "\n" << input_file << "\n";
+    char *fileType = "png";
+    strncat(imageNameChar, fileType, 4); //add png to file char
+    im.save(imageNameChar);
+    
+    
+}
+
+    
+
+
+
+//evantually, i will have tri mesh defined via

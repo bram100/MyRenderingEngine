@@ -1,0 +1,15 @@
+# files to test my math implimentaiton
+
+# step 1: un-comment math operation
+
+#rules: 
+#	first line must be file name
+#	second line must be file type
+
+fileName iLikeApples
+
+#filetype ppm
+#filetype PNG 
+ 
+#resolution 100 100
+

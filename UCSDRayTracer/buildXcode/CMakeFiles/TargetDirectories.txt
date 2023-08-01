@@ -1,0 +1,3 @@
+/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode/CMakeFiles/UCSDRayTracer.dir
+/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode/CMakeFiles/ALL_BUILD.dir
+/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode/CMakeFiles/ZERO_CHECK.dir

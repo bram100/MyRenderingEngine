@@ -1,0 +1,26 @@
+# CMakeLists.txt in src/rendering
+add_library(RenderingLib
+	imageManager.hpp	
+	raytrace.hpp
+	camera.cpp
+	intersection.cpp
+	sample.cpp
+	camera.hpp
+	intersection.hpp
+	sample.hpp
+	cameraPerspective.cpp
+	objParameters.cpp
+	sampler.cpp
+	cameraPerspective.hpp
+	objParameters.hpp
+	sampler.hpp
+	film.cpp
+	ray.cpp
+	scene.hpp
+	film.hpp
+	ray.hpp
+	imageManager.cpp
+	raytrace.cpp
+)
+
+target_include_directories(RenderingLib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

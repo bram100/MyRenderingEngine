@@ -1,0 +1,165 @@
+cmake_minimum_required(VERSION 3.6)
+project(UCSDRayTracer)
+
+set(CMAKE_CXX_STANDARD 17)
+
+# Set source files for each group
+set(COLORS_SOURCES
+    src/colors/color.hpp
+    src/colors/BRDF.cpp
+    src/colors/material.hpp
+    src/colors/material.cpp
+    src/colors/color.cpp
+    src/colors/BRDF.hpp
+    src/colors/DisneyBSDF.cpp
+    src/colors/DisneyBSDF.hpp
+    src/colors/texture.cpp
+    src/colors/texture.hpp
+)
+
+set(GEOMETRY_SOURCES
+    src/geometry/localGeo.hpp
+    src/geometry/sphere.cpp
+    src/geometry/aggregate.cpp
+    src/geometry/primitive.cpp
+    src/geometry/sphere.hpp
+    src/geometry/aggregate.hpp
+    src/geometry/primitive.hpp
+    src/geometry/triangle.cpp
+    src/geometry/triangle.hpp
+    src/geometry/shape.cpp
+    src/geometry/localGeo.cpp
+    src/geometry/geometricPrimitive.hpp
+    src/geometry/geometricPrimitive.cpp
+)
+
+set(RENDERING_SOURCES
+    src/rendering/imageManager.hpp
+    src/rendering/raytrace.hpp
+    src/rendering/camera.cpp
+    src/rendering/intersection.cpp
+    src/rendering/sample.cpp
+    src/rendering/camera.hpp
+    src/rendering/intersection.hpp
+    src/rendering/sample.hpp
+    src/rendering/cameraPerspective.cpp
+    src/rendering/objParameters.cpp
+    src/rendering/sampler.cpp
+    src/rendering/cameraPerspective.hpp
+    src/rendering/objParameters.hpp
+    src/rendering/sampler.hpp
+    src/rendering/film.cpp
+    src/rendering/ray.cpp
+    src/rendering/film.hpp
+    src/rendering/ray.hpp
+    src/rendering/imageManager.cpp
+    src/rendering/raytrace.cpp
+)
+
+set(UTILS_SOURCES
+    src/utils/accelerators.cpp
+    src/utils/testing.cpp
+    src/utils/scene.cpp
+    src/utils/math.cpp
+    src/utils/thread.cpp
+    src/utils/matrix.cpp
+    src/utils/transform.cpp
+    src/utils/memory.cpp
+    src/utils/transformationStack.cpp
+    src/utils/normal.cpp
+    src/utils/transformedPrimitive.cpp
+    src/utils/point.cpp
+    src/utils/variables.cpp
+    src/utils/readCommand.cpp
+    src/utils/vector.cpp
+    src/utils/accelerators.hpp
+    src/utils/testing.hpp
+    src/utils/scene.hpp
+    src/utils/math.hpp
+    src/utils/thread.hpp
+    src/utils/matrix.hpp
+    src/utils/transform.hpp
+    src/utils/memory.hpp
+    src/utils/transformationStack.hpp
+    src/utils/normal.hpp
+    src/utils/transformedPrimitive.hpp
+    src/utils/point.hpp
+    src/utils/variables.hpp
+    src/utils/readCommand.hpp
+    src/utils/vector.hpp
+)
+
+# Add the main executable
+add_executable(UCSDRayTracer
+    src/main.cpp
+    src/CImg.h
+    ${COLORS_SOURCES}
+    ${GEOMETRY_SOURCES}
+    ${RENDERING_SOURCES}
+    ${UTILS_SOURCES}
+)
+
+# Set the source groups for Visual Studio
+source_group("colors" FILES ${COLORS_SOURCES})
+source_group("geometry" FILES ${GEOMETRY_SOURCES})
+source_group("rendering" FILES ${RENDERING_SOURCES})
+source_group("utils" FILES ${UTILS_SOURCES})
+
+# Set the VS_SOURCE_GROUPS property
+set_property(TARGET UCSDRayTracer PROPERTY VS_SOURCE_GROUPS
+    "colors\\Header Files" ${CMAKE_CURRENT_SOURCE_DIR}/src/colors/*.hpp
+    "colors\\Source Files" ${CMAKE_CURRENT_SOURCE_DIR}/src/colors/*.cpp
+    "geometry\\Header Files" ${CMAKE_CURRENT_SOURCE_DIR}/src/geometry/*.hpp
+    "geometry\\Source Files" ${CMAKE_CURRENT_SOURCE_DIR}/src/geometry/*.cpp
+    "rendering\\Header Files" ${CMAKE_CURRENT_SOURCE_DIR}/src/rendering/*.hpp
+    "rendering\\Source Files" ${CMAKE_CURRENT_SOURCE_DIR}/src/rendering/*.cpp
+    "utils\\Header Files" ${CMAKE_CURRENT_SOURCE_DIR}/src/utils/*.hpp
+    "utils\\Source Files" ${CMAKE_CURRENT_SOURCE_DIR}/src/utils/*.cpp
+)
+
+# Include directories
+target_include_directories(UCSDRayTracer
+    PRIVATE
+        src/colors
+        src/geometry
+        src/rendering
+        src/utils
+	src #for CImg
+)
+
+# Link any additional libraries if required
+# target_link_libraries(UCSDRayTracer
+#     YourLibraryName
+# )
+
+# You can alter these according to your needs, e.g if you don't need to display images - set(YOU_NEED_X11 0)
+set(YOU_NEED_X11 1)
+set(YOU_NEED_PNG 1)
+set(YOU_NEED_JPG 1)
+
+
+if(${YOU_NEED_X11} EQUAL 1)
+    message(STATUS "Looking for X11...")
+    find_package(X11 REQUIRED)
+    include_directories(${X11_INCLUDE_DIR})
+    target_link_libraries(UCSDRayTracer ${X11_LIBRARIES})
+else()
+    target_compile_definitions(UCSDRayTracer PRIVATE cimg_display=0)
+endif()
+
+if(${YOU_NEED_JPG} EQUAL 1)
+    message(STATUS "Looking for libjpg...")
+    find_package(JPEG REQUIRED)
+    include_directories(${JPEG_INCLUDE_DIR})
+    target_link_libraries(UCSDRayTracer ${JPEG_LIBRARIES})
+    target_compile_definitions(UCSDRayTracer PRIVATE cimg_use_jpeg=1)
+endif()
+
+if(${YOU_NEED_PNG} EQUAL 1)
+    message(STATUS "Looking for libpng...")
+    find_package(PNG REQUIRED)
+    include_directories(${PNG_INCLUDE_DIR})
+    target_link_libraries(UCSDRayTracer ${PNG_LIBRARIES})
+    target_compile_definitions(UCSDRayTracer PRIVATE cimg_use_png=1)
+endif()
+
