@@ -14,6 +14,8 @@
 #include "matrix.hpp"
 #include <cmath>
 
+//this doesnt do anything right now
+
 
 void setProjectionMatrix(const float &angleOfView, const float &near, const float &far, matrix4 &M)
 {

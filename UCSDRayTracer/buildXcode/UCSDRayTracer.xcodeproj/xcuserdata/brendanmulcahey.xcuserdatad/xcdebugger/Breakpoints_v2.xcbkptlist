@@ -14,8 +14,8 @@
             filePath = "src/utils/scene.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "Scene::renderer()"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "184"
-            endingLineNumber = "184"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
             <Locations>
@@ -106,8 +106,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
             <Locations>
@@ -341,8 +341,8 @@
             filePath = "src/utils/scene.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "Scene::addGeometricPrimitive(geometricPrimitive)"
             landmarkType = "7">
          </BreakpointContent>
@@ -530,8 +530,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "378"
-            endingLineNumber = "378"
+            startingLineNumber = "382"
+            endingLineNumber = "382"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
             <Locations>
@@ -656,8 +656,8 @@
             filePath = "src/utils/scene.hpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "Scene"
             landmarkType = "3">
          </BreakpointContent>
@@ -672,8 +672,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "376"
-            endingLineNumber = "376"
+            startingLineNumber = "380"
+            endingLineNumber = "380"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
             <Locations>
@@ -720,8 +720,8 @@
             filePath = "src/utils/scene.hpp"
             startingColumnNumber = "10"
             endingColumnNumber = "10"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "renderer()"
             landmarkType = "6">
          </BreakpointContent>
@@ -768,8 +768,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "438"
-            endingLineNumber = "438"
+            startingLineNumber = "442"
+            endingLineNumber = "442"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -786,8 +786,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "642"
             endingLineNumber = "642"
-            landmarkName = "transformation"
-            landmarkType = "3">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -802,8 +802,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "643"
             endingLineNumber = "643"
-            landmarkName = "transformation"
-            landmarkType = "3">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -818,8 +818,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "636"
             endingLineNumber = "636"
-            landmarkName = "transformation"
-            landmarkType = "3">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "947B7E59-8D5A-4080-BACD-3218A9A58D29 - cfa5b258924ef035"
@@ -879,8 +879,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "258"
-            endingLineNumber = "258"
+            startingLineNumber = "262"
+            endingLineNumber = "262"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -897,8 +897,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "631"
             endingLineNumber = "631"
-            landmarkName = "transformation"
-            landmarkType = "3">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -913,8 +913,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "634"
             endingLineNumber = "634"
-            landmarkName = "transformation"
-            landmarkType = "3">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "8701AAB1-D50A-48DB-A138-E591E1C5C6A7 - cfa5b258924ef035"
@@ -959,8 +959,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "268"
-            endingLineNumber = "268"
+            startingLineNumber = "272"
+            endingLineNumber = "272"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -975,8 +975,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "425"
-            endingLineNumber = "425"
+            startingLineNumber = "429"
+            endingLineNumber = "429"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
             <Locations>
@@ -1023,8 +1023,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "424"
-            endingLineNumber = "424"
+            startingLineNumber = "428"
+            endingLineNumber = "428"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1041,8 +1041,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "637"
             endingLineNumber = "637"
-            landmarkName = "transformation"
-            landmarkType = "3">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1415,8 +1415,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "369"
-            endingLineNumber = "369"
+            startingLineNumber = "373"
+            endingLineNumber = "373"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1431,8 +1431,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "466"
-            endingLineNumber = "466"
+            startingLineNumber = "470"
+            endingLineNumber = "470"
             landmarkName = "closefile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1451,22 +1451,6 @@
             endingLineNumber = "124"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0F4A8D57-F6CC-45E0-B995-5C8BDDA4E6DA"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/utils/scene.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "Scene::addGeometricPrimitive(geometricPrimitive)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1701,8 +1685,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "141"
             endingLineNumber = "141"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "makeShapes(name, object2World, world2Object, paramSet)"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1715,8 +1699,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "434"
-            endingLineNumber = "434"
+            startingLineNumber = "438"
+            endingLineNumber = "438"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1795,8 +1779,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "410"
-            endingLineNumber = "410"
+            startingLineNumber = "414"
+            endingLineNumber = "414"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
             <Locations>
@@ -1845,8 +1829,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "436"
             endingLineNumber = "436"
-            landmarkName = "scaling(startVector)"
-            landmarkType = "7">
+            landmarkName = "transformation"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1859,8 +1843,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "420"
-            endingLineNumber = "420"
+            startingLineNumber = "424"
+            endingLineNumber = "424"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
             <Locations>
@@ -1907,8 +1891,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "419"
-            endingLineNumber = "419"
+            startingLineNumber = "423"
+            endingLineNumber = "423"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
             <Locations>
@@ -1955,8 +1939,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "421"
-            endingLineNumber = "421"
+            startingLineNumber = "425"
+            endingLineNumber = "425"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1971,8 +1955,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "366"
-            endingLineNumber = "366"
+            startingLineNumber = "370"
+            endingLineNumber = "370"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1987,8 +1971,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "407"
-            endingLineNumber = "407"
+            startingLineNumber = "411"
+            endingLineNumber = "411"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -2003,8 +1987,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "311"
-            endingLineNumber = "311"
+            startingLineNumber = "315"
+            endingLineNumber = "315"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
             <Locations>
@@ -2067,8 +2051,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "400"
-            endingLineNumber = "400"
+            startingLineNumber = "404"
+            endingLineNumber = "404"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -2083,8 +2067,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "411"
-            endingLineNumber = "411"
+            startingLineNumber = "415"
+            endingLineNumber = "415"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -2241,7 +2225,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "401"
             endingLineNumber = "401"
-            landmarkName = "scaling(startVector)"
+            landmarkName = "rotation(theta, vector)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2257,7 +2241,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "378"
             endingLineNumber = "378"
-            landmarkName = "scaling(startVector)"
+            landmarkName = "rotation(theta, vector)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -2319,8 +2303,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "440"
-            endingLineNumber = "440"
+            startingLineNumber = "444"
+            endingLineNumber = "444"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
             <Locations>
@@ -2369,8 +2353,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "311"
             endingLineNumber = "311"
-            landmarkName = "scaling(startVector)"
-            landmarkType = "7">
+            landmarkName = "transformation"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2385,8 +2369,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "486"
             endingLineNumber = "486"
-            landmarkName = "scaling(startVector)"
-            landmarkType = "7">
+            landmarkName = "transformation"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2961,8 +2945,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "427"
             endingLineNumber = "427"
-            landmarkName = "scaling(startVector)"
-            landmarkType = "7">
+            landmarkName = "transformation"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2977,8 +2961,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "428"
             endingLineNumber = "428"
-            landmarkName = "scaling(startVector)"
-            landmarkType = "7">
+            landmarkName = "transformation"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -3116,8 +3100,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "397"
-            endingLineNumber = "397"
+            startingLineNumber = "401"
+            endingLineNumber = "401"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -3132,8 +3116,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "398"
-            endingLineNumber = "398"
+            startingLineNumber = "402"
+            endingLineNumber = "402"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -3322,8 +3306,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "352"
-            endingLineNumber = "352"
+            startingLineNumber = "356"
+            endingLineNumber = "356"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -3370,8 +3354,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "363"
-            endingLineNumber = "363"
+            startingLineNumber = "367"
+            endingLineNumber = "367"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -3386,8 +3370,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "371"
-            endingLineNumber = "371"
+            startingLineNumber = "375"
+            endingLineNumber = "375"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -3402,8 +3386,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "373"
-            endingLineNumber = "373"
+            startingLineNumber = "377"
+            endingLineNumber = "377"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -3418,8 +3402,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "439"
-            endingLineNumber = "439"
+            startingLineNumber = "443"
+            endingLineNumber = "443"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -3514,8 +3498,8 @@
             filePath = "src/utils/scene.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "Scene::renderer()"
             landmarkType = "7">
             <Locations>
@@ -3562,8 +3546,8 @@
             filePath = "src/utils/scene.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "Scene::renderer()"
             landmarkType = "7">
          </BreakpointContent>
@@ -3847,8 +3831,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "114"
             endingLineNumber = "114"
-            landmarkName = "Camera"
-            landmarkType = "3">
+            landmarkName = "createPerspectiveMatrix(fov, aspectRatio, nearClip, farClip)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "A2242DA1-DBC6-43BA-8F14-43ADE48FA089 - a25d5df29b6c317"
@@ -4144,8 +4128,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "479"
             endingLineNumber = "479"
-            landmarkName = "scaling(startVector)"
-            landmarkType = "7">
+            landmarkName = "transformation"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -4160,8 +4144,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "473"
             endingLineNumber = "473"
-            landmarkName = "scaling(startVector)"
-            landmarkType = "7">
+            landmarkName = "transformation"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -4255,8 +4239,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "482"
             endingLineNumber = "482"
-            landmarkName = "scaling(startVector)"
-            landmarkType = "7">
+            landmarkName = "transformation"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -4287,8 +4271,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "485"
             endingLineNumber = "485"
-            landmarkName = "scaling(startVector)"
-            landmarkType = "7">
+            landmarkName = "transformation"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -4701,8 +4685,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "430"
             endingLineNumber = "430"
-            landmarkName = "scaling(startVector)"
-            landmarkType = "7">
+            landmarkName = "transformation"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -4717,8 +4701,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "433"
             endingLineNumber = "433"
-            landmarkName = "scaling(startVector)"
-            landmarkType = "7">
+            landmarkName = "transformation"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

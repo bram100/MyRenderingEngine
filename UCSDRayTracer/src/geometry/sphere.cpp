@@ -29,7 +29,7 @@ bool sphere::intersect(const ray &currentRay, float *tHit, localGeo *localGeoPos
     float t0 = 0;
     float t1 = 0;
     
-    point3<float> transformedCenter = multPointMatrix<float>(camera.worldToCamera, center); //i may need to fix this
+    point3<float> transformedCenter = center;// multPointMatrix<float>(camera.worldToCamera, center); //i may need to fix this
 
     vector3<float> L = transformedRay.lookFrom - transformedCenter; //vector from the ray's origin to the center of the sphere
     
@@ -77,7 +77,7 @@ std::shared_ptr<Shapes> createSphereShape(const transformation *o2w,
                                          const transformation *w2o,
                                          const objParamMap &params) {
 
-    int curMaterial;
+     int curMaterial;
     
     float radius = params.findOneFloat("radius", 999.f) ;
     vector3<float> center = params.findOneVector3F("position", vector3<float>()) ;

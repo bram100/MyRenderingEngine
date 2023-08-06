@@ -37,7 +37,6 @@ public:
     matrix4& worldToCamera = cameraViewTransformation.mt;
     matrix4& cameraToWorld = cameraViewTransformation.minvt;
     matrix4 perspectiveMatrix;
-   // matrix4 cameraViewMatrix;
 
 
     transformation cameraShapeTransformation;// = *objectToWorld ^ worldToCamera;

@@ -15,7 +15,6 @@
 extern Camera camera;
 
 
-// Implement the constructor
 bool triangleMesh::intersect(const ray &ray, float *tHit, localGeo *localGeoPos) const
 {
     
@@ -41,15 +40,7 @@ std::vector<std::shared_ptr<Shapes>> createTriangleMesh(
         *objectToWorld, *worldToObject, nTriangles, triArray, nVertices, vertexPointArray/*, s, n , alphaMask, shadowAlphaMask*/, faceIndices);
     
 
-    /*
-    std::cout << "vertexPointArray[3 * triNumber]: "
-              << mesh->vertexPointArray[0].x << ", "
-              << mesh->vertexPointArray[1].y << ", "
-              << mesh->vertexPointArray[2].z << std::endl;
-*/
-    
-   // std::cout << "numTri: " << mesh->nTriangles << std::endl;
-
+ 
     
     std::vector<std::shared_ptr<Shapes>> triangleShapes;
 
@@ -220,24 +211,6 @@ std::vector<std::shared_ptr<Shapes>> createTriangleMeshShape(const transformatio
 
     const point3<float> *vertexPointArray = params.findPoint3F("vertexArray", &vertPInt);
     
-
-    
-    
-    
-    /*
-    for (int i = 0; i < nTriangles; ++i)
-            tris.push_back(std::make_shared<Triangle>(ObjectToWorld, WorldToObject,
-                                                      reverseOrientation, mesh, i));
-    */
-    
-    
-    //static std::vector<vector3<int>> vertexPointArray;
-    //Float zmin = params.FindOneFloat("zmin", -radius);
-    //Float zmax = params.FindOneFloat("zmax", radius);
-    //Float phimax = params.FindOneFloat("phimax", 360.f);
-    //return makeTriangleMesh2(o2w, w2o, nTriangles, &vertexPointArray, nVertices,  &P, &S, &N, &uv, /* &alphaMask, &shadowAlphaMask, */ &faceIndices);
-    
-    
     
     
     
@@ -254,7 +227,6 @@ std::vector<std::shared_ptr<Shapes>> createTriangleMeshShape(const transformatio
     
     //4. Additional Data: Depending on the rendering system, the function might also compute additional data for the triangles, such as bounding boxes or surface area information. These additional data can help optimize the rendering process by enabling spatial acceleration structures like bounding volume hierarchies (BVH) or spatial partitioning.
     
-    //createTriangleMesh(
     
     
     
@@ -292,12 +264,6 @@ bool Triangle::intersect(const ray &currentRay, float *tHit, localGeo *localGeoP
 {
     
     ray transformedRay = worldToObject->operator*(currentRay);
-
-    /*
-    matrix4 testing = worldToObject->mt;
-    ray transformedRay = currentRay * testing;
-     */
-     
     
     const point3<float>* v = mesh->vertexPointArray.get();
     const vector3<int>* thisArray = mesh->triArray.get();
@@ -306,7 +272,8 @@ bool Triangle::intersect(const ray &currentRay, float *tHit, localGeo *localGeoP
     point3<float> v1 = point3<float>(v[thisArray[faceIndex][1]]);
     point3<float> v2 = point3<float>(v[thisArray[faceIndex][2]]);
 
-/*
+    
+    /*
     point3<float> v00 = multPointMatrix<float>(camera.worldToCamera, v0);
     point3<float> v11 = multPointMatrix<float>(camera.worldToCamera, v1);
     point3<float> v22 = multPointMatrix<float>(camera.worldToCamera, v2);
@@ -314,7 +281,8 @@ bool Triangle::intersect(const ray &currentRay, float *tHit, localGeo *localGeoP
     v0 = v00;
     v1 = v11;
     v2 = v22;
-    */
+*/
+
     //compute planes normal
     vector3<float> normalEdge1 = v1 - v0; //normalizing makes no diff?
     vector3<float> normalEdge2 = v2 - v0;//normalizing makes no diff?

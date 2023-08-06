@@ -89,6 +89,7 @@ void createTransformationMatrix(const vector3<float>& translate, const vector3<f
     scaleMatrix.scaling(scale);
     transformationMatrix *= scaleMatrix;
 
+
     transformationMatrix.updateInverse();
     curTransform[i] = transformationMatrix;
     

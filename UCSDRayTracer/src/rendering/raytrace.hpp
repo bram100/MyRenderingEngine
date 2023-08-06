@@ -13,6 +13,5 @@
 #include "ray.hpp"
 
 void trace(ray& ray, int depth, color3* color);
-//void trace(sample2 currentSample, int depth, color3 color);
 
 #endif /* raytrace_hpp */

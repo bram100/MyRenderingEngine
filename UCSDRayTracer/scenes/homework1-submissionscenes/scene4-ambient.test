@@ -20,7 +20,7 @@ maxverts 8
 vertex -1 -1 -1
 vertex +1 -1 -1 
 vertex +1 +1 -1 
-vertex -1 +1 -1 
+vertex -1 +1 -1 o
 vertex -1 -1 +1
 vertex +1 -1 +1 
 vertex +1 +1 +1

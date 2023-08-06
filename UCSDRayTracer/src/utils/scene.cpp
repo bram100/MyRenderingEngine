@@ -24,9 +24,11 @@ color3 currentColor;
 int currentFrame = 0;
 
 void Scene::addGeometricPrimitive(std::shared_ptr<GeometricPrimitive> geometricPrimitive) {
-    geometricPrimitives.push_back(geometricPrimitive);
-    
-    
+    geometricPrimitivesVec.push_back(geometricPrimitive);
+}
+
+void Scene::addLight(std::shared_ptr<Lights> aLight) {
+    lightsVec.push_back(aLight);
 }
 
 void Scene::renderer() {
@@ -45,18 +47,10 @@ void Scene::renderer() {
         int percent = (current*100)/total;
         // std::cout << "Percentage complete: " << percent << "%" << " [ " << current << " of " << total << " pixels ]" << std::endl;
         
-            //cameraScene = camera;
-            //give camera a sample, return a point (point is xyz)
             camera.generateRay(currentSample, &currentRay); //eye position
-            //trace the ray in raytracer, return new color
-            // currentColor.b = 0.f; //temp reset
             
             trace(currentRay, maxDepth, &currentColor);
             
-            
-            //checkThread.join();
-            
-            //send color to film
             
             
             commit(currentSample, currentColor);

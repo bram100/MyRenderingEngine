@@ -14,21 +14,24 @@
 
 class Material {
 public:
-    BRDF aBRDF;
     
     Material() {}
-    Material(const BRDF& brdf) : aBRDF(brdf) {}
+    Material(const BRDF& brdf, color3 ambient) : aBRDF(brdf), ambient(ambient) {}
 
     
     const color3& getAmbient() const {
-        
-        return aBRDF.getAmbient();
+        return ambient;
     }
 
+    
+    
+    BRDF aBRDF;
+    color3 ambient;
     //add volumetric scattering to material class??
 };
 
 void getBRDF(localGeo& local, BRDF* brdf);
+
 
 /*
  Class for storing material. For this example, it just returns a constant material regardless of what local is. Later on, when we want to support texture mapping, this need to be modified.

@@ -126,19 +126,7 @@ class primitive {
 public:
     
    // primitive(const std::shared_ptr<Shapes>& shape, const std::shared_ptr<Material>& material) : shape(shape), material(material) {}
-
-    /*
-    bool intersect(const ray& ray, SurfaceInteraction& interaction) const {
-        // Perform intersection tests using the shape's geometry
-        if (shape->intersect(ray, interaction)) {
-            // Update the surface interaction with material properties
-            interaction.material = material;
-            return true;
-        }
-        return false;
-    }
-     */
-
+    
     virtual bool intersect(ray& ray, float* thit, intersection* intersct) = 0;
     //virtual bool intersectP(ray& ray) = 0;
     virtual void getBRDF(localGeo& local, BRDF* brdf) = 0;

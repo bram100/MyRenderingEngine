@@ -172,6 +172,14 @@ vector3<float> objParamMap::findOneVector3F(const std::string &name, vector3<flo
     return d;
 }
     
+color3 objParamMap::findOneColor3(const std::string &name, color3 d) const {
+    auto it = myMap.find(name);
+    if (it != myMap.end() && std::holds_alternative<color3>(it->second)) {
+        return std::get<color3>(it->second);
+    }
+    return d;
+}
+
 
 point3<float> objParamMap::findOnePoint3F(const std::string &name, point3<float> d) const {
         auto it = myMap.find(name);
@@ -181,48 +189,6 @@ point3<float> objParamMap::findOnePoint3F(const std::string &name, point3<float>
         return d;
 
     }
-
-
-
-
-/*
-vector3<int> objParamMap::findOneVector3I(const std::string &key, vector3<int> d) const {
-    //may be wrong????
-    
-    auto it = myMap.find(key);
-    if (it != myMap.end() && std::holds_alternative<vector3<int>>(it->second)) {
-        return std::get<vector3<int>>(it->second);
-    } else {
-        return d;
-    }
-}
- 
-
-vector3<float> objParamMap::findOneVector3F(const std::string &key, vector3<float> d) const {
-    //may be wrong????
-    
-    auto it = myMap.find(key);
-    if (it != myMap.end() && std::holds_alternative<vector3<float>>(it->second)) {
-        return std::get<vector3<float>>(it->second);
-    } else {
-        return d;
-    }
-}
- */
-/*
-point3<float> objParamMap::findOnePoint3F(const std::string &key, point3<float> d) const {
-    //may be wrong????
-    
-    
-    auto it = myMap.find(key);
-    if (it != myMap.end() && std::holds_alternative<point3f>(it->second)) {
-        return std::get<point3f>(it->second);
-    }
-    return d;
-}
-*/
-
-//find many , through pointer to the first
 
 
 const point3<float>* objParamMap::findPoint3F(const std::string& key, int* nValues) const {

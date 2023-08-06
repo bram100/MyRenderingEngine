@@ -232,23 +232,6 @@ public:
          return result;
      }
     
-    /*
-    transformation operator*(const transformation& object) const {
-        transformation result;
-        for (int i = 0; i < 4; i++) {
-            for (int j = 0; j < 4; j++) {
-                result.mt[i][j] = 0;
-                result.minvt[i][j] = 0;
-                for (int k = 0; k < 4; k++) {
-                    result.mt[i][j] += mt[i][k] * object.mt[k][j];
-                    result.minvt[i][j] += minvt[i][k] * object.minvt[k][j];
-                }
-            }
-        }
-        return result;
-    }
-*/
-    
 
     transformation& operator*=(const transformation& object)  {
         transformation result;
@@ -322,21 +305,7 @@ public:
         minvt[0][0] /= startVector.x;
         minvt[1][1] /= startVector.y;
         minvt[2][2] /= startVector.z;
-        /*
-         matrix4 scaleMatrix(startVector.x, 0, 0, 0,
-         0, startVector.y, 0, 0,
-         0, 0, startVector.z, 0,
-         0, 0, 0, 1);
-         matrix4 invScaleMatrix(1/startVector.x,   0,   0, 0,
-     
-         0,   1/startVector.y,   0, 0,
-         0,     0, 1/startVector.z, 0,
-         0,     0,   0, 1);
-         
-         mt = scaleMatrix * mt;
-         minvt = minvt * invScaleMatrix;
-         
-         */
+
     }
     //translation
     template <typename Vec>
@@ -431,31 +400,7 @@ public:
         m.m[2][1] = a.y * a.z * (1 - cosTheta) + a.x * sinTheta;
         m.m[2][2] = a.z * a.z + (1 - a.z * a.z) * cosTheta;
         m.m[2][3] = 0;
-        
-        /*
-        matrix4 mTest;
-        
-        testingMatrix.m[0][0] = cosTheta+Rx*Rx (1 - cosTheta);
-        testingMatrix.m[0][1] =
-        testingMatrix.m[0][2] =
-        testingMatrix.m[0][3] =
-        
-        testingMatrix.m[1][0] =
-        testingMatrix.m[1][1] =
-        testingMatrix.m[1][2] =
-        testingMatrix.m[1][3] =
-        
-        testingMatrix.m[2][0] =
-        testingMatrix.m[2][1] =
-        testingMatrix.m[2][2] =
-        testingMatrix.m[2][3] =
-        testingMatrix.m[3][0] =
-        
-        testingMatrix.m[3][1] =
-        testingMatrix.m[3][2] =
-        testingMatrix.m[3][3] =
-        */
-        
+                
         // Compute rotations of second and third basis vectors
         m.m[1][0] = a.x * a.y * (1 - cosTheta) + a.z * sinTheta;
         m.m[1][1] = a.y * a.y + (1 - a.y * a.y) * cosTheta;
@@ -474,16 +419,9 @@ public:
             this->minvt = matrix4();
             return;
         }
-
-        //this->mt = X * Y * Z;
-        
         
         this->mt = m;
-        this->minvt = Transpose(m);
         this->minvt = inverse(m);
-
-
-        //return transformation(m, Transpose(m));
     }
 
 

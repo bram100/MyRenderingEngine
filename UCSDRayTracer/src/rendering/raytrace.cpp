@@ -39,7 +39,7 @@ void trace(ray& ray, int depth, color3* color3) {
         color3->b = 0.f;
     }
     //for (int i = 0; i < scene.geometricPrimitives.size(); ++i) {
-    for (const auto& p : scene.geometricPrimitives){
+    for (const auto& p : scene.geometricPrimitivesVec){
         
         
         //const auto& p = scene.geometricPrimitives[i];

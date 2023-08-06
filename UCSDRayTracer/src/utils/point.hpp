@@ -13,8 +13,6 @@
 #include <cassert>
 #include <iostream>
 #include <cmath>
-//#include "matrix.hpp"
-//#include "vector.hpp"
 
 template <typename T>
 class vector3;
@@ -61,7 +59,6 @@ class point3 {
                 if (index == 1) return y;
                 return z;
             }
-            //to allow for multiplcation by a tranformation matrix
             else if (index == 3 ) {
                 static T one = T(1);
                 return one;
@@ -86,17 +83,11 @@ class point3 {
                 std::cerr << "Error: index out of rancge " << std::endl;
             }
         };
-    
-        //opperators (overloading)
-    
+        
         point3<T> operator+(const point3<T> &object) const {
             return point3(x + object.x, y + object.y, z + object.z);
         };
-/*
-        point3<T> operator-(const point3<T> &object) const {
-            return point3(x - object.x, y - object.y, z - object.z);
-        };
-    */
+
         vector3<T> operator-(const point3<T>& other) const {
             return vector3<T>(x - other.x, y - other.y, z - other.z);
         }
@@ -105,33 +96,6 @@ class point3 {
     operator point3<T>() const {
         return point3<T>(x, y, z);
     }
-
-/*
-    template <typename U>
-        point3<T> operator*(U scalar) const {
-            return point3<T>(scalar * x, scalar * y, scalar * z);
-        };
-*/
-    /*
-    
-    //cross product
-    point3<T> operator^(const point3<T>& object) const {
-        float crossX = y * object.z - z * object.y;
-        float crossY = z * object.x - x * object.z;
-        float crossZ = x * object.y - y * object.x;
-        return point3<T>(crossX, crossY, crossZ);
-    }
-    
-    //dot product //change int to T eventually
-    template<typename U>
-    int operator*(const point3<U>& other) const {
-      return x * other.x + y * other.y + z * other.z;
-    }
-
-    */
-
-    
-    
     
     T operator*(const point3<T>& other) const {
         return x * other.x + y * other.y + z * other.z;
@@ -142,7 +106,6 @@ class point3 {
     
     T x, y, z;
     
-    //template <typename X>
 
 
 };

@@ -15,3 +15,6 @@ int b = static_cast<int>(floatValues[2] * 255);
 
 return color3(r, g, b);
 }
+
+
+

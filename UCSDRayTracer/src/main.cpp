@@ -28,8 +28,6 @@ int main(int argc, char* argv[]) {
         cerr << "Error reading .txt file \n";
         exit(-1);
     }
-    //print working directory
-
     
     const std::string fileName = argv[1];
     std::cout << fileName << std::endl;

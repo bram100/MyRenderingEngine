@@ -1,0 +1,475 @@
+#define file name and resolution (only ppm works currently, will export as ppm and jpeg)
+
+fileName scene1D.ppm
+
+size 640 480 
+
+
+#camera -2 -2 2 0 0 0 1 1 2 60
+#camera +2 +2 2 0 0 0 -1 -1 2 60
+#camera -2 -2 -2 0 0 0 -1 -1 2 60
+
+camera -2 -2 -2 0 0 0 1 0 0 60
+
+
+# lighting/material definitions
+# for initial testing, you should get the geometry right
+# you may want to use dummy (constant) shading, ignoring these lines
+
+maxverts 8
+
+vertex -1 -1 -1
+vertex +1 -1 -1 
+vertex +1 +1 -1 
+vertex -1 +1 -1 
+vertex -1 -1 +1
+vertex +1 -1 +1 
+vertex +1 +1 +1
+vertex -1 +1 +1
+
+ambient .5 0 .5 
+# face -Y
+tri 0 1 5 
+tri 0 5 4 
+popTransform
+
+ambient .5 1 .5 
+# face +Y
+tri 3 7 6
+tri 3 6 2
+popTransform
+
+ambient 1 .5 .5 
+# face +X
+tri 1 2 6
+tri 1 6 5 
+popTransform
+
+ambient .5 .5 1
+# face +Z
+tri 4 5 6 
+tri 4 6 7 
+popTransform
+
+ambient 0 .5 .5 
+# face -X
+tri 0 7 3 
+tri 0 4 7 
+popTransform
+
+ambient .5 .5 0
+# face -Z
+tri 0 3 2 
+tri 0 2 1
+popTransform
+
+
+ambient 1 1 1
+
+sphere 1 0 0 0.15
+
+sphere -.5 1 -.5 0.15
+sphere +.5 1 +.5 0.15
+
+sphere 0 0 1 0.15
+sphere -.5 -.5 1 0.15
+sphere +.5 +.5 1 0.15
+
+sphere -1 -.5 -.5 0.15
+sphere -1 -.5 +.5 0.15
+sphere -1 +.5 +.5 0.15
+sphere -1 +.5 -.5 0.15
+
+sphere -.5 -1 -.5 0.15
+sphere -.5 -1 +.5 0.15
+sphere +.5 -1 +.5 0.15
+sphere +.5 -1 -.5 0.15
+sphere  0 -1 0 0.15
+
+sphere -.5 -.5 -1 0.15
+sphere -.5   0 -1 0.15
+sphere -.5 +.5 -1 0.15
+sphere +.5 -.5 -1 0.15
+sphere +.5   0 -1 0.15
+sphere +.5 +.5 -1 0.15 
+
+popTransform
+ 
+end
+
+
+vertex -1 -1 -1
+vertex +1 -1 -1 
+vertex +1 +1 -1 
+vertex -1 +1 -1 
+vertex -1 -1 +1
+vertex +1 -1 +1 
+vertex +1 +1 +1
+vertex -1 +1 +1
+
+#pushTransform
+# The basic camera transform to return to for new parts
+
+# The actual cube definition.  Since no instancing is supported, I will just 
+# repeat this to create many cubes.  For extra credit, you can implement 
+# instancing to make this simpler.  Alternatively, define a ray-cube 
+# intersection test.
+
+ambient .7 .7 1
+
+scale 2 1 .25
+tri 0 1 5 
+tri 0 5 4 
+tri 3 7 6
+tri 3 6 2
+tri 1 2 6
+tri 1 6 5 
+tri 0 7 3 
+tri 0 4 7 
+tri 0 3 2 
+tri 0 2 1
+tri 4 5 6 
+tri 4 6 7 
+
+#push onto stack
+pushTransform 
+
+#make sure a new clean matrix is created
+popTransform
+
+# This idiom restores the camera transform and pushes it back on the stack
+# Now, I draw the 4 legs of the table.
+# Note that like OpenGL, commands right-multiply
+
+ambient .7 .7 .4
+
+translate -1.75 -.8 -.25 
+translate 0 0 -2.0 
+scale 0.15 0.15 2.0 
+tri 0 1 5 
+tri 0 5 4 
+tri 3 7 6
+tri 3 6 2
+tri 1 2 6
+tri 1 6 5 
+tri 0 7 3 
+tri 0 4 7 
+tri 0 3 2 
+tri 0 2 1
+tri 4 5 6 
+tri 4 6 7 
+pushTransform 
+
+# leg 2: Note that I'm only changing a single translation command.
+
+popTransform
+translate +1.75 -.8 -.25
+translate 0 0 -2.0 
+scale 0.15 0.15 2.0 
+tri 0 1 5 
+tri 0 5 4 
+tri 3 7 6
+tri 3 6 2
+tri 1 2 6
+tri 1 6 5 
+tri 0 7 3 
+tri 0 4 7 
+tri 0 3 2 
+tri 0 2 1
+tri 4 5 6 
+tri 4 6 7 
+
+# leg 3: Note that I'm only changing a single translation command.
+
+popTransform
+translate +1.75 +.8 -.25
+translate 0 0 -2.0 
+scale 0.15 0.15 2.0 
+tri 0 1 5 
+tri 0 5 4 
+tri 3 7 6
+tri 3 6 2
+tri 1 2 6
+tri 1 6 5 
+tri 0 7 3 
+tri 0 4 7 
+tri 0 3 2 
+tri 0 2 1
+tri 4 5 6 
+tri 4 6 7 
+pushTransform 
+
+# leg 4: Note that I'm only changing a single translation command.
+
+popTransform
+translate -1.75 +.8 -.25
+translate 0 0 -2.0 
+scale 0.15 0.15 2.0 
+tri 0 1 5 
+tri 0 5 4 
+tri 3 7 6
+tri 3 6 2
+tri 1 2 6
+tri 1 6 5 
+tri 0 7 3 
+tri 0 4 7 
+tri 0 3 2 
+tri 0 2 1
+tri 4 5 6 
+tri 4 6 7 
+pushTransform 
+
+
+# Now draw the spheres
+
+ambient 0 1 0 
+popTransform
+translate  0 0 0.5
+rotate 0 0 1 45
+scale 1.0 0.25 0.25 
+sphere 0 0 0 1
+pushTransform 
+
+ambient 1 0 0
+popTransform
+translate  0 0 0.5
+rotate 0 0 1 -45
+scale 1.0 0.25 0.25 
+sphere 0 0 0 1
+pushTransform
+
+ambient 0 1 1 
+popTransform
+translate -1.5 -.8 0.65
+scale 0.4 0.4 0.4
+sphere 0 0 0 1
+pushTransform
+
+ambient 0 1 1 
+popTransform
+translate 1.5 -.8 0.65
+scale 0.4 0.4 0.4
+sphere 0 0 0 1
+pushTransform
+
+ambient 0 1 1 
+popTransform
+translate 1.5 .8 0.65
+scale 0.4 0.4 0.4
+sphere 0 0 0 1
+pushTransform
+
+ambient 0 1 1 
+popTransform
+translate -1.5 .8 0.65
+scale 0.4 0.4 0.4
+sphere 0 0 0 1
+pushTransform
+
+end
+pushTransform
+# The basic camera transform to return to for new parts
+
+# The actual cube definition.  Since no instancing is supported, I will just 
+# repeat this to create many cubes.  For extra credit, you can implement 
+# instancing to make this simpler.  Alternatively, define a ray-cube 
+# intersection test.
+
+ambient .7 .7 1
+
+scale 2 1 .25
+tri 0 1 5 
+tri 0 5 4 
+tri 3 7 6
+tri 3 6 2
+tri 1 2 6
+tri 1 6 5 
+tri 0 7 3 
+tri 0 4 7 
+tri 0 3 2 
+tri 0 2 1
+tri 4 5 6 
+tri 4 6 7 
+
+popTransform
+pushTransform 
+
+end
+# This idiom restores the camera transform and pushes it back on the stack
+# Now, I draw the 4 legs of the table.
+# Note that like OpenGL, commands right-multiply
+
+ambient .7 .7 .4
+
+translate -1.75 -.8 -.25 
+translate 0 0 -2.0 
+scale 0.15 0.15 2.0 
+
+end
+
+#define resolution (x y):
+resolution 250 250
+#resolution 320 240 
+
+#define camera coord: (10 values: lookfromx lookfromy lookfromz lookatx lookaty lookatz upx upy upz fov)
+
+maxDepth = 50;
+
+
+#camera 1 1 1 0 0 0 0 1 0 30
+
+#camera 0 0 4 0 0 0 0 1 0 30
+#camera 0 -3 3 0 0 0 0 1 0 30
+#camera -4 0 1 0 0 1 0 0 1 45
+#camera -5 -4 4 1 0 0 0 1 0 30
+
+
+camera -2 -2 2 0 0 0 1 1 2 10
+#camera +2 +2 2 0 0 0 -1 -1 2 60
+#camera -2 -2 -2 0 0 0 -1 -1 2 60
+
+
+#     lr   ud
+#camera 0 1 1 0 0 0 0 1 0 30
+
+#ambient 1 0 0
+
+#sphere 0 0 0 .5
+
+#popTransform
+
+#translate -10 0 -14
+
+#vertex x y z (coords)
+#tri v1 v2 v3 (connect three vertex together)
+
+
+#ambient 0 0 1
+
+#geometry 
+maxverts 8
+
+
+vertex -1 -1 -1
+vertex +1 -1 -1 
+vertex +1 +1 -1 
+vertex -1 +1 -1 
+vertex -1 -1 +1
+vertex +1 -1 +1 
+vertex +1 +1 +1
+vertex -1 +1 +1
+
+ambient .5 0 .5 
+# face -Y
+tri 0 1 5 
+tri 0 5 4 
+popTransform
+
+ambient .5 1 .5 
+# face +Y
+tri 3 7 6
+tri 3 6 2
+popTransform
+
+ambient 1 .5 .5 
+# face +X
+tri 1 2 6
+tri 1 6 5 
+popTransform
+
+ambient 0 .5 .5 
+# face -X
+tri 0 7 3 
+tri 0 4 7 
+popTransform
+
+ambient .5 .5 0
+# face -Z
+tri 0 3 2 
+tri 0 2 1
+popTransform
+
+ambient .5 .5 1
+# face +Z
+tri 4 5 6 
+tri 4 6 7 
+popTransform
+
+ambient 1 1 1
+
+sphere 1 0 0 0.15
+
+sphere -.5 1 -.5 0.15
+sphere +.5 1 +.5 0.15
+
+sphere 0 0 1 0.15
+sphere -.5 -.5 1 0.15
+sphere +.5 +.5 1 0.15
+
+sphere -1 -.5 -.5 0.15
+sphere -1 -.5 +.5 0.15
+sphere -1 +.5 +.5 0.15
+sphere -1 +.5 -.5 0.15
+
+sphere -.5 -1 -.5 0.15
+sphere -.5 -1 +.5 0.15
+sphere +.5 -1 +.5 0.15
+sphere +.5 -1 -.5 0.15
+sphere  0 -1 0 0.15
+
+sphere -.5 -.5 -1 0.15
+sphere -.5   0 -1 0.15
+sphere -.5 +.5 -1 0.15
+sphere +.5 -.5 -1 0.15
+sphere +.5   0 -1 0.15
+sphere +.5 +.5 -1 0.15 
+
+popTransform
+ 
+end
+ 
+vertex -1 -1 -1
+vertex +1 -1 -1 
+vertex +1 +1 -1 
+vertex -1 +1 -1 
+vertex -1 -1 +1
+vertex +1 -1 +1 
+vertex +1 +1 +1
+vertex -1 +1 +1
+
+# Now, I actually define the cube.  Note that to avoid lighting/material 
+# calculations, I am just using ambient to define the colors.
+# No lighting calculations should be performed since I haven't defined any 
+# lights.
+
+ambient .5 0 .5 
+# face -Y
+tri 0 1 5 
+tri 0 5 4 
+popTransform
+ambient .5 1 .5 
+# face +Y
+tri 3 7 6
+tri 3 6 2
+popTransform
+ambient 1 .5 .5 
+# face +X
+tri 1 2 6
+tri 1 6 5 
+popTransform
+ambient 0 .5 .5 
+# face -X
+tri 0 7 3 
+tri 0 4 7 
+popTransform
+ambient .5 .5 0
+# face -Z
+tri 0 3 2 
+tri 0 2 1
+popTransform
+ambient .5 .5 1
+# face +Z
+tri 4 5 6 
+tri 4 6 7 
+
+popTransform

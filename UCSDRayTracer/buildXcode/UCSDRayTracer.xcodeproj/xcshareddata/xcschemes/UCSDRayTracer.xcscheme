@@ -52,15 +52,15 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "testingfilescene3.txt"
+            argument = "testingScene3.txt"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "scene1testing.txt"
+            argument = "testingScene2.txt"
             isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "testingfile.txt"
+            argument = "testingScene1.txt"
             isEnabled = "NO">
          </CommandLineArgument>
       </CommandLineArguments>

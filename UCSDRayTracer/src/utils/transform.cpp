@@ -10,7 +10,6 @@
 int nTransformCacheHits;
 
 transformation *transformCache::lookup(const transformation &t) {
-        //++nTransformCacheLookups;
 
         int offset = hash(t) & (hashTable.size() - 1);
         int step = 1;
@@ -59,7 +58,6 @@ void transformCache::insert(transformation *tNew) {
     }
 }
 
-//expand hashtable, if insert says its needed
 
 void transformCache::grow() {
     std::vector<transformation *> newTable(2 * hashTable.size());

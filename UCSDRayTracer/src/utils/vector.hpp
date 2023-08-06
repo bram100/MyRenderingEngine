@@ -153,16 +153,6 @@ class vector3 {
             return point3(x, y, z);
         }
     
-
-    
-    
-    
-
-/*
-    operator point3<float>*() const {
-            return new point3(x, y, z);
-        }
-    */
    
     template <typename U>
     vector3<T> operator/(U scalar) const {

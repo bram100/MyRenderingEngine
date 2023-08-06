@@ -30,7 +30,7 @@
 
 #include "primitive.hpp"
 #include "geometricPrimitive.hpp"
-//#include "camera.hpp"
+
 #include "scene.hpp"
 using namespace std;
 using namespace cimg_library;
@@ -48,20 +48,14 @@ Scene scene;
 std::shared_ptr<Material> materialParsed = std::make_shared<Material>();
 int countingj = 0;
 
-
-
 float w, h;
 int maxDepth;
-//int newI;
 bool animatedBool = false;
 
-std::vector<std::shared_ptr<Shapes>> shapesContainer;
-//std::vector<std::shared_ptr<GeometricPrimitive>> prims;
 
 
 transformation tranform;
 
-//extern transformationSet transformationStack;
 
 transformationSet curTransform;
 static transformCache transformCache;
@@ -77,8 +71,6 @@ void output2(std::ofstream& outdata)
 void readfile(const char* fileName)
 {
     
-    //std::atomic<int> myVariable(0); // Variable to be checked
-    //std::thread checkThread(camera);
     int newI;
     int myCounting = 0;
 
@@ -102,7 +94,6 @@ void readfile(const char* fileName)
         std::cout << "Error opening file";
         //https://stackoverflow.com/questions/23438393/new-to-xcode-cant-open-files-in-c
       }
-   // int newI;
     
     if (fileIn.is_open()) {
         getline (fileIn, str);
@@ -149,7 +140,6 @@ void readfile(const char* fileName)
                     throw std::invalid_argument("use 'size' not 'resolution");
 
                 }
-
                
                 if (cmd == "maxdepth") {
                     str.erase(0, 8);
@@ -188,11 +178,14 @@ void readfile(const char* fileName)
 
                     //color3 ambientColor(valuesf[0], valuesf[1], valuesf[2]);
                     
-                    materialParsed->aBRDF.ambient = ambientColor;
+                    materialParsed->ambient = ambientColor;
+                    
+                    //new method
+                    
+                    
                     
                 }
 
-                
                 //Note also that if no ambient color or attenuation is specified, you should use the defaults. Note that we allow the ambient value to be changed between objects (so different objects will be rendered with a different ambient term; this is used frequently in the examples).  Finally, note that here and in the materials below, we do not include the alpha term in the color specification.
                 
                 //materials
@@ -202,6 +195,7 @@ void readfile(const char* fileName)
                     color3 diffuseColor = convertFloatToColor(valuesf);
                     materialParsed->aBRDF.diffuse = diffuseColor;
                 }
+                
                 if (cmd == "specular") { // r g b
                     str.erase(0, 8);
                     readValuesFloat(str, 3, valuesf, 3);
@@ -210,13 +204,15 @@ void readfile(const char* fileName)
                     materialParsed->aBRDF.specular = specularColor;
 
                 }
-                if (cmd == "mirror") { // r g b
+                
+                if (cmd == "shininess") { // r g b
                     str.erase(0, 9);
                     readValuesFloat(str, 3, valuesf, 3);
                     color3 mirrorColor = convertFloatToColor(valuesf);
-                    materialParsed->aBRDF.mirror = mirrorColor;
+                    materialParsed->aBRDF.shininess = mirrorColor;
 
                 }
+                
                 if (cmd == "specular") { // r g b
                     str.erase(0, 8);
                     readValuesFloat(str, 4, valuesf, 3);
@@ -225,7 +221,6 @@ void readfile(const char* fileName)
                     materialParsed->aBRDF.specular = specularColor;
 
                 }
-                                
                 
                 if (cmd == "camera") {
                     str.erase(0, 6);
@@ -235,28 +230,13 @@ void readfile(const char* fileName)
                     vector3<float> cameraLookAtInit(valuesf[3], valuesf[4], valuesf[5]);
                     vector3<float> cameraUpInit(valuesf[6], valuesf[7], valuesf[8]);
                     float fovInit = valuesf[9];
-                    //scale = tan(fov * 0.5f * M_PI / 180.0f);
-                    
-
-                    //camera(cameraPositionInit, cameraLookAtInit, cameraUpInit, fovInit, aspectRatio);
-
-                    
                     
                     camera.cameraPosition = cameraPositionInit;
-                    
                     camera.cameraLookAt = cameraLookAtInit;
                     camera.cameraUp = cameraUpInit;
                     camera.fov = fovInit;
-                    //cameraToWorld set here
                     camera.updateCameraParameters();
                     
-                    /*
-                    vector3<float> from(cameraPositionInit);
-                    vector3<float> to(cameraLookAtInit);
-                    vector3<float> up(cameraUpInit);
-
-                    cameraViewTransformation =transformation (from, to, up);
-*/
                     
                     std::cout << "camera position " << camera.cameraPosition << std::endl;
                     
@@ -266,8 +246,7 @@ void readfile(const char* fileName)
                 
                 if (cmd == "popTransform") { //retrive
                     str.erase(0, 12);
-                    //scene.transformationStack.PopTransform();
-                    //curTransform[curTransformIndex] = scene.transformationStack[scene.transformationStack.stackIndex - 1];
+
                     if (curTransformIndex != 0) {
                         curTransformIndex--;
                         
@@ -276,21 +255,20 @@ void readfile(const char* fileName)
                        
                 if (cmd == "pushTransform") { //add to stack, current working should be idenity matrix
                     str.erase(0, 13);
-                    
-                    //scene.transformationStack.PushTransform(curTransform[curTransformIndex]);
-                    
-                    //currentTransform = transformation();
-                    // Call the PushTransform() function on the instance
-                    
+                                        
                     curTransformIndex++;
-                    
-
                     
                     }
                       
                 if (animatedBool == true) {
                     //these will only impact the creation of the tranformationSet in scene creation
 
+                    if (cmd == "mass") { //mass [bool]
+                        str.erase(0, 5);
+                        //
+                    }
+
+                    
                     if (cmd == "gravity") { //gravity [bool]
                         str.erase(0, 8);
                         //put it at 9.8 meters per second based off time value
@@ -304,7 +282,7 @@ void readfile(const char* fileName)
                     if (cmd == "node") { //node [parent objectID]
                         //if object hand and parent object arm, then each tranformation for arm needs to adjust hand by the same
                         str.erase(0, 5);
-                                      
+                                    
                     }
                 }
                 
@@ -313,22 +291,15 @@ void readfile(const char* fileName)
                     
                     str.erase(0, 7);
                     readValuesFloat(str, 10, valuesf, 3);
-    
-                    //eventually ill need to setup a makTranformation() function
-                    
-                    //ok, so whats supposed to happen is i create a transformation stack. Then makeShape just calls the most recent transformation stakc, amybe?
-                    
+                                            
                     objParamMap sphereParams;
                     
                     vector3<float> positionArray (valuesf[0], valuesf[1], valuesf[2]);
                     
-                   
                     params.addOneVector3F("position", positionArray);
                     params.addOneFloat("radius", valuesf[3]);
-                    //lookup will check if curTranform is in the transformCache, if not it will add it to the stack. Then returns a pointer
                     //transformation *o2w = transformCache.lookup(curTransform[0]);
                     //transformation *w2o = transformCache.lookup(inverse(curTransform[0]));
-                    
                     
                     
                     //transformation *o2w = &currentTransform;// transformCache.lookup(currentTranform);
@@ -349,19 +320,13 @@ void readfile(const char* fileName)
                     string str = "sphere";
                     //makeShapes(str, o2w, w2o, params);
                     
-                    
                     makeShapes(str, &curTransform[curTransformIndex], &curTransform[curTransformIndex], params);
 
                     countingj++;
                     std::cout << "sphere number  " << countingj << std::endl;
                     
-                    shapesContainer.push_back(aShape);
                     curTransformIndex++;
-
-                    //std::cout << "shape number " << shapesContainer.size() << "set as a " << str << std::endl;
                     
-                    //sphere.printValues();
-
                 }
                 
                 if (cmd == "maxverts") {
@@ -394,7 +359,6 @@ void readfile(const char* fileName)
                     transformation *w2o = &inversedTransform;
 */
                     
-                    //maybe placing these outside function makes it more efficent?
 
                     triArray.resize(newI+1);
 
@@ -403,7 +367,6 @@ void readfile(const char* fileName)
                     newI++;
                     std::cout << newI << std::endl;
                     
-                                        
                 }
 
                 if (cmd == "maxvertnorms") {
@@ -421,22 +384,14 @@ void readfile(const char* fileName)
                     
                 }
                 
-                
                     //this has to move up
                 if (cmd == "translate") {
                     str.erase(0, 10);
                     readValuesFloat(str, 4, valuesf, 3);
                     
-                     //translateVector(valuesf[0], valuesf[1], valuesf[2]);
-
                     translateVector.x += valuesf[0];
                     translateVector.y += valuesf[1];
                     translateVector.z += valuesf[2];
-
-                    //tranform.translation(translateVector);
-                    //currentTransform.translation(translateVector);
-                    //curTransform[curTransformIndex].translation(translateVector);
-                     
                     
                 }
                 
@@ -450,38 +405,24 @@ void readfile(const char* fileName)
 
                     theta = valuesf[3];
 
-                    
-                    
-                   //currentTransform.rotation(theta, translateVector);
-                    //curTransform[curTransformIndex].rotation(theta, rotationVector);
-                    //transformation rotationMatrix = transformation::rotation(theta, translateVector);
-                    
                 }
                 
                 if (cmd == "scale") {
                     str.erase(0, 5);
                     readValuesFloat(str, 4, valuesf, 3);
-                    
-                     //scaleVector(valuesf[0], valuesf[1], valuesf[2]);
-                    
+                                        
                     scaleVector.x = valuesf[0];
                     scaleVector.y = valuesf[1];
                     scaleVector.z = valuesf[2];
 
-                    //currentTransform.scaling(scaleVector);
-                    
-                    //curTransform[curTransformIndex].scaling(scaleVector);
-
                 }
-                
-                
+    
                 if (cmd == "end") {
                     goto endParsing;
                 }
                 auto previousCmd = cmd;
             }
 
-            
             else if (str[0] != '#') {
                 //std::cout << "empty line" << std::endl;
                 
@@ -500,35 +441,21 @@ void readfile(const char* fileName)
                    params.addVector3I("triArray", &triArray[0]);
                    params.addOneInt("nVertices", maxVertArraySize);
                    params.addPoint3F("vertexArray", &vertexPointArray[0]);
-                    
-                    
                                
                     makeShapes(str, &curTransform[curTransformIndex], &curTransform[curTransformIndex], params);
                     
                     curTransformIndex++;
                     
-                    
                     triArray.clear();
                     triArray.resize(0);
                     newI = 0;
-
-                    //params.clear();
-
                }
-                //this
-
-                //newI = 0;
-
             }
-            
                 getline (fileIn, str);
             
         }
-
         endParsing:
         outdata << "P3\n" << w << ' ' << h << "\n255\n";
-
-        
         scene.renderer();
     }
 
@@ -554,8 +481,4 @@ void closefile(const char* fileName) {
     
 }
 
-    
 
-
-
-//evantually, i will have tri mesh defined via

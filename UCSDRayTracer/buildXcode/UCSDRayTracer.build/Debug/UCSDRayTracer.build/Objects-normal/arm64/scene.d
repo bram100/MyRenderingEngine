@@ -24,6 +24,7 @@ dependencies: \
   /Users/brendanmulcahey/Library/Mobile\ Documents/com~apple~CloudDocs/Self\ Learning/RayTracerClean/UCSDRayTracer/src/utils/scene.hpp \
   /Users/brendanmulcahey/Library/Mobile\ Documents/com~apple~CloudDocs/Self\ Learning/RayTracerClean/UCSDRayTracer/src/geometry/geometricPrimitive.hpp \
   /Users/brendanmulcahey/Library/Mobile\ Documents/com~apple~CloudDocs/Self\ Learning/RayTracerClean/UCSDRayTracer/src/utils/accelerators.hpp \
+  /Users/brendanmulcahey/Library/Mobile\ Documents/com~apple~CloudDocs/Self\ Learning/RayTracerClean/UCSDRayTracer/src/lights/lights.hpp \
   /Users/brendanmulcahey/Library/Mobile\ Documents/com~apple~CloudDocs/Self\ Learning/RayTracerClean/UCSDRayTracer/src/rendering/film.hpp \
   /Users/brendanmulcahey/Library/Mobile\ Documents/com~apple~CloudDocs/Self\ Learning/RayTracerClean/UCSDRayTracer/src/rendering/sampler.hpp \
   /Users/brendanmulcahey/Library/Mobile\ Documents/com~apple~CloudDocs/Self\ Learning/RayTracerClean/UCSDRayTracer/src/rendering/raytrace.hpp

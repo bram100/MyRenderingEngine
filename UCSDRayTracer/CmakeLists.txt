@@ -17,6 +17,17 @@ set(COLORS_SOURCES
     src/colors/texture.hpp
 )
 
+set(LIGHTS_SOURCES
+    src/lights/lights.cpp
+    src/lights/lights.hpp
+    src/lights/directionalLight.cpp
+    src/lights/directionalLight.hpp
+    src/lights/pointLight.cpp
+    src/lights/pointLight.hpp
+    src/lights/attenuation.cpp
+    src/lights/attenuation.hpp
+)
+
 set(GEOMETRY_SOURCES
     src/geometry/localGeo.hpp
     src/geometry/sphere.cpp
@@ -94,6 +105,7 @@ add_executable(UCSDRayTracer
     src/main.cpp
     src/CImg.h
     ${COLORS_SOURCES}
+    ${LIGHTS_SOURCES}
     ${GEOMETRY_SOURCES}
     ${RENDERING_SOURCES}
     ${UTILS_SOURCES}
@@ -101,6 +113,7 @@ add_executable(UCSDRayTracer
 
 # Set the source groups for Visual Studio
 source_group("colors" FILES ${COLORS_SOURCES})
+source_group("lights" FILES ${LIGHTS_SOURCES})
 source_group("geometry" FILES ${GEOMETRY_SOURCES})
 source_group("rendering" FILES ${RENDERING_SOURCES})
 source_group("utils" FILES ${UTILS_SOURCES})
@@ -124,7 +137,7 @@ target_include_directories(UCSDRayTracer
         src/geometry
         src/rendering
         src/utils
-	src #for CImg
+        src #for CImg
 )
 
 # Link any additional libraries if required
