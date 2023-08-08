@@ -67,9 +67,6 @@ public:
     void addNormalF(const std::string &key, const normal<float> value);
     //void printValues() const;
     
-    
-    
-    
     //find single objects
     const float findOneFloat(const std::string &, float d) const ;
     const int findOneInt(const std::string &, int d) const;
@@ -101,6 +98,10 @@ public:
     const vector3<int> *findVector3I(const std::string &,  int *nValues) const;
     const int *findInt(const std::string &, int *nValues) const;
 
+    
+    void clearMap() {
+            myMap.clear();
+        }
 
 private:
     //ok so const color3 didnt work but const color3* fixed my bug

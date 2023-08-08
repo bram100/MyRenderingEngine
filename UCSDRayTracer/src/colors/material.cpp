@@ -6,10 +6,16 @@
 //
 
 #include "material.hpp"
+#include "ray.hpp"
 
 void getBRDF(localGeo& local, BRDF* brdf) {
     
 }
+
+color3 shading(const localGeo& intersection, const ray& lightRay, const color3& lightColor){
+    
+}
+
 
 
 /*

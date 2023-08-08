@@ -128,6 +128,8 @@ public:
    // primitive(const std::shared_ptr<Shapes>& shape, const std::shared_ptr<Material>& material) : shape(shape), material(material) {}
     
     virtual bool intersect(ray& ray, float* thit, intersection* intersct) = 0;
+    virtual bool intersectP(ray& ray) = 0;
+
     //virtual bool intersectP(ray& ray) = 0;
     virtual void getBRDF(localGeo& local, BRDF* brdf) = 0;
     

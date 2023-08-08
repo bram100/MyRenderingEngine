@@ -18,13 +18,10 @@ extern Camera camera;
  */
 bool sphere::intersect(const ray &currentRay, float *tHit, localGeo *localGeoPos) const
 {
- 
         //testingTransform.minvt;
     ray transformedRay = worldToObject->operator*(currentRay);
     //ok, so i need this to be the inverse matrix from within worldToObject
     //ray transformedRay = testingTransform*(currentRay);
-
-    
     
     float t0 = 0;
     float t1 = 0;
@@ -72,6 +69,38 @@ bool sphere::intersect(const ray &currentRay, float *tHit, localGeo *localGeoPos
     return true;
     
 }
+
+
+//don't need to compute the intersection point or normal. You're simply checking whether an intersection occurs by solving the quadratic equation and checking the resulting values of t0 and t1.
+bool sphere::intersectP(const ray &currentRay) const
+{
+    ray transformedRay = worldToObject->operator*(currentRay);
+
+    float t0 = 0;
+    float t1 = 0;
+
+    point3<float> transformedCenter = center;
+
+    vector3<float> L = transformedRay.lookFrom - transformedCenter;
+
+    float a = transformedRay.lookAt * transformedRay.lookAt;
+    float b = 2 * (transformedRay.lookAt * L);
+    float c = (L * L) - (radius * radius);
+
+    if (!math.solveQuadratic(a, b, c, t0, t1)) {
+        return false;
+    }
+    if (t0 > t1) std::swap(t0, t1);
+    if (t0 < 0) {
+        t0 = t1;
+
+        if (t0 < 0)
+            return false;
+    }
+
+    return true;
+}
+
 
 std::shared_ptr<Shapes> createSphereShape(const transformation *o2w,
                                          const transformation *w2o,

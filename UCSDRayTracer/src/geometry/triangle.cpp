@@ -26,6 +26,16 @@ bool triangleMesh::intersect(const ray &ray, float *tHit, localGeo *localGeoPos)
 }
 
 
+bool triangleMesh::intersectP(const ray &ray) const
+{
+    
+    //this isnt needed?
+    //we just call triangle intersect, not mesh intersect?
+    
+    
+    return true;
+}
+
 
 std::vector<std::shared_ptr<Shapes>> createTriangleMesh(
     const transformation *objectToWorld, const transformation *worldToObject, int nTriangles, const vector3<int> *triArray,
@@ -259,7 +269,7 @@ point3<T> operator*(const point3<T>& vec, const matrix4& matrix) {
 
 
 
-int current = 0;
+//int current = 0;
 bool Triangle::intersect(const ray &currentRay, float *tHit, localGeo *localGeoPos) const
 {
     
@@ -354,6 +364,74 @@ bool Triangle::intersect(const ray &currentRay, float *tHit, localGeo *localGeoP
     
     *tHit = t;  // Update the intersection distance
     
+    return true; // this ray hits the triangle
+}
+
+
+
+bool Triangle::intersectP(const ray &currentRay) const
+{
+    
+    ray transformedRay = worldToObject->operator*(currentRay);
+    
+    const point3<float>* v = mesh->vertexPointArray.get();
+    const vector3<int>* thisArray = mesh->triArray.get();
+   
+    point3<float> v0 = point3<float>(v[thisArray[faceIndex][0]]);
+    point3<float> v1 = point3<float>(v[thisArray[faceIndex][1]]);
+    point3<float> v2 = point3<float>(v[thisArray[faceIndex][2]]);
+
+    vector3<float> normalEdge1 = v1 - v0;
+    vector3<float> normalEdge2 = v2 - v0;
+
+    vector3<float> N = normalEdge1^normalEdge2;
+    
+    float area2 = N.Length();
+    
+    float NdotRayDirection = N*transformedRay.lookAt;
+
+    auto k = fabs(NdotRayDirection);
+    if (k < kEpsilon)
+        
+        return false;
+
+    float d = -(N*v0);
+    
+    float t = -(N*transformedRay.lookFrom + d) / NdotRayDirection;
+    
+    if (t < 0)
+        
+        return false;
+
+    vector3<float> P = transformedRay.lookFrom + (transformedRay.lookAt * t);
+ 
+    vector3<float> cross;
+    
+    // edge 0
+    vector3<float> edge0 = v1 - v0;
+    
+    vector3<float> vp0 = P - v0;
+    cross = edge0^vp0; //cross product
+    if ((N*cross) < 0) //clockwise vs counterclockwise reverse >
+        
+        return false; // P is on the right side
+ 
+    // edge 1
+    vector3<float> edge1 = v2 - v1; //actually isnt this a re/definintion?
+    vector3<float> vp1 = P - v1;
+    cross = edge1^vp1; //cross product of edge1 and
+    if ((N*cross) < 0) //clockwise vs counterclockwise reverse >
+        
+        return false; // P is on the right side
+ 
+    // edge 2
+    vector3<float> edge2 = v0 - v2; //actually isnt this a re/definintion?
+    vector3<float> vp2 = P - v2;
+    cross = edge2^vp2;
+    if ((N*cross) < 0) //clockwise vs counterclockwise reverse >
+        
+        return false; // P is on the right side;
+
     return true; // this ray hits the triangle
 }
 

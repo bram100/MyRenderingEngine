@@ -25,6 +25,12 @@ bool GeometricPrimitive::intersect(ray& currentRay,  float* tHit, intersection* 
      }
 }
 
+bool GeometricPrimitive::intersectP(ray& currentRay) {
+    if (shape->intersectP(currentRay))
+        return true;
+
+}
+
 
 
 void GeometricPrimitive::getBRDF(localGeo& local, BRDF* brdf) {

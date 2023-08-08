@@ -33,6 +33,14 @@ class color3
            }
            return *this;
        }
+    
+        color3& operator+=(const color3& other) {
+            r += other.r;
+            g += other.g;
+            b += other.b;
+            return *this;
+        }
+
 
 };
 

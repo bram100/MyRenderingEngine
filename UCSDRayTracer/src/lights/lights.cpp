@@ -51,6 +51,7 @@ Lights::~Lights() {
 }
 
 
+//This is an abstract class that will generate a ray starting from the position stored in local to the position of the light source.
 void generateLightRay(localGeo& local, ray* lray, color3* lcolor) {
     // Implementation of the generateLightRay function for PointLights
     // Add code to calculate the light ray direction and color

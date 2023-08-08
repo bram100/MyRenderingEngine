@@ -9,7 +9,7 @@
 #define pointLight_hpp
 
 #include "lights.hpp"
-
+#include "ray.hpp"
 
 class PointLights : public Lights {
 public:
@@ -18,10 +18,14 @@ public:
 
     ~PointLights();
 
-    void generateLightRay(localGeo& local, ray* lray, color3* lcolor) override {
-        // For a point light, the light ray's direction is from the light position to the point in the scene
-        *lray = ray(/* calculate the direction of the light ray from the local geometry and light position */);
-        *lcolor = lightColor;
+    void generateLightRay(localGeo& local, ray* lightRay, color3* lightColor) override {
+        vector3<float> direction = (lightPos - local.pos);
+
+        // Set up the light ray
+        *lightRay = ray(lightPos, direction, infinity, (infinity * -1));
+
+        // Set the light color
+        *lightColor = this->lightColor;
     }
     
 
