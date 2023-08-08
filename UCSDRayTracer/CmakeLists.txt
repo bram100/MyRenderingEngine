@@ -39,6 +39,7 @@ set(GEOMETRY_SOURCES
     src/geometry/triangle.cpp
     src/geometry/triangle.hpp
     src/geometry/shape.cpp
+    src/geometry/shape.hpp
     src/geometry/localGeo.cpp
     src/geometry/geometricPrimitive.hpp
     src/geometry/geometricPrimitive.cpp
