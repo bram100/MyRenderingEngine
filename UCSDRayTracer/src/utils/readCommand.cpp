@@ -55,7 +55,7 @@ bool animatedBool = false;
 
 
 transformation tranform;
-
+transformation defaultLightTransform; //may add feature later
 
 transformationSet curTransform;
 static transformCache transformCache;
@@ -152,19 +152,42 @@ void readfile(const char* fileName)
                 if (cmd == "directional") { // x y z r g b
                     str.erase(0, 11);
                     readValuesFloat(str, 6, valuesf, 3);
+                    
+                    
+                    vector3<float> positionXYZ (valuesf[0], valuesf[1], valuesf[2]);
+                    color3 colorRGB (valuesf[3], valuesf[4], valuesf[4]);
+                    
+                    params.addOneVector3F("position", positionXYZ);
+                    params.addOneColor3("color", colorRGB);
+
+                    makeLights(cmd, &defaultLightTransform, params);
 
                 }
                 
                 if (cmd == "point") { //x y z r g b The location of a point source and the color, as in OpenGL.
                     str.erase(0, 5);
                     readValuesFloat(str, 6, valuesf, 3);
+                    
+                    
+                    vector3<float> positionXYZ (valuesf[0], valuesf[1], valuesf[2]);
+                    color3 colorRGB (valuesf[3], valuesf[4], valuesf[4]);
+
+                    params.addOneVector3F("position", positionXYZ);
+                    params.addOneColor3("color", colorRGB);
+
                 
+                    makeLights(cmd, &defaultLightTransform, params);
 
                 }
                 
                 if (cmd == "attenuation") { //const linear quadratic (Sets the constant, linear and quadratic attenuations (default 1,0,0) as in OpenGL. By default there is no attenuation (the constant term is 1, linear and quadratic are 0; that's what we mean by 1,0,0).
                     str.erase(0, 11);
                     readValuesFloat(str, 3, valuesf, 3);
+                    
+                    
+                    makeLights(cmd, &defaultLightTransform, params);
+
+                     
 
                 }
                 
@@ -294,9 +317,9 @@ void readfile(const char* fileName)
                                             
                     objParamMap sphereParams;
                     
-                    vector3<float> positionArray (valuesf[0], valuesf[1], valuesf[2]);
+                    vector3<float> positionXYZ (valuesf[0], valuesf[1], valuesf[2]);
                     
-                    params.addOneVector3F("position", positionArray);
+                    params.addOneVector3F("position", positionXYZ);
                     params.addOneFloat("radius", valuesf[3]);
                     //transformation *o2w = transformCache.lookup(curTransform[0]);
                     //transformation *w2o = transformCache.lookup(inverse(curTransform[0]));
@@ -317,10 +340,12 @@ void readfile(const char* fileName)
                     scaleVector.ones();
 
                     
-                    string str = "sphere";
+                    //string str = "sphere";
                     //makeShapes(str, o2w, w2o, params);
                     
-                    makeShapes(str, &curTransform[curTransformIndex], &curTransform[curTransformIndex], params);
+                    
+                    
+                    makeShapes(cmd, &curTransform[curTransformIndex], &curTransform[curTransformIndex], params);
 
                     countingj++;
                     std::cout << "sphere number  " << countingj << std::endl;

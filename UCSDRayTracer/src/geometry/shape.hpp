@@ -41,13 +41,14 @@ public:
     virtual ~Shapes();
     virtual bool intersect(const ray &ray, float *tHit, localGeo *localGeo) const; ///*const = 0*/;
 
+    virtual bool intersectP(const ray& currentRay) const;
+
     friend std::ostream& operator<<(std::ostream& os, const Shapes& shape) {
         os << "This is a shape!";
         return os;
     }
     
     
-    bool intersectP(ray& currentRay);
     
     bool intersecttest (color3 color3);
 
@@ -162,7 +163,7 @@ void createTransformationMatrix(const vector3<float>& translate, const vector3<f
 void printShapes();
 
 
-void makeShapes(const std::string &name, const transformation *ObjectToWorld, const transformation *WorldToObject, const objParamMap &paramSet);
+void makeShapes(const std::string &name, const transformation *ObjectToWorld, const transformation *WorldToObject, objParamMap &paramSet);
 
 extern std::vector<std::shared_ptr<Shapes>> shapesContainer;
 

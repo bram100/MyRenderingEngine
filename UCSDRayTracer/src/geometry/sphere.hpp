@@ -21,7 +21,12 @@ class sphere : public Shapes {
         
     }
     //bool intersect(const ray &ray, float *tHit, localGeo *localGeoPos) const;
+    
+    //why override????
     bool intersect(const ray &ray, float *tHit, localGeo *localGeoPos) const override;
+    
+    //why overrride
+    bool intersectP(const ray &ray) const override;
 
     //bool intersectp(const Ray &ray, bool testAlphaTexture) const;
     //Float Area() const;

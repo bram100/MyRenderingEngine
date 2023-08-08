@@ -62,9 +62,11 @@ bool Shapes::intersect(const ray& ray, float* tHit, localGeo* localGeo) const {
     /*
      Same as intersect, but just return whether there is any intersection or not
      */
-    bool intersectP(ray& ray){
-        
-    }
+
+bool Shapes::intersectP(const ray& ray) const {
+    
+}
+
 
 void createTransformationMatrix(const vector3<float>& translate, const vector3<float>& rotation, const float axis, const vector3<float>& scale, const int i) {
 
@@ -98,7 +100,7 @@ void createTransformationMatrix(const vector3<float>& translate, const vector3<f
 }
 
 
-void makeShapes(const std::string &name, const transformation *object2World, const transformation *world2Object, const objParamMap &paramSet) {
+void makeShapes(const std::string &name, const transformation *object2World, const transformation *world2Object, objParamMap &paramSet) {
     std::vector<std::shared_ptr<Shapes>> vecShapes;
     intersection intersection;
     std::shared_ptr<Shapes> aShape;

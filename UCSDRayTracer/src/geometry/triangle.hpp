@@ -44,9 +44,11 @@ public:
 
     }
     
-
-
     bool intersect(const ray &ray, float *tHit, localGeo *localGeoPos) const;
+
+    bool intersectP(const ray &ray) const;
+
+
 
     // Rest of the member variables
     int nTriangles, nVertices, triArraySize;
@@ -99,8 +101,10 @@ class Triangle : public Shapes {
     
 
     //bool intersect(const ray &ray, float *tHit, localGeo *localGeoPos) const;
-    bool intersect(const ray &ray, float *tHit, localGeo *localGeoPos) const;
+    bool intersect(const ray &ray, float *tHit, localGeo *localGeoPos) const override;
     
+    bool intersectP(const ray &ray) const override;
+
 
   private:
     std::shared_ptr<triangleMesh> mesh;
