@@ -60,16 +60,16 @@ void trace(ray& ray, int depth, color3* color3) {
             
             
             hitAnything = true;
-            currentIntersect.localGeo = localGeo;
             if (tHit < closestTHit) {
                 //get BRDF
                 *color3 = p->getMaterial()->getAmbient();
                 closestTHit = tHit;
-                // }
+                currentIntersect.localGeo = localGeo;
+
                 
             }
         }
-        
+    }
         
         if (hitAnything == true) {
             // currentColor.b = 100.f;
@@ -77,8 +77,9 @@ void trace(ray& ray, int depth, color3* color3) {
             for (const auto& l : scene.lightsVec){
                 l->generateLightRay(currentIntersect.localGeo, &lightRay, &lightColor);
                 
-                //check if ilght is blocked by any primtive or not
-                if (!p->intersectP(lightRay))
+    
+                //check if ilght is blocked by closest(?) primtive or not
+                if (!currentIntersect.primitive->intersectP(lightRay))
                     // If not, do shading calculation for this
                     // light source
                     *color3 += shading(currentIntersect.localGeo, lightRay, lightColor);
@@ -86,6 +87,7 @@ void trace(ray& ray, int depth, color3* color3) {
                 return true;
             }
         }
+        
         
         
         else {
@@ -96,7 +98,7 @@ void trace(ray& ray, int depth, color3* color3) {
             return false;
         }
         
-    }
+    
     /*
     if (brdf.emission > 0) {
         reflectRay = createReflectRay(in.local, ray);
