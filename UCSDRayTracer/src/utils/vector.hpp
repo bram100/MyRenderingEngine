@@ -14,6 +14,7 @@
 #include <cmath>
 #include "point.hpp"
 #include "vector.hpp"
+#include "normal.hpp"
 //#include "matrix.hpp"
 //value of 1 for the origin and 0 for the direction for 4d vector/ray transformation 
 
@@ -131,13 +132,19 @@ class vector3 {
 
 
     //return a scalar, thus dot product
-        T operator*(const vector3<T> &object) const {
+    T operator*(const vector3<T> &object) const {
         return ((x * object[0]) + (y * object[1]) + (z * object[2]));
     };
     
     T operator*(const point3<T>& point) const {
         return x * point.x + y * point.y + z * point.z;
     }
+
+    /*
+    T operator*(const normal<T>& normal) const {
+        return x * normal.x + y * normal.y + z * normal.z;
+    }
+*/
 
     
     //cross product

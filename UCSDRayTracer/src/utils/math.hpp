@@ -23,8 +23,20 @@ public:
     
     
     static float Radians(float deg);
+    
+    
 
 };
+
+
+namespace MathOperations {
+template <typename T, typename U>
+    float dotProduct(const T& a, const U& b) {
+        return a.x * b.x + b.y * b.y + a.z * b.z;
+    }
+}
+typedef normal<float> normalf; //are these neeeded?
+typedef vector3<float> vector3f; //are these neeeded?
 
 
 

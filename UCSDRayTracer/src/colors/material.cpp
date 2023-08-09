@@ -7,6 +7,7 @@
 
 #include "material.hpp"
 #include "ray.hpp"
+#include "math.hpp"
 
 void getBRDF(localGeo& local, BRDF* brdf) {
     
@@ -15,6 +16,13 @@ void getBRDF(localGeo& local, BRDF* brdf) {
 color3 Material::shading(const localGeo& intersection, const ray& lightRay, const color3& lightColor){
     
     //ok, i am passing in intersectoin. Interseciton contains pos and normal
+    
+    float cosTheta = MathOperations::dotProduct(intersection.normal, lightRay.lookAt); //dot product
+    
+    if (cosTheta <= 0.0f) {
+        return color3(0.0f, 0.0f, 0.0f); // No diffuse reflection on the back side of the surface
+    }
+
     
     /*
     float cosTheta = dot(intersection.normal, lightRay.direction);
@@ -29,6 +37,8 @@ color3 Material::shading(const localGeo& intersection, const ray& lightRay, cons
     color3 finalColor = ambientDiffuse;
 
 */
+    
+    
    
     color3 finalColor = ambient;
 
