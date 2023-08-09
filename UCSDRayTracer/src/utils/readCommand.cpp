@@ -194,7 +194,7 @@ void readfile(const char* fileName)
                 
                 if (cmd == "ambient") { //default is .2,.2,.2
                     str.erase(0, 7);
-                    materialParsed = std::shared_ptr<Material>(new Material());
+                    //materialParsed = std::shared_ptr<Material>(new Material());
 
                     readValuesFloat(str, 3, valuesf, 3);
                     color3 ambientColor = convertFloatToColor(valuesf);
@@ -217,6 +217,8 @@ void readfile(const char* fileName)
                     readValuesFloat(str, 3, valuesf, 3);
                     color3 diffuseColor = convertFloatToColor(valuesf);
                     materialParsed->aBRDF.diffuse = diffuseColor;
+                    std::cout << materialParsed->aBRDF.diffuse << std::endl;
+
                 }
                 
                 if (cmd == "specular") { // r g b
@@ -347,6 +349,8 @@ void readfile(const char* fileName)
                     
                     makeShapes(cmd, &curTransform[curTransformIndex], &curTransform[curTransformIndex], params);
 
+                    //std::shared_ptr<Material> materialParsed = std::make_shared<Material>(*materialParsed);
+
                     countingj++;
                     std::cout << "sphere number  " << countingj << std::endl;
                     
@@ -469,6 +473,8 @@ void readfile(const char* fileName)
                                
                     makeShapes(str, &curTransform[curTransformIndex], &curTransform[curTransformIndex], params);
                     
+                   // std::shared_ptr<Material> materialParsed = std::make_shared<Material>(*materialParsed);
+
                     curTransformIndex++;
                     
                     triArray.clear();

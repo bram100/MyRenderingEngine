@@ -132,9 +132,12 @@ void makeShapes(const std::string &name, const transformation *object2World, con
         throw std::invalid_argument("error reading accelerator");
     }
     
+    std::shared_ptr<Material> newMaterialParsed = std::make_shared<Material>(*materialParsed); // Create a new Material copy
+
+    
     for (const auto& shape : vecShapes) {
         
-        std::shared_ptr<GeometricPrimitive> geometricPrimitive = std::make_shared<GeometricPrimitive>(shape, materialParsed);
+        std::shared_ptr<GeometricPrimitive> geometricPrimitive = std::make_shared<GeometricPrimitive>(shape, newMaterialParsed);
 
         scene.addGeometricPrimitive(geometricPrimitive);
         

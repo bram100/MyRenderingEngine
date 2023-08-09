@@ -17,12 +17,25 @@ color3 Material::shading(const localGeo& intersection, const ray& lightRay, cons
     
     //ok, i am passing in intersectoin. Interseciton contains pos and normal
     
+    color3 finalColor;
+    
+    finalColor += aBRDF.diffuse;
+
+    
     float cosTheta = MathOperations::dotProduct(intersection.normal, lightRay.lookAt); //dot product
     
+    //std::cout << cosTheta << std::endl;
+    
+    /*
     if (cosTheta <= 0.0f) {
         return color3(0.0f, 0.0f, 0.0f); // No diffuse reflection on the back side of the surface
     }
+*/
+   // finalColor +=  aBRDF.diffuse;// * lightColor * cosTheta;
+    color3 diffuseComponent = aBRDF.diffuse * lightColor * fmax(cosTheta, 0.0f);
 
+    //finalColor += diffuseComponent;
+    
     
     /*
     float cosTheta = dot(intersection.normal, lightRay.direction);
@@ -40,10 +53,10 @@ color3 Material::shading(const localGeo& intersection, const ray& lightRay, cons
     
     
    
-    color3 finalColor = ambient;
+
+    
 
     //std::cout << ambient << std::endl;
-    
     return finalColor;
 
     

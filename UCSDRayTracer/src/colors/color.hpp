@@ -34,6 +34,27 @@ class color3
            return *this;
        }
     
+    /*
+        color3& operator*(const color3& other) const {
+            if (this != &other) {
+                r *= other.r;
+                g *= other.g;
+                b *= other.b;
+            }
+            return *this;
+        }
+*/
+    
+        color3 operator*(float scalar) const {
+            return color3(r * scalar, g * scalar, b * scalar);
+        }
+        
+    
+        color3 operator*(const color3& other) const {
+            return color3(r * other.r, g * other.g, b * other.b);
+        }
+
+    
         color3& operator+=(const color3& other) {
             r += other.r;
             g += other.g;
