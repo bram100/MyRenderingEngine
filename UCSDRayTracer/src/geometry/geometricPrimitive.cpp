@@ -31,7 +31,13 @@ bool GeometricPrimitive::intersectP(ray& currentRay) {
 
 }
 
-
+/*
+std::shared_ptr<Material> GeometricPrimitive::getMaterial() const {
+   
+    return material;
+    
+}
+*/
 
 void GeometricPrimitive::getBRDF(localGeo& local, BRDF* brdf) {
     //holding

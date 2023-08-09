@@ -19,5 +19,5 @@ dependencies: \
   /Users/brendanmulcahey/Library/Mobile\ Documents/com~apple~CloudDocs/Self\ Learning/RayTracerClean/UCSDRayTracer/src/utils/testing.hpp \
   /Users/brendanmulcahey/Library/Mobile\ Documents/com~apple~CloudDocs/Self\ Learning/RayTracerClean/UCSDRayTracer/src/rendering/objParameters.hpp \
   /Users/brendanmulcahey/Library/Mobile\ Documents/com~apple~CloudDocs/Self\ Learning/RayTracerClean/UCSDRayTracer/src/colors/material.hpp \
-  /Users/brendanmulcahey/Library/Mobile\ Documents/com~apple~CloudDocs/Self\ Learning/RayTracerClean/UCSDRayTracer/src/colors/brdf.hpp \
+  /Users/brendanmulcahey/Library/Mobile\ Documents/com~apple~CloudDocs/Self\ Learning/RayTracerClean/UCSDRayTracer/src/colors/BRDF.hpp \
   /Users/brendanmulcahey/Library/Mobile\ Documents/com~apple~CloudDocs/Self\ Learning/RayTracerClean/UCSDRayTracer/src/utils/accelerators.hpp

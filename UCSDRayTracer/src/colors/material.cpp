@@ -14,6 +14,7 @@ void getBRDF(localGeo& local, BRDF* brdf) {
 
 color3 Material::shading(const localGeo& intersection, const ray& lightRay, const color3& lightColor){
     
+    //ok, i am passing in intersectoin. Interseciton contains pos and normal
     
     /*
     float cosTheta = dot(intersection.normal, lightRay.direction);
@@ -27,8 +28,14 @@ color3 Material::shading(const localGeo& intersection, const ray& lightRay, cons
     // Final shading color with BRDF components
     color3 finalColor = ambientDiffuse;
 
-    return finalColor;
 */
+   
+    color3 finalColor = ambient;
+
+    std::cout << ambient << std::endl;
+    
+    return finalColor;
+
     
 }
 

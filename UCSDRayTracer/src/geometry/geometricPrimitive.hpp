@@ -36,11 +36,9 @@ public:
     void getBRDF(localGeo& local, BRDF* brdf) override;
 
     std::shared_ptr<Material> getMaterial() const override {
-       
         return material;
-        
     }
-    
+
     boundingBox3F WorldBound() const {
       // Compute the world-space bounding box of the shape
       //return shape->WorldBound();

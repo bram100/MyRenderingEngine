@@ -53,7 +53,7 @@ void Scene::renderer() {
             
             
             
-            commit(currentSample, currentColor);
+            commit(currentSample, &currentColor);
             // std::cout << "Pixel " << k << " of " << j << std::endl; //progress check
         }
         
