@@ -64,71 +64,32 @@ void trace(ray& ray, int depth, color3* color3) {
         if (p->intersect(ray, &tHit, &currentIntersect)) {
             hitAnything = true;
             if (tHit < closestTHit) {
-                //get BRDF
-                color3;
-               // *color3 = p->getMaterial()->getAmbient();
                 closestTHit = tHit;
                 currentIntersect.localGeo = localGeo;
-            
                 currentMaterial = currentIntersect.primitive->getMaterial();
-
-
             }
         }
-        
-        
-        
     }
     
-
-                  if (hitAnything == true) {
-                      // currentColor.b = 100.f;
-                    
-                      for (const auto& l : scene.lightsVec){
-                          l->generateLightRay(currentIntersect.localGeo, &lightRay, &lightColor);
+    if (hitAnything) {
+        for (const auto& l : scene.lightsVec){
+            l->generateLightRay(currentIntersect.localGeo, &lightRay, &lightColor);
                           
-                          //this doesnt work if below the if statment, idk why
-                          //std::shared_ptr<Material> pMaterial = currentIntersect.primitive->getMaterial();
+            if (!currentIntersect.primitive->intersectP(lightRay)) {
+                *color3 += currentMaterial->shading(currentIntersect.localGeo, lightRay, lightColor);
 
-                          
-
-                          if (!currentIntersect.primitive->intersectP(lightRay)) {
-                              
-                              
-                              auto test = currentMaterial->getAmbient();
-                            
-                            std::cout << test << std::endl;
-
-
-                              
-                              // If not, do shading calculation for this
-                              // light source
-                              *color3 += currentMaterial->shading(currentIntersect.localGeo, lightRay, lightColor);
-
-                              
-                          }
-                          
-
-            
-                          //std::cout << "Ambient color of amaterial: " << amaterial->getAmbient() << std::endl;
-
-                          
-                          
-                        //  *color3 += amaterial->shading(currentIntersect.localGeo, lightRay, lightColor);
-                          
-                          return true;
-                      }
-                  }
+                }
+            return true;
+        }
+    }
                   
-                  
-                  
-                  else {
-                      color3->r = 0.f;
-                      color3->g = 0.f;
-                      color3->b = 0.f;
-                      
-                      return false;
-                  }
+
+    else {
+            color3->r = 0.f;
+            color3->g = 0.f;
+            color3->b = 0.f;
+            return false;
+    }
                   
     /*
     if (brdf.emission > 0) {
