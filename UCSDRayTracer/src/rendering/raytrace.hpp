@@ -11,7 +11,10 @@
 #include <stdio.h>
 #include "color.hpp"
 #include "ray.hpp"
+#include "material.hpp"
 
 void trace(ray& ray, int depth, color3* color);
+
+//std::shared_ptr<Material>  amaterial ;
 
 #endif /* raytrace_hpp */

@@ -12,7 +12,10 @@
 #include "sample.hpp"
 #include "shape.hpp"
 
+
+#include "primitive.hpp"
 #include "geometricPrimitive.hpp"
+
 #include "scene.hpp"
 
 #include "material.hpp"
@@ -30,7 +33,6 @@ float closestTHit;
 ray lightRay;
 color3 lightColor;
 BRDF brdf;
-
 
 extern Scene scene;
 extern std::vector<std::shared_ptr<GeometricPrimitive>> geometricPrimitives;
@@ -59,23 +61,18 @@ void trace(ray& ray, int depth, color3* color3) {
         //p->applyTransformationToObject(transformationFromStack);
         
         if (p->intersect(ray, &tHit, &currentIntersect)) {
-            
-            
             hitAnything = true;
             if (tHit < closestTHit) {
                 //get BRDF
                 *color3 = p->getMaterial()->getAmbient();
                 closestTHit = tHit;
                 currentIntersect.localGeo = localGeo;
-
-                
             }
         }
     }
-                  
                   if (hitAnything == true) {
                       // currentColor.b = 100.f;
-                      
+                    
                       for (const auto& l : scene.lightsVec){
                           l->generateLightRay(currentIntersect.localGeo, &lightRay, &lightColor);
                           
@@ -84,7 +81,18 @@ void trace(ray& ray, int depth, color3* color3) {
                           if (!currentIntersect.primitive->intersectP(lightRay))
                               // If not, do shading calculation for this
                               // light source
-                              *color3 += shading(currentIntersect.localGeo, lightRay, lightColor);
+                              //*color3 +=
+                              //currentIntersect.primitive.Material;//.material.shading(currentIntersect.localGeo, lightRay, lightColor);
+                              
+                              
+                              std::shared_ptr<Material> amaterial = currentIntersect.primitive->getMaterial();
+                          
+            
+                          //std::cout << "Ambient color of amaterial: " << amaterial->getAmbient() << std::endl;
+
+                          
+                          
+                        //  *color3 += amaterial->shading(currentIntersect.localGeo, lightRay, lightColor);
                           
                           return true;
                       }

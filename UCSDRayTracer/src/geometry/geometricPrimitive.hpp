@@ -15,7 +15,7 @@
 #include "matrix.hpp" //maybe?
 #include "shape.hpp"
 #include "intersection.hpp"
-#include "material.hpp"
+//#include "material.hpp"
 
 #include "accelerators.hpp"
 
@@ -35,8 +35,10 @@ public:
 
     void getBRDF(localGeo& local, BRDF* brdf) override;
 
-    std::shared_ptr<Material> getMaterial() const {
+    std::shared_ptr<Material> getMaterial() const override {
+       
         return material;
+        
     }
     
     boundingBox3F WorldBound() const {

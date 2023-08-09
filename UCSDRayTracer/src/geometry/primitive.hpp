@@ -114,13 +114,12 @@ public:
 
 #include "ray.hpp"
 //#include "intersection.hpp"
-#include "material.hpp"
+//#include "material.hpp"
 #include "shape.hpp"
 
 class intersection;
-
-
-
+class Material;
+class BRDF;
 class Shapes;
 class primitive {
 public:
@@ -133,6 +132,9 @@ public:
     //virtual bool intersectP(ray& ray) = 0;
     virtual void getBRDF(localGeo& local, BRDF* brdf) = 0;
     
+    
+    virtual std::shared_ptr<Material> getMaterial() const = 0;
+
 private:
     //std::shared_ptr<Shapes> shape;
    // std::shared_ptr<Material> material;

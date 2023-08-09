@@ -9,9 +9,10 @@
 #define material_hpp
 
 #include <stdio.h>
-#include "brdf.hpp"
+#include "BRDF.hpp"
 #include "localGeo.hpp"
 #include "ray.hpp"
+
 
 class Material {
 public:
@@ -25,6 +26,7 @@ public:
     }
 
     
+    color3 shading(const localGeo& intersection, const ray& lightRay, const color3& lightColor);
 
     
     BRDF aBRDF;
@@ -34,7 +36,6 @@ public:
 
 void getBRDF(localGeo& local, BRDF* brdf);
 
-color3 shading(const localGeo& intersection, const ray& lightRay, const color3& lightColor);
 
 
 /*

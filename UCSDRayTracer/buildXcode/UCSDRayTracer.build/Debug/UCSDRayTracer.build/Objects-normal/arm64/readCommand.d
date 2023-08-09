@@ -13,10 +13,10 @@ dependencies: \
   /Users/brendanmulcahey/Library/Mobile\ Documents/com~apple~CloudDocs/Self\ Learning/RayTracerClean/UCSDRayTracer/src/colors/color.hpp \
   /Users/brendanmulcahey/Library/Mobile\ Documents/com~apple~CloudDocs/Self\ Learning/RayTracerClean/UCSDRayTracer/src/rendering/intersection.hpp \
   /Users/brendanmulcahey/Library/Mobile\ Documents/com~apple~CloudDocs/Self\ Learning/RayTracerClean/UCSDRayTracer/src/geometry/primitive.hpp \
-  /Users/brendanmulcahey/Library/Mobile\ Documents/com~apple~CloudDocs/Self\ Learning/RayTracerClean/UCSDRayTracer/src/colors/material.hpp \
-  /Users/brendanmulcahey/Library/Mobile\ Documents/com~apple~CloudDocs/Self\ Learning/RayTracerClean/UCSDRayTracer/src/colors/brdf.hpp \
   /Users/brendanmulcahey/Library/Mobile\ Documents/com~apple~CloudDocs/Self\ Learning/RayTracerClean/UCSDRayTracer/src/geometry/shape.hpp \
   /Users/brendanmulcahey/Library/Mobile\ Documents/com~apple~CloudDocs/Self\ Learning/RayTracerClean/UCSDRayTracer/src/rendering/objParameters.hpp \
+  /Users/brendanmulcahey/Library/Mobile\ Documents/com~apple~CloudDocs/Self\ Learning/RayTracerClean/UCSDRayTracer/src/colors/material.hpp \
+  /Users/brendanmulcahey/Library/Mobile\ Documents/com~apple~CloudDocs/Self\ Learning/RayTracerClean/UCSDRayTracer/src/colors/BRDF.hpp \
   /Users/brendanmulcahey/Library/Mobile\ Documents/com~apple~CloudDocs/Self\ Learning/RayTracerClean/UCSDRayTracer/src/utils/transform.hpp \
   /Users/brendanmulcahey/Library/Mobile\ Documents/com~apple~CloudDocs/Self\ Learning/RayTracerClean/UCSDRayTracer/src/utils/math.hpp \
   /Users/brendanmulcahey/Library/Mobile\ Documents/com~apple~CloudDocs/Self\ Learning/RayTracerClean/UCSDRayTracer/src/utils/memory.hpp \
@@ -37,4 +37,5 @@ dependencies: \
   /opt/homebrew/include/X11/keysymdef.h /opt/homebrew/include/png.h \
   /opt/homebrew/include/pnglibconf.h /opt/homebrew/include/pngconf.h \
   /opt/homebrew/include/jpeglib.h /opt/homebrew/include/jconfig.h \
-  /opt/homebrew/include/jmorecfg.h
+  /opt/homebrew/include/jmorecfg.h \
+  /Users/brendanmulcahey/Library/Mobile\ Documents/com~apple~CloudDocs/Self\ Learning/RayTracerClean/UCSDRayTracer/src/colors/brdf.hpp

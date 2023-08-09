@@ -42,10 +42,21 @@ public:
     
      
     
-    const color3& getdiffuse() const {
-        return diffuse;
-    }
+    const color3& getDiffuse() const {
+           return diffuse;
+       }
 
+    const color3& getSpecular() const {
+           return specular;
+       }
+
+    const color3& getShininess() const {
+           return shininess;
+       }
+
+    const color3& getEmission() const {
+           return emission;
+       }
 
 
 };
