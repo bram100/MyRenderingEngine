@@ -32,7 +32,7 @@ color3 Material::shading(const localGeo& intersection, const ray& lightRay, cons
    
     color3 finalColor = ambient;
 
-    std::cout << ambient << std::endl;
+    //std::cout << ambient << std::endl;
     
     return finalColor;
 
