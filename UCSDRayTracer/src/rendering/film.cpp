@@ -11,7 +11,15 @@
 #include <fstream>
 
 
-void commit(sample2 sample, color3 color) {
-    //std::cout << color << std::endl;
-    outdata << color << std::endl;
+
+void commit(sample2 sample, color3* color) {
+    
+    //std::cout << "Color: (" << color->r << ", " << color->g << ", " << color->b << ")" << std::endl;
+
+    outdata << color->r << " " << color->g << " " << color->b << std::endl;
+    
+    //color->r = 0;
+    //color->g = 0;
+    //color->b = 0;
+    
 }

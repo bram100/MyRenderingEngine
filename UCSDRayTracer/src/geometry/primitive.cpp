@@ -7,5 +7,5 @@
 
 #include <iostream>
 #include "primitive.hpp"
-#include "ray.hpp"
+//#include "ray.hpp"
 

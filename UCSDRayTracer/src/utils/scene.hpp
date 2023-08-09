@@ -9,10 +9,10 @@
 #define scene_hpp
 
 #include <stdio.h>
-#include "ray.hpp"
-#include "localGeo.hpp"
-#include "color.hpp"
-#include "primitive.hpp"
+//#include "ray.hpp"
+//#include "localGeo.hpp"
+//#include "color.hpp"
+//#include "primitive.hpp"
 #include "geometricPrimitive.hpp"
 #include "vector.hpp"
 

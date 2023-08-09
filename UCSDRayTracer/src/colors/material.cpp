@@ -12,7 +12,30 @@ void getBRDF(localGeo& local, BRDF* brdf) {
     
 }
 
-color3 shading(const localGeo& intersection, const ray& lightRay, const color3& lightColor){
+color3 Material::shading(const localGeo& intersection, const ray& lightRay, const color3& lightColor){
+    
+    //ok, i am passing in intersectoin. Interseciton contains pos and normal
+    
+    /*
+    float cosTheta = dot(intersection.normal, lightRay.direction);
+
+    // Apply Lambertian reflection model for diffuse reflection
+    color3 diffuseComponent = aBRDF.diffuse * lightColor * max(cosTheta, 0.0f);
+
+    // Combine the diffuse component with ambient term
+    color3 ambientDiffuse = brdf.ambient + diffuseComponent;
+
+    // Final shading color with BRDF components
+    color3 finalColor = ambientDiffuse;
+
+*/
+   
+    color3 finalColor = ambient;
+
+    //std::cout << ambient << std::endl;
+    
+    return finalColor;
+
     
 }
 

@@ -12,6 +12,6 @@
 #include "sampler.hpp"
 #include "color.hpp"
 
-void commit(sample2 sample, color3 color);
+void commit(sample2 sample, color3* color);
 
 #endif /* film_hpp */

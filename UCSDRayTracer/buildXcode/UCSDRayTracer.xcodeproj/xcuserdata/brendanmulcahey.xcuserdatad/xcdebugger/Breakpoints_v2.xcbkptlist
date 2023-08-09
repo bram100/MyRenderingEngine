@@ -48,8 +48,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
             endingLineNumber = "16"
-            landmarkName = "shading(intersection, lightRay, lightColor)"
-            landmarkType = "9">
+            landmarkName = "Material::shading(intersection, lightRay, lightColor)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "25624F11-E701-4C1D-8D46-EA6A8C834E4E - f4766e6a0817b12e"
@@ -160,8 +160,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
             endingLineNumber = "34"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "Material::shading(intersection, lightRay, lightColor)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -208,8 +208,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
             endingLineNumber = "33"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "Material::shading(intersection, lightRay, lightColor)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

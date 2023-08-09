@@ -53,6 +53,13 @@
       <CommandLineArguments>
          <CommandLineArgument
             argument = "testingScene3.txt"
+<<<<<<< HEAD
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "testingScene2.txt"
+=======
+>>>>>>> errorfixing
             isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
@@ -61,7 +68,7 @@
          </CommandLineArgument>
          <CommandLineArgument
             argument = "testingScene1.txt"
-            isEnabled = "NO">
+            isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "testingScene4.txt"
