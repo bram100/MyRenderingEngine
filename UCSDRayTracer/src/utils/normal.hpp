@@ -80,6 +80,11 @@ class normal {
             return *this;
         }
 
+    normal<T> operator/(T scalar) const {
+        T invLength = T(1) / scalar;
+        return normal<T>(x * invLength, y * invLength, z * invLength);
+    }
+
     
           
     float Length() const { return std::sqrt(x * x + y * y + z * z); }

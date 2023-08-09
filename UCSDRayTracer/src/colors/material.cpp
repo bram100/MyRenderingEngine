@@ -19,22 +19,15 @@ color3 Material::shading(const localGeo& intersection, const ray& lightRay, cons
     
     color3 finalColor;
     
-    finalColor += aBRDF.diffuse;
+    finalColor += ambient;
+    
+    auto inverseNormalLight =  normalize(lightRay.lookAt);
 
+    float cosTheta = MathOperations::dotProduct(normalize(intersection.normal), inverseNormalLight); //dot product
     
-    float cosTheta = MathOperations::dotProduct(intersection.normal, lightRay.lookAt); //dot product
-    
-    //std::cout << cosTheta << std::endl;
-    
-    /*
-    if (cosTheta <= 0.0f) {
-        return color3(0.0f, 0.0f, 0.0f); // No diffuse reflection on the back side of the surface
-    }
-*/
-   // finalColor +=  aBRDF.diffuse;// * lightColor * cosTheta;
     color3 diffuseComponent = aBRDF.diffuse * lightColor * fmax(cosTheta, 0.0f);
 
-    //finalColor += diffuseComponent;
+    finalColor += diffuseComponent;
     
     
     /*

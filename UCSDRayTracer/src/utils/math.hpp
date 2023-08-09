@@ -32,7 +32,7 @@ public:
 namespace MathOperations {
 template <typename T, typename U>
     float dotProduct(const T& a, const U& b) {
-        return a.x * b.x + b.y * b.y + a.z * b.z;
+        return a.x * b.x + a.y * b.y + a.z * b.z;
     }
 }
 typedef normal<float> normalf; //are these neeeded?

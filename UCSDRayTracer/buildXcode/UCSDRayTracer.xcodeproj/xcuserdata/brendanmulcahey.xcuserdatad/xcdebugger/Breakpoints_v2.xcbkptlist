@@ -158,8 +158,8 @@
             filePath = "src/colors/material.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "Material::shading(intersection, lightRay, lightColor)"
             landmarkType = "7">
          </BreakpointContent>
@@ -238,8 +238,8 @@
             filePath = "src/colors/material.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "Material::shading(intersection, lightRay, lightColor)"
             landmarkType = "7">
          </BreakpointContent>
@@ -311,54 +311,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1837D6C1-76E8-481F-84DE-D1EC04D1D535"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/colors/material.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "Material::shading(intersection, lightRay, lightColor)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "1837D6C1-76E8-481F-84DE-D1EC04D1D535 - 29a6053547d8c3bb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Material::shading(localGeo const&amp;, ray const&amp;, color3 const&amp;)"
-                  moduleName = "UCSDRayTracer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/colors/material.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "64">
-               </Location>
-               <Location
-                  uuid = "1837D6C1-76E8-481F-84DE-D1EC04D1D535 - 29a6053547d8c0fc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Material::shading(localGeo const&amp;, ray const&amp;, color3 const&amp;)"
-                  moduleName = "UCSDRayTracer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/colors/material.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "BF153159-F3AE-420D-B6CC-259C65C22C99"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -418,6 +370,197 @@
             endingLineNumber = "364"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B6FC8BFE-9FD7-465A-AEF0-06B6C0F68922"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/colors/material.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "Material::shading(intersection, lightRay, lightColor)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B6FC8BFE-9FD7-465A-AEF0-06B6C0F68922 - 29a6053547d8c516"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Material::shading(localGeo const&amp;, ray const&amp;, color3 const&amp;)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/colors/material.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "B6FC8BFE-9FD7-465A-AEF0-06B6C0F68922 - 29a6053547d8c20d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Material::shading(localGeo const&amp;, ray const&amp;, color3 const&amp;)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/colors/material.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "200">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "63FD6D05-CFAB-4BA1-ADDB-8F11BDA9A60F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/colors/material.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "Material::shading(intersection, lightRay, lightColor)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "78FC76C6-A76E-430B-8A50-F42788724EA0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/geometry/sphere.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "sphere::intersect(currentRay, tHit, localGeoPos)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "69B078FF-D95B-4C27-BD99-A3D9DEA91E82"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/colors/material.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "Material::shading(intersection, lightRay, lightColor)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "69B078FF-D95B-4C27-BD99-A3D9DEA91E82 - 29a6053547d8c516"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Material::shading(localGeo const&amp;, ray const&amp;, color3 const&amp;)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/colors/material.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "204">
+               </Location>
+               <Location
+                  uuid = "69B078FF-D95B-4C27-BD99-A3D9DEA91E82 - 29a6053547d8c5d4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Material::shading(localGeo const&amp;, ray const&amp;, color3 const&amp;)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/colors/material.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "188">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "35B29ACD-0D85-41A7-8BFD-1EE529CAC07B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/colors/material.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "Material::shading(intersection, lightRay, lightColor)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "35B29ACD-0D85-41A7-8BFD-1EE529CAC07B - 29a6053547d8c0b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Material::shading(localGeo const&amp;, ray const&amp;, color3 const&amp;)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/colors/material.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "35B29ACD-0D85-41A7-8BFD-1EE529CAC07B - 29a6053547d8c170"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Material::shading(localGeo const&amp;, ray const&amp;, color3 const&amp;)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/colors/material.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "35B29ACD-0D85-41A7-8BFD-1EE529CAC07B - 29a6053547d8c170"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Material::shading(localGeo const&amp;, ray const&amp;, color3 const&amp;)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/colors/material.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "116">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
