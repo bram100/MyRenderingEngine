@@ -38,12 +38,12 @@ public:
     matrix4& cameraToWorld = cameraViewTransformation.minvt;
     matrix4 perspectiveMatrix;
 
-
+//no idea why thisexists 
     transformation cameraShapeTransformation;// = *objectToWorld ^ worldToCamera;
 
 
     Camera() :  cameraPosition(vector3<float>(0.0f, 0.0f, 0.0f)),
-                cameraLookAt(vector3<float>(0.0f, 0.0f, -1.0f)),
+                cameraLookAt(vector3<float>(0.0f, 0.0f, 1.0f)),
                 cameraUp(vector3<float>(0.0f, 1.0f, 0.0f)),
                 fov(45.0f), //fov in the y direction
                 aspectRatio(1.f),
@@ -71,22 +71,36 @@ public:
 
     void generateRay(const sample2& currentSample, ray* currentRay){
         
+        ray tempRay;
         float scale = tan(fov * 0.5f * M_PI / 180.0f);
 
         float pixelX = (2.0f * (currentSample.x + 0.5f) / w - 1.0f) * aspectRatio * scale;
         float pixelY = (1.0f - 2.0f * (currentSample.y + 0.5f) / h) * scale;
         
-        currentRay->lookAt = vector3<float>(pixelX, pixelY, -1.0f);
-        currentRay->lookAt = normalize(currentRay->lookAt)/* * cameraViewTransformation.mt */;
-        currentRay->lookFrom =  worldToCamera * cameraPosition /** cameraViewTransformation.mt*/;
+        tempRay.lookAt = vector3<float>(pixelX, pixelY, -1.0f);
+        //tempRay.lookAt = worldToCamera * normalize(tempRay.lookAt) /* * cameraViewTransformation.mt */;
         
-        currentRay->t_max = infinity;
-        currentRay->t_min = infinity * -1;
+        tempRay.lookAt = normalize(MathOperations::matrixVector(worldToCamera, tempRay.lookAt, 0.0f));
+
+        tempRay.lookFrom = cameraPosition /** cameraViewTransformation.mt*/;
+        
+
+
+
+        tempRay.t_max = infinity;
+        tempRay.t_min = infinity * -1;
+        
+        
+
+        
         
         //this is bad code
-        ray tempRay = perspectiveMatrix * (*currentRay);
-        currentRay = &tempRay;
+       // tempRay.lookFrom = perspectiveMatrix * tempRay.lookFrom;
 
+        currentRay->lookAt = tempRay.lookAt;
+        currentRay->lookFrom = tempRay.lookFrom;
+
+        
         }
     
     void lookat(const vector3<float>& from, const vector3<float>& to, const vector3<float>& up, transformation& m)

@@ -177,6 +177,35 @@ const float* operator[](int row) const {
         return transformedVec;
     }
     
+    
+    normal<float> operator*(const normal<float>& dir) const {
+        normal<float> transformedNormal;
+        
+        transformedNormal[0] = m[0][0] * dir[0] + m[0][1] * dir[1] + m[0][2] * dir[2];
+        transformedNormal[1] = m[1][0] * dir[0] + m[1][1] * dir[1] + m[1][2] * dir[2];
+        transformedNormal[2] = m[2][0] * dir[0] + m[2][1] * dir[1] + m[2][2] * dir[2];
+
+        return transformedNormal;
+    }
+    
+    
+
+    friend normal<float> operator*(const normal<float>& v, const matrix4& m) {
+        normal<float> transformedNormal;
+        //v.w = 0;
+        
+        transformedNormal.x = v.x * m[0][0] + v.y * m[1][0] +
+                   v.z * m[2][0] + 0 * m[3][0];
+
+        transformedNormal.y = v.x * m[0][1] + v.y * m[1][1] +
+                   v.z * m[2][1] + 0 * m[3][1];
+
+        transformedNormal.z = v.x * m[0][2] + v.y * m[1][2] +
+                   v.z * m[2][2] + 0 * m[3][2];
+
+        return transformedNormal;
+    }
+
     vector3<float> operator*(const vector3<float>& v) {
         vector3<float> transformedVec;
         //v.w = 0;

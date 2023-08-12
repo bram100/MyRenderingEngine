@@ -14,21 +14,25 @@ void getBRDF(localGeo& local, BRDF* brdf) {
 }
 
 color3 Material::shading(const localGeo& intersection, const ray& lightRay, const color3& lightColor){
-    
-    //ok, i am passing in intersectoin. Interseciton contains pos and normal
-    
+        
     color3 finalColor;
     
     finalColor += ambient;
     
-    auto inverseNormalLight =  normalize(lightRay.lookAt);
+    color3 emissionComponent = aBRDF.emission;
+    finalColor += emissionComponent;
 
-    float cosTheta = MathOperations::dotProduct(normalize(intersection.normal), inverseNormalLight); //dot product
+    auto normalizeLight =  normalize(lightRay.lookAt);
+
+    auto normalizeNormal = normalize(intersection.normal);
+  
+    float cosTheta = MathOperations::dotProduct(normalizeNormal, normalizeLight); //dot product
     
+    std::cout << cosTheta <<std::endl;
     color3 diffuseComponent = aBRDF.diffuse * lightColor * fmax(cosTheta, 0.0f);
 
     finalColor += diffuseComponent;
-    
+
     
     /*
     float cosTheta = dot(intersection.normal, lightRay.direction);

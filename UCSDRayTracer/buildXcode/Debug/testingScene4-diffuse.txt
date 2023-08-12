@@ -74,6 +74,8 @@ tri 0 2 1
 tri 4 5 6 
 tri 4 6 7 
 
+
+ 
 # leg 2: Note that I'm only changing a single translation command.
 
 popTransform

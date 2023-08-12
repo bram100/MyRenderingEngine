@@ -104,8 +104,10 @@ inline std::ostream &operator<<(std::ostream &os, const normal<T> &object) {
 
 //why is this out of scope of the class?
 template <typename T>
-inline normal<T> normalize(const normal<T> &object) {
-    return object / object.Length();
+inline normal<T> normalize(const normal<T> &v) {
+    
+    return v / v.Length();
+   
 }
 
 

@@ -19,14 +19,29 @@ extern Camera camera;
 bool sphere::intersect(const ray &currentRay, float *tHit, localGeo *localGeoPos) const
 {
         //testingTransform.minvt;
-    ray transformedRay = worldToObject->operator*(currentRay);
+    ray transformedRay;
+    
+    
     //ok, so i need this to be the inverse matrix from within worldToObject
     //ray transformedRay = testingTransform*(currentRay);
+    
+    worldToObject;
+    objectToWorld;
+    
+    
+    
+    transformedRay.lookAt = normalize(MathOperations::matrixVector( worldToObject->mt, currentRay.lookAt,  0));
+    
+    transformedRay.lookFrom = (MathOperations::matrixVector(worldToObject->mt, currentRay.lookFrom,  1));
+
     
     float t0 = 0;
     float t1 = 0;
     
-    point3<float> transformedCenter = center;// multPointMatrix<float>(camera.worldToCamera, center); //i may need to fix this
+    
+    point3<float> transformedCenter = (MathOperations::matrixVector(worldToObject->mt, center,  0));
+
+    //point3<float> transformedCenter = center;// multPointMatrix<float>(camera.worldToCamera, center); //i may need to fix this
 
     vector3<float> L = transformedRay.lookFrom - transformedCenter; //vector from the ray's origin to the center of the sphere
     
@@ -57,12 +72,24 @@ bool sphere::intersect(const ray &currentRay, float *tHit, localGeo *localGeoPos
         
     }
 
-    localGeoPos->pos = transformedRay.pointAt(t0);
+    //localGeoPos->pos = transformedRay.pointAt(t0);
     
-    vector3<float> normalVector = normalize(localGeoPos->pos - center);
+    localGeoPos->pos = MathOperations::matrixVector(objectToWorld->mt, transformedRay.pointAt(t0), 1.f);
+
+    vector3<float> normalVector = (transformedRay.pointAt(t0) - transformedCenter);
     
-    localGeoPos->normal = normal<float>(normalVector.x, normalVector.y, normalVector.z);
+
     
+    //localGeoPos->normal = MathOperations::transformation3Matrix(normal<float>(normalVector.x, normalVector.y, normalVector.z), objectToWorld->minvt);
+    
+    
+   // normal<float> worldNormal = transformation::Transpose(objectToWorld->minvt) * normal<float>(normalVector.x, normalVector.y, normalVector.z);
+
+    localGeoPos->normal = MathOperations::matrixVector(transformation::Transpose(objectToWorld->minvt), normalVector, 0.f);
+
+                      
+    
+
     *tHit = t0;
 
     
@@ -74,12 +101,18 @@ bool sphere::intersect(const ray &currentRay, float *tHit, localGeo *localGeoPos
 //don't need to compute the intersection point or normal. You're simply checking whether an intersection occurs by solving the quadratic equation and checking the resulting values of t0 and t1.
 bool sphere::intersectP(const ray &currentRay) const
 {
-    ray transformedRay = worldToObject->operator*(currentRay);
+    ray transformedRay;// = worldToObject->operator*(currentRay);
+
+    
+    transformedRay.lookAt = normalize(MathOperations::matrixVector( worldToObject->mt, currentRay.lookAt,  0));
+    
+    transformedRay.lookFrom = (MathOperations::matrixVector(worldToObject->mt, currentRay.lookFrom,  1));
 
     float t0 = 0;
     float t1 = 0;
 
-    point3<float> transformedCenter = center;
+    //point3<float> transformedCenter = center;
+    point3<float> transformedCenter = (MathOperations::matrixVector(worldToObject->mt, center,  0));
 
     vector3<float> L = transformedRay.lookFrom - transformedCenter;
 

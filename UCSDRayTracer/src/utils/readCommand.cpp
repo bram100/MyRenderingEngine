@@ -58,6 +58,7 @@ transformation tranform;
 transformation defaultLightTransform; //may add feature later
 
 transformationSet curTransform;
+transformationSet curTransformInverse;
 static transformCache transformCache;
 transformation currentTransform;
 
@@ -247,6 +248,16 @@ void readfile(const char* fileName)
 
                 }
                 
+                if (cmd == "emission") { // r g b
+                    str.erase(0, 8);
+                    readValuesFloat(str, 4, valuesf, 3);
+                    readValuesFloat(str, 3, valuesf, 3);
+                    color3 emissionColor = convertFloatToColor(valuesf);
+                    materialParsed->aBRDF.emission = emissionColor;
+
+                }
+
+                
                 if (cmd == "camera") {
                     str.erase(0, 6);
                     readValuesFloat(str, 10, valuesf, 3);
@@ -345,9 +356,11 @@ void readfile(const char* fileName)
                     //string str = "sphere";
                     //makeShapes(str, o2w, w2o, params);
                     
-                    
-                    
-                    makeShapes(cmd, &curTransform[curTransformIndex], &curTransform[curTransformIndex], params);
+                     
+                    curTransformInverse[curTransformIndex].mt = curTransform[curTransformIndex].minvt;
+                    curTransformInverse[curTransformIndex].minvt = curTransform[curTransformIndex].mt;
+
+                    makeShapes(cmd, &curTransform[curTransformIndex], &curTransformInverse[curTransformIndex], params);
 
                     //std::shared_ptr<Material> materialParsed = std::make_shared<Material>(*materialParsed);
 
@@ -470,8 +483,11 @@ void readfile(const char* fileName)
                    params.addVector3I("triArray", &triArray[0]);
                    params.addOneInt("nVertices", maxVertArraySize);
                    params.addPoint3F("vertexArray", &vertexPointArray[0]);
-                               
-                    makeShapes(str, &curTransform[curTransformIndex], &curTransform[curTransformIndex], params);
+                            
+                    curTransformInverse[curTransformIndex].mt = curTransform[curTransformIndex].minvt;
+                    curTransformInverse[curTransformIndex].minvt = curTransform[curTransformIndex].mt;
+
+                    makeShapes(str, &curTransform[curTransformIndex], &curTransformInverse[curTransformIndex], params);
                     
                    // std::shared_ptr<Material> materialParsed = std::make_shared<Material>(*materialParsed);
 

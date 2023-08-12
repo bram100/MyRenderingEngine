@@ -38,14 +38,14 @@ Shapes::Shapes(const transformation *objectToWorld, const transformation *worldT
       worldToObject(worldToObject)
        {
            //this needed???
-           ++nShapesCreated;
            
-           matrix4& worldToCamera = camera.cameraToWorld;// camera.worldToCamera;
+           ++nShapesCreated;
+           /*
+           matrix4& worldToCamera = camera.worldToCamera;// camera.worldToCamera;
 
           // cameraToWorld = inverse(worldToCamera);
                transformation cameraShapeTransformation = *objectToWorld ^ worldToCamera;
-          
-
+          */
 } 
 
 extern float closestTHit;
@@ -72,11 +72,13 @@ void createTransformationMatrix(const vector3<float>& translate, const vector3<f
 
     transformation transformationMatrix; //should be identity matrix
        
-    transformationMatrix.mt = camera.cameraToWorld;
+    //transformationMatrix.mt = camera.cameraToWorld;
 
     //(TRS is the proper order but that doesnt work with
     // translation
-    transformation translationMatrix;
+    
+    
+    transformation translationMatrix; //this would be creating the objecToWolrd
     
     translationMatrix.translation(translate);
     transformationMatrix *= translationMatrix;
@@ -92,7 +94,12 @@ void createTransformationMatrix(const vector3<float>& translate, const vector3<f
     transformationMatrix *= scaleMatrix;
 
 
+    //transformationMatrix = camera.cameraToWorld * transformationMatrix.mt;
+    
+    
     transformationMatrix.updateInverse();
+    
+    
     curTransform[i] = transformationMatrix;
     
     
@@ -139,6 +146,8 @@ void makeShapes(const std::string &name, const transformation *object2World, con
         
         std::shared_ptr<GeometricPrimitive> geometricPrimitive = std::make_shared<GeometricPrimitive>(shape, newMaterialParsed);
 
+        
+        
         scene.addGeometricPrimitive(geometricPrimitive);
         
     }

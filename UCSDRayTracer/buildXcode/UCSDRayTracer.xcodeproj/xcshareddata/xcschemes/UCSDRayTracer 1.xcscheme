@@ -56,6 +56,10 @@
             isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
+            argument = "testingscene4-emission.txt"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
             argument = "testingscene4-diffuse.txt"
             isEnabled = "YES">
          </CommandLineArgument>

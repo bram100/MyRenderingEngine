@@ -16,6 +16,7 @@
 using namespace std;
 
 
+
 class Camera;
 extern Camera camera;
 
@@ -49,7 +50,7 @@ void Scene::renderer() {
         
             camera.generateRay(currentSample, &currentRay); //eye position
             
-            trace(currentRay, maxDepth, &currentColor);
+             trace(currentRay, maxDepth, &currentColor);
             
             
             
