@@ -271,6 +271,7 @@ point3<T> operator*(const point3<T>& vec, const matrix4& matrix) {
 //int current = 0;
 bool Triangle::intersect(const ray &currentRay, float *tHit, localGeo *localGeoPos) const
 {
+    
     //return false;
     
     worldToObject;
@@ -279,7 +280,7 @@ bool Triangle::intersect(const ray &currentRay, float *tHit, localGeo *localGeoP
     
         ray objectRay;
         
-       objectRay.lookFrom = MathOperations::matrixVector( worldToObject->mt, currentRay.lookFrom, 1);
+       objectRay.lookFrom = (MathOperations::matrixVector( worldToObject->mt, currentRay.lookFrom, 1));
     
     
         objectRay.lookAt = normalize(MathOperations::matrixVector( worldToObject->mt, currentRay.lookAt, 0));
@@ -375,8 +376,10 @@ bool Triangle::intersect(const ray &currentRay, float *tHit, localGeo *localGeoP
     //normal - find the perpendicular/face
     vector3<float> N = cross(normalEdge1, normalEdge2); // N = cross product
     normalize(N);
-
     
+    
+    //normal<float> oldNormal(N.x, N.y, N.z);
+
     //magnitude of the resulting vector crossProduct is equal to the area of the parallelogram formed by edge1 and edge2
     float area2 = N.Length();
     
@@ -439,7 +442,7 @@ bool Triangle::intersect(const ray &currentRay, float *tHit, localGeo *localGeoP
     
 
     
-   // normal<float> oldNormal(N.x, 0.f, 4.f);
+    //normal<float> oldNormal(N.x, 0.f, 4.f);
     normal<float> oldNormal(N.x, N.y, N.z);
 
     normal<float> worldNormal =  oldNormal;// transformation::Transpose(objectToWorld->minvt) * oldNormal;
@@ -447,7 +450,7 @@ bool Triangle::intersect(const ray &currentRay, float *tHit, localGeo *localGeoP
     //std::cout << this->
     //localGeoPos->normal = MathOperations::matrixVector(transformation::Transpose(objectToWorld->minvt), oldNormal, 0);
     
-    //localGeoPos->pos = MathOperations::matrixVector(objectToWorld->minvt, P,  1.f);
+    localGeoPos->pos = MathOperations::matrixVector(objectToWorld->mt, P,  1.f);
 
     localGeoPos->normal = MathOperations::matrixVector(transformation::Transpose(objectToWorld->minvt), oldNormal, 0.f);
 
@@ -464,7 +467,7 @@ bool Triangle::intersect(const ray &currentRay, float *tHit, localGeo *localGeoP
 bool Triangle::intersectP(const ray &currentRay) const
 {
     ray transformedRay;
-    transformedRay.lookAt = (MathOperations::matrixVector( worldToObject->mt, currentRay.lookAt,  0));
+    transformedRay.lookAt = normalize(MathOperations::matrixVector( worldToObject->mt, currentRay.lookAt,  0));
     
     transformedRay.lookFrom = (MathOperations::matrixVector(worldToObject->mt, currentRay.lookFrom,  1));
 

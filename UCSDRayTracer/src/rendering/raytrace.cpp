@@ -26,7 +26,7 @@ int counting = 0;
 
 intersection currentIntersect;
 localGeo localGeo;
-
+intersection currentIntersectHolding;
 bool hitAnything;
 float closestTHit;
 
@@ -66,6 +66,7 @@ void trace(ray& ray, int depth, color3* color3) {
             if (tHit < closestTHit) {
                 closestTHit = tHit;
                 
+                currentIntersectHolding = currentIntersect;
                 //std::cout << "hit normal: " << currentIntersect.localGeo.normal << std::endl;
 
                 currentMaterial = currentIntersect.primitive->getMaterial();
@@ -79,11 +80,11 @@ void trace(ray& ray, int depth, color3* color3) {
     if (hitAnything) {
         
         for (const auto& l : scene.lightsVec){
-            l->generateLightRay(currentIntersect.localGeo, &lightRay, &lightColor);
+            l->generateLightRay(currentIntersectHolding.localGeo, &lightRay, &lightColor);
 
             if (!currentIntersect.primitive->intersectP(lightRay)) {
                 
-                *color3 += currentMaterial->shading(currentIntersect.localGeo, lightRay, lightColor);
+                *color3 += currentMaterial->shading(currentIntersectHolding.localGeo, lightRay, lightColor);
                 
                 
                 }

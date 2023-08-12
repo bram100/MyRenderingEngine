@@ -39,7 +39,7 @@ bool sphere::intersect(const ray &currentRay, float *tHit, localGeo *localGeoPos
     float t1 = 0;
     
     
-    point3<float> transformedCenter = (MathOperations::matrixVector(worldToObject->mt, center,  0));
+    point3<float> transformedCenter = center;// (MathOperations::matrixVector(worldToObject->mt, center,  0));
 
     //point3<float> transformedCenter = center;// multPointMatrix<float>(camera.worldToCamera, center); //i may need to fix this
 
