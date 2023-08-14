@@ -12,17 +12,38 @@
 #include "intersection.hpp"
 #include "math.hpp"
 #include "localGeo.hpp"
-
-//this intersection is for determining the exact lcoation of the intersect. Intersection with shape class returns a binary, this returns an x,y,z normal or something or other 
+int counting2;
+//this intersection is for determining the exact lcoation of the intersect. Intersection with shape class returns a binary, this returns an x,y,z normal or something or other
 bool GeometricPrimitive::intersect(ray& currentRay,  float* tHit, intersection* intersct) {
+
     
-    if (shape->intersect(currentRay, tHit, &(intersct->localGeo)))
+    if (shape->intersect(currentRay, tHit, &(intersct->localGeo))) {
+          
         return true;
+       }
+    
+    return false;
+     
+  // return shape->intersect(currentRay, tHit, &(intersct->localGeo));
+    
+    
+    /*
+    if (shape->intersect(currentRay, tHit, &(intersct->localGeo))) {
+        std::cout << "emw" << std::endl;
+        return true;
+    } else {
+
+    }*/
+    
+    //shape->intersect(currentRay, tHit, &(intersct->localGeo));
+    
+       // return true;
 
     
     if (*tHit == 1.f) {
          std::cout << "tHit value changed" << std::endl;
      }
+    
 }
 
 bool GeometricPrimitive::intersectP(ray& currentRay) {

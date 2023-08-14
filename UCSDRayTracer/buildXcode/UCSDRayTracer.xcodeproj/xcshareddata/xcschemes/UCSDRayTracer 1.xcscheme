@@ -57,11 +57,11 @@
          </CommandLineArgument>
          <CommandLineArgument
             argument = "testingscene4-emission.txt"
-            isEnabled = "NO">
+            isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "testingscene4-diffuse.txt"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "testingscene3.txt"

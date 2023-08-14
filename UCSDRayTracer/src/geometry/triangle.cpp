@@ -272,7 +272,7 @@ point3<T> operator*(const point3<T>& vec, const matrix4& matrix) {
 bool Triangle::intersect(const ray &currentRay, float *tHit, localGeo *localGeoPos) const
 {
     
-    //return false;
+    //return true;
     
     worldToObject;
     objectToWorld;

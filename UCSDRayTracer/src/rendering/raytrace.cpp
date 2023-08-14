@@ -26,7 +26,7 @@ int counting = 0;
 
 intersection currentIntersect;
 localGeo localGeo;
-intersection currentIntersectHolding;
+intersection closestIntersect;
 bool hitAnything;
 float closestTHit;
 
@@ -60,48 +60,71 @@ void trace(ray& ray, int depth, color3* color3) {
         //multiply transfor
         
         //p->applyTransformationToObject(transformationFromStack);
-        
-        if (p->intersect(ray, &tHit, &currentIntersect)) {
-            hitAnything = true;
-            if (tHit < closestTHit) {
-                closestTHit = tHit;
-                
-                currentIntersectHolding = currentIntersect;
-                //std::cout << "hit normal: " << currentIntersect.localGeo.normal << std::endl;
+        if (!p->intersect(ray, &tHit, &currentIntersect)) {
+            
+            color3->r = 0.f;
+            color3->g = 0.f;
+            color3->b = 0.f;
+            
+           // std::cout << "meow" << std::endl;
+            //return false;
 
-                currentMaterial = currentIntersect.primitive->getMaterial();
+        }
+        else {
+            std::cout << "woof" << std::endl;
+
+            currentMaterial = currentIntersect.primitive->getMaterial();
+            
+            
+            /*
+             if (p->intersect(ray, &tHit, &currentIntersect)) {
+             hitAnything = true;
+             if (tHit < closestTHit) {
+             closestTHit = tHit;
+             
+             closestIntersect = currentIntersect;
+             //std::cout << "hit normal: " << currentIntersect.localGeo.normal << std::endl;
+             
+             currentMaterial = currentIntersect.primitive->getMaterial();
+             
+             
+             }
+             }
+             else {
+             // std::cout << "bark";
+             }
+             */
+            
+            
+            
+            // if (hitAnything) {
+            if (true) {
                 
-                
+                for (const auto& l : scene.lightsVec){
+                    l->generateLightRay(currentIntersect.localGeo, &lightRay, &lightColor);
+                    
+                    //    if (!currentIntersect.primitive->intersectP(lightRay)) {
+                    
+                    *color3 += currentMaterial->shading(currentIntersect.localGeo, lightRay, lightColor);
+                    
+                    
+                    //  }
+                    
+                    //std::cout << "Color: (" << color3->r << ", " << color3->g << ", " << color3->b << ")" << std::endl;
+                    return true;
+                }
             }
         }
-    }
-    
-    
-    if (hitAnything) {
-        
-        for (const auto& l : scene.lightsVec){
-            l->generateLightRay(currentIntersectHolding.localGeo, &lightRay, &lightColor);
-
-            if (!currentIntersect.primitive->intersectP(lightRay)) {
-                
-                *color3 += currentMaterial->shading(currentIntersectHolding.localGeo, lightRay, lightColor);
-                
-                
-                }
-            
-            //std::cout << "Color: (" << color3->r << ", " << color3->g << ", " << color3->b << ")" << std::endl;
-            return true;
-        }
-    }
-                  
-
-    else {
+        /*
+        else {
             color3->r = 0.f;
             color3->g = 0.f;
             color3->b = 0.f;
             return false;
+        }
+         */
     }
-                  
+
     /*
     if (brdf.emission > 0) {
         reflectRay = createReflectRay(in.local, ray);

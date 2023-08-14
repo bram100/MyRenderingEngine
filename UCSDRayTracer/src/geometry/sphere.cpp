@@ -22,14 +22,6 @@ bool sphere::intersect(const ray &currentRay, float *tHit, localGeo *localGeoPos
     ray transformedRay;
     
     
-    //ok, so i need this to be the inverse matrix from within worldToObject
-    //ray transformedRay = testingTransform*(currentRay);
-    
-    worldToObject;
-    objectToWorld;
-    
-    
-    
     transformedRay.lookAt = normalize(MathOperations::matrixVector( worldToObject->mt, currentRay.lookAt,  0));
     
     transformedRay.lookFrom = (MathOperations::matrixVector(worldToObject->mt, currentRay.lookFrom,  1));
