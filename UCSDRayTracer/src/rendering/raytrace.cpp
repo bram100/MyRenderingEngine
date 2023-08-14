@@ -39,6 +39,8 @@ extern std::vector<std::shared_ptr<GeometricPrimitive>> geometricPrimitives;
 
 std::shared_ptr<Material> currentMaterial;
 
+
+
 void trace(ray& ray, int depth, color3* color3) {
     hitAnything = false;
     closestTHit = std::numeric_limits<float>::infinity();
@@ -65,56 +67,44 @@ void trace(ray& ray, int depth, color3* color3) {
             color3->r = 0.f;
             color3->g = 0.f;
             color3->b = 0.f;
-            
-           // std::cout << "meow" << std::endl;
+            // std::cout << "meow" << std::endl;
             //return false;
-
         }
         else {
-            std::cout << "woof" << std::endl;
-
-            currentMaterial = currentIntersect.primitive->getMaterial();
+            // if (p->intersect(ray, &tHit, &currentIntersect)) {
             
-            
-            /*
-             if (p->intersect(ray, &tHit, &currentIntersect)) {
-             hitAnything = true;
-             if (tHit < closestTHit) {
-             closestTHit = tHit;
-             
-             closestIntersect = currentIntersect;
-             //std::cout << "hit normal: " << currentIntersect.localGeo.normal << std::endl;
-             
-             currentMaterial = currentIntersect.primitive->getMaterial();
-             
-             
-             }
-             }
-             else {
-             // std::cout << "bark";
-             }
-             */
-            
-            
-            
-            // if (hitAnything) {
-            if (true) {
+            if (hitAnything == false) {
+                std::cout << "fucl" << std::endl;
+            }
+            hitAnything = true;
+            if (tHit < closestTHit) {
                 
-                for (const auto& l : scene.lightsVec){
-                    l->generateLightRay(currentIntersect.localGeo, &lightRay, &lightColor);
-                    
-                    //    if (!currentIntersect.primitive->intersectP(lightRay)) {
-                    
-                    *color3 += currentMaterial->shading(currentIntersect.localGeo, lightRay, lightColor);
-                    
-                    
-                    //  }
-                    
-                    //std::cout << "Color: (" << color3->r << ", " << color3->g << ", " << color3->b << ")" << std::endl;
-                    return true;
-                }
+                closestTHit = tHit;
+                
+                closestIntersect = currentIntersect;
+                
+                currentMaterial = currentIntersect.primitive->getMaterial();
             }
         }
+    }
+            if (hitAnything) {
+               for (const auto& l : scene.lightsVec){
+                    l->generateLightRay(closestIntersect.localGeo, &lightRay, &lightColor);
+
+                  
+                /*
+                    if closes
+                color3->r = 100.f;
+                color3->g = 0.f;
+                color3->b = 0.f;
+*/
+                   *color3 +=  currentMaterial->shading(closestIntersect.localGeo, lightRay, lightColor);
+                    
+                }
+                //return true;
+
+            }
+        
         /*
         else {
             color3->r = 0.f;
@@ -123,7 +113,7 @@ void trace(ray& ray, int depth, color3* color3) {
             return false;
         }
          */
-    }
+
 
     /*
     if (brdf.emission > 0) {

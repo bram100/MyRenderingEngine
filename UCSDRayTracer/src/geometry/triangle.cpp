@@ -279,11 +279,12 @@ bool Triangle::intersect(const ray &currentRay, float *tHit, localGeo *localGeoP
 
     
         ray objectRay;
+    objectRay.lookAt = normalize(MathOperations::matrixVector( worldToObject->mt, currentRay.lookAt, 0));
+
         
        objectRay.lookFrom = (MathOperations::matrixVector( worldToObject->mt, currentRay.lookFrom, 1));
     
     
-        objectRay.lookAt = normalize(MathOperations::matrixVector( worldToObject->mt, currentRay.lookAt, 0));
 
     
     const point3<float>* v = mesh->vertexPointArray.get();
@@ -360,9 +361,9 @@ bool Triangle::intersect(const ray &currentRay, float *tHit, localGeo *localGeoP
   //  point3<float> v22 = multPointMatrix<float>(camera.worldToCamera, v2);
 
      
-//  v0 = MathOperations::matrixVector(worldToObject->minvt, v0, 1);
- //   v1 = MathOperations::matrixVector( worldToObject->minvt,v1,  1);
-  //  v2 = MathOperations::matrixVector(worldToObject->minvt, v2, 1);
+  //v0 = MathOperations::matrixVector(worldToObject->minvt, v0, 1);
+   //v1 = MathOperations::matrixVector( worldToObject->minvt,v1,  1);
+    //v2 = MathOperations::matrixVector(worldToObject->minvt, v2, 1);
 
 
   //v0 = v00;
