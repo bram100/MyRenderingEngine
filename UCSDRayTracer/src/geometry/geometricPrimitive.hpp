@@ -45,12 +45,12 @@ public:
     }
     
 
-    
+    /*
      void applyTransformationToObject( const transformation& other) {
         
      shape->multiplyObjectToWorld(other);
     }
-
+*/
     //void applyTransformationToWorld( transformation& other) { shape->multiplyWorldToObject(other); }
 
 

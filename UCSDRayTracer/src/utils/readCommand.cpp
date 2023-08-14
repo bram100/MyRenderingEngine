@@ -52,7 +52,7 @@ float w, h;
 int maxDepth;
 bool animatedBool = false;
 
-bool lightExists = false;
+bool lightExists;
 
 
 transformation tranform;
@@ -179,7 +179,7 @@ void readfile(const char* fileName)
                     params.addOneVector3F("position", positionXYZ);
                     params.addOneColor3("color", colorRGB);
 
-                    lightExists == true;
+                    lightExists = true;
                     
                     makeLights(cmd, &defaultLightTransform, params);
 
@@ -508,6 +508,7 @@ void readfile(const char* fileName)
         endParsing:
         
         //handle older scenes
+        
         if (lightExists == false) {
             vector3<float> positionXYZ (1.f, 1.f, 1.f);
             color3 colorRGB (1.f, 1.f, 1.f);
