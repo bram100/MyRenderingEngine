@@ -22,7 +22,7 @@ bool sphere::intersect(const ray &currentRay, float *tHit, localGeo *localGeoPos
     ray transformedRay;
     
     
-    transformedRay.lookAt = normalize(MathOperations::matrixVector( worldToObject->mt, currentRay.lookAt,  0));
+    transformedRay.lookAt = (MathOperations::matrixVector( worldToObject->mt, normalize(currentRay.lookAt),  0)); //this is supposed to be normalized 
     
     transformedRay.lookFrom = (MathOperations::matrixVector(worldToObject->mt, currentRay.lookFrom,  1));
 

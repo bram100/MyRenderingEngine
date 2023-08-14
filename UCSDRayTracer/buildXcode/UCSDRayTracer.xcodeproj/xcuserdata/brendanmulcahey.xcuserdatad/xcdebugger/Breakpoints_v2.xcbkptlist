@@ -2037,6 +2037,21 @@
                   endingLineNumber = "534"
                   offsetFromSymbolStart = "1140">
                </Location>
+               <Location
+                  uuid = "48F19D2D-3047-475F-9383-4464E35B1F67 - 390dab5110eabc4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Triangle::intersectP(ray const&amp;) const"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/triangle.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "534"
+                  endingLineNumber = "534"
+                  offsetFromSymbolStart = "1124">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
