@@ -29,9 +29,57 @@ class matrix4 {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
                 m[i][j] = mat[i][j];
+            }
         }
+        
     }
-}
+        matrix4 inverse(const matrix4& m) const {
+            matrix4 inv;  // Placeholder for the inverse matrix
+            matrix4 aug = m;  // Augmented matrix (original matrix + identity matrix)
+
+            // Perform Gaussian elimination with partial pivoting
+            int n = 4;  // Size of the matrix (assuming it's a 4x4 matrix)
+            for (int i = 0; i < n; i++) {
+                // Partial pivoting - find the row with the largest pivot element
+                int pivotRow = i;
+                float pivotValue = std::abs(aug[i][i]);
+                for (int k = i + 1; k < n; k++) {
+                    if (std::abs(aug[k][i]) > pivotValue) {
+                        pivotRow = k;
+                        pivotValue = std::abs(aug[k][i]);
+                    }
+                }
+
+                // Swap rows to bring the pivot element to the diagonal
+                if (pivotRow != i) {
+                    std::swap_ranges(aug[i], aug[i] + n, aug[pivotRow]);
+                    std::swap_ranges(inv[i], inv[i] + n, inv[pivotRow]);
+                }
+
+                // Scale the pivot row to make the pivot element equal to 1
+                float pivotScale = 1.0f / aug[i][i];
+                for (int j = 0; j < n; j++) {
+                    aug[i][j] *= pivotScale;
+                    inv[i][j] *= pivotScale;
+                }
+
+                // Eliminate the other rows
+                for (int k = 0; k < n; k++) {
+                    if (k != i) {
+                        float factor = aug[k][i];
+                        for (int j = 0; j < n; j++) {
+                            aug[k][j] -= factor * aug[i][j];
+                            inv[k][j] -= factor * inv[i][j];
+                        }
+                    }
+                }
+            }
+
+            return inv;
+        }
+        
+
+
     //wtf is this
     matrix4(const std::initializer_list<std::initializer_list<float>>& initList) {
         int i = 0;

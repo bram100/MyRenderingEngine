@@ -63,19 +63,11 @@ void trace(ray& ray, int depth, color3* color3) {
         
         //p->applyTransformationToObject(transformationFromStack);
         if (!p->intersect(ray, &tHit, &currentIntersect)) {
-            
             color3->r = 0.f;
             color3->g = 0.f;
             color3->b = 0.f;
-            // std::cout << "meow" << std::endl;
-            //return false;
         }
         else {
-            // if (p->intersect(ray, &tHit, &currentIntersect)) {
-            
-            if (hitAnything == false) {
-                std::cout << "fucl" << std::endl;
-            }
             hitAnything = true;
             if (tHit < closestTHit) {
                 
@@ -90,19 +82,14 @@ void trace(ray& ray, int depth, color3* color3) {
             if (hitAnything) {
                for (const auto& l : scene.lightsVec){
                     l->generateLightRay(closestIntersect.localGeo, &lightRay, &lightColor);
+                   
+                   //maybe this should be currentIntersect to go through all intersects ??
+                    if (!closestIntersect.primitive->intersectP(lightRay)) {
+                       // if (!currentIntersect.intersect(lightRay, &tHit, &closestIntersect)) {
 
-                  
-                /*
-                    if closes
-                color3->r = 100.f;
-                color3->g = 0.f;
-                color3->b = 0.f;
-*/
-                   *color3 +=  currentMaterial->shading(closestIntersect.localGeo, lightRay, lightColor);
-                    
+                     *color3 +=  currentMaterial->shading(closestIntersect.localGeo, lightRay, lightColor);
+                 }
                 }
-                //return true;
-
             }
         
         /*

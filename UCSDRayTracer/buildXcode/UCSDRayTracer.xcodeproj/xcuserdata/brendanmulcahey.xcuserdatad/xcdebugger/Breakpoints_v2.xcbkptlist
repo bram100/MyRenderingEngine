@@ -110,8 +110,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "447"
-            endingLineNumber = "447"
+            startingLineNumber = "451"
+            endingLineNumber = "451"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
             <Locations>
@@ -218,8 +218,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "450"
-            endingLineNumber = "450"
+            startingLineNumber = "454"
+            endingLineNumber = "454"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
             <Locations>
@@ -281,8 +281,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "449"
-            endingLineNumber = "449"
+            startingLineNumber = "453"
+            endingLineNumber = "453"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -297,8 +297,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "458"
-            endingLineNumber = "458"
+            startingLineNumber = "462"
+            endingLineNumber = "462"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
             <Locations>
@@ -360,8 +360,8 @@
             filePath = "src/utils/matrix.hpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "184"
-            endingLineNumber = "184"
+            startingLineNumber = "232"
+            endingLineNumber = "232"
             landmarkName = "matrix4"
             landmarkType = "3">
          </BreakpointContent>
@@ -376,8 +376,8 @@
             filePath = "src/utils/matrix.hpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "225"
-            endingLineNumber = "225"
+            startingLineNumber = "273"
+            endingLineNumber = "273"
             landmarkName = "matrix4"
             landmarkType = "3">
          </BreakpointContent>
@@ -392,8 +392,8 @@
             filePath = "src/utils/matrix.hpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "203"
-            endingLineNumber = "203"
+            startingLineNumber = "251"
+            endingLineNumber = "251"
             landmarkName = "matrix4"
             landmarkType = "3">
          </BreakpointContent>
@@ -408,8 +408,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "355"
-            endingLineNumber = "355"
+            startingLineNumber = "359"
+            endingLineNumber = "359"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -472,8 +472,8 @@
             filePath = "src/geometry/sphere.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "sphere::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -488,8 +488,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "349"
-            endingLineNumber = "349"
+            startingLineNumber = "353"
+            endingLineNumber = "353"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -520,8 +520,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "414"
-            endingLineNumber = "414"
+            startingLineNumber = "418"
+            endingLineNumber = "418"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
             <Locations>
@@ -615,8 +615,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "341"
-            endingLineNumber = "341"
+            startingLineNumber = "345"
+            endingLineNumber = "345"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
             <Locations>
@@ -663,8 +663,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "457"
-            endingLineNumber = "457"
+            startingLineNumber = "461"
+            endingLineNumber = "461"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
             <Locations>
@@ -728,6 +728,36 @@
                   endingLineNumber = "454"
                   offsetFromSymbolStart = "1264">
                </Location>
+               <Location
+                  uuid = "EE3E3348-8A14-4FCE-9741-31DD8ECC88C7 - 4bd37d65e9846ec1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Triangle::intersect(ray const&amp;, float*, localGeo*) const"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/triangle.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "459"
+                  endingLineNumber = "459"
+                  offsetFromSymbolStart = "1304">
+               </Location>
+               <Location
+                  uuid = "EE3E3348-8A14-4FCE-9741-31DD8ECC88C7 - 4bd37d65e9846ec1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Triangle::intersect(ray const&amp;, float*, localGeo*) const"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/triangle.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "459"
+                  endingLineNumber = "459"
+                  offsetFromSymbolStart = "1288">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -741,8 +771,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "455"
-            endingLineNumber = "455"
+            startingLineNumber = "459"
+            endingLineNumber = "459"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -757,8 +787,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "448"
-            endingLineNumber = "448"
+            startingLineNumber = "452"
+            endingLineNumber = "452"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -773,8 +803,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "422"
-            endingLineNumber = "422"
+            startingLineNumber = "426"
+            endingLineNumber = "426"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -805,13 +835,13 @@
             filePath = "src/geometry/sphere.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "sphere::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "4EEE0A66-A8F0-48F7-8B0C-B0ACA5FE6021 - a3ef202aa8d7b917"
+                  uuid = "4EEE0A66-A8F0-48F7-8B0C-B0ACA5FE6021 - a3ef202aa8d7b993"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -821,12 +851,12 @@
                   urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/sphere.cpp"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "212">
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "200">
                </Location>
                <Location
-                  uuid = "4EEE0A66-A8F0-48F7-8B0C-B0ACA5FE6021 - a3ef202aa8d7b974"
+                  uuid = "4EEE0A66-A8F0-48F7-8B0C-B0ACA5FE6021 - a3ef202aa8d7b9b2"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -836,9 +866,9 @@
                   urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/sphere.cpp"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "144">
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "148">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -853,8 +883,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "289"
-            endingLineNumber = "289"
+            startingLineNumber = "293"
+            endingLineNumber = "293"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -869,8 +899,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "368"
-            endingLineNumber = "368"
+            startingLineNumber = "369"
+            endingLineNumber = "369"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
             <Locations>
@@ -904,6 +934,21 @@
                   endingLineNumber = "367"
                   offsetFromSymbolStart = "4136">
                </Location>
+               <Location
+                  uuid = "FC6B0BC4-82E8-413B-9102-8AAFAA006AB3 - 79f3fed533f3844f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readfile(char const*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "372"
+                  endingLineNumber = "372"
+                  offsetFromSymbolStart = "4000">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -917,8 +962,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "495"
-            endingLineNumber = "495"
+            startingLineNumber = "499"
+            endingLineNumber = "499"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -933,8 +978,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
             landmarkName = "makeShapes(name, object2World, world2Object, paramSet)"
             landmarkType = "9">
          </BreakpointContent>
@@ -965,8 +1010,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "481"
-            endingLineNumber = "481"
+            startingLineNumber = "482"
+            endingLineNumber = "482"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -981,8 +1026,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "createTransformationMatrix(translate, rotation, axis, scale, i)"
             landmarkType = "9">
          </BreakpointContent>
@@ -997,8 +1042,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "287"
-            endingLineNumber = "287"
+            startingLineNumber = "291"
+            endingLineNumber = "291"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
             <Locations>
@@ -1046,6 +1091,21 @@
                   startingLineNumber = "281"
                   endingLineNumber = "281"
                   offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "A795BFB3-3DCD-4FEF-B1C8-A96D5C137754 - 4bd37d65e98444be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Triangle::intersect(ray const&amp;, float*, localGeo*) const"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/triangle.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "290"
+                  endingLineNumber = "290"
+                  offsetFromSymbolStart = "176">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1428,8 +1488,8 @@
             filePath = "src/geometry/sphere.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "sphere::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
             <Locations>
@@ -1462,6 +1522,21 @@
                   startingLineNumber = "30"
                   endingLineNumber = "30"
                   offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "ACA95B87-1B97-41B0-9A6E-13DF91910BBC - a3ef202aa8d7b993"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "sphere::intersect(ray const&amp;, float*, localGeo*) const"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/sphere.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "200">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1508,8 +1583,8 @@
             filePath = "src/geometry/sphere.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "sphere::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1524,8 +1599,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "createTransformationMatrix(translate, rotation, axis, scale, i)"
             landmarkType = "9">
             <Locations>
@@ -1559,6 +1634,36 @@
                   endingLineNumber = "103"
                   offsetFromSymbolStart = "188">
                </Location>
+               <Location
+                  uuid = "23ECA33E-0891-4F57-A8DB-F240A38BB6D8 - 377429cd750d0745"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "createTransformationMatrix(vector3&lt;float&gt; const&amp;, vector3&lt;float&gt; const&amp;, float, vector3&lt;float&gt; const&amp;, int)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/shape.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "188">
+               </Location>
+               <Location
+                  uuid = "23ECA33E-0891-4F57-A8DB-F240A38BB6D8 - 377429cd750d078b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "createTransformationMatrix(vector3&lt;float&gt; const&amp;, vector3&lt;float&gt; const&amp;, float, vector3&lt;float&gt; const&amp;, int)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/shape.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "224">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -1572,8 +1677,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "149"
-            endingLineNumber = "149"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
             landmarkName = "makeShapes(name, object2World, world2Object, paramSet)"
             landmarkType = "9">
             <Locations>
@@ -1613,54 +1718,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7E422AA6-C8C8-4DD3-908C-453139622BC5"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/geometry/triangle.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "280"
-            endingLineNumber = "280"
-            landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "7E422AA6-C8C8-4DD3-908C-453139622BC5 - 4bd37d65e9844615"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Triangle::intersect(ray const&amp;, float*, localGeo*) const"
-                  moduleName = "UCSDRayTracer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/triangle.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "279"
-                  endingLineNumber = "279"
-                  offsetFromSymbolStart = "56">
-               </Location>
-               <Location
-                  uuid = "7E422AA6-C8C8-4DD3-908C-453139622BC5 - 4bd37d65e98445d7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Triangle::intersect(ray const&amp;, float*, localGeo*) const"
-                  moduleName = "UCSDRayTracer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/triangle.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "281"
-                  endingLineNumber = "281"
-                  offsetFromSymbolStart = "56">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "A00A6068-830C-4096-983C-3A50142E66A0"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -1668,8 +1725,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "createTransformationMatrix(translate, rotation, axis, scale, i)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1736,6 +1793,38 @@
             endingLineNumber = "23"
             landmarkName = "generateLightRay(local, lightRay, lightColor)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "34DF6499-9E0A-4789-8019-0B23603E7889 - 6fc1db4434e0a95d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PointLights::generateLightRay(localGeo&amp;, ray*, color3*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/lights/pointLight.hpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "34DF6499-9E0A-4789-8019-0B23603E7889 - 6fc1db4434e0a95d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PointLights::generateLightRay(localGeo&amp;, ray*, color3*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/lights/pointLight.hpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1780,8 +1869,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "383"
-            endingLineNumber = "383"
+            startingLineNumber = "387"
+            endingLineNumber = "387"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
             <Locations>
@@ -1828,8 +1917,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "381"
-            endingLineNumber = "381"
+            startingLineNumber = "385"
+            endingLineNumber = "385"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
             <Locations>
@@ -1876,8 +1965,8 @@
             filePath = "src/geometry/sphere.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "sphere::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1908,8 +1997,8 @@
             filePath = "src/geometry/sphere.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "sphere::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
             <Locations>
@@ -1973,6 +2062,51 @@
                   endingLineNumber = "81"
                   offsetFromSymbolStart = "740">
                </Location>
+               <Location
+                  uuid = "C0CFDC25-1DF6-4FD3-B3A6-742D97CEB56E - a3ef202aa8d7400e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "sphere::intersect(ray const&amp;, float*, localGeo*) const"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/sphere.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "736">
+               </Location>
+               <Location
+                  uuid = "C0CFDC25-1DF6-4FD3-B3A6-742D97CEB56E - a3ef202aa8d74029"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "sphere::intersect(ray const&amp;, float*, localGeo*) const"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/sphere.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "788">
+               </Location>
+               <Location
+                  uuid = "C0CFDC25-1DF6-4FD3-B3A6-742D97CEB56E - a3ef202aa8d74029"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "sphere::intersect(ray const&amp;, float*, localGeo*) const"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/sphere.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "784">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -1986,8 +2120,8 @@
             filePath = "src/geometry/sphere.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "sphere::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2002,13 +2136,13 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "533"
-            endingLineNumber = "533"
+            startingLineNumber = "537"
+            endingLineNumber = "537"
             landmarkName = "Triangle::intersectP(currentRay)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "48F19D2D-3047-475F-9383-4464E35B1F67 - 390dab5110eaba5"
+                  uuid = "48F19D2D-3047-475F-9383-4464E35B1F67 - 390dab5110eaa39"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -2018,12 +2152,12 @@
                   urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/triangle.cpp"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "533"
-                  endingLineNumber = "533"
-                  offsetFromSymbolStart = "1140">
+                  startingLineNumber = "537"
+                  endingLineNumber = "537"
+                  offsetFromSymbolStart = "1164">
                </Location>
                <Location
-                  uuid = "48F19D2D-3047-475F-9383-4464E35B1F67 - 390dab5110eabc4"
+                  uuid = "48F19D2D-3047-475F-9383-4464E35B1F67 - 390dab5110eaa58"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -2033,24 +2167,9 @@
                   urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/triangle.cpp"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "534"
-                  endingLineNumber = "534"
-                  offsetFromSymbolStart = "1140">
-               </Location>
-               <Location
-                  uuid = "48F19D2D-3047-475F-9383-4464E35B1F67 - 390dab5110eabc4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Triangle::intersectP(ray const&amp;) const"
-                  moduleName = "UCSDRayTracer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/triangle.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "534"
-                  endingLineNumber = "534"
-                  offsetFromSymbolStart = "1124">
+                  startingLineNumber = "538"
+                  endingLineNumber = "538"
+                  offsetFromSymbolStart = "1148">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -2065,8 +2184,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "460"
-            endingLineNumber = "460"
+            startingLineNumber = "464"
+            endingLineNumber = "464"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2081,8 +2200,8 @@
             filePath = "src/geometry/sphere.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "sphere::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2193,8 +2312,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "396"
-            endingLineNumber = "396"
+            startingLineNumber = "400"
+            endingLineNumber = "400"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2209,8 +2328,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "406"
-            endingLineNumber = "406"
+            startingLineNumber = "410"
+            endingLineNumber = "410"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2225,8 +2344,8 @@
             filePath = "src/geometry/triangle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "397"
-            endingLineNumber = "397"
+            startingLineNumber = "401"
+            endingLineNumber = "401"
             landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2401,26 +2520,10 @@
             filePath = "src/geometry/sphere.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "sphere::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "EEA0DEC4-7867-4222-BA90-8CED0A378C41"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/rendering/raytrace.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
-            landmarkName = "trace(ray, depth, color3)"
-            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2449,8 +2552,8 @@
             filePath = "src/geometry/sphere.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "sphere::intersectP(currentRay)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2465,8 +2568,8 @@
             filePath = "src/geometry/sphere.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
             landmarkName = "createSphereShape(o2w, w2o, params)"
             landmarkType = "9">
          </BreakpointContent>
@@ -2497,8 +2600,8 @@
             filePath = "src/utils/readCommand.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "515"
-            endingLineNumber = "515"
+            startingLineNumber = "519"
+            endingLineNumber = "519"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -2517,6 +2620,581 @@
             endingLineNumber = "354"
             landmarkName = "readfile(fileName)"
             landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "98AF5B71-14D4-4DB4-B54D-A573345D5F83"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/rendering/raytrace.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "trace(ray, depth, color3)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "81339F56-FF1A-4B24-A29F-C5200CB40E29"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/geometry/sphere.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "sphere::intersectP(currentRay)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A703891E-4BA5-4948-A4DF-00E34B412C05"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/geometry/sphere.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "sphere::intersectP(currentRay)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6AD7D71A-AC83-43CA-A6FC-B7B96A34C7F5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/rendering/raytrace.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "trace(ray, depth, color3)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "772711B7-E2C9-4B7A-B28D-14763159C9F4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/geometry/geometricPrimitive.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "GeometricPrimitive::intersectP(currentRay)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ACED2FEF-FD8B-450D-A532-D9A3E40AF1BB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/geometry/geometricPrimitive.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "GeometricPrimitive::intersectP(currentRay)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "ACED2FEF-FD8B-450D-A532-D9A3E40AF1BB - e036707be172cd1c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GeometricPrimitive::intersectP(ray&amp;)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/geometricPrimitive.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "ACED2FEF-FD8B-450D-A532-D9A3E40AF1BB - e036707be172cd3f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GeometricPrimitive::intersectP(ray&amp;)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/geometricPrimitive.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CADED607-B064-4F5C-A523-B86BF0085FA5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/geometry/sphere.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "sphere::intersectP(currentRay)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "279FF7B2-802D-4B97-9D54-9BDC9CAEDFCB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/geometry/sphere.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "sphere::intersect(currentRay, tHit, localGeoPos)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B08166A7-380E-48D9-BF13-1C13A3D6BE25"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/rendering/raytrace.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "trace(ray, depth, color3)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EC58FFA0-3625-474D-894A-F1C472FA9DBC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/geometry/geometricPrimitive.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "GeometricPrimitive::intersectP(currentRay)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "717EE2F4-5E82-4B7C-B519-F60E9E86BFA1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/geometry/geometricPrimitive.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "GeometricPrimitive::intersectP(currentRay)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B16381F7-A1C1-4C00-823A-2FFEDB162F59"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/geometry/sphere.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "sphere::intersect(currentRay, tHit, localGeoPos)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C3B2D690-8E6F-4AB2-A567-F93096A607E3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/utils/readCommand.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "495"
+            endingLineNumber = "495"
+            landmarkName = "readfile(fileName)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52EC559E-A11D-46CD-BA03-9E6A165783AF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/geometry/shape.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "createTransformationMatrix(translate, rotation, axis, scale, i)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "52EC559E-A11D-46CD-BA03-9E6A165783AF - 377429cd750d064d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "createTransformationMatrix(vector3&lt;float&gt; const&amp;, vector3&lt;float&gt; const&amp;, float, vector3&lt;float&gt; const&amp;, int)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/shape.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "52EC559E-A11D-46CD-BA03-9E6A165783AF - 377429cd750d064d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "createTransformationMatrix(vector3&lt;float&gt; const&amp;, vector3&lt;float&gt; const&amp;, float, vector3&lt;float&gt; const&amp;, int)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/shape.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "296">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "81EF28A9-C7E4-4CB6-B7AB-ED3C9EA8F0F2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/geometry/shape.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "makeShapes(name, object2World, world2Object, paramSet)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ACA6F40F-C644-48B8-AC37-F3FB43E667C9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/geometry/sphere.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
+            landmarkName = "createSphereShape(o2w, w2o, params)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "08F6114F-32C1-4BF0-A04B-7F305B5338B7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/geometry/sphere.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
+            landmarkName = "createSphereShape(o2w, w2o, params)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4B21A1A3-0B52-44A7-B194-00F6E2E2EE60"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/rendering/raytrace.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "trace(ray, depth, color3)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D3173489-3441-4C93-BBFE-1EF0C9A8795D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/geometry/triangle.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "292"
+            endingLineNumber = "292"
+            landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D3173489-3441-4C93-BBFE-1EF0C9A8795D - 4bd37d65e9844499"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Triangle::intersect(ray const&amp;, float*, localGeo*) const"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/triangle.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "291"
+                  endingLineNumber = "291"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "D3173489-3441-4C93-BBFE-1EF0C9A8795D - 4bd37d65e9844478"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Triangle::intersect(ray const&amp;, float*, localGeo*) const"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/triangle.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "292"
+                  endingLineNumber = "292"
+                  offsetFromSymbolStart = "176">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "55AF2CC0-97DB-40AD-BF57-FF89394C15FD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/geometry/triangle.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "284"
+            endingLineNumber = "284"
+            landmarkName = "Triangle::intersect(currentRay, tHit, localGeoPos)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "55AF2CC0-97DB-40AD-BF57-FF89394C15FD - 4bd37d65e9844570"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Triangle::intersect(ray const&amp;, float*, localGeo*) const"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/triangle.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "284"
+                  endingLineNumber = "284"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "55AF2CC0-97DB-40AD-BF57-FF89394C15FD - 4bd37d65e9844553"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Triangle::intersect(ray const&amp;, float*, localGeo*) const"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/triangle.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "285"
+                  endingLineNumber = "285"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "654B15C1-FD66-4943-938E-DAA16FE16061"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/geometry/sphere.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "sphere::intersect(currentRay, tHit, localGeoPos)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "654B15C1-FD66-4943-938E-DAA16FE16061 - a3ef202aa8d7b8ce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "sphere::intersect(ray const&amp;, float*, localGeo*) const"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/sphere.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "654B15C1-FD66-4943-938E-DAA16FE16061 - a3ef202aa8d7b80c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "sphere::intersect(ray const&amp;, float*, localGeo*) const"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/sphere.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DE7EEF36-557B-491A-957F-8AAB3AC015ED"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/geometry/shape.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "makeShapes(name, object2World, world2Object, paramSet)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A2DBBAB3-C613-46AB-AF9E-08B3BB7DAEFC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/geometry/shape.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "createTransformationMatrix(translate, rotation, axis, scale, i)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "A2DBBAB3-C613-46AB-AF9E-08B3BB7DAEFC - 377429cd750d0745"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "createTransformationMatrix(vector3&lt;float&gt; const&amp;, vector3&lt;float&gt; const&amp;, float, vector3&lt;float&gt; const&amp;, int)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/shape.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  uuid = "A2DBBAB3-C613-46AB-AF9E-08B3BB7DAEFC - 377429cd750d07aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "createTransformationMatrix(vector3&lt;float&gt; const&amp;, vector3&lt;float&gt; const&amp;, float, vector3&lt;float&gt; const&amp;, int)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/shape.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "212">
+               </Location>
+               <Location
+                  uuid = "A2DBBAB3-C613-46AB-AF9E-08B3BB7DAEFC - 377429cd750d07aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "createTransformationMatrix(vector3&lt;float&gt; const&amp;, vector3&lt;float&gt; const&amp;, float, vector3&lt;float&gt; const&amp;, int)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/shape.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "228">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

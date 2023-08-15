@@ -360,10 +360,11 @@ void readfile(const char* fileName)
                     //string str = "sphere";
                     //makeShapes(str, o2w, w2o, params);
                     
-                     
+                     /*
                     curTransformInverse[curTransformIndex].mt = curTransform[curTransformIndex].minvt;
                     curTransformInverse[curTransformIndex].minvt = curTransform[curTransformIndex].mt;
-
+*/
+                    
                     makeShapes(cmd, &curTransform[curTransformIndex], &curTransformInverse[curTransformIndex], params);
 
                     //std::shared_ptr<Material> materialParsed = std::make_shared<Material>(*materialParsed);
@@ -487,9 +488,12 @@ void readfile(const char* fileName)
                    params.addVector3I("triArray", &triArray[0]);
                    params.addOneInt("nVertices", maxVertArraySize);
                    params.addPoint3F("vertexArray", &vertexPointArray[0]);
-                            
-                    curTransformInverse[curTransformIndex].mt = curTransform[curTransformIndex].minvt;
-                    curTransformInverse[curTransformIndex].minvt = curTransform[curTransformIndex].mt;
+                   
+                    
+                   // curTransformInverse[curTransformIndex].mt = transformation::Transpose(inverse(curTransform[curTransformIndex].mt));
+                   // curTransformInverse[curTransformIndex].minvt = curTransform[curTransformIndex].mt;
+                //    curTransformInverse[curTransformIndex].updateInverseTranpose;
+
 
                     makeShapes(str, &curTransform[curTransformIndex], &curTransformInverse[curTransformIndex], params);
                     

@@ -19,7 +19,7 @@ public:
     ~PointLights();
 
     void generateLightRay(localGeo& local, ray* lightRay, color3* lightColor) override {
-        vector3<float> direction = (lightPos - local.pos);
+        vector3<float> direction = normalize(lightPos - local.pos);
 
         // Set up the light ray
         *lightRay = ray(lightPos, direction, infinity, (infinity * -1));

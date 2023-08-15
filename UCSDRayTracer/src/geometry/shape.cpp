@@ -51,6 +51,8 @@ Shapes::Shapes(const transformation *objectToWorld, const transformation *worldT
 extern float closestTHit;
 extern bool hitAnything;
 extern transformationSet curTransform; //should probably move where this is defined
+extern transformationSet curTransformInverse; //should probably move where this is defined
+
 int count2 = 0;
 int a, b = 0;
 
@@ -70,8 +72,9 @@ bool Shapes::intersectP(const ray& ray) const {
 
 void createTransformationMatrix(const vector3<float>& translate, const vector3<float>& rotation, const float axis, const vector3<float>& scale, const int i) {
 
-    transformation transformationMatrix; //should be identity matrix
-       
+    transformation matrixTransform; //should be identity matrix
+    transformation inversMatrixTransform; //should be identity matrix
+
     //transformationMatrix.mt = camera.cameraToWorld;
 
     //(TRS is the proper order but that doesnt work with
@@ -81,28 +84,31 @@ void createTransformationMatrix(const vector3<float>& translate, const vector3<f
     transformation translationMatrix; //this would be creating the objecToWolrd
     
     translationMatrix.translation(translate);
-    transformationMatrix *= translationMatrix;
+    matrixTransform *= translationMatrix;
     
     //rotation
     transformation rotationMatrix;
     rotationMatrix.rotation(axis, rotation);
-    transformationMatrix *= rotationMatrix;
+    matrixTransform *= rotationMatrix;
 
     // Apply scaling
     transformation scaleMatrix;
     scaleMatrix.scaling(scale);
-    transformationMatrix *= scaleMatrix;
+    matrixTransform *= scaleMatrix;
 
 
     //transformationMatrix = camera.cameraToWorld * transformationMatrix.mt;
     
     
-    transformationMatrix.updateInverse();
+    inversMatrixTransform.mt = matrixTransform.mt.inverse(matrixTransform.mt);
     
     
-    curTransform[i] = transformationMatrix;
+    matrixTransform.updateInverseTranpose();
+    inversMatrixTransform.updateInverseTranpose();
     
+    curTransform[i] = matrixTransform;
     
+    curTransformInverse[i] = inversMatrixTransform;
     
 }
 

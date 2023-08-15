@@ -47,8 +47,13 @@ bool GeometricPrimitive::intersect(ray& currentRay,  float* tHit, intersection* 
 }
 
 bool GeometricPrimitive::intersectP(ray& currentRay) {
-    if (shape->intersectP(currentRay))
+    if (shape->intersectP(currentRay)) {
+        
         return true;
+    
+       }
+    
+    return false;
 
 }
 

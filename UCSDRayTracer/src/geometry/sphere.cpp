@@ -21,8 +21,10 @@ bool sphere::intersect(const ray &currentRay, float *tHit, localGeo *localGeoPos
         //testingTransform.minvt;
     ray transformedRay;
     
+    sphere;
     
-    transformedRay.lookAt = (MathOperations::matrixVector( worldToObject->mt, normalize(currentRay.lookAt),  0)); //this is supposed to be normalized 
+    
+    transformedRay.lookAt = (MathOperations::matrixVector( this->worldToObject->mt, normalize(currentRay.lookAt),  0)); //this is supposed to be normalized
     
     transformedRay.lookFrom = (MathOperations::matrixVector(worldToObject->mt, currentRay.lookFrom,  1));
 
@@ -78,14 +80,13 @@ bool sphere::intersect(const ray &currentRay, float *tHit, localGeo *localGeoPos
     
    // normal<float> worldNormal = transformation::Transpose(objectToWorld->minvt) * normal<float>(normalVector.x, normalVector.y, normalVector.z);
 
-    localGeoPos->normal = MathOperations::matrixVector(transformation::Transpose(objectToWorld->minvt), normalVector, 0.f);
+    localGeoPos->normal = normalize(MathOperations::matrixVector(objectToWorld->minvt, normalVector, 0.f));
 
                       
-    
 
     *tHit = t0;
 
-    
+     
     return true;
     
 }
@@ -97,7 +98,7 @@ bool sphere::intersectP(const ray &currentRay) const
     ray transformedRay;// = worldToObject->operator*(currentRay);
 
     
-    transformedRay.lookAt = normalize(MathOperations::matrixVector( worldToObject->mt, currentRay.lookAt,  0));
+    transformedRay.lookAt = (MathOperations::matrixVector( worldToObject->mt, normalize(currentRay.lookAt),  0));
     
     transformedRay.lookFrom = (MathOperations::matrixVector(worldToObject->mt, currentRay.lookFrom,  1));
 

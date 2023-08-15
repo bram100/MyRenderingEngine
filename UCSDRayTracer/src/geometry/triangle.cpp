@@ -274,12 +274,16 @@ bool Triangle::intersect(const ray &currentRay, float *tHit, localGeo *localGeoP
     
     //return true;
     
+   /// worldToObject->mt;
     worldToObject;
     objectToWorld;
+    
+    //somehow world to obj is not initi riht 
 
+    Triangle;
     
         ray objectRay;
-    objectRay.lookAt = normalize(MathOperations::matrixVector( worldToObject->mt, currentRay.lookAt, 0));
+        objectRay.lookAt = (MathOperations::matrixVector( worldToObject->mt, normalize(currentRay.lookAt), 0));
 
         
        objectRay.lookFrom = (MathOperations::matrixVector( worldToObject->mt, currentRay.lookFrom, 1));
@@ -452,8 +456,8 @@ bool Triangle::intersect(const ray &currentRay, float *tHit, localGeo *localGeoP
     //localGeoPos->normal = MathOperations::matrixVector(transformation::Transpose(objectToWorld->minvt), oldNormal, 0);
     
     localGeoPos->pos = MathOperations::matrixVector(objectToWorld->mt, P,  1.f);
-
-    localGeoPos->normal = MathOperations::matrixVector(transformation::Transpose(objectToWorld->minvt), oldNormal, 0.f);
+    
+    localGeoPos->normal = normalize(MathOperations::matrixVector(objectToWorld->minvt, oldNormal, 0.f));
 
    // std::cout << "triangle normal: " << worldNormal << std::endl;
     *tHit = t;  // Update the intersection distance
@@ -468,7 +472,7 @@ bool Triangle::intersect(const ray &currentRay, float *tHit, localGeo *localGeoP
 bool Triangle::intersectP(const ray &currentRay) const
 {
     ray transformedRay;
-    transformedRay.lookAt = normalize(MathOperations::matrixVector( worldToObject->mt, currentRay.lookAt,  0));
+    transformedRay.lookAt = (MathOperations::matrixVector( worldToObject->mt, normalize(currentRay.lookAt),  0));
     
     transformedRay.lookFrom = (MathOperations::matrixVector(worldToObject->mt, currentRay.lookFrom,  1));
 

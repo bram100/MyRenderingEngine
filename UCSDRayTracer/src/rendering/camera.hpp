@@ -122,7 +122,7 @@ public:
              m.mt[2][2] = dir.z;
              m.mt[3][2] = 0.;
         
-        m.updateInverse();
+        m.updateInverseTranpose();
     }
     
     void createPerspectiveMatrix(float fov, float aspectRatio, float nearClip, float farClip) {
