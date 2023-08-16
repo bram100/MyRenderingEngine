@@ -25,7 +25,7 @@ public:
 
      //   point3<float> testing=  MathOperations::floatVector3Add(0.01f, local.pos);
         
-        vector3 testing(local.pos.x, local.pos.y, local.pos.z);
+        vector3 testing(local.pos.x + kEpsilon, local.pos.y + kEpsilon,  local.pos.z + kEpsilon);
         // Set up the light ray
         *lightRay = ray(testing, direction,  infinity, (infinity * -1));
 
