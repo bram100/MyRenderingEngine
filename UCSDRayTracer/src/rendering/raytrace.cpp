@@ -78,37 +78,65 @@ void trace(ray& ray, int depth, color3* color3) {
                 currentMaterial = currentIntersect.primitive->getMaterial();
             }
         }
-    }
-            if (hitAnything) {
-               for (const auto& l : scene.lightsVec){
-                    l->generateLightRay(closestIntersect.localGeo, &lightRay, &lightColor);
-                   
-                   //maybe this should be currentIntersect to go through all intersects ??
-                    if (!closestIntersect.primitive->intersectP(lightRay)) {
-                       // if (!currentIntersect.intersect(lightRay, &tHit, &closestIntersect)) {
-
-                     *color3 +=  currentMaterial->shading(closestIntersect.localGeo, lightRay, lightColor);
-                 }
+        }
+   
+        bool inShadow = false;
+        if (hitAnything) {
+            for (const auto& l : scene.lightsVec){
+                
+                l->generateLightRay(closestIntersect.localGeo, &lightRay, &lightColor);
+                
+                //for every shape
+                for (const auto& p : scene.geometricPrimitivesVec) {
+                    
+                  
+                    //check if shape intersects with the lightRay
+                    //if intersect is there, then shadow must be true
+                    
+                    //it needs to loop only through the sapes not looped through 
+                    if (p->intersectP(lightRay)) {
+               
+                        inShadow = true;
+                        
+                        //break
+                    }
+                    
+                    if (inShadow == false) {
+                        
+                    }
+                    
+                    
                 }
-            }
+                
+                
+            
+                    if (!inShadow) {
+                        
+                        *color3 += currentMaterial->shading(closestIntersect.localGeo, lightRay, lightColor);
+                
+                    }
+                }
+                
+                
+           // }
+        }
+        /*
+         else {
+         color3->r = 0.f;
+         color3->g = 0.f;
+         color3->b = 0.f;
+         return false;
+         }
+         */
+        
         
         /*
-        else {
-            color3->r = 0.f;
-            color3->g = 0.f;
-            color3->b = 0.f;
-            return false;
-        }
+         if (brdf.emission > 0) {
+         reflectRay = createReflectRay(in.local, ray);
+         // Make a recursive call to trace the reflected ray
+         trace(reflectRay, depth+1, &tempColor);
+         *color += brdf.emission * tempColor;
+         }
          */
-
-
-    /*
-    if (brdf.emission > 0) {
-        reflectRay = createReflectRay(in.local, ray);
-        // Make a recursive call to trace the reflected ray
-        trace(reflectRay, depth+1, &tempColor);
-        *color += brdf.emission * tempColor;
-    }
-*/
-
+    
     };

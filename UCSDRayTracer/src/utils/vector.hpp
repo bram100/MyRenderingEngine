@@ -52,6 +52,18 @@ class vector3 {
         x = y = z = 1;
     }
 
+    template <typename A, typename B>
+    static vector3<float> length3addtion(const A& a, const B& b) {
+        vector3<float> resultV;
+        
+        resultV.x = a.x + b.x;
+        resultV.y = a.y * b.y;
+        resultV.z = a.z * b.z;
+        
+        return resultV;
+
+    }
+
 
     bool operator!=(const vector3<T>& other) const {
            return (x != other.x) || (y != other.y) || (z != other.z);

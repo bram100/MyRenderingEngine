@@ -16,6 +16,9 @@ extern Camera camera;
  transformation holding = *objectToWorld ^ camera.cameraToWorld;
  matrix4 holding2 = holding.minvt;
  */
+
+inline int currentK;
+
 bool sphere::intersect(const ray &currentRay, float *tHit, localGeo *localGeoPos) const
 {
         //testingTransform.minvt;
@@ -71,6 +74,8 @@ bool sphere::intersect(const ray &currentRay, float *tHit, localGeo *localGeoPos
     
     localGeoPos->pos = MathOperations::matrixVector(objectToWorld->mt, transformedRay.pointAt(t0), 1.f);
 
+    
+    
     vector3<float> normalVector = (transformedRay.pointAt(t0) - transformedCenter);
     
 
@@ -83,8 +88,16 @@ bool sphere::intersect(const ray &currentRay, float *tHit, localGeo *localGeoPos
     localGeoPos->normal = normalize(MathOperations::matrixVector(objectToWorld->minvt, normalVector, 0.f));
 
                       
+    
 
     *tHit = t0;
+    
+   // point3<float> intersectionPoint = transformedRay.lookFrom + ( transformedRay.lookAt * t0);
+
+    // Apply the inverse transformation matrix to the intersection point
+  //  point3<float> originalIntersectionPoint = MathOperations::matrixVector(objectToWorld->minvt, intersectionPoint, 0);
+
+   // localGeoPos->pos = originalIntersectionPoint;
 
      
     return true;

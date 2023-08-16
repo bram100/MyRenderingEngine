@@ -8,10 +8,14 @@
 #include "material.hpp"
 #include "ray.hpp"
 #include "math.hpp"
+#include "vector.hpp"
 
 void getBRDF(localGeo& local, BRDF* brdf) {
     
 }
+vector3<float> const testing;
+vector3<float> const testing2;
+
 
 color3 Material::shading(const localGeo& intersection, const ray& lightRay, const color3& lightColor){
         
@@ -28,10 +32,33 @@ color3 Material::shading(const localGeo& intersection, const ray& lightRay, cons
   
     float cosTheta = MathOperations::dotProduct(normalizeNormal, normalizeLight); //dot product
     
-    std::cout << cosTheta <<std::endl;
+ //   std::cout << cosTheta <<std::endl;
+    
     color3 diffuseComponent = aBRDF.diffuse * lightColor * fmax(cosTheta, 0.0f);
+    
 
-    finalColor += diffuseComponent;
+    
+    
+    //create ShadowRay
+    vector3<float> lookFromShadow = vector3<float>::length3addtion(intersection.pos, MathOperations::floatVector3(kEpsilon, normalizeNormal));
+    
+    ray shadowRay(lookFromShadow, lightRay.lookAt, infinity, infinity * - 1);
+
+
+    
+    
+  //  bool isShadowed = scene.isIntersecting(shadowRay);
+
+   /* if (!isShadowed) {
+        finalColor += diffuseComponent;
+    }
+*/
+    
+   finalColor += diffuseComponent;
+
+    return finalColor;
+
+
 
     
     /*
@@ -47,7 +74,7 @@ color3 Material::shading(const localGeo& intersection, const ray& lightRay, cons
     color3 finalColor = ambientDiffuse;
 
 */
-    
+    //bool V
     
    
 

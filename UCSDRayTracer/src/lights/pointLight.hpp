@@ -10,7 +10,9 @@
 
 #include "lights.hpp"
 #include "ray.hpp"
+#include "math.hpp"
 
+inline int currentA;
 class PointLights : public Lights {
 public:
     PointLights(const vector3<float>& lightPos, const color3& lightColor, vector3<float> attenuation, const transformation lightToWorld)
@@ -19,13 +21,18 @@ public:
     ~PointLights();
 
     void generateLightRay(localGeo& local, ray* lightRay, color3* lightColor) override {
-        vector3<float> direction = normalize(lightPos - local.pos);
+        vector3<float> direction = normalize( lightPos -  MathOperations::floatVector3Add(0.0000001f, local.pos) );
 
+     //   point3<float> testing=  MathOperations::floatVector3Add(0.01f, local.pos);
+        
+        vector3 testing(local.pos.x, local.pos.y, local.pos.z);
         // Set up the light ray
-        *lightRay = ray(lightPos, direction, infinity, (infinity * -1));
+        *lightRay = ray(testing, direction,  infinity, (infinity * -1));
 
         // Set the light color
         *lightColor = this->lightColor;
+        
+        
     }
     
 

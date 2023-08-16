@@ -33,6 +33,7 @@ public:
 
     virtual bool intersectP(ray& ray) override ;
 
+ 
     void getBRDF(localGeo& local, BRDF* brdf) override;
 
     std::shared_ptr<Material> getMaterial() const override {

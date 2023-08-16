@@ -268,19 +268,10 @@ point3<T> operator*(const point3<T>& vec, const matrix4& matrix) {
 
 
 
-//int current = 0;
+inline int currentL;
 bool Triangle::intersect(const ray &currentRay, float *tHit, localGeo *localGeoPos) const
 {
     
-    //return true;
-    
-   /// worldToObject->mt;
-    worldToObject;
-    objectToWorld;
-    
-    //somehow world to obj is not initi riht 
-
-    Triangle;
     
         ray objectRay;
         objectRay.lookAt = (MathOperations::matrixVector( worldToObject->mt, normalize(currentRay.lookAt), 0));
@@ -458,6 +449,7 @@ bool Triangle::intersect(const ray &currentRay, float *tHit, localGeo *localGeoP
     localGeoPos->pos = MathOperations::matrixVector(objectToWorld->mt, P,  1.f);
     
     localGeoPos->normal = normalize(MathOperations::matrixVector(objectToWorld->minvt, oldNormal, 0.f));
+
 
    // std::cout << "triangle normal: " << worldNormal << std::endl;
     *tHit = t;  // Update the intersection distance
