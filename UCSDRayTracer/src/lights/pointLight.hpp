@@ -29,7 +29,7 @@ public:
         vector3<float> lookAtDirection = normalize( lightPos - local.pos);
         
         //create epsilon lookAt vector
-        vector3<float> lookAtDirectionEpsilon = MathOperations::floatVector3Multiply(kEpsilon, lookAtDirection);
+        vector3<float> lookAtDirectionEpsilon = MathOperations::floatVector3Multiply(0.001, lookAtDirection);
         
         //alter lookFrmo by epsilon lookAt vector
         vector3<float> lookFromEpsilon = MathOperations::vectorVectorAdd(vectorPos, lookAtDirectionEpsilon);
