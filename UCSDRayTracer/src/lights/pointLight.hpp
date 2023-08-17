@@ -21,23 +21,24 @@ public:
     ~PointLights();
 
     void generateLightRay(localGeo& local, ray* lightRay, color3* lightColor) override {
-        
-       // epsilonj = 0.0000001f * direction
-       // point3<float> epsilonPos(local.pos.x + 0.0000001f, local.pos.y + 0.0000001f,  local.pos.z + 0.0000001f);//
-        
+
+        //convert intersection to point to vector
         vector3<float> vectorPos(local.pos.x , local.pos.y, local.pos.z);
 
+        //noramlize lookAt
+        vector3<float> lookAtDirection = normalize( lightPos - local.pos);
         
-        //direction
-        vector3<float> direction = normalize( lightPos - local.pos);// MathOperations::vectorFloatSub(local.pos, 0.00000000000000001f) );
-
-        //
-        vector3<float> directionEpsilon = MathOperations::floatVector3Multiply(.0001, direction);
+        //create epsilon lookAt vector
+        vector3<float> lookAtDirectionEpsilon = MathOperations::floatVector3Multiply(kEpsilon, lookAtDirection);
         
-        //origin altered by epsilon * shadowRayDirection
-        vector3<float> lookFromEpsilon = MathOperations::vectorVectorAdd(vectorPos, directionEpsilon);
+        //alter lookFrmo by epsilon lookAt vector
+        vector3<float> lookFromEpsilon = MathOperations::vectorVectorAdd(vectorPos, lookAtDirectionEpsilon);
         
-        *lightRay = ray(lookFromEpsilon, direction,  infinity, (infinity * -1));
+        
+        
+        //lookFrom is intersection point altered by epsilon * direction
+        //lookAt is lightPos - intersection
+        *lightRay = ray(lookFromEpsilon, lookAtDirection,  infinity, (infinity * -1));
 
         *lightColor = this->lightColor;
         
