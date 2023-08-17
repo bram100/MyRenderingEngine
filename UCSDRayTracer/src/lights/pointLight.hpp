@@ -21,15 +21,24 @@ public:
     ~PointLights();
 
     void generateLightRay(localGeo& local, ray* lightRay, color3* lightColor) override {
-        vector3<float> direction = normalize( lightPos -  MathOperations::floatVector3Add(0.0000001f, local.pos) );
-
-     //   point3<float> testing=  MathOperations::floatVector3Add(0.01f, local.pos);
         
-        vector3 testing(local.pos.x + kEpsilon, local.pos.y + kEpsilon,  local.pos.z + kEpsilon);
-        // Set up the light ray
-        *lightRay = ray(testing, direction,  infinity, (infinity * -1));
+       // epsilonj = 0.0000001f * direction
+       // point3<float> epsilonPos(local.pos.x + 0.0000001f, local.pos.y + 0.0000001f,  local.pos.z + 0.0000001f);//
+        
+        vector3<float> vectorPos(local.pos.x , local.pos.y, local.pos.z);
 
-        // Set the light color
+        
+        //direction
+        vector3<float> direction = normalize( lightPos - local.pos);// MathOperations::vectorFloatSub(local.pos, 0.00000000000000001f) );
+
+        //
+        vector3<float> directionEpsilon = MathOperations::floatVector3Multiply(.0001, direction);
+        
+        //origin altered by epsilon * shadowRayDirection
+        vector3<float> lookFromEpsilon = MathOperations::vectorVectorAdd(vectorPos, directionEpsilon);
+        
+        *lightRay = ray(lookFromEpsilon, direction,  infinity, (infinity * -1));
+
         *lightColor = this->lightColor;
         
         

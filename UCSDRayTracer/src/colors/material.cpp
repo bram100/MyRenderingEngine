@@ -37,7 +37,10 @@ color3 Material::shading(const localGeo& intersection, const ray& lightRay, cons
     color3 diffuseComponent = aBRDF.diffuse * lightColor * fmax(cosTheta, 0.0f);
     
 
+//    vector3 halfEdge;
     
+    //i need to lookup how to code this
+//    color3 specularComponent = aBRDF.specular * MathOperations::vectorPower(fmax(normalizeNormal, halfEdge), aBRDF.shininess )
     
     //create ShadowRay
     vector3<float> lookFromShadow = vector3<float>::length3addtion(intersection.pos, MathOperations::floatVector3(kEpsilon, normalizeNormal));
@@ -101,5 +104,5 @@ L = vector3(?) directionToLight
 D = color3 diffuse
 S = color3 specular
 N = normal surfaceNormal
-
+H = the half-angle (what????)
 */
