@@ -9,9 +9,9 @@ UCSDRayTracer/buildXcode/build/XCBuildData/1458a7bd520dc05ed7cfc17bee11e340.xcbu
 UCSDRayTracer/buildXcode/UCSDRayTracer.xcodeproj/project.xcworkspace/xcuserdata/brendanmulcahey.xcuserdatad/UserInterfaceState.xcuserstate
 UCSDRayTracer/buildXcode/build/XCBuildData/build.db
 
+*.xcbkptlist
+
+UserInterfaceState.xcuserstate
 
 
-	UCSDRayTracer/buildXcode/UCSDRayTracer.xcodeproj/xcuserdata/brendanmulcahey.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
-
-
-*.xcuserstate
+UCSDRayTracer/buildXcode/UCSDRayTracer.xcodeproj/xcuserdata/brendanmulcahey.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
