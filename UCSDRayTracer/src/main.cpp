@@ -53,8 +53,6 @@ int main(int argc, char* argv[]) {
 
     ofstream outdata;
     
-    std::cout << "fuc" << std::endl;
-
     return 0;
 
     

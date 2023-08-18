@@ -26,15 +26,9 @@ color3 Material::shading(const localGeo& intersection, const ray& lightRay, cons
     color3 emissionComponent = aBRDF.emission;
     finalColor += emissionComponent;
 
-    auto normalizeLight =  normalize(lightRay.lookAt);
-
-    auto normalizeNormal = normalize(intersection.normal);
-  
-    float cosTheta = MathOperations::dotProduct(normalizeNormal, normalizeLight); //dot product
     
  //   std::cout << cosTheta <<std::endl;
-    
-    color3 diffuseComponent = aBRDF.diffuse * lightColor * fmax(cosTheta, 0.0f);
+
     
 
 //    vector3 halfEdge;
@@ -43,9 +37,9 @@ color3 Material::shading(const localGeo& intersection, const ray& lightRay, cons
 //    color3 specularComponent = aBRDF.specular * MathOperations::vectorPower(fmax(normalizeNormal, halfEdge), aBRDF.shininess )
     
     //create ShadowRay
-    vector3<float> lookFromShadow = vector3<float>::length3addtion(intersection.pos, MathOperations::floatVector3(kEpsilon, normalizeNormal));
+    //vector3<float> lookFromShadow = vector3<float>::length3addtion(intersection.pos, MathOperations::floatVector3(kEpsilon, normalizeNormal));
     
-    ray shadowRay(lookFromShadow, lightRay.lookAt, infinity, infinity * - 1);
+    //ray shadowRay(lookFromShadow, lightRay.lookAt, infinity, infinity * - 1);
 
 
     
@@ -57,7 +51,6 @@ color3 Material::shading(const localGeo& intersection, const ray& lightRay, cons
     }
 */
     
-   finalColor += diffuseComponent;
 
     return finalColor;
 
@@ -89,6 +82,24 @@ color3 Material::shading(const localGeo& intersection, const ray& lightRay, cons
     
 }
 
+
+color3 Material::shadingDiffuse(const localGeo& intersection, const ray& lightRay, const color3& lightColor){
+    
+    
+    auto normalizeLight =  normalize(lightRay.lookAt);
+
+    auto normalizeNormal = normalize(intersection.normal);
+  
+
+    float cosTheta = MathOperations::dotProduct(normalizeNormal, normalizeLight); //dot product
+
+    color3 diffuseComponent = aBRDF.diffuse * lightColor * fmax(cosTheta, 0.0f);
+    
+    return diffuseComponent;
+    
+   // finalColor += diffuseComponent;
+
+}
 
 
 /*

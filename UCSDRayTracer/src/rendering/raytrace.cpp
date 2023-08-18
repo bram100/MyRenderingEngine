@@ -88,37 +88,27 @@ void trace(ray& ray, int depth, color3* color3) {
                 
                 //for every shape
                 for (const auto& p : scene.geometricPrimitivesVec) {
-                    
-                  
                     //check if shape intersects with the lightRay
                     //if intersect is there, then shadow must be true
                     
                     //it needs to loop only through the sapes not looped through 
                     if (p->intersectP(lightRay)) {
-               
                         inShadow = true;
-                        
-                        //break
+                        break;
                     }
-                    
-                    if (inShadow == false) {
-                        
-                    }
-                    
                     
                 }
-                
-                
-            
                     if (!inShadow) {
                         
-                        *color3 += currentMaterial->shading(closestIntersect.localGeo, lightRay, lightColor);
+                        *color3 += currentMaterial->shadingDiffuse(closestIntersect.localGeo, lightRay, lightColor);
                 
                     }
+                
+                
                 }
-                
-                
-           // }
+            
+            *color3 += currentMaterial->shading(closestIntersect.localGeo, lightRay, lightColor);
+
         }
         /*
          else {
