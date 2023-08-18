@@ -24,6 +24,7 @@ class color3
         // Copy constructor
         color3(const color3& other) : r(other.r), g(other.g), b(other.b) {}
 
+    
        // Assignment operator
        color3& operator=(const color3& other) {
            if (this != &other) {
@@ -33,6 +34,34 @@ class color3
            }
            return *this;
        }
+    
+        bool operator==(const color3& other) const {
+            return r == other.r && g == other.g && b == other.b;
+        }
+
+        bool operator!=(const color3& other) const {
+            return (r != other.r) || (g != other.g) || (b != other.b);
+        }
+    /*
+        color3& operator*(const color3& other) const {
+            if (this != &other) {
+                r *= other.r;
+                g *= other.g;
+                b *= other.b;
+            }
+            return *this;
+        }
+*/
+    
+        color3 operator*(float scalar) const {
+            return color3(r * scalar, g * scalar, b * scalar);
+        }
+        
+    
+        color3 operator*(const color3& other) const {
+            return color3(r * other.r, g * other.g, b * other.b);
+        }
+
     
         color3& operator+=(const color3& other) {
             r += other.r;

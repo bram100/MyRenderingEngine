@@ -33,6 +33,7 @@ public:
 
     virtual bool intersectP(ray& ray) override ;
 
+ 
     void getBRDF(localGeo& local, BRDF* brdf) override;
 
     std::shared_ptr<Material> getMaterial() const override {
@@ -45,12 +46,12 @@ public:
     }
     
 
-    
+    /*
      void applyTransformationToObject( const transformation& other) {
         
      shape->multiplyObjectToWorld(other);
     }
-
+*/
     //void applyTransformationToWorld( transformation& other) { shape->multiplyWorldToObject(other); }
 
 

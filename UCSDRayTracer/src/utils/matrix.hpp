@@ -29,9 +29,57 @@ class matrix4 {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
                 m[i][j] = mat[i][j];
+            }
         }
+        
     }
-}
+        matrix4 inverse(const matrix4& m) const {
+            matrix4 inv;  // Placeholder for the inverse matrix
+            matrix4 aug = m;  // Augmented matrix (original matrix + identity matrix)
+
+            // Perform Gaussian elimination with partial pivoting
+            int n = 4;  // Size of the matrix (assuming it's a 4x4 matrix)
+            for (int i = 0; i < n; i++) {
+                // Partial pivoting - find the row with the largest pivot element
+                int pivotRow = i;
+                float pivotValue = std::abs(aug[i][i]);
+                for (int k = i + 1; k < n; k++) {
+                    if (std::abs(aug[k][i]) > pivotValue) {
+                        pivotRow = k;
+                        pivotValue = std::abs(aug[k][i]);
+                    }
+                }
+
+                // Swap rows to bring the pivot element to the diagonal
+                if (pivotRow != i) {
+                    std::swap_ranges(aug[i], aug[i] + n, aug[pivotRow]);
+                    std::swap_ranges(inv[i], inv[i] + n, inv[pivotRow]);
+                }
+
+                // Scale the pivot row to make the pivot element equal to 1
+                float pivotScale = 1.0f / aug[i][i];
+                for (int j = 0; j < n; j++) {
+                    aug[i][j] *= pivotScale;
+                    inv[i][j] *= pivotScale;
+                }
+
+                // Eliminate the other rows
+                for (int k = 0; k < n; k++) {
+                    if (k != i) {
+                        float factor = aug[k][i];
+                        for (int j = 0; j < n; j++) {
+                            aug[k][j] -= factor * aug[i][j];
+                            inv[k][j] -= factor * inv[i][j];
+                        }
+                    }
+                }
+            }
+
+            return inv;
+        }
+        
+
+
     //wtf is this
     matrix4(const std::initializer_list<std::initializer_list<float>>& initList) {
         int i = 0;
@@ -177,6 +225,35 @@ const float* operator[](int row) const {
         return transformedVec;
     }
     
+    
+    normal<float> operator*(const normal<float>& dir) const {
+        normal<float> transformedNormal;
+        
+        transformedNormal[0] = m[0][0] * dir[0] + m[0][1] * dir[1] + m[0][2] * dir[2];
+        transformedNormal[1] = m[1][0] * dir[0] + m[1][1] * dir[1] + m[1][2] * dir[2];
+        transformedNormal[2] = m[2][0] * dir[0] + m[2][1] * dir[1] + m[2][2] * dir[2];
+
+        return transformedNormal;
+    }
+    
+    
+
+    friend normal<float> operator*(const normal<float>& v, const matrix4& m) {
+        normal<float> transformedNormal;
+        //v.w = 0;
+        
+        transformedNormal.x = v.x * m[0][0] + v.y * m[1][0] +
+                   v.z * m[2][0] + 0 * m[3][0];
+
+        transformedNormal.y = v.x * m[0][1] + v.y * m[1][1] +
+                   v.z * m[2][1] + 0 * m[3][1];
+
+        transformedNormal.z = v.x * m[0][2] + v.y * m[1][2] +
+                   v.z * m[2][2] + 0 * m[3][2];
+
+        return transformedNormal;
+    }
+
     vector3<float> operator*(const vector3<float>& v) {
         vector3<float> transformedVec;
         //v.w = 0;

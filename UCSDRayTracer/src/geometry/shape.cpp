@@ -38,19 +38,21 @@ Shapes::Shapes(const transformation *objectToWorld, const transformation *worldT
       worldToObject(worldToObject)
        {
            //this needed???
-           ++nShapesCreated;
            
-           matrix4& worldToCamera = camera.cameraToWorld;// camera.worldToCamera;
+           ++nShapesCreated;
+           /*
+           matrix4& worldToCamera = camera.worldToCamera;// camera.worldToCamera;
 
           // cameraToWorld = inverse(worldToCamera);
                transformation cameraShapeTransformation = *objectToWorld ^ worldToCamera;
-          
-
+          */
 } 
 
 extern float closestTHit;
 extern bool hitAnything;
 extern transformationSet curTransform; //should probably move where this is defined
+extern transformationSet curTransformInverse; //should probably move where this is defined
+
 int count2 = 0;
 int a, b = 0;
 
@@ -70,32 +72,43 @@ bool Shapes::intersectP(const ray& ray) const {
 
 void createTransformationMatrix(const vector3<float>& translate, const vector3<float>& rotation, const float axis, const vector3<float>& scale, const int i) {
 
-    transformation transformationMatrix; //should be identity matrix
-       
-    transformationMatrix.mt = camera.cameraToWorld;
+    transformation matrixTransform; //should be identity matrix
+    transformation inversMatrixTransform; //should be identity matrix
+
+    //transformationMatrix.mt = camera.cameraToWorld;
 
     //(TRS is the proper order but that doesnt work with
     // translation
-    transformation translationMatrix;
+    
+    
+    transformation translationMatrix; //this would be creating the objecToWolrd
     
     translationMatrix.translation(translate);
-    transformationMatrix *= translationMatrix;
+    matrixTransform *= translationMatrix;
     
     //rotation
     transformation rotationMatrix;
     rotationMatrix.rotation(axis, rotation);
-    transformationMatrix *= rotationMatrix;
+    matrixTransform *= rotationMatrix;
 
     // Apply scaling
     transformation scaleMatrix;
     scaleMatrix.scaling(scale);
-    transformationMatrix *= scaleMatrix;
+    matrixTransform *= scaleMatrix;
 
 
-    transformationMatrix.updateInverse();
-    curTransform[i] = transformationMatrix;
+    //transformationMatrix = camera.cameraToWorld * transformationMatrix.mt;
     
     
+    inversMatrixTransform.mt = matrixTransform.mt.inverse(matrixTransform.mt);
+    
+    
+    matrixTransform.updateInverseTranpose();
+    inversMatrixTransform.updateInverseTranpose();
+    
+    curTransform[i] = matrixTransform;
+    
+    curTransformInverse[i] = inversMatrixTransform;
     
 }
 
@@ -132,10 +145,15 @@ void makeShapes(const std::string &name, const transformation *object2World, con
         throw std::invalid_argument("error reading accelerator");
     }
     
+    std::shared_ptr<Material> newMaterialParsed = std::make_shared<Material>(*materialParsed); // Create a new Material copy
+
+    
     for (const auto& shape : vecShapes) {
         
-        std::shared_ptr<GeometricPrimitive> geometricPrimitive = std::make_shared<GeometricPrimitive>(shape, materialParsed);
+        std::shared_ptr<GeometricPrimitive> geometricPrimitive = std::make_shared<GeometricPrimitive>(shape, newMaterialParsed);
 
+        
+        
         scene.addGeometricPrimitive(geometricPrimitive);
         
     }

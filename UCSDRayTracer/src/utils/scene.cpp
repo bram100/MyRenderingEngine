@@ -16,6 +16,7 @@
 using namespace std;
 
 
+
 class Camera;
 extern Camera camera;
 
@@ -45,11 +46,11 @@ void Scene::renderer() {
         
         current++;
         int percent = (current*100)/total;
-        // std::cout << "Percentage complete: " << percent << "%" << " [ " << current << " of " << total << " pixels ]" << std::endl;
+        std::cout << "Percentage complete: " << percent << "%" << " [ " << current << " of " << total << " pixels ]" << std::endl;
         
             camera.generateRay(currentSample, &currentRay); //eye position
             
-            trace(currentRay, maxDepth, &currentColor);
+             trace(currentRay, maxDepth, &currentColor);
             
             
             

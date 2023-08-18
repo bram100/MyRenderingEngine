@@ -102,7 +102,7 @@ class point3 {
     }
 
     //Euclidean distance
-    float Length() const { return std::sqrt(x * x + y * y + z * z); }
+    T Length() const { return std::sqrt(x * x + y * y + z * z); }
     
     T x, y, z;
     
@@ -120,10 +120,12 @@ inline std::ostream &operator<<(std::ostream &os, const point3<T> &object) {
 }
 
 //why is this out of scope of the class?
+
 template <typename T>
 inline point3<T> normalize(const point3<T> &object) {
     //float length = std::sqrt(v.x * v.x + v.y * v.y + v.z * v.z);
-    return object / object.Length();
+    T length = object.Length();
+    return point3<T>{object.x / length, object.y / length, object.z / length};
 }
 
 
@@ -174,7 +176,6 @@ class point2 {
         };
           
     float Length() const { return std::sqrt(x * x + y * y); }
-    
     T x, y, z;
     
 

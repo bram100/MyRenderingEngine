@@ -18,8 +18,8 @@ void commit(sample2 sample, color3* color) {
 
     outdata << color->r << " " << color->g << " " << color->b << std::endl;
     
-    //color->r = 0;
-    //color->g = 0;
-    //color->b = 0;
+    color->r = 0;
+    color->g = 0;
+    color->b = 0;
     
 }

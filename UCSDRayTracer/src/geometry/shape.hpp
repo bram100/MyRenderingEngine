@@ -52,6 +52,7 @@ public:
     
     bool intersecttest (color3 color3);
 
+    /*
     void multiplyObjectToWorld( const transformation& newObjectToWorld) {
         
         *const_cast<transformation*>(objectToWorld) = newObjectToWorld * (*objectToWorld);
@@ -59,7 +60,7 @@ public:
         *const_cast<transformation*>(worldToObject) = inverse(newObjectToWorld) * (*worldToObject);
 
         }
-    
+    */
 /*
         void multiplyWorldToObject(const transformation& newWorldToObject) {
             *const_cast<transformation*>(worldToObject) = newWorldToObject * (*worldToObject);

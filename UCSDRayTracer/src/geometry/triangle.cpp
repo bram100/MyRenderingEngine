@@ -14,7 +14,6 @@
 
 extern Camera camera;
 
-
 bool triangleMesh::intersect(const ray &ray, float *tHit, localGeo *localGeoPos) const
 {
     
@@ -269,36 +268,113 @@ point3<T> operator*(const point3<T>& vec, const matrix4& matrix) {
 
 
 
-//int current = 0;
+inline int currentL;
 bool Triangle::intersect(const ray &currentRay, float *tHit, localGeo *localGeoPos) const
 {
     
-    ray transformedRay = worldToObject->operator*(currentRay);
+    
+        ray objectRay;
+        objectRay.lookAt = (MathOperations::matrixVector( worldToObject->mt, normalize(currentRay.lookAt), 0));
+
+        
+       objectRay.lookFrom = (MathOperations::matrixVector( worldToObject->mt, currentRay.lookFrom, 1));
+    
+    
+
     
     const point3<float>* v = mesh->vertexPointArray.get();
     const vector3<int>* thisArray = mesh->triArray.get();
-   
+
+       // Triangle vertices in object space
     point3<float> v0 = point3<float>(v[thisArray[faceIndex][0]]);
     point3<float> v1 = point3<float>(v[thisArray[faceIndex][1]]);
     point3<float> v2 = point3<float>(v[thisArray[faceIndex][2]]);
+/*
+       // Calculate triangle normal
+       vector3<float> edge0 = v1 - v0;
+       vector3<float> edge1 = v2 - v0;
+       vector3<float> N = cross(edge0, edge1);
+       
+       // Check if the ray is parallel to the triangle
+       float NdotRayDir = dot(N, objectRay.lookAt);
+       if (fabs(NdotRayDir) < kEpsilon) {
+           return false;
+       }
+       
+       // Compute intersection distance t
+       float d = dot(N, v0);
+       float t = -(dot(N, objectRay.lookFrom) + d) / NdotRayDir;
+       
+       // Check if the triangle is behind the ray
+       if (t < 0) {
+           return false;
+       }
+       
+       // Calculate intersection point in object space
+       //point3<float> P = objectRay.lookFrom + t * objectRay.lookAt;
+    
+        point3<float> P = objectRay.lookFrom + vector3<float>(t * objectRay.lookAt.x, t * objectRay.lookAt.y, t * objectRay.lookAt.z);
+
+       
+       // Perform inside-outside test
+       vector3<float> C0 = P - v0;
+       vector3<float> C1 = P - v1;
+       vector3<float> C2 = P - v2;
+       vector3<float> edge0Normal = cross(edge0, C0);
+       vector3<float> edge1Normal = cross(edge1, C1);
+       
+       if (dot(N, edge0Normal) < 0 || dot(N, edge1Normal) < 0) {
+           return false;
+       }
+       
+       // Calculate intersection point in world space
+       //localGeoPos->pos = transformPoint(P, objectTriangle.objectToWorld);
+       //localGeoPos->normal = normalize(transformNormal(N, objectTriangle.objectToWorld));
+    
+    localGeoPos->pos = MathOperations::matrixVector(objectToWorld->mt, P, 1.f);
+    localGeoPos->normal = MathOperations::matrixVector(objectToWorld->mt, N, 0.f);
+
+       
+       *tHit = t;
+       return true;
+    */
+    
+    
+    
+    //
+    
+
+    //v0 = worldToObject->operator*(v0);
+    //v1 = worldToObject->operator*(v1);
+    //v2 = worldToObject->operator*(v2);
 
     
-    /*
-    point3<float> v00 = multPointMatrix<float>(camera.worldToCamera, v0);
-    point3<float> v11 = multPointMatrix<float>(camera.worldToCamera, v1);
-    point3<float> v22 = multPointMatrix<float>(camera.worldToCamera, v2);
+  //  matrix4 testing = worldToObject->mt;
+    
+   // point3<float> v00 = multPointMatrix<float>(camera.worldToCamera, v0);
+ //   point3<float> v11 = multPointMatrix<float>(camera.worldToCamera, v1);
+  //  point3<float> v22 = multPointMatrix<float>(camera.worldToCamera, v2);
 
-    v0 = v00;
-    v1 = v11;
-    v2 = v22;
-*/
+     
+  //v0 = MathOperations::matrixVector(worldToObject->minvt, v0, 1);
+   //v1 = MathOperations::matrixVector( worldToObject->minvt,v1,  1);
+    //v2 = MathOperations::matrixVector(worldToObject->minvt, v2, 1);
+
+
+  //v0 = v00;
+    //    v1 = v11;
+ //   v2 = v22;
 
     //compute planes normal
     vector3<float> normalEdge1 = v1 - v0; //normalizing makes no diff?
     vector3<float> normalEdge2 = v2 - v0;//normalizing makes no diff?
 
     //normal - find the perpendicular/face
-    vector3<float> N = normalEdge1^normalEdge2; // N = cross product
+    vector3<float> N = cross(normalEdge1, normalEdge2); // N = cross product
+    normalize(N);
+    
+    
+    //normal<float> oldNormal(N.x, N.y, N.z);
 
     //magnitude of the resulting vector crossProduct is equal to the area of the parallelogram formed by edge1 and edge2
     float area2 = N.Length();
@@ -309,7 +385,7 @@ bool Triangle::intersect(const ray &currentRay, float *tHit, localGeo *localGeoP
     // STEP 1: finding P
     
     // check if the ray and plane are parallel.
-    float NdotRayDirection = N*transformedRay.lookAt; //dot product
+    float NdotRayDirection = N*objectRay.lookAt; //dot product
 
     auto k = fabs(NdotRayDirection); //float absolutre
     if (k < kEpsilon) // fabs is "float absolute values" if its almost 0 fabs() returns absolute value
@@ -320,7 +396,7 @@ bool Triangle::intersect(const ray &currentRay, float *tHit, localGeo *localGeoP
     float d = -(N*v0); //vector<float> * point3<float> //why negative
     
     // compute t (equation 3)
-    float t = -(N*transformedRay.lookFrom + d) / NdotRayDirection; //dot
+    float t = -(N*objectRay.lookFrom + d) / NdotRayDirection; //dot
     
     // check if the triangle is behind the ray
     if (t < 0)
@@ -328,7 +404,8 @@ bool Triangle::intersect(const ray &currentRay, float *tHit, localGeo *localGeoP
         return false; // the triangle is behind
  
     // compute the intersection point using equation 1
-    vector3<float> P = transformedRay.lookFrom + (transformedRay.lookAt * t); //not sure if * is right form of multiplcaiton
+    //transforming point  from object space to world space
+    vector3<float> P = objectRay.lookFrom + (objectRay.lookAt * t); //not sure if * is right form of multiplcaiton
  
     // Step 2: inside-outside test
     vector3<float> cross; // vector perpendicular to triangle's plane
@@ -336,7 +413,8 @@ bool Triangle::intersect(const ray &currentRay, float *tHit, localGeo *localGeoP
     // edge 0
     vector3<float> edge0 = v1 - v0; //actually isnt this a re/definintion?
     vector3<float> vp0 = P - v0; //
-    cross = edge0^vp0; //cross product
+    cross = edge0^vp0; //cross prod uct
+    
     if ((N*cross) < 0) //clockwise vs counterclockwise reverse >
         
         return false; // P is on the right side
@@ -355,25 +433,41 @@ bool Triangle::intersect(const ray &currentRay, float *tHit, localGeo *localGeoP
     cross = edge2^vp2;
     if ((N*cross) < 0) //clockwise vs counterclockwise reverse >
         
-        return false; // P is on the right side;
+        return false; // P is on the right side
 
-    localGeoPos->pos = transformedRay.pointAt(t);  // Calculate the intersection position
-    normal<float> normal(N.x, N.y, N.z);
     
-    localGeoPos->normal = normal; //not sure if this is right ????
+
     
+    //normal<float> oldNormal(N.x, 0.f, 4.f);
+    normal<float> oldNormal(N.x, N.y, N.z);
+
+    normal<float> worldNormal =  oldNormal;// transformation::Transpose(objectToWorld->minvt) * oldNormal;
+    
+    //std::cout << this->
+    //localGeoPos->normal = MathOperations::matrixVector(transformation::Transpose(objectToWorld->minvt), oldNormal, 0);
+    
+    localGeoPos->pos = MathOperations::matrixVector(objectToWorld->mt, P,  1.f);
+    
+    localGeoPos->normal = normalize(MathOperations::matrixVector(objectToWorld->minvt, oldNormal, 0.f));
+
+
+   // std::cout << "triangle normal: " << worldNormal << std::endl;
     *tHit = t;  // Update the intersection distance
     
     return true; // this ray hits the triangle
+     
+     
 }
 
 
 
 bool Triangle::intersectP(const ray &currentRay) const
 {
+    ray transformedRay;
+    transformedRay.lookAt = (MathOperations::matrixVector( worldToObject->mt, normalize(currentRay.lookAt),  0));
     
-    ray transformedRay = worldToObject->operator*(currentRay);
-    
+    transformedRay.lookFrom = (MathOperations::matrixVector(worldToObject->mt, currentRay.lookFrom,  1));
+
     const point3<float>* v = mesh->vertexPointArray.get();
     const vector3<int>* thisArray = mesh->triArray.get();
    
@@ -381,10 +475,10 @@ bool Triangle::intersectP(const ray &currentRay) const
     point3<float> v1 = point3<float>(v[thisArray[faceIndex][1]]);
     point3<float> v2 = point3<float>(v[thisArray[faceIndex][2]]);
 
-    vector3<float> normalEdge1 = v1 - v0;
-    vector3<float> normalEdge2 = v2 - v0;
+    vector3<float> v0v1 = v1 - v0;
+    vector3<float> v0v2 = v2 - v0;
 
-    vector3<float> N = normalEdge1^normalEdge2;
+    vector3<float> N = cross(v0v1, v0v2);
     
     float area2 = N.Length();
     
@@ -432,6 +526,7 @@ bool Triangle::intersectP(const ray &currentRay) const
         
         return false; // P is on the right side;
 
+    
     return true; // this ray hits the triangle
 }
 

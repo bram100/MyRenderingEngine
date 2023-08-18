@@ -52,12 +52,14 @@ float w, h;
 int maxDepth;
 bool animatedBool = false;
 
+bool lightExists;
 
 
 transformation tranform;
 transformation defaultLightTransform; //may add feature later
 
 transformationSet curTransform;
+transformationSet curTransformInverse;
 static transformCache transformCache;
 transformation currentTransform;
 
@@ -160,6 +162,8 @@ void readfile(const char* fileName)
                     params.addOneVector3F("position", positionXYZ);
                     params.addOneColor3("color", colorRGB);
 
+                    lightExists = true;
+
                     makeLights(cmd, &defaultLightTransform, params);
 
                 }
@@ -175,7 +179,8 @@ void readfile(const char* fileName)
                     params.addOneVector3F("position", positionXYZ);
                     params.addOneColor3("color", colorRGB);
 
-                
+                    lightExists = true;
+                    
                     makeLights(cmd, &defaultLightTransform, params);
 
                 }
@@ -194,7 +199,7 @@ void readfile(const char* fileName)
                 
                 if (cmd == "ambient") { //default is .2,.2,.2
                     str.erase(0, 7);
-                    materialParsed = std::shared_ptr<Material>(new Material());
+                    //materialParsed = std::shared_ptr<Material>(new Material());
 
                     readValuesFloat(str, 3, valuesf, 3);
                     color3 ambientColor = convertFloatToColor(valuesf);
@@ -217,6 +222,8 @@ void readfile(const char* fileName)
                     readValuesFloat(str, 3, valuesf, 3);
                     color3 diffuseColor = convertFloatToColor(valuesf);
                     materialParsed->aBRDF.diffuse = diffuseColor;
+                    std::cout << materialParsed->aBRDF.diffuse << std::endl;
+
                 }
                 
                 if (cmd == "specular") { // r g b
@@ -244,6 +251,16 @@ void readfile(const char* fileName)
                     materialParsed->aBRDF.specular = specularColor;
 
                 }
+                
+                if (cmd == "emission") { // r g b
+                    str.erase(0, 8);
+                    readValuesFloat(str, 4, valuesf, 3);
+                    readValuesFloat(str, 3, valuesf, 3);
+                    color3 emissionColor = convertFloatToColor(valuesf);
+                    materialParsed->aBRDF.emission = emissionColor;
+
+                }
+
                 
                 if (cmd == "camera") {
                     str.erase(0, 6);
@@ -343,9 +360,14 @@ void readfile(const char* fileName)
                     //string str = "sphere";
                     //makeShapes(str, o2w, w2o, params);
                     
+                     /*
+                    curTransformInverse[curTransformIndex].mt = curTransform[curTransformIndex].minvt;
+                    curTransformInverse[curTransformIndex].minvt = curTransform[curTransformIndex].mt;
+*/
                     
-                    
-                    makeShapes(cmd, &curTransform[curTransformIndex], &curTransform[curTransformIndex], params);
+                    makeShapes(cmd, &curTransform[curTransformIndex], &curTransformInverse[curTransformIndex], params);
+
+                    //std::shared_ptr<Material> materialParsed = std::make_shared<Material>(*materialParsed);
 
                     countingj++;
                     std::cout << "sphere number  " << countingj << std::endl;
@@ -466,9 +488,17 @@ void readfile(const char* fileName)
                    params.addVector3I("triArray", &triArray[0]);
                    params.addOneInt("nVertices", maxVertArraySize);
                    params.addPoint3F("vertexArray", &vertexPointArray[0]);
-                               
-                    makeShapes(str, &curTransform[curTransformIndex], &curTransform[curTransformIndex], params);
+                   
                     
+                   // curTransformInverse[curTransformIndex].mt = transformation::Transpose(inverse(curTransform[curTransformIndex].mt));
+                   // curTransformInverse[curTransformIndex].minvt = curTransform[curTransformIndex].mt;
+                //    curTransformInverse[curTransformIndex].updateInverseTranpose;
+
+
+                    makeShapes(str, &curTransform[curTransformIndex], &curTransformInverse[curTransformIndex], params);
+                    
+                   // std::shared_ptr<Material> materialParsed = std::make_shared<Material>(*materialParsed);
+
                     curTransformIndex++;
                     
                     triArray.clear();
@@ -480,6 +510,22 @@ void readfile(const char* fileName)
             
         }
         endParsing:
+        
+        //handle older scenes
+        
+        if (lightExists == false) {
+            vector3<float> positionXYZ (1.f, 1.f, 1.f);
+            color3 colorRGB (1.f, 1.f, 1.f);
+            
+            params.addOneVector3F("position", positionXYZ);
+            params.addOneColor3("color", colorRGB);
+
+            lightExists = true;
+
+            makeLights("point", &defaultLightTransform, params);
+
+        }
+        
         outdata << "P3\n" << w << ' ' << h << "\n255\n";
         scene.renderer();
     }

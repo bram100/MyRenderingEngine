@@ -7,14 +7,55 @@
 
 #include "material.hpp"
 #include "ray.hpp"
+#include "math.hpp"
+#include "vector.hpp"
 
 void getBRDF(localGeo& local, BRDF* brdf) {
     
 }
+vector3<float> const testing;
+vector3<float> const testing2;
+
 
 color3 Material::shading(const localGeo& intersection, const ray& lightRay, const color3& lightColor){
+        
+    color3 finalColor;
     
-    //ok, i am passing in intersectoin. Interseciton contains pos and normal
+    finalColor += ambient;
+    
+    color3 emissionComponent = aBRDF.emission;
+    finalColor += emissionComponent;
+
+    
+ //   std::cout << cosTheta <<std::endl;
+
+    
+
+//    vector3 halfEdge;
+    
+    //i need to lookup how to code this
+//    color3 specularComponent = aBRDF.specular * MathOperations::vectorPower(fmax(normalizeNormal, halfEdge), aBRDF.shininess )
+    
+    //create ShadowRay
+    //vector3<float> lookFromShadow = vector3<float>::length3addtion(intersection.pos, MathOperations::floatVector3(kEpsilon, normalizeNormal));
+    
+    //ray shadowRay(lookFromShadow, lightRay.lookAt, infinity, infinity * - 1);
+
+
+    
+    
+  //  bool isShadowed = scene.isIntersecting(shadowRay);
+
+   /* if (!isShadowed) {
+        finalColor += diffuseComponent;
+    }
+*/
+    
+
+    return finalColor;
+
+
+
     
     /*
     float cosTheta = dot(intersection.normal, lightRay.direction);
@@ -29,16 +70,36 @@ color3 Material::shading(const localGeo& intersection, const ray& lightRay, cons
     color3 finalColor = ambientDiffuse;
 
 */
+    //bool V
+    
    
-    color3 finalColor = ambient;
+
+    
 
     //std::cout << ambient << std::endl;
-    
     return finalColor;
 
     
 }
 
+
+color3 Material::shadingDiffuse(const localGeo& intersection, const ray& lightRay, const color3& lightColor){
+    
+    
+    auto normalizeLight =  normalize(lightRay.lookAt);
+
+    auto normalizeNormal = normalize(intersection.normal);
+  
+
+    float cosTheta = MathOperations::dotProduct(normalizeNormal, normalizeLight); //dot product
+
+    color3 diffuseComponent = aBRDF.diffuse * lightColor * fmax(cosTheta, 0.0f);
+    
+    return diffuseComponent;
+    
+   // finalColor += diffuseComponent;
+
+}
 
 
 /*
@@ -54,5 +115,5 @@ L = vector3(?) directionToLight
 D = color3 diffuse
 S = color3 specular
 N = normal surfaceNormal
-
+H = the half-angle (what????)
 */

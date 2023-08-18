@@ -32,11 +32,11 @@ public:
                     mat[1][1], mat[1][2], mat[1][3], mat[2][0], mat[2][1],
                       mat[2][2], mat[2][3], mat[3][0], mat[3][1], mat[3][2],
                       mat[3][3]);
-        minvt = inverse(mt);
+        minvt = transformation::Transpose(inverse(mt));
         
     }
     
-    transformation(const matrix4 &mt) : mt(mt), minvt(inverse(mt)) {}
+    transformation(const matrix4 &mt) : mt(mt), minvt(transformation::Transpose(inverse(mt))) {}
     transformation(const matrix4 &mt, const matrix4 &minvt) : mt(mt), minvt(minvt) {}
     
     // Constructor using a look-at configuration
@@ -56,7 +56,7 @@ public:
                 {from.x, from.y, from.z, 1.0f}
             };
 
-            minvt = inverse(mt);
+            minvt = transformation::Transpose(inverse(mt));
             
             
         }
@@ -109,10 +109,10 @@ public:
     }
     
 
-    
+    /*
     friend transformation inverse(const transformation &t) {
             return transformation(t.minvt, t.mt);
-        }
+        }*/
     
     //https://www.scratchapixel.com/lessons/mathematics-physics-for-computer-graphics/matrix-inverse/matrix-inverse.html
     //friend matrix4 inverse(const matrix4 &) {
@@ -228,7 +228,7 @@ public:
              }
          }
         
-        result->updateInverse();
+        result->updateInverseTranpose();
          return result;
      }
     
@@ -246,7 +246,7 @@ public:
             }
         }
         
-        result.updateInverse();
+        result.updateInverseTranpose();
         
         *this = result;
         return *this;
@@ -421,7 +421,7 @@ public:
         }
         
         this->mt = m;
-        this->minvt = inverse(m);
+        this->minvt = transformation::Transpose(inverse(m));
     }
 
 
@@ -494,8 +494,8 @@ public:
     }
 
     
-    void updateInverse() {
-        minvt = inverse(mt);
+    void updateInverseTranpose() {
+        minvt = transformation::Transpose(inverse(mt));
     }
 
     
@@ -558,12 +558,13 @@ struct transformationSet {
     }
     
     //inverse for use in time??
+    /*
     friend transformationSet inverse(const transformationSet &ts) {
         transformationSet tInv;
         for (int i = 0; i < maxTransforms; ++i) tInv.t[i] = inverse(ts.t[i]);
         return tInv;
     }
-    
+    */
     void PushTransform(const transformation& transform) {
         if (stackIndex >= maxTransforms) {
             throw std::overflow_error("Transformation stack overthrow.");

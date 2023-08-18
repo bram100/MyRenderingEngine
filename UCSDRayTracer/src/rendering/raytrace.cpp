@@ -26,7 +26,7 @@ int counting = 0;
 
 intersection currentIntersect;
 localGeo localGeo;
-
+intersection closestIntersect;
 bool hitAnything;
 float closestTHit;
 
@@ -38,6 +38,8 @@ extern Scene scene;
 extern std::vector<std::shared_ptr<GeometricPrimitive>> geometricPrimitives;
 
 std::shared_ptr<Material> currentMaterial;
+
+
 
 void trace(ray& ray, int depth, color3* color3) {
     hitAnything = false;
@@ -60,44 +62,71 @@ void trace(ray& ray, int depth, color3* color3) {
         //multiply transfor
         
         //p->applyTransformationToObject(transformationFromStack);
-        
-        if (p->intersect(ray, &tHit, &currentIntersect)) {
-            hitAnything = true;
-            if (tHit < closestTHit) {
-                closestTHit = tHit;
-                currentIntersect.localGeo = localGeo;
-                currentMaterial = currentIntersect.primitive->getMaterial();
-            }
-        }
-    }
-    
-    if (hitAnything) {
-        for (const auto& l : scene.lightsVec){
-            l->generateLightRay(currentIntersect.localGeo, &lightRay, &lightColor);
-                          
-            if (!currentIntersect.primitive->intersectP(lightRay)) {
-                *color3 += currentMaterial->shading(currentIntersect.localGeo, lightRay, lightColor);
-
-                }
-            return true;
-        }
-    }
-                  
-
-    else {
+        if (!p->intersect(ray, &tHit, &currentIntersect)) {
             color3->r = 0.f;
             color3->g = 0.f;
             color3->b = 0.f;
-            return false;
-    }
-                  
-    /*
-    if (brdf.emission > 0) {
-        reflectRay = createReflectRay(in.local, ray);
-        // Make a recursive call to trace the reflected ray
-        trace(reflectRay, depth+1, &tempColor);
-        *color += brdf.emission * tempColor;
-    }
-*/
+        }
+        else {
+            hitAnything = true;
+            if (tHit < closestTHit) {
+                
+                closestTHit = tHit;
+                
+                closestIntersect = currentIntersect;
+                
+                currentMaterial = currentIntersect.primitive->getMaterial();
+            }
+        }
+        }
+   
+        bool inShadow = false;
+        if (hitAnything) {
+            for (const auto& l : scene.lightsVec){
+                
+                l->generateLightRay(closestIntersect.localGeo, &lightRay, &lightColor);
+                
+                //for every shape
+                for (const auto& p : scene.geometricPrimitivesVec) {
+                    //check if shape intersects with the lightRay
+                    //if intersect is there, then shadow must be true
+                    
+                    //it needs to loop only through the sapes not looped through 
+                    if (p->intersectP(lightRay)) {
+                        inShadow = true;
+                        break;
+                    }
+                    
+                }
+                    if (!inShadow) {
+                        
+                        *color3 += currentMaterial->shadingDiffuse(closestIntersect.localGeo, lightRay, lightColor);
+                
+                    }
+                
+                
+                }
+            
+            *color3 += currentMaterial->shading(closestIntersect.localGeo, lightRay, lightColor);
 
+        }
+        /*
+         else {
+         color3->r = 0.f;
+         color3->g = 0.f;
+         color3->b = 0.f;
+         return false;
+         }
+         */
+        
+        
+        /*
+         if (brdf.emission > 0) {
+         reflectRay = createReflectRay(in.local, ray);
+         // Make a recursive call to trace the reflected ray
+         trace(reflectRay, depth+1, &tempColor);
+         *color += brdf.emission * tempColor;
+         }
+         */
+    
     };
