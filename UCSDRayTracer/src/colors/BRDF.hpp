@@ -27,16 +27,18 @@
 class BRDF{
     //color3 kd, ks, ka, kr; //initilizing color3 4 times
 public:
-    color3 diffuse, specular, shininess, emission;
+    color3 diffuse, specular, emission;
+    float shininess; 
 
     BRDF() :    diffuse(),
                 specular(),
-                shininess(),
-                emission()
+                emission(),
+                shininess()
+
     {}
     
-    BRDF(const color3& diffuse, const color3& specular, const color3& shininess, const color3& emission)
-        : diffuse(diffuse), specular(specular), shininess(shininess), emission(emission)
+    BRDF(const color3& diffuse, const color3& specular, const color3& emission, float shininess)
+        : diffuse(diffuse), specular(specular), emission(emission), shininess(shininess)
     {}
     
     
@@ -50,12 +52,12 @@ public:
            return specular;
        }
 
-    const color3& getShininess() const {
-           return shininess;
-       }
-
     const color3& getEmission() const {
            return emission;
+       }
+
+    const float& getShininess() const {
+           return shininess;
        }
 
 

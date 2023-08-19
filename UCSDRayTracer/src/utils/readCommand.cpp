@@ -229,7 +229,6 @@ void readfile(const char* fileName)
                 if (cmd == "specular") { // r g b
                     str.erase(0, 8);
                     readValuesFloat(str, 3, valuesf, 3);
-                    readValuesFloat(str, 3, valuesf, 3);
                     color3 specularColor = convertFloatToColor(valuesf);
                     materialParsed->aBRDF.specular = specularColor;
 
@@ -237,24 +236,14 @@ void readfile(const char* fileName)
                 
                 if (cmd == "shininess") { // r g b
                     str.erase(0, 9);
-                    readValuesFloat(str, 3, valuesf, 3);
-                    color3 mirrorColor = convertFloatToColor(valuesf);
-                    materialParsed->aBRDF.shininess = mirrorColor;
+                    readValuesFloat(str, 1, valuesf, 1);
+                    materialParsed->aBRDF.shininess = valuesf[0];;
 
                 }
                 
-                if (cmd == "specular") { // r g b
-                    str.erase(0, 8);
-                    readValuesFloat(str, 4, valuesf, 3);
-                    readValuesFloat(str, 3, valuesf, 3);
-                    color3 specularColor = convertFloatToColor(valuesf);
-                    materialParsed->aBRDF.specular = specularColor;
-
-                }
                 
                 if (cmd == "emission") { // r g b
                     str.erase(0, 8);
-                    readValuesFloat(str, 4, valuesf, 3);
                     readValuesFloat(str, 3, valuesf, 3);
                     color3 emissionColor = convertFloatToColor(valuesf);
                     materialParsed->aBRDF.emission = emissionColor;

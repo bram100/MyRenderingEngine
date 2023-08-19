@@ -28,7 +28,7 @@ public:
     
     color3 shading(const localGeo& intersection, const ray& lightRay, const color3& lightColor);
 
-    color3 shadingDiffuse(const localGeo& intersection, const ray& lightRay, const color3& lightColor);
+    color3 shadingShadows(const localGeo& intersection, const ray& lightRay, const color3& lightColor);
 
     
     BRDF aBRDF;

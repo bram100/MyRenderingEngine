@@ -48,3 +48,15 @@ float math::Radians(float deg) {
 
 
 
+float MathOperations::cosineAngle(const vector3<float>& a, const vector3<float>& b) {
+    float dotProduct = a * b; //dot product
+    float magnitudeA = a.Length(); //Magnitude(a);
+    float magnitudeB = b.Length(); //Magnitude(b);
+    
+    // Make sure the magnitudes are not zero
+    if (magnitudeA == 0.0f || magnitudeB == 0.0f) {
+        return 0.0f; // Angle doesn't make sense, return 0
+    }
+    
+    return dotProduct / (magnitudeA * magnitudeB);
+}

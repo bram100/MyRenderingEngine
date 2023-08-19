@@ -13,12 +13,12 @@
 #include "math.hpp"
 
 inline int currentA;
-class PointLights : public Lights {
+class PointLight : public Lights {
 public:
-    PointLights(const vector3<float>& lightPos, const color3& lightColor, vector3<float> attenuation, const transformation lightToWorld)
+    PointLight(const vector3<float>& lightPos, const color3& lightColor, vector3<float> attenuation, const transformation lightToWorld)
         : Lights(lightToWorld, attenuation), lightPos(lightPos), lightColor(lightColor) {}
 
-    ~PointLights();
+    ~PointLight();
 
     void generateLightRay(localGeo& local, ray* lightRay, color3* lightColor) override {
 

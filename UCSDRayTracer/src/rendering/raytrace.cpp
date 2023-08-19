@@ -12,6 +12,7 @@
 #include "sample.hpp"
 #include "shape.hpp"
 
+#include "lights/pointLight.hpp"
 
 #include "primitive.hpp"
 #include "geometricPrimitive.hpp"
@@ -19,7 +20,7 @@
 #include "scene.hpp"
 
 #include "material.hpp"
-
+#include <cmath>
 bool isThereIntersect = false;
 
 int counting = 0;
@@ -27,6 +28,7 @@ int counting = 0;
 intersection currentIntersect;
 localGeo localGeo;
 intersection closestIntersect;
+vector3<float> currentAttenuation;
 bool hitAnything;
 float closestTHit;
 
@@ -44,6 +46,7 @@ std::shared_ptr<Material> currentMaterial;
 void trace(ray& ray, int depth, color3* color3) {
     hitAnything = false;
     closestTHit = std::numeric_limits<float>::infinity();
+    vector3<int> cVector(0, 0, 1);//maybe put this somewhere else??
     if (depth > maxDepth) { //depth as in bounces?
         //presently this doesnt do anything
         color3->r = 0.f;
@@ -85,7 +88,7 @@ void trace(ray& ray, int depth, color3* color3) {
             for (const auto& l : scene.lightsVec){
                 
                 l->generateLightRay(closestIntersect.localGeo, &lightRay, &lightColor);
-                
+                    
                 //for every shape
                 for (const auto& p : scene.geometricPrimitivesVec) {
                     //check if shape intersects with the lightRay
@@ -98,16 +101,38 @@ void trace(ray& ray, int depth, color3* color3) {
                     }
                     
                 }
+                    //no shape intersect, thus visslible
                     if (!inShadow) {
+                        if (/*std::shared_ptr<PointLight> pointLight =*/ std::dynamic_pointer_cast<PointLight>(l)) {
+                            
+                            //change cVector to 0, 0, 1
+                            cVector.z = 1;
+                            
+                            vector3<float> lightPos = lightRay.lookAt /* position of the light source */;
+                            point3 pointPos = closestIntersect.localGeo.pos /* position of the point you're calculating for */;
+
+                            vector3<float> diff = lightPos - pointPos;
+                            float r = diff.Length(); // Calculate the length of the vector
+
+                            
+                            
+                            currentAttenuation = lightRay.lookAt / (cVector.x + cVector.y * r + std::pow(cVector.z, r));
+                            
+
+                        }
+
                         
-                        *color3 += currentMaterial->shadingDiffuse(closestIntersect.localGeo, lightRay, lightColor);
+                        *color3 += (currentMaterial->shadingShadows(closestIntersect.localGeo, lightRay, lightColor));// * currentAttenuation;
                 
                     }
                 
                 
                 }
+            *color3 += currentMaterial->ambient;
             
-            *color3 += currentMaterial->shading(closestIntersect.localGeo, lightRay, lightColor);
+            *color3 += currentMaterial->aBRDF.emission;
+
+            //*color3 += currentMaterial->shading(closestIntersect.localGeo, lightRay, lightColor);
 
         }
         /*
