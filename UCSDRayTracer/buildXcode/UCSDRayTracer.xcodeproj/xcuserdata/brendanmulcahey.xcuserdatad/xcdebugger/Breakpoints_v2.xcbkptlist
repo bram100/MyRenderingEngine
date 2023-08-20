@@ -844,85 +844,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FC6B0BC4-82E8-413B-9102-8AAFAA006AB3"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/utils/readCommand.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "358"
-            endingLineNumber = "358"
-            landmarkName = "readfile(fileName)"
-            landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "FC6B0BC4-82E8-413B-9102-8AAFAA006AB3 - 79f3fed533f3fb28"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "readfile(char const*)"
-                  moduleName = "UCSDRayTracer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "365"
-                  endingLineNumber = "365"
-                  offsetFromSymbolStart = "3996">
-               </Location>
-               <Location
-                  uuid = "FC6B0BC4-82E8-413B-9102-8AAFAA006AB3 - 79f3fed533f3fbea"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "readfile(char const*)"
-                  moduleName = "UCSDRayTracer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "367"
-                  endingLineNumber = "367"
-                  offsetFromSymbolStart = "4136">
-               </Location>
-               <Location
-                  uuid = "FC6B0BC4-82E8-413B-9102-8AAFAA006AB3 - 79f3fed533f3844f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "readfile(char const*)"
-                  moduleName = "UCSDRayTracer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "372"
-                  endingLineNumber = "372"
-                  offsetFromSymbolStart = "4000">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C0B7D570-1350-43F0-88F6-224D4E90118B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/utils/readCommand.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "488"
-            endingLineNumber = "488"
-            landmarkName = "readfile(fileName)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "4FB68411-4732-46BC-BCE1-0015D4AA1D86"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -930,8 +851,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
             landmarkName = "makeShapes(name, object2World, world2Object, paramSet)"
             landmarkType = "9">
          </BreakpointContent>
@@ -955,22 +876,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DB4FC056-96AD-4E51-B489-895B197F1B97"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/utils/readCommand.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "471"
-            endingLineNumber = "471"
-            landmarkName = "readfile(fileName)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "36CBE0D2-9224-4897-AAB8-E00CBF2AAE66"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -978,8 +883,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "createTransformationMatrix(translate, rotation, axis, scale, i)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1376,8 +1281,8 @@
             filePath = "src/utils/scene.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "Scene::renderer()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1551,8 +1456,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
             landmarkName = "createTransformationMatrix(translate, rotation, axis, scale, i)"
             landmarkType = "9">
             <Locations>
@@ -1629,8 +1534,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
             landmarkName = "makeShapes(name, object2World, world2Object, paramSet)"
             landmarkType = "9">
             <Locations>
@@ -1677,41 +1582,9 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "createTransformationMatrix(translate, rotation, axis, scale, i)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "EAA4BB40-DA09-4BE2-916A-EA5C17CFC6B3"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/utils/readCommand.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
-            landmarkName = "readfile(fileName)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "03529441-480D-418D-8FD3-921D9879E12C"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/utils/readCommand.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
-            landmarkName = "readfile(fileName)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2336,54 +2209,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EA5210D4-1CA0-4581-AE11-E42DD733B4CE"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/utils/readCommand.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
-            landmarkName = "readfile(fileName)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "72F15737-63D9-44B4-9595-DF1CD9314A98"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/utils/readCommand.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
-            landmarkName = "readfile(fileName)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "AB250932-8CDA-43B7-92C1-AD55A9765392"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/utils/readCommand.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
-            landmarkName = "readfile(fileName)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "E71B85A1-AE8F-41DF-8DEE-79173FD2C8D8"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -2395,22 +2220,6 @@
             endingLineNumber = "41"
             landmarkName = "sphere::intersect(currentRay, tHit, localGeoPos)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B17E15E7-83D6-4DC7-ADE2-BAFAAF453A84"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/utils/readCommand.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "355"
-            endingLineNumber = "355"
-            landmarkName = "readfile(fileName)"
-            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2459,38 +2268,6 @@
             endingLineNumber = "29"
             landmarkName = "shading(intersection, lightRay, lightColor)"
             landmarkType = "6">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B3250741-D437-40CF-8997-35981A8719C1"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/utils/readCommand.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "508"
-            endingLineNumber = "508"
-            landmarkName = "readfile(fileName)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "987F687C-53DB-4079-B06D-F8712652D4BC"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/utils/readCommand.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "343"
-            endingLineNumber = "343"
-            landmarkName = "readfile(fileName)"
-            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2781,22 +2558,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C3B2D690-8E6F-4AB2-A567-F93096A607E3"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/utils/readCommand.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "484"
-            endingLineNumber = "484"
-            landmarkName = "readfile(fileName)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "52EC559E-A11D-46CD-BA03-9E6A165783AF"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -2804,8 +2565,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "createTransformationMatrix(translate, rotation, axis, scale, i)"
             landmarkType = "9">
             <Locations>
@@ -2852,8 +2613,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
             landmarkName = "makeShapes(name, object2World, world2Object, paramSet)"
             landmarkType = "9">
          </BreakpointContent>
@@ -3012,8 +2773,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
             landmarkName = "makeShapes(name, object2World, world2Object, paramSet)"
             landmarkType = "9">
          </BreakpointContent>
@@ -3028,8 +2789,8 @@
             filePath = "src/geometry/shape.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "createTransformationMatrix(translate, rotation, axis, scale, i)"
             landmarkType = "9">
             <Locations>
@@ -3219,8 +2980,8 @@
             filePath = "src/utils/scene.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "Scene::renderer()"
             landmarkType = "7">
          </BreakpointContent>
@@ -3380,54 +3141,6 @@
                   startingLineNumber = "124"
                   endingLineNumber = "124"
                   offsetFromSymbolStart = "248">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "AA2B56FF-EFE5-40B2-A156-8D946F4F127E"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/utils/readCommand.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "240"
-            endingLineNumber = "240"
-            landmarkName = "readfile(fileName)"
-            landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "AA2B56FF-EFE5-40B2-A156-8D946F4F127E - 79f3fed533f3eb81"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "readfile(char const*)"
-                  moduleName = "UCSDRayTracer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "246"
-                  endingLineNumber = "246"
-                  offsetFromSymbolStart = "2556">
-               </Location>
-               <Location
-                  uuid = "AA2B56FF-EFE5-40B2-A156-8D946F4F127E - 79f3fed533f3f462"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "readfile(char const*)"
-                  moduleName = "UCSDRayTracer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "247"
-                  endingLineNumber = "247"
-                  offsetFromSymbolStart = "2556">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -3652,6 +3365,943 @@
             endingLineNumber = "159"
             landmarkName = "vectorVectorMultiply(v, n)"
             landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3D38CD89-19C9-4507-B267-A4A7F2D3F101"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/rendering/raytrace.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "trace(ray, depth, color3)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6F2B964A-B2D2-4887-92F1-DDB94BD3AC06"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/lights/pointLight.hpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "generateLightRay(local, lightRay, lightColor)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "083D101A-89BA-4E5B-B7C7-A2B4DD59E9A4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/lights/pointLight.hpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "generateLightRay(local, lightRay, lightColor)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "69857ACA-A03D-4458-8719-62A466076392"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/geometry/shape.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "createTransformationMatrix(translate, rotation, axis, scale, i)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "69857ACA-A03D-4458-8719-62A466076392 - 377429cd750d003f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "createTransformationMatrix(vector3&lt;float&gt; const&amp;, vector3&lt;float&gt; const&amp;, float, vector3&lt;float&gt; const&amp;, int)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/shape.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "69857ACA-A03D-4458-8719-62A466076392 - 377429cd750d003f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "createTransformationMatrix(vector3&lt;float&gt; const&amp;, vector3&lt;float&gt; const&amp;, float, vector3&lt;float&gt; const&amp;, int)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/geometry/shape.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "184">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0D2F99BE-5C8B-4C0E-BBC9-2988D396158B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/utils/transform.hpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "584"
+            endingLineNumber = "584"
+            landmarkName = "PopTransform()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4710BF1F-A96D-4BE8-BE7F-2BF44A410A3C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/geometry/shape.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "createTransformationMatrix(translate, rotation, axis, scale, i)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B884A057-92FB-40D4-A176-C8EBE0546BAC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/geometry/shape.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "createTransformationMatrix(translate, rotation, axis, scale, i)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C93243B4-155A-41C1-9DBC-7F47E67497F4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/utils/readCommand.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "403"
+            endingLineNumber = "403"
+            landmarkName = "readfile(fileName)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "C93243B4-155A-41C1-9DBC-7F47E67497F4 - 79f3fed533f3867d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readfile(char const*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "386"
+                  endingLineNumber = "386"
+                  offsetFromSymbolStart = "4012">
+               </Location>
+               <Location
+                  uuid = "C93243B4-155A-41C1-9DBC-7F47E67497F4 - 79f3fed533f38756"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readfile(char const*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "395"
+                  endingLineNumber = "395"
+                  offsetFromSymbolStart = "4040">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6C1AC474-1133-4148-A03B-2D65027C4C34"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/utils/readCommand.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "323"
+            endingLineNumber = "323"
+            landmarkName = "readfile(fileName)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9D391380-40F7-4147-82CB-C4F8FC62C9A1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/utils/readCommand.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "519"
+            endingLineNumber = "519"
+            landmarkName = "readfile(fileName)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "9D391380-40F7-4147-82CB-C4F8FC62C9A1 - 79f3fed533f38ba8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readfile(char const*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "493"
+                  endingLineNumber = "493"
+                  offsetFromSymbolStart = "5220">
+               </Location>
+               <Location
+                  uuid = "9D391380-40F7-4147-82CB-C4F8FC62C9A1 - 79f3fed533f395e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readfile(char const*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "507"
+                  endingLineNumber = "507"
+                  offsetFromSymbolStart = "5248">
+               </Location>
+               <Location
+                  uuid = "9D391380-40F7-4147-82CB-C4F8FC62C9A1 - 79f3fed533f395e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readfile(char const*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "507"
+                  endingLineNumber = "507"
+                  offsetFromSymbolStart = "5172">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "817D1F8E-A939-4630-A757-3CAD56D4D316"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/utils/readCommand.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "520"
+            endingLineNumber = "520"
+            landmarkName = "readfile(fileName)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "817D1F8E-A939-4630-A757-3CAD56D4D316 - 79f3fed533f3944b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readfile(char const*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "496"
+                  endingLineNumber = "496"
+                  offsetFromSymbolStart = "5228">
+               </Location>
+               <Location
+                  uuid = "817D1F8E-A939-4630-A757-3CAD56D4D316 - 79f3fed533f39505"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readfile(char const*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "506"
+                  endingLineNumber = "506"
+                  offsetFromSymbolStart = "5256">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E9D74B96-5B6A-4C55-BC5A-00DD8BD79366"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/utils/readCommand.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "309"
+            endingLineNumber = "309"
+            landmarkName = "readfile(fileName)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "E9D74B96-5B6A-4C55-BC5A-00DD8BD79366 - 79f3fed533f3f2b6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readfile(char const*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "299"
+                  endingLineNumber = "299"
+                  offsetFromSymbolStart = "3276">
+               </Location>
+               <Location
+                  uuid = "E9D74B96-5B6A-4C55-BC5A-00DD8BD79366 - 79f3fed533f3f349"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readfile(char const*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "302"
+                  endingLineNumber = "302"
+                  offsetFromSymbolStart = "3284">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "69FE393F-B10A-4CC3-B305-ADE6D0B4F0D7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/utils/readCommand.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "302"
+            endingLineNumber = "302"
+            landmarkName = "readfile(fileName)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "69FE393F-B10A-4CC3-B305-ADE6D0B4F0D7 - 79f3fed533f3f270"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readfile(char const*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "293"
+                  endingLineNumber = "293"
+                  offsetFromSymbolStart = "3224">
+               </Location>
+               <Location
+                  uuid = "69FE393F-B10A-4CC3-B305-ADE6D0B4F0D7 - 79f3fed533f3f232"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readfile(char const*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "295"
+                  endingLineNumber = "295"
+                  offsetFromSymbolStart = "3224">
+               </Location>
+               <Location
+                  uuid = "69FE393F-B10A-4CC3-B305-ADE6D0B4F0D7 - 79f3fed533f3f30b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readfile(char const*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "304"
+                  endingLineNumber = "304"
+                  offsetFromSymbolStart = "3272">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "04796F4A-62BC-44FD-92B1-2722E7F69DA6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/utils/readCommand.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "611"
+            endingLineNumber = "611"
+            landmarkName = "readfile(fileName)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "296A0982-A0AA-46F1-A877-EDDCCC78BEB6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/utils/readCommand.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "608"
+            endingLineNumber = "608"
+            landmarkName = "readfile(fileName)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "296A0982-A0AA-46F1-A877-EDDCCC78BEB6 - 79f3fed533f3980a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readfile(char const*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "591"
+                  endingLineNumber = "591"
+                  offsetFromSymbolStart = "236">
+               </Location>
+               <Location
+                  uuid = "296A0982-A0AA-46F1-A877-EDDCCC78BEB6 - 79f3fed533f3980a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readfile(char const*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "591"
+                  endingLineNumber = "591"
+                  offsetFromSymbolStart = "648">
+               </Location>
+               <Location
+                  uuid = "296A0982-A0AA-46F1-A877-EDDCCC78BEB6 - 79f3fed533f3980a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readfile(char const*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "591"
+                  endingLineNumber = "591"
+                  offsetFromSymbolStart = "1568">
+               </Location>
+               <Location
+                  uuid = "296A0982-A0AA-46F1-A877-EDDCCC78BEB6 - 79f3fed533f3980a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readfile(char const*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "591"
+                  endingLineNumber = "591"
+                  offsetFromSymbolStart = "1924">
+               </Location>
+               <Location
+                  uuid = "296A0982-A0AA-46F1-A877-EDDCCC78BEB6 - 79f3fed533f3980a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readfile(char const*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "591"
+                  endingLineNumber = "591"
+                  offsetFromSymbolStart = "4124">
+               </Location>
+               <Location
+                  uuid = "296A0982-A0AA-46F1-A877-EDDCCC78BEB6 - 79f3fed533f3980a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readfile(char const*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "591"
+                  endingLineNumber = "591"
+                  offsetFromSymbolStart = "5872">
+               </Location>
+               <Location
+                  uuid = "296A0982-A0AA-46F1-A877-EDDCCC78BEB6 - 79f3fed533f3980a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readfile(char const*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "591"
+                  endingLineNumber = "591"
+                  offsetFromSymbolStart = "6308">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6EE4BE7C-B313-4141-A5DB-E4C0758BD6B7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/utils/readCommand.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "604"
+            endingLineNumber = "604"
+            landmarkName = "readfile(fileName)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4423519D-D96B-42AF-BFA2-29350E3B3D2E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/utils/readCommand.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "600"
+            endingLineNumber = "600"
+            landmarkName = "readfile(fileName)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A246C452-029B-4B33-99C8-7AFE8FC8CAA6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/utils/readCommand.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "319"
+            endingLineNumber = "319"
+            landmarkName = "readfile(fileName)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FAA529BC-0A4A-45DF-B25C-36836F602FB1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/utils/readCommand.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "503"
+            endingLineNumber = "503"
+            landmarkName = "readfile(fileName)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0F86D8EC-CFD5-4968-A082-3CCAE00F1C17"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/utils/readCommand.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "502"
+            endingLineNumber = "502"
+            landmarkName = "readfile(fileName)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8F409BDB-8832-4FCA-AC39-32FE18937BA0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/utils/readCommand.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "509"
+            endingLineNumber = "509"
+            landmarkName = "readfile(fileName)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0615D364-B91E-4D6F-A488-677E94435483"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/utils/readCommand.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "565"
+            endingLineNumber = "565"
+            landmarkName = "readfile(fileName)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "0615D364-B91E-4D6F-A488-677E94435483 - 79f3fed533f39332"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readfile(char const*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "551"
+                  endingLineNumber = "551"
+                  offsetFromSymbolStart = "5816">
+               </Location>
+               <Location
+                  uuid = "0615D364-B91E-4D6F-A488-677E94435483 - 79f3fed533f39351"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readfile(char const*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "550"
+                  endingLineNumber = "550"
+                  offsetFromSymbolStart = "5816">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "08EA2652-518A-4875-804E-84A18875C252"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/geometry/shape.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "makeShapes(name, object2World, world2Object, paramSet)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE17B91E-4980-43C4-A84D-8866A9AC1CAD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/utils/readCommand.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "474"
+            endingLineNumber = "474"
+            landmarkName = "readfile(fileName)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6758FF1A-35EF-4004-9773-5D3BFF90E1B9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/utils/readCommand.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "482"
+            endingLineNumber = "482"
+            landmarkName = "readfile(fileName)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "6758FF1A-35EF-4004-9773-5D3BFF90E1B9 - 79f3fed533f38925"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readfile(char const*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "474"
+                  endingLineNumber = "474"
+                  offsetFromSymbolStart = "4956">
+               </Location>
+               <Location
+                  uuid = "6758FF1A-35EF-4004-9773-5D3BFF90E1B9 - 79f3fed533f38963"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readfile(char const*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "472"
+                  endingLineNumber = "472"
+                  offsetFromSymbolStart = "4880">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9CEC5A61-5474-463D-9E29-9C567E38ABC7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/utils/readCommand.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "400"
+            endingLineNumber = "400"
+            landmarkName = "readfile(fileName)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7FA89F68-08D7-4709-A98F-4CD43A37DD4D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/utils/readCommand.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "399"
+            endingLineNumber = "399"
+            landmarkName = "readfile(fileName)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "619E11B2-F19D-4DD6-8A7D-F9ED42EB5430"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/utils/readCommand.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "310"
+            endingLineNumber = "310"
+            landmarkName = "readfile(fileName)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8F5D7052-390B-4214-8D86-24D69AA530CD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/utils/readCommand.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "355"
+            endingLineNumber = "355"
+            landmarkName = "readfile(fileName)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D394D25-F645-4714-80AB-F59FC1F75D98"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/utils/readCommand.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "561"
+            endingLineNumber = "561"
+            landmarkName = "readfile(fileName)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B070C7B6-AEBD-4DF0-90EE-AD2B7AB1B14B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/utils/readCommand.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "568"
+            endingLineNumber = "568"
+            landmarkName = "readfile(fileName)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7B647603-EFD7-4091-9156-897E35E75113"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/utils/readCommand.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "479"
+            endingLineNumber = "479"
+            landmarkName = "readfile(fileName)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "7B647603-EFD7-4091-9156-897E35E75113 - 79f3fed533f38a5b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readfile(char const*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "480"
+                  endingLineNumber = "480"
+                  offsetFromSymbolStart = "4804">
+               </Location>
+               <Location
+                  uuid = "7B647603-EFD7-4091-9156-897E35E75113 - 79f3fed533f38a5b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readfile(char const*)"
+                  moduleName = "UCSDRayTracer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brendanmulcahey/Library/Mobile%20Documents/com~apple~CloudDocs/Self%20Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "480"
+                  endingLineNumber = "480"
+                  offsetFromSymbolStart = "4780">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

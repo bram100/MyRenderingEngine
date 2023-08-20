@@ -50,9 +50,7 @@ void Scene::renderer() {
         
             camera.generateRay(currentSample, &currentRay); //eye position
             
-             trace(currentRay, maxDepth, &currentColor);
-            
-            
+            trace(currentRay, maxDepth, &currentColor);
             
             commit(currentSample, &currentColor);
             // std::cout << "Pixel " << k << " of " << j << std::endl; //progress check

@@ -7,6 +7,8 @@
 
 
 
+
+
 #include <thread>
 #include "thread.hpp"
 
@@ -45,6 +47,10 @@ Camera camera;
 objParamMap params;
 Scene scene;
 
+transformation translationMatrix;
+transformation rotationMatrix;
+transformation scaleMatrix;
+
 std::shared_ptr<Material> materialParsed = std::make_shared<Material>();
 int countingj = 0;
 
@@ -62,6 +68,7 @@ transformationSet curTransform;
 transformationSet curTransformInverse;
 static transformCache transformCache;
 transformation currentTransform;
+transformation currentTransformInverse;
 
 int curTransformIndex;
 
@@ -276,17 +283,45 @@ void readfile(const char* fileName)
                 if (cmd == "popTransform") { //retrive
                     str.erase(0, 12);
 
+                    
+                    
+                    
+
                     if (curTransformIndex != 0) {
                         curTransformIndex--;
                         
                     }
+                    
+                    translationMatrix.clear();
+                    rotationMatrix.clear();
+                    scaleMatrix.clear();
+
+                    
+                    currentTransform = curTransform[curTransformIndex];
+                    currentTransformInverse = curTransformInverse[curTransformIndex];
+                    
+
                     }
                        
                 if (cmd == "pushTransform") { //add to stack, current working should be idenity matrix
                     str.erase(0, 13);
-                                        
-                    curTransformIndex++;
                     
+                    
+                    
+                    
+                    
+                   // currentTransformInverse.mt = currentTransform.mt.inverse(currentTransform.mt);
+
+
+                  //  currentTransform.updateInverseTranpose();
+                   // currentTransformInverse.updateInverseTranpose();
+
+                    
+                    //curTransform[curTransformIndex] = currentTransform;
+                   // curTransformInverse[curTransformIndex] =currentTransformInverse;
+
+                  //  curTransformIndex++;
+
                     }
                       
                 if (animatedBool == true) {
@@ -339,13 +374,14 @@ void readfile(const char* fileName)
                     //transformation *w2o = &curTransform[curTransformIndex];
                     //transformation *o2w = (&curTransform[curTransformIndex]);
                    // transformation result = *o2w * cameraViewTransformation;
+                   /*
                     createTransformationMatrix(translateVector, rotationVector, theta, scaleVector, curTransformIndex);
 
                     translateVector.clear();
                     rotationVector.clear();
                     scaleVector.ones();
 
-                    
+                    */
                     //string str = "sphere";
                     //makeShapes(str, o2w, w2o, params);
                     
@@ -354,15 +390,26 @@ void readfile(const char* fileName)
                     curTransformInverse[curTransformIndex].minvt = curTransform[curTransformIndex].mt;
 */
                     
-                    makeShapes(cmd, &curTransform[curTransformIndex], &curTransformInverse[curTransformIndex], params);
+                    currentTransformInverse.mt = currentTransform.mt.inverse(currentTransform.mt);
 
+                    
+                    
+                    currentTransform.updateInverseTranpose();
+                    currentTransformInverse.updateInverseTranpose();
+
+
+                    
+                    makeShapes(cmd, &currentTransform, &currentTransformInverse, params);
+
+                    currentTransform.clear();
+                    currentTransformInverse.clear();
                     //std::shared_ptr<Material> materialParsed = std::make_shared<Material>(*materialParsed);
 
                     countingj++;
                     std::cout << "sphere number  " << countingj << std::endl;
                     
-                    curTransformIndex++;
-                    
+                   // curTransformIndex++;
+                   
                 }
                 
                 if (cmd == "maxverts") {
@@ -425,10 +472,16 @@ void readfile(const char* fileName)
                     str.erase(0, 10);
                     readValuesFloat(str, 4, valuesf, 3);
                     
-                    translateVector.x += valuesf[0];
-                    translateVector.y += valuesf[1];
-                    translateVector.z += valuesf[2];
+                    translateVector.x = valuesf[0];
+                    translateVector.y = valuesf[1];
+                    translateVector.z = valuesf[2];
                     
+                    
+                    translationMatrix.translation(translateVector);
+                    currentTransform *= translationMatrix;
+
+                    
+
                 }
                 
                 if (cmd == "rotate") {
@@ -440,6 +493,13 @@ void readfile(const char* fileName)
                     rotationVector.z = valuesf[2];
 
                     theta = valuesf[3];
+                    
+                    transformation rotationMatrix;
+                    
+                    
+                    rotationMatrix.rotation(theta, rotationVector);
+                    currentTransform *= rotationMatrix;
+
 
                 }
                 
@@ -450,6 +510,14 @@ void readfile(const char* fileName)
                     scaleVector.x = valuesf[0];
                     scaleVector.y = valuesf[1];
                     scaleVector.z = valuesf[2];
+                    
+                    transformation scaleMatrix;
+                    
+                    
+                    
+                    scaleMatrix.scaling(scaleVector);
+                    currentTransform *= scaleMatrix;
+
 
                 }
     
@@ -467,11 +535,15 @@ void readfile(const char* fileName)
                    
                     //transformation *o2w = &curTransform[curTransformIndex];// transformCache.lookup(curTransform[0]);
                     //transformation *w2o = (&curTransform[curTransformIndex]);// transformCache.lookup(inverse(curTransform[0]));
+                    
+                    /*
                     createTransformationMatrix(translateVector, rotationVector, theta, scaleVector, curTransformIndex);
                     
                     translateVector.clear();
                     rotationVector.clear();
                     scaleVector.ones();
+                    
+                    */
                     
                    params.addOneInt("nTriangles", static_cast<int>(triArray.size()));
                    params.addVector3I("triArray", &triArray[0]);
@@ -483,12 +555,23 @@ void readfile(const char* fileName)
                    // curTransformInverse[curTransformIndex].minvt = curTransform[curTransformIndex].mt;
                 //    curTransformInverse[curTransformIndex].updateInverseTranpose;
 
-
-                    makeShapes(str, &curTransform[curTransformIndex], &curTransformInverse[curTransformIndex], params);
                     
+                    currentTransformInverse.mt = currentTransform.mt.inverse(currentTransform.mt);
+
+                    
+                    
+                    currentTransform.updateInverseTranpose();
+                    currentTransformInverse.updateInverseTranpose();
+
+
+                    makeShapes(str, &currentTransform, &currentTransformInverse, params);
+                    
+                    currentTransform.clear();
+                    currentTransformInverse.clear();
+
                    // std::shared_ptr<Material> materialParsed = std::make_shared<Material>(*materialParsed);
 
-                    curTransformIndex++;
+                   // curTransformIndex++;
                     
                     triArray.clear();
                     triArray.resize(0);
@@ -540,5 +623,3 @@ void closefile(const char* fileName) {
     
     
 }
-
-

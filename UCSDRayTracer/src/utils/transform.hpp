@@ -21,7 +21,7 @@ other quantities (eg. texture coordinate) in a more complicated
 raytracer.
 */
 
-const int maxTransforms = 100;
+const int maxTransforms = 1000;
 
 class transformation {
 public:
@@ -38,6 +38,11 @@ public:
     
     transformation(const matrix4 &mt) : mt(mt), minvt(transformation::Transpose(inverse(mt))) {}
     transformation(const matrix4 &mt, const matrix4 &minvt) : mt(mt), minvt(minvt) {}
+    
+    void clear() {
+           mt = matrix4();  // Set mt to identity matrix
+           minvt = matrix4(); // Set minvt to identity matrix
+       }
     
     // Constructor using a look-at configuration
     //i have no idea what this is for????

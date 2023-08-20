@@ -20,12 +20,13 @@ public:
 
     ~PointLight();
 
+    //point light - shines light at a point
     void generateLightRay(localGeo& local, ray* lightRay, color3* lightColor) override {
 
         //convert intersection to point to vector
         vector3<float> vectorPos(local.pos.x , local.pos.y, local.pos.z);
 
-        //noramlize lookAt
+        //noramlize lookAt, normalize direction
         vector3<float> lookAtDirection = normalize( lightPos - local.pos);
         
         //create epsilon lookAt vector

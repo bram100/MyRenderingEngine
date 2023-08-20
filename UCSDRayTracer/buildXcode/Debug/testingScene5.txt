@@ -13,6 +13,15 @@ diffuse 0.4 0.4 0.4
 shininess 40
 emission 0 0 0
 
+
+ambient 1 0 0 
+#specular 0 0 1
+#diffuse 1 0 0
+shininess 40
+#emission 0 0 0
+translate -2 -2 -5
+sphere 0 0 0 0.4
+
 pushTransform
 translate 0 -2 -5
 
