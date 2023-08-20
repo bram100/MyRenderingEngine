@@ -95,14 +95,15 @@ color3 Material::shadingShadows(const localGeo& intersection, const ray& lightRa
     //dot product of normalized surface normal and normalizd half vector
     float dotProduct = MathOperations::dotProduct(normalizeNormal, halfEdge);
     
-    //(max of dot product, 0)^ shineness
-    float shineness = std::pow(fmax(dotProduct, 0.f), aBRDF.shininess/100);
-    
     
     float cosine = MathOperations::cosineAngle(lightRay.lookAt, viewDirection);
-    
 
-    color3 specularComponent = aBRDF.specular * std::pow(cosine, shineness) ;
+    //(max of dot product, 0)^ shineness
+    //float shineness = std::pow(fmax(dotProduct, 0.f), std::pow(cosine,  aBRDF.shininess));
+    
+    float shineness = std::pow(fmax(dotProduct, 0.f),  aBRDF.shininess);
+
+    color3 specularComponent = aBRDF.specular * shineness;
     
    // color3 specularComponent = aBRDF.specular * pow(fmax(normalizeNormal, halfEdge), aBRDF.shininess );
 

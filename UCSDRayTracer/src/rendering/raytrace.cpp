@@ -103,13 +103,14 @@ void trace(ray& ray, int depth, color3* color3) {
                 }
                     //no shape intersect, thus visslible
                     if (!inShadow) {
-                        if (/*std::shared_ptr<PointLight> pointLight =*/ std::dynamic_pointer_cast<PointLight>(l)) {
+                        /*
+                        if ( std::dynamic_pointer_cast<PointLight>(l)) {
                             
                             //change cVector to 0, 0, 1
                             cVector.z = 1;
                             
-                            vector3<float> lightPos = lightRay.lookAt /* position of the light source */;
-                            point3 pointPos = closestIntersect.localGeo.pos /* position of the point you're calculating for */;
+                            vector3<float> lightPos = lightRay.lookAt ; // position of the light source
+                            point3 pointPos = closestIntersect.localGeo.pos; // position of the point you're calculating for
 
                             vector3<float> diff = lightPos - pointPos;
                             float r = diff.Length(); // Calculate the length of the vector
@@ -120,9 +121,9 @@ void trace(ray& ray, int depth, color3* color3) {
                             
 
                         }
-
+*/
                         
-                        *color3 += (currentMaterial->shadingShadows(closestIntersect.localGeo, lightRay, lightColor));// * currentAttenuation;
+                        *color3 += (currentMaterial->shadingShadows(closestIntersect.localGeo, lightRay, lightColor));// *  currentAttenuation;
                 
                     }
                 

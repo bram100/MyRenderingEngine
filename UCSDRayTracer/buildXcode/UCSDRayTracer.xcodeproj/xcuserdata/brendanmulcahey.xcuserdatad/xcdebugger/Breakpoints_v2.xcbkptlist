@@ -3091,8 +3091,8 @@
             filePath = "src/rendering/raytrace.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
             landmarkName = "trace(ray, depth, color3)"
             landmarkType = "9">
          </BreakpointContent>
@@ -3187,8 +3187,8 @@
             filePath = "src/rendering/raytrace.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "trace(ray, depth, color3)"
             landmarkType = "9">
          </BreakpointContent>
@@ -3435,22 +3435,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "68CEADA1-A5AC-42FE-9DAB-2486814858F7"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/colors/material.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
-            landmarkName = "Material::shadingShadows(intersection, lightRay, lightColor)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "6030522E-E493-4D2D-BD2D-CE077EC790F0"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -3458,8 +3442,8 @@
             filePath = "src/colors/material.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "Material::shadingShadows(intersection, lightRay, lightColor)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3506,8 +3490,8 @@
             filePath = "src/colors/material.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "Material::shadingShadows(intersection, lightRay, lightColor)"
             landmarkType = "7">
             <Locations>
@@ -3600,8 +3584,8 @@
             filePath = "src/rendering/raytrace.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "trace(ray, depth, color3)"
             landmarkType = "9">
          </BreakpointContent>
@@ -3632,8 +3616,8 @@
             filePath = "src/rendering/raytrace.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "trace(ray, depth, color3)"
             landmarkType = "9">
          </BreakpointContent>
@@ -3648,8 +3632,8 @@
             filePath = "src/rendering/raytrace.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "trace(ray, depth, color3)"
             landmarkType = "9">
          </BreakpointContent>
