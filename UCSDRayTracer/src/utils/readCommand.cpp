@@ -122,7 +122,7 @@ void readfile(const char* fileName)
                 // Lighting Command
                 
                 
-                if (cmd == "fileName") {
+                if (cmd == "fileName" || cmd == "filename") {
                     str.erase(0, 9);
                     outdata.open(str);
                     if( !outdata ) { // file couldn't be opened
@@ -292,9 +292,9 @@ void readfile(const char* fileName)
                         
                     }
                     
-                    translationMatrix.clear();
-                    rotationMatrix.clear();
-                    scaleMatrix.clear();
+                  //  translationMatrix.clear();
+                    //rotationMatrix.clear();
+                    //scaleMatrix.clear();
 
                     
                     currentTransform = curTransform[curTransformIndex];
@@ -317,10 +317,10 @@ void readfile(const char* fileName)
                    // currentTransformInverse.updateInverseTranpose();
 
                     
-                    //curTransform[curTransformIndex] = currentTransform;
-                   // curTransformInverse[curTransformIndex] =currentTransformInverse;
+                    curTransform[curTransformIndex] = currentTransform;
+                    curTransformInverse[curTransformIndex] =currentTransformInverse;
 
-                  //  curTransformIndex++;
+                    curTransformIndex++;
 
                     }
                       

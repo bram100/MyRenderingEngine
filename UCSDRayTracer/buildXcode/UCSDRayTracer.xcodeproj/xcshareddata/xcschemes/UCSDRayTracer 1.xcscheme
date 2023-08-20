@@ -61,7 +61,7 @@
          </CommandLineArgument>
          <CommandLineArgument
             argument = "testingScene5.txt"
-            isEnabled = "NO">
+            isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "testingscene2.txt"
@@ -85,7 +85,7 @@
          </CommandLineArgument>
          <CommandLineArgument
             argument = "testingscene4-ambient.txt"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
       </CommandLineArguments>
    </LaunchAction>
