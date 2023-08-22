@@ -70,6 +70,8 @@ static transformCache transformCache;
 transformation currentTransform;
 transformation currentTransformInverse;
 
+vector3<float> curAttenuation;
+
 int curTransformIndex;
 
 void output2(std::ofstream& outdata)
@@ -121,6 +123,7 @@ void readfile(const char* fileName)
                 // Process the light, add it to database.
                 // Lighting Command
                 
+                std::cout << cmd << std::endl;
                 
                 if (cmd == "fileName" || cmd == "filename") {
                     str.erase(0, 9);
@@ -196,8 +199,9 @@ void readfile(const char* fileName)
                     str.erase(0, 11);
                     readValuesFloat(str, 3, valuesf, 3);
                     
+                    curAttenuation = vector3<float>(valuesf[0], valuesf[1], valuesf[2]);
                     
-                    makeLights(cmd, &defaultLightTransform, params);
+                //    makeLights(cmd, &defaultLightTransform, params);
 
                      
 

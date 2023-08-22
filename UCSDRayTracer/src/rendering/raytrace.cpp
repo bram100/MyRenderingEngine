@@ -103,7 +103,7 @@ void trace(ray& ray, int depth, color3* color3) {
                 }
                     //no shape intersect, thus visslible
                     if (!inShadow) {
-                        /*
+                        
                         if ( std::dynamic_pointer_cast<PointLight>(l)) {
                             
                             //change cVector to 0, 0, 1
@@ -116,12 +116,12 @@ void trace(ray& ray, int depth, color3* color3) {
                             float r = diff.Length(); // Calculate the length of the vector
 
                             
-                            
-                            currentAttenuation = lightRay.lookAt / (cVector.x + cVector.y * r + std::pow(cVector.z, r));
+                            int L = 1; //lightRay.lookAt
+                            currentAttenuation =  1 / (cVector.x + cVector.y * r + std::pow(cVector.z, r));
                             
 
-                        }
-*/
+                    }
+
                         
                         *color3 += (currentMaterial->shadingShadows(closestIntersect.localGeo, lightRay, lightColor));// *  currentAttenuation;
                 
