@@ -1,7 +1,8 @@
 #Thousand Spheres
 size 640 480
+#size 320 240 
 camera 0 0 0 0 0 -1 0 1 0 45
-filename scene5.ppm
+fileName scene5.ppm
 
 maxdepth 5
 
@@ -12,6 +13,7 @@ specular 0.4 0.4 0.4
 diffuse 0.4 0.4 0.4
 shininess 40
 emission 0 0 0
+
 
 pushTransform
 translate 0 -2 -5

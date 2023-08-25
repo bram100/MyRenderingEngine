@@ -13,25 +13,26 @@
 #include "math.hpp"
 
 inline int currentA;
-class PointLights : public Lights {
+class PointLight : public Lights {
 public:
-    PointLights(const vector3<float>& lightPos, const color3& lightColor, vector3<float> attenuation, const transformation lightToWorld)
+    PointLight(const vector3<float>& lightPos, const color3& lightColor, vector3<float> attenuation, const transformation lightToWorld)
         : Lights(lightToWorld, attenuation), lightPos(lightPos), lightColor(lightColor) {}
 
-    ~PointLights();
+    ~PointLight();
 
+    //point light - shines light at a point
     void generateLightRay(localGeo& local, ray* lightRay, color3* lightColor) override {
 
         //convert intersection to point to vector
         vector3<float> vectorPos(local.pos.x , local.pos.y, local.pos.z);
 
-        //noramlize lookAt
+        //noramlize lookAt, normalize direction
         vector3<float> lookAtDirection = normalize( lightPos - local.pos);
         
         //create epsilon lookAt vector
         vector3<float> lookAtDirectionEpsilon = MathOperations::floatVector3Multiply(0.001, lookAtDirection);
         
-        //alter lookFrmo by epsilon lookAt vector
+        //alter lookFrom by epsilon lookAt vector
         vector3<float> lookFromEpsilon = MathOperations::vectorVectorAdd(vectorPos, lookAtDirectionEpsilon);
         
         

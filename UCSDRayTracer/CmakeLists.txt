@@ -66,6 +66,8 @@ set(RENDERING_SOURCES
     src/rendering/ray.cpp
     src/rendering/film.hpp
     src/rendering/ray.hpp
+    src/rendering/reflectedray.hpp
+    src/rendering/reflectedray.cpp
     src/rendering/imageManager.cpp
     src/rendering/raytrace.cpp
 )

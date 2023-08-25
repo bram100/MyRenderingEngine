@@ -145,6 +145,23 @@ template <typename V, typename N>
 
 template <typename V, typename N>
 //float is 0 or 1 for when v is length 3
+    V vectorVectorSub(const V& v, const N& n) {
+        
+        V resultV;
+        
+        resultV.x = v.x - n.x;
+        resultV.y = v.y - n.y;
+        resultV.z = v.z - n.z;
+       // transformedV.w = v.x * m.m[0][3] + v.y * m.m[1][3] + v.z * m.m[2][3] + v.w * m.m[3][3];
+
+        return resultV;
+
+    }
+
+
+
+template <typename V, typename N>
+//float is 0 or 1 for when v is length 3
     V vectorVectorMultiply(const V& v, const N& n) {
         
         V resultV;
@@ -158,24 +175,25 @@ template <typename V, typename N>
 
     }
 
-
-template <typename V>
-//float is 0 or 1 for when v is length 3
-    V vectorPower(const V& v, float power) {
-        
-        V resultV;
-        
-       // resultV.x = f * v.x;
-      //  resultV.y = f * v.y;
-      //  resultV.z = f * v.z;
-       // transformedV.w = v.x * m.m[0][3] + v.y * m.m[1][3] + v.z * m.m[2][3] + v.w * m.m[3][3];
-
-        return resultV;
-
+float cosineAngle(const vector3<float>& a, const vector3<float>& b);
+/*
+float cosineAngle(const vector3<float>& a, const vector3<float>& b) {
+    float dotProduct = a * b; //dot product
+    float magnitudeA = a.Length(); //Magnitude(a);
+    float magnitudeB = b.Length(); //Magnitude(b);
+    
+    // Make sure the magnitudes are not zero
+    if (magnitudeA == 0.0f || magnitudeB == 0.0f) {
+        return 0.0f; // Angle doesn't make sense, return 0
     }
-
+    
+    return dotProduct / (magnitudeA * magnitudeB);
+}
+*/
     
 }
+
+
 
 template <typename T, typename L>
 float dot(const T &v1, const L &v2) {

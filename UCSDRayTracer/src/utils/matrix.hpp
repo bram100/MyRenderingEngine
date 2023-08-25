@@ -157,7 +157,7 @@ const float* operator[](int row) const {
         ray transformedRay;
         vector4<float> holdLookAt;
         vector4<float> holdLookFrom;
-        vector4<float> lookFrom4 = vector4<float>(r.lookFrom, 1.f);
+        vector4<float> lookFrom4 = vector4<float>(r.lookFrom.x, r.lookFrom.y, r.lookFrom.z, 1.f);
         vector4<float> lookAt4 = vector4<float>(r.lookAt, 0.f);
         
         holdLookAt[0] = m[0][0] * lookAt4[0] + m[0][1] * lookAt4[1] + m[0][2] * lookAt4[2] + m[0][3] * lookAt4[3];

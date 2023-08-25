@@ -7,6 +7,8 @@
 
 
 
+
+
 #include <thread>
 #include "thread.hpp"
 
@@ -45,11 +47,15 @@ Camera camera;
 objParamMap params;
 Scene scene;
 
+transformation translationMatrix;
+transformation rotationMatrix;
+transformation scaleMatrix;
+
 std::shared_ptr<Material> materialParsed = std::make_shared<Material>();
 int countingj = 0;
 
 float w, h;
-int maxDepth;
+int maxDepth = 5;
 bool animatedBool = false;
 
 bool lightExists;
@@ -62,6 +68,9 @@ transformationSet curTransform;
 transformationSet curTransformInverse;
 static transformCache transformCache;
 transformation currentTransform;
+transformation currentTransformInverse;
+
+vector3<float> curAttenuation(1.f, 0.f, 0.f);
 
 int curTransformIndex;
 
@@ -114,8 +123,9 @@ void readfile(const char* fileName)
                 // Process the light, add it to database.
                 // Lighting Command
                 
+                std::cout << cmd << std::endl;
                 
-                if (cmd == "fileName") {
+                if (cmd == "fileName" || cmd == "filename") {
                     str.erase(0, 9);
                     outdata.open(str);
                     if( !outdata ) { // file couldn't be opened
@@ -161,6 +171,7 @@ void readfile(const char* fileName)
                     
                     params.addOneVector3F("position", positionXYZ);
                     params.addOneColor3("color", colorRGB);
+                   // params.addOneVector3F("attenuation", attenuationConst);
 
                     lightExists = true;
 
@@ -178,7 +189,7 @@ void readfile(const char* fileName)
 
                     params.addOneVector3F("position", positionXYZ);
                     params.addOneColor3("color", colorRGB);
-
+                    params.addOneVector3F("attenuation", curAttenuation);
                     lightExists = true;
                     
                     makeLights(cmd, &defaultLightTransform, params);
@@ -189,8 +200,9 @@ void readfile(const char* fileName)
                     str.erase(0, 11);
                     readValuesFloat(str, 3, valuesf, 3);
                     
+                    curAttenuation = vector3<float>(valuesf[0], valuesf[1], valuesf[2]);
                     
-                    makeLights(cmd, &defaultLightTransform, params);
+                //    makeLights(cmd, &defaultLightTransform, params);
 
                      
 
@@ -229,7 +241,6 @@ void readfile(const char* fileName)
                 if (cmd == "specular") { // r g b
                     str.erase(0, 8);
                     readValuesFloat(str, 3, valuesf, 3);
-                    readValuesFloat(str, 3, valuesf, 3);
                     color3 specularColor = convertFloatToColor(valuesf);
                     materialParsed->aBRDF.specular = specularColor;
 
@@ -237,24 +248,14 @@ void readfile(const char* fileName)
                 
                 if (cmd == "shininess") { // r g b
                     str.erase(0, 9);
-                    readValuesFloat(str, 3, valuesf, 3);
-                    color3 mirrorColor = convertFloatToColor(valuesf);
-                    materialParsed->aBRDF.shininess = mirrorColor;
+                    readValuesFloat(str, 1, valuesf, 1);
+                    materialParsed->aBRDF.shininess = valuesf[0];;
 
                 }
                 
-                if (cmd == "specular") { // r g b
-                    str.erase(0, 8);
-                    readValuesFloat(str, 4, valuesf, 3);
-                    readValuesFloat(str, 3, valuesf, 3);
-                    color3 specularColor = convertFloatToColor(valuesf);
-                    materialParsed->aBRDF.specular = specularColor;
-
-                }
                 
                 if (cmd == "emission") { // r g b
                     str.erase(0, 8);
-                    readValuesFloat(str, 4, valuesf, 3);
                     readValuesFloat(str, 3, valuesf, 3);
                     color3 emissionColor = convertFloatToColor(valuesf);
                     materialParsed->aBRDF.emission = emissionColor;
@@ -287,17 +288,45 @@ void readfile(const char* fileName)
                 if (cmd == "popTransform") { //retrive
                     str.erase(0, 12);
 
+                    
+                    
+                    
+
                     if (curTransformIndex != 0) {
                         curTransformIndex--;
                         
                     }
+                    
+                  //  translationMatrix.clear();
+                    //rotationMatrix.clear();
+                    //scaleMatrix.clear();
+
+                    
+                    currentTransform = curTransform[curTransformIndex];
+                    currentTransformInverse = curTransformInverse[curTransformIndex];
+                    
+
                     }
                        
                 if (cmd == "pushTransform") { //add to stack, current working should be idenity matrix
                     str.erase(0, 13);
-                                        
-                    curTransformIndex++;
                     
+                    
+                    
+                    
+                    
+                   // currentTransformInverse.mt = currentTransform.mt.inverse(currentTransform.mt);
+
+
+                  //  currentTransform.updateInverseTranpose();
+                   // currentTransformInverse.updateInverseTranpose();
+
+                    
+                    curTransform[curTransformIndex] = currentTransform;
+                    curTransformInverse[curTransformIndex] =currentTransformInverse;
+
+                    curTransformIndex++;
+
                     }
                       
                 if (animatedBool == true) {
@@ -350,13 +379,14 @@ void readfile(const char* fileName)
                     //transformation *w2o = &curTransform[curTransformIndex];
                     //transformation *o2w = (&curTransform[curTransformIndex]);
                    // transformation result = *o2w * cameraViewTransformation;
+                   /*
                     createTransformationMatrix(translateVector, rotationVector, theta, scaleVector, curTransformIndex);
 
                     translateVector.clear();
                     rotationVector.clear();
                     scaleVector.ones();
 
-                    
+                    */
                     //string str = "sphere";
                     //makeShapes(str, o2w, w2o, params);
                     
@@ -365,15 +395,26 @@ void readfile(const char* fileName)
                     curTransformInverse[curTransformIndex].minvt = curTransform[curTransformIndex].mt;
 */
                     
-                    makeShapes(cmd, &curTransform[curTransformIndex], &curTransformInverse[curTransformIndex], params);
+                    currentTransformInverse.mt = currentTransform.mt.inverse(currentTransform.mt);
 
+                    
+                    
+                    currentTransform.updateInverseTranpose();
+                    currentTransformInverse.updateInverseTranpose();
+
+
+                    
+                    makeShapes(cmd, &currentTransform, &currentTransformInverse, params);
+
+                    currentTransform.clear();
+                    currentTransformInverse.clear();
                     //std::shared_ptr<Material> materialParsed = std::make_shared<Material>(*materialParsed);
 
                     countingj++;
                     std::cout << "sphere number  " << countingj << std::endl;
                     
-                    curTransformIndex++;
-                    
+                   // curTransformIndex++;
+                   
                 }
                 
                 if (cmd == "maxverts") {
@@ -436,10 +477,16 @@ void readfile(const char* fileName)
                     str.erase(0, 10);
                     readValuesFloat(str, 4, valuesf, 3);
                     
-                    translateVector.x += valuesf[0];
-                    translateVector.y += valuesf[1];
-                    translateVector.z += valuesf[2];
+                    translateVector.x = valuesf[0];
+                    translateVector.y = valuesf[1];
+                    translateVector.z = valuesf[2];
                     
+                    
+                    translationMatrix.translation(translateVector);
+                    currentTransform *= translationMatrix;
+
+                    
+
                 }
                 
                 if (cmd == "rotate") {
@@ -451,6 +498,13 @@ void readfile(const char* fileName)
                     rotationVector.z = valuesf[2];
 
                     theta = valuesf[3];
+                    
+                    transformation rotationMatrix;
+                    
+                    
+                    rotationMatrix.rotation(theta, rotationVector);
+                    currentTransform *= rotationMatrix;
+
 
                 }
                 
@@ -461,6 +515,14 @@ void readfile(const char* fileName)
                     scaleVector.x = valuesf[0];
                     scaleVector.y = valuesf[1];
                     scaleVector.z = valuesf[2];
+                    
+                    transformation scaleMatrix;
+                    
+                    
+                    
+                    scaleMatrix.scaling(scaleVector);
+                    currentTransform *= scaleMatrix;
+
 
                 }
     
@@ -478,11 +540,15 @@ void readfile(const char* fileName)
                    
                     //transformation *o2w = &curTransform[curTransformIndex];// transformCache.lookup(curTransform[0]);
                     //transformation *w2o = (&curTransform[curTransformIndex]);// transformCache.lookup(inverse(curTransform[0]));
+                    
+                    /*
                     createTransformationMatrix(translateVector, rotationVector, theta, scaleVector, curTransformIndex);
                     
                     translateVector.clear();
                     rotationVector.clear();
                     scaleVector.ones();
+                    
+                    */
                     
                    params.addOneInt("nTriangles", static_cast<int>(triArray.size()));
                    params.addVector3I("triArray", &triArray[0]);
@@ -494,12 +560,23 @@ void readfile(const char* fileName)
                    // curTransformInverse[curTransformIndex].minvt = curTransform[curTransformIndex].mt;
                 //    curTransformInverse[curTransformIndex].updateInverseTranpose;
 
-
-                    makeShapes(str, &curTransform[curTransformIndex], &curTransformInverse[curTransformIndex], params);
                     
+                    currentTransformInverse.mt = currentTransform.mt.inverse(currentTransform.mt);
+
+                    
+                    
+                    currentTransform.updateInverseTranpose();
+                    currentTransformInverse.updateInverseTranpose();
+
+
+                    makeShapes(str, &currentTransform, &currentTransformInverse, params);
+                    
+                    currentTransform.clear();
+                    currentTransformInverse.clear();
+
                    // std::shared_ptr<Material> materialParsed = std::make_shared<Material>(*materialParsed);
 
-                    curTransformIndex++;
+                   // curTransformIndex++;
                     
                     triArray.clear();
                     triArray.resize(0);
@@ -551,5 +628,3 @@ void closefile(const char* fileName) {
     
     
 }
-
-

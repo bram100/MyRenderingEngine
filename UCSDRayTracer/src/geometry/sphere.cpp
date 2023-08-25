@@ -137,7 +137,7 @@ bool sphere::intersectP(const ray &currentRay) const
         if (t0 < 0)
             return false;
     }
-
+    
     return true;
 }
 

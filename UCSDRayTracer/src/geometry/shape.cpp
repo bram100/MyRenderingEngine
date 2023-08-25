@@ -65,14 +65,18 @@ bool Shapes::intersect(const ray& ray, float* tHit, localGeo* localGeo) const {
      Same as intersect, but just return whether there is any intersection or not
      */
 
+const std::string getShapeType() {
+    
+}
+
 bool Shapes::intersectP(const ray& ray) const {
     
 }
 
-
+int j;
 void createTransformationMatrix(const vector3<float>& translate, const vector3<float>& rotation, const float axis, const vector3<float>& scale, const int i) {
 
-    transformation matrixTransform; //should be identity matrix
+    //transformation matrixTransform; //should be identity matrix
     transformation inversMatrixTransform; //should be identity matrix
 
     //transformationMatrix.mt = camera.cameraToWorld;
@@ -80,9 +84,21 @@ void createTransformationMatrix(const vector3<float>& translate, const vector3<f
     //(TRS is the proper order but that doesnt work with
     // translation
     
+    vector3<float> temp(0, -2, -5);
+    transformation translationMatrixTemp;
+    translationMatrixTemp.translation(temp);
+  //  matrixTransform *= translationMatrixTemp;
     
-    transformation translationMatrix; //this would be creating the objecToWolrd
+
+    if (i != 0) {
+        j = i-1;
+    }
     
+    transformation matrixTransform;// = curTransform[j]; //this would be creating the objecToWolrd
+    
+    transformation translationMatrix;//this would be creating the objecToWolrd
+
+
     translationMatrix.translation(translate);
     matrixTransform *= translationMatrix;
     
@@ -113,6 +129,7 @@ void createTransformationMatrix(const vector3<float>& translate, const vector3<f
 }
 
 
+
 void makeShapes(const std::string &name, const transformation *object2World, const transformation *world2Object, objParamMap &paramSet) {
     std::vector<std::shared_ptr<Shapes>> vecShapes;
     intersection intersection;
@@ -121,8 +138,15 @@ void makeShapes(const std::string &name, const transformation *object2World, con
     aShape.reset();
     vecShapes.clear();
     
+    
+    transformation *newObject2World = new transformation(*object2World);
+    
+    // Allocate memory for new world2Object transformation and copy values
+    transformation *newWorld2Object = new transformation(*world2Object);
+
+    
     if (name == "sphere") {
-        aShape = createSphereShape(object2World, world2Object, paramSet);
+        aShape = createSphereShape(newObject2World, newWorld2Object, paramSet);
     }
     
     else if (name == "temp" ) {
@@ -135,7 +159,7 @@ void makeShapes(const std::string &name, const transformation *object2World, con
     }
     
     else if  (name == "triangleMesh") {
-        vecShapes = createTriangleMeshShape(object2World, world2Object, paramSet, 0);
+        vecShapes = createTriangleMeshShape(newObject2World, newWorld2Object, paramSet, 0);
         
         triMeshCount++;
         std::cout << "triagnle Mesh created " << triMeshCount << std::endl;

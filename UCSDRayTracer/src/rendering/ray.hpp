@@ -32,11 +32,11 @@ class ray {
     ray() : lookFrom(0.f,0.f,0.f), lookAt(0,0,0), t_max(0), t_min(0) {}
     
 
-    ray(const vector3<float> lookFrom, const vector3<float> lookAt, float t_max = infinity, float t_min = infinity * -1)
+    ray(const point3<float> lookFrom, const vector3<float> lookAt, float t_max = infinity, float t_min = infinity * -1)
             : lookFrom(lookFrom), lookAt(lookAt), t_max(t_max), t_min(t_min) {}
     
     // Point pos
-    vector3<float> lookFrom;
+    point3<float> lookFrom;
     
     // Vector dir
     vector3<float> lookAt;

@@ -43,6 +43,8 @@ public:
 
     virtual bool intersectP(const ray& currentRay) const;
 
+    virtual std::string getShapeType() const = 0;
+
     friend std::ostream& operator<<(std::ostream& os, const Shapes& shape) {
         os << "This is a shape!";
         return os;

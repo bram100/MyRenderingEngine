@@ -405,7 +405,7 @@ bool Triangle::intersect(const ray &currentRay, float *tHit, localGeo *localGeoP
  
     // compute the intersection point using equation 1
     //transforming point  from object space to world space
-    vector3<float> P = objectRay.lookFrom + (objectRay.lookAt * t); //not sure if * is right form of multiplcaiton
+    point3<float> P = objectRay.lookFrom + (objectRay.lookAt * t); //not sure if * is right form of multiplcaiton
  
     // Step 2: inside-outside test
     vector3<float> cross; // vector perpendicular to triangle's plane
@@ -497,7 +497,7 @@ bool Triangle::intersectP(const ray &currentRay) const
         
         return false;
 
-    vector3<float> P = transformedRay.lookFrom + (transformedRay.lookAt * t);
+    point3<float> P = transformedRay.lookFrom + (transformedRay.lookAt * t);
  
     vector3<float> cross;
     

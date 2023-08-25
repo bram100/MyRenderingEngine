@@ -10,7 +10,7 @@
 
 #include <stdio.h>
 #include <iostream>
-
+#include "vector.hpp"
 
 
 class color3
@@ -24,6 +24,7 @@ class color3
         // Copy constructor
         color3(const color3& other) : r(other.r), g(other.g), b(other.b) {}
 
+    
     
        // Assignment operator
        color3& operator=(const color3& other) {
@@ -54,13 +55,32 @@ class color3
 */
     
         color3 operator*(float scalar) const {
+            
             return color3(r * scalar, g * scalar, b * scalar);
         }
         
     
         color3 operator*(const color3& other) const {
+            
             return color3(r * other.r, g * other.g, b * other.b);
         }
+    
+        color3 operator*(const vector3<float>& vec) const {
+            return color3(r * vec.x, g * vec.y, b * vec.z);
+        }
+
+    void normalize() {
+        int maxComponent = std::max(std::max(r, g), b);
+
+        if (maxComponent > 255) {
+            float scale = 255.0f / maxComponent;
+            r = static_cast<int>(r * scale);
+            g = static_cast<int>(g * scale);
+            b = static_cast<int>(b * scale);
+        }
+    }
+
+
 
     
         color3& operator+=(const color3& other) {
@@ -69,6 +89,14 @@ class color3
             b += other.b;
             return *this;
         }
+    
+    color3& operator+(const color3& other) {
+        r = r + other.r;
+        g = g + other.g;
+        b = b + other.b;
+        
+        return *this;
+    }
 
 
 };

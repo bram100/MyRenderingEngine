@@ -66,10 +66,16 @@ class normal {
         normal<T> operator+(const normal<T> &object) const {
             return normalize(vector3(x + object.x, y + object.y, z + object.z));
         };
+    
 
         normal<T> operator-(const normal<T> &object) const {
             return normalize(vector3(x - object.x, y - object.y, z - object.z));
         };
+    
+        friend normal operator*(float scalar, const normal& norm) {
+            return normal(scalar * norm.x, scalar * norm.y, scalar * norm.z);
+        }
+
     
     template <typename U>
         normal<T>& operator=(const vector3<U>& vec) {

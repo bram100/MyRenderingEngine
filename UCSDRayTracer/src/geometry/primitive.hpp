@@ -125,7 +125,8 @@ class primitive {
 public:
     
    // primitive(const std::shared_ptr<Shapes>& shape, const std::shared_ptr<Material>& material) : shape(shape), material(material) {}
-    
+    virtual std::string getShapeType() const = 0;
+
     virtual bool intersect(ray& ray, float* thit, intersection* intersct) = 0;
     virtual bool intersectP(ray& ray) = 0;
 

@@ -18,11 +18,11 @@ std::shared_ptr<Lights> createPointLight(const transformation *l2w, const objPar
     color3 lightColor = params.findOneColor3("color", color3()) ;
     vector3<float> attenuation = params.findOneVector3F("attenuation", vector3<float>()) ;
     
-    return std::make_shared<PointLights>(lightPos, lightColor, attenuation, *l2w);
+    return std::make_shared<PointLight>(lightPos, lightColor, attenuation, *l2w);
 
 
 }
-PointLights::~PointLights() {
+PointLight::~PointLight() {
     // Implementation of the destructor
     // Add any necessary cleanup code here
 }

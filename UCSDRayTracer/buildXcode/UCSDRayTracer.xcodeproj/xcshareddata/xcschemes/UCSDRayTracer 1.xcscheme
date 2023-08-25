@@ -56,6 +56,18 @@
             isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
+            argument = "testingScene6.txt"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "testingscene4-specular.txt"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "testingScene5.txt"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
             argument = "testingscene2.txt"
             isEnabled = "NO">
          </CommandLineArgument>
@@ -65,7 +77,7 @@
          </CommandLineArgument>
          <CommandLineArgument
             argument = "testingscene4-emission.txt"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "testingscene4-diffuse.txt"

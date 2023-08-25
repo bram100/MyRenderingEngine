@@ -22,6 +22,11 @@ class sphere : public Shapes {
     }
     //bool intersect(const ray &ray, float *tHit, localGeo *localGeoPos) const;
     
+    std::string getShapeType() const {
+        return "Sphere";
+    }
+
+    
     //why override????
     bool intersect(const ray &ray, float *tHit, localGeo *localGeoPos) const override;
     

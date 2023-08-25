@@ -105,6 +105,9 @@ class Triangle : public Shapes {
     
     bool intersectP(const ray &ray) const override;
 
+    std::string getShapeType() const {
+        return "Triangle";
+    }
 
   private:
     std::shared_ptr<triangleMesh> mesh;

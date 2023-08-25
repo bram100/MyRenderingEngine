@@ -26,6 +26,11 @@ public:
 
     virtual void generateLightRay(localGeo& local, ray* currentRay, color3* currentColor) = 0;
     
+    
+    const vector3<float>& getAttenuation() const {
+           return attenuation;
+       }
+
     //why protected
     protected:
     vector3<float> attenuation;

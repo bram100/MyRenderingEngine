@@ -16,11 +16,17 @@ public:
         : Lights(lightToWorld, attenuation), direction(dir), lightColor(lightColor) {}
 
     ~DirectionalLights();
-    void generateLightRay(localGeo& local, ray* lray, color3* lcolor) override {
+    void generateLightRay(localGeo& local, ray* lightRay, color3* lightColor) override {
         // For a directional light, the direction is constant for all points in the scene
-        *lray = ray(/* calculate the direction of the light ray from the local geometry */);
-        *lcolor = lightColor;
-    }
+        //why negative
+        vector3<float> lightDir = normalize(direction * -1);
+        
+        // Generate the light ray with the directional light direction
+        *lightRay = ray(local.pos, lightDir,  infinity, (infinity * -1));
+
+        *lightColor = this->lightColor;
+
+        }
 
 private:
     // Directional light attributes

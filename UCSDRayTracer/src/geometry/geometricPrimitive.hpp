@@ -33,7 +33,10 @@ public:
 
     virtual bool intersectP(ray& ray) override ;
 
- 
+    virtual std::string getShapeType() const override{
+        return shape->getShapeType();
+    }
+
     void getBRDF(localGeo& local, BRDF* brdf) override;
 
     std::shared_ptr<Material> getMaterial() const override {
