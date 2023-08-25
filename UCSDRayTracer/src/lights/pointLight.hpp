@@ -32,7 +32,7 @@ public:
         //create epsilon lookAt vector
         vector3<float> lookAtDirectionEpsilon = MathOperations::floatVector3Multiply(0.001, lookAtDirection);
         
-        //alter lookFrmo by epsilon lookAt vector
+        //alter lookFrom by epsilon lookAt vector
         vector3<float> lookFromEpsilon = MathOperations::vectorVectorAdd(vectorPos, lookAtDirectionEpsilon);
         
         

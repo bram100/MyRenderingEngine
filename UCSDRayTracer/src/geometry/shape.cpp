@@ -65,6 +65,10 @@ bool Shapes::intersect(const ray& ray, float* tHit, localGeo* localGeo) const {
      Same as intersect, but just return whether there is any intersection or not
      */
 
+const std::string getShapeType() {
+    
+}
+
 bool Shapes::intersectP(const ray& ray) const {
     
 }

@@ -6,13 +6,7 @@
   },
   "configuredTargets" : [
     {
-      "guid" : "bfec56aa1f812ee1695d74a98718c654e0667b34f892479ee8d339a3e6e99576"
-    },
-    {
       "guid" : "bfec56aa1f812ee1695d74a98718c654f3d563feba96d394a7e0802b1468e8c0"
-    },
-    {
-      "guid" : "bfec56aa1f812ee1695d74a98718c65464cf2c6de7fc36db239987b33c5a91d9"
     }
   ],
   "containerPath" : "/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode/UCSDRayTracer.xcodeproj",
@@ -21,6 +15,19 @@
   "hideShellScriptEnvironment" : false,
   "parameters" : {
     "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx13.3",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
     "arenaInfo" : {
       "buildIntermediatesPath" : "",
       "buildProductsPath" : "",
@@ -39,10 +46,9 @@
       }
     }
   },
-  "qos" : "default",
   "schemeCommand" : "launch",
   "showNonLoggedProgress" : true,
-  "useDryRun" : true,
+  "useDryRun" : false,
   "useImplicitDependencies" : true,
   "useLegacyBuildLocations" : false,
   "useParallelTargets" : true

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -34,123 +34,50 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		011B43ACCE944351AE26ED1D /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/sample.cpp */ = {isa = PBXBuildFile; fileRef = 02C22CF7544A4C7187D23F7D /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/sample.cpp */; };
-		062D83BF29E24774BFD46AF7 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/texture.cpp */ = {isa = PBXBuildFile; fileRef = 56C87DEAFFD5433A90E2EBE5 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/texture.cpp */; };
-		09BA5A52849C4BC099ED9A1E /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/localGeo.hpp */ = {isa = PBXBuildFile; fileRef = 9417A6E173F64FEC99E01003 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/localGeo.hpp */; };
-		0DD128A8F0B7432DB384A153 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transformationStack.hpp */ = {isa = PBXBuildFile; fileRef = 67FB8E6D489645F1BE284626 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transformationStack.hpp */; };
-		0F74E07CD5CC43C2BDE25364 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/point.hpp */ = {isa = PBXBuildFile; fileRef = 5B2AB8E512EA4F50ACEBCD90 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/point.hpp */; };
-		11EDF584B028468190AF3725 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/aggregate.cpp */ = {isa = PBXBuildFile; fileRef = 60B9875064BE4C30B3699F70 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/aggregate.cpp */; };
-		16A56F92651F491C900904C3 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/primitive.cpp */ = {isa = PBXBuildFile; fileRef = 53D45CC93AD949A8B43D07E6 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/primitive.cpp */; };
-		17D7A84004F14105ABBBBD08 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/texture.hpp */ = {isa = PBXBuildFile; fileRef = 1D82DFEE3B4A43CB9DFE99CE /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/texture.hpp */; };
-		1AB3FC13B3904632B3D523FB /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/objParameters.cpp */ = {isa = PBXBuildFile; fileRef = DE3E28D1AFC7466E9D985481 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/objParameters.cpp */; };
-		21F096F04355463BAD228B4E /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/primitive.hpp */ = {isa = PBXBuildFile; fileRef = CF82733F076F4778BE7EF6A2 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/primitive.hpp */; };
-		24C9E95C8CE54FF39D6007EF /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transform.hpp */ = {isa = PBXBuildFile; fileRef = 7A6702A06CF94C8F9B68E294 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transform.hpp */; };
-		28F29B7C164B4BFFA644DAEA /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/attenuation.cpp */ = {isa = PBXBuildFile; fileRef = ED77AF5C67A8411AB366C98D /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/attenuation.cpp */; };
-		2B045B651D5C426E8CB8290E /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/point.cpp */ = {isa = PBXBuildFile; fileRef = 27ABD4BFA6B047ADB7D61BC6 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/point.cpp */; };
-		2DEAF63A4CBE4C68BFDE13E7 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/pointLight.hpp */ = {isa = PBXBuildFile; fileRef = 8120E308ECAC4136AC862237 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/pointLight.hpp */; };
-		34BEFA3542D64A42B8E46C27 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/aggregate.hpp */ = {isa = PBXBuildFile; fileRef = 8EDB86FA9B134B27AB3461F2 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/aggregate.hpp */; };
-		3FAE475282D44A409AE0157F /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/attenuation.hpp */ = {isa = PBXBuildFile; fileRef = A349DB65EA384953A84B4F86 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/attenuation.hpp */; };
-		410FF0392EEF4CF097B31BA9 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/BRDF.hpp */ = {isa = PBXBuildFile; fileRef = 4947B7FFDEE141B5875DAA02 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/BRDF.hpp */; };
-		481B8D5AAD0042539303E65E /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/pointLight.cpp */ = {isa = PBXBuildFile; fileRef = 3571BB66F6BB41488B2579C2 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/pointLight.cpp */; };
-		51159DBD311A48D6BCC3C0C3 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/color.cpp */ = {isa = PBXBuildFile; fileRef = 829E1DBF9CEB46A1AA79D449 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/color.cpp */; };
-		5620DAD8C814421AA255482A /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 591F15AFCDCA455193B53D86 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/CMakeLists.txt */; };
-		58D998A29488467896204865 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/normal.hpp */ = {isa = PBXBuildFile; fileRef = EF680CC04E8D4E468404EB72 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/normal.hpp */; };
-		600FC306C5314E359DA52BBB /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/thread.cpp */ = {isa = PBXBuildFile; fileRef = 3ED381031BD94B73BD81C7FA /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/thread.cpp */; };
-		60CD2CB56FF346618B2F7029 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/sphere.hpp */ = {isa = PBXBuildFile; fileRef = 23FEE37D2DBF478CB7CBB91C /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/sphere.hpp */; };
-		60DCB32A35DD4BA8B6C19E7B /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/film.cpp */ = {isa = PBXBuildFile; fileRef = B107C306E00B4EAEB47B7D97 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/film.cpp */; };
-		641FD2E060BE486388AB8849 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/objParameters.hpp */ = {isa = PBXBuildFile; fileRef = 7650CAC9D00B485AAB7E32C8 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/objParameters.hpp */; };
-		650CFF3F9F644EE1871286B1 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/scene.hpp */ = {isa = PBXBuildFile; fileRef = 38FFB89A96B14B069E41CDE5 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/scene.hpp */; };
-		69BFC6CDE2B54201B00F0B61 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/geometricPrimitive.cpp */ = {isa = PBXBuildFile; fileRef = 702EE336AB6C47D49967594E /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/geometricPrimitive.cpp */; };
-		6C642CCB8177482E90F96924 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/sample.hpp */ = {isa = PBXBuildFile; fileRef = D36FCA8E12ED41B1A5D98DD3 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/sample.hpp */; };
-		6F1D98556A834B0385F5FC35 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/cameraPerspective.cpp */ = {isa = PBXBuildFile; fileRef = 02359B59176348FEB132874C /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/cameraPerspective.cpp */; };
-		7005C4F37C474AF9A0D4CF6A /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/ray.cpp */ = {isa = PBXBuildFile; fileRef = 1EBA9BCCE127441D8AEF5E3A /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/ray.cpp */; };
-		72A1153C7FFB47C7A15D330C /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/triangle.cpp */ = {isa = PBXBuildFile; fileRef = E1BF43B274AE45CFBD4B7D65 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/triangle.cpp */; };
-		72DA46989FDD44DC94EF97CD /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/normal.cpp */ = {isa = PBXBuildFile; fileRef = F38EE4AA07E14D648C41DC1A /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/normal.cpp */; };
-		73FA577BBA9B4FD9B0CC9B00 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/accelerators.cpp */ = {isa = PBXBuildFile; fileRef = E7AA70518CFA403CA340415C /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/accelerators.cpp */; };
-		7649444FD09A4AD3BCEA9CEC /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp */ = {isa = PBXBuildFile; fileRef = E4574E3372314E3498134688 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp */; };
-		77E8DA930C5446A8AD8B7DB6 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/triangle.hpp */ = {isa = PBXBuildFile; fileRef = DD9DC3887F0A4EFDAC75DC76 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/triangle.hpp */; };
-		78159CBA9AC7439CBDFB9CBF /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/shape.cpp */ = {isa = PBXBuildFile; fileRef = 3C1E2D2D79494E69A582B41C /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/shape.cpp */; };
-		7C27FA1B62EB4AD7ABF621F8 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/raytrace.hpp */ = {isa = PBXBuildFile; fileRef = 1C990BCA7B374C91B5351254 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/raytrace.hpp */; };
-		7F37433D62474F359B5A22B3 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/shape.hpp */ = {isa = PBXBuildFile; fileRef = C915D13131F148E8AB4AC75F /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/shape.hpp */; };
-		85DEFAB4841141B89A7B4E5F /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/material.cpp */ = {isa = PBXBuildFile; fileRef = 7B4895005C4541B29253E070 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/material.cpp */; };
-		884334B767234DE39B1FC5A2 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transform.cpp */ = {isa = PBXBuildFile; fileRef = 8E457FEEFCFA4FA79519FDAC /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transform.cpp */; };
-		88A66747587C41FCBEB24EDD /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/DisneyBSDF.cpp */ = {isa = PBXBuildFile; fileRef = 110CCF2132D84686A67BCDA2 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/DisneyBSDF.cpp */; };
-		8A461686CEAB4C17B7CA5F67 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/testing.hpp */ = {isa = PBXBuildFile; fileRef = 33387910718A47398711BF9D /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/testing.hpp */; };
-		8BB61D6BFABB42A8AA234158 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/imageManager.hpp */ = {isa = PBXBuildFile; fileRef = 896E775DB5BB4BE59E43311E /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/imageManager.hpp */; };
-		95BCBC42411C45B18308C3BE /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/matrix.hpp */ = {isa = PBXBuildFile; fileRef = C7C850FB9E98408FA14E8F0E /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/matrix.hpp */; };
-		96E5F1355C944ED9AAE74533 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/camera.cpp */ = {isa = PBXBuildFile; fileRef = 56CC9DD708A04FE7BDD5095D /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/camera.cpp */; };
-		96FFB3B7D0DD40EABA744E3F /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/lights.hpp */ = {isa = PBXBuildFile; fileRef = 4D96DA32BD4F4C3793900D2F /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/lights.hpp */; };
-		9EC31826FDB7444BA0766274 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/film.hpp */ = {isa = PBXBuildFile; fileRef = 9CCF818C8B054BDAACF16828 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/film.hpp */; };
-		9F2AF573036B42BEAD65E68A /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/matrix.cpp */ = {isa = PBXBuildFile; fileRef = ADA52AA43DD24C17A5B003E2 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/matrix.cpp */; };
-		A4C0AC58D3DA4E48B44D7324 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/ray.hpp */ = {isa = PBXBuildFile; fileRef = 690121798E8647438EA14745 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/ray.hpp */; };
-		A4E4573D45684D779DF797FB /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/raytrace.cpp */ = {isa = PBXBuildFile; fileRef = 345F50794F0046589D8B0AA3 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/raytrace.cpp */; };
-		A6951586FB4249F39AB212DD /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/color.hpp */ = {isa = PBXBuildFile; fileRef = 3E2E61F09FFA43998D0AA8BB /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/color.hpp */; };
-		A81A5AC2BA814EAE92A6BE07 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/localGeo.cpp */ = {isa = PBXBuildFile; fileRef = 2F2BB85E1E8648E3ABF46C3B /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/localGeo.cpp */; };
-		AA12581DBDE1468B9968973F /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/testing.cpp */ = {isa = PBXBuildFile; fileRef = C7DA5BBAE602436F9DA3B689 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/testing.cpp */; };
-		AC9C805A91B8418FA2ABF1C8 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/lights.cpp */ = {isa = PBXBuildFile; fileRef = 53EFDAD2300242CFA96A7C4F /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/lights.cpp */; };
-		ACD46EA315D44DF8B9A4EBB8 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/imageManager.cpp */ = {isa = PBXBuildFile; fileRef = 10472206930E462F92C20FD4 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/imageManager.cpp */; };
-		B13305BF43E64860BDEE0534 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/CImg.h */ = {isa = PBXBuildFile; fileRef = 52CBEEE6993A4C37AC185D0D /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/CImg.h */; };
-		B5E615C99A5F4696B17B6463 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transformedPrimitive.hpp */ = {isa = PBXBuildFile; fileRef = 8A9D865C2F3B4A5FB1AC0FF9 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transformedPrimitive.hpp */; };
-		B9FC6908DB8F4BCFAD68C2C1 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/sphere.cpp */ = {isa = PBXBuildFile; fileRef = 4F5F096DCEB74617AFAD7412 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/sphere.cpp */; };
-		BA16F644F26C40F8AFF7D487 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/geometricPrimitive.hpp */ = {isa = PBXBuildFile; fileRef = 5B2200A6ADBC415C9E8765D5 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/geometricPrimitive.hpp */; };
-		BAF84B19530D4EB8B5104288 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/scene.cpp */ = {isa = PBXBuildFile; fileRef = 824B98F6CC9A43E4B518D8A5 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/scene.cpp */; };
-		BE706B19044747D49B8D7B5D /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/directionalLight.hpp */ = {isa = PBXBuildFile; fileRef = 1357269016D74501BBE462ED /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/directionalLight.hpp */; };
-		C0985060E9084099969DE3CC /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/directionalLight.cpp */ = {isa = PBXBuildFile; fileRef = 23B3E4BB5FBF46E39A9D37C2 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/directionalLight.cpp */; };
-		C7010BC2D9C44077B92AE9E9 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/vector.cpp */ = {isa = PBXBuildFile; fileRef = 8D9DA14D5F3946E7A3ABE2BE /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/vector.cpp */; };
-		CD7A6750BC7444AE95472FDD /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/memory.cpp */ = {isa = PBXBuildFile; fileRef = 09F6C2686E6441EA9A69A3C6 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/memory.cpp */; };
-		D236C3B439094978A0BF725A /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/intersection.hpp */ = {isa = PBXBuildFile; fileRef = 876398CCC04846DE87E33734 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/intersection.hpp */; };
-		D2BAA146BC80442D94F6FC65 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transformationStack.cpp */ = {isa = PBXBuildFile; fileRef = 54C22DDFD307460D8D599E7B /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transformationStack.cpp */; };
-		D53D9F4514554B85B2259C6D /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.hpp */ = {isa = PBXBuildFile; fileRef = D355C943223242528E571BDC /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.hpp */; };
-		D576A902B7664B78B1814B75 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/sampler.cpp */ = {isa = PBXBuildFile; fileRef = 87B27A5DB0FF42B09EBA9F87 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/sampler.cpp */; };
-		D5A1852DC03B447193C0580B /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/sampler.hpp */ = {isa = PBXBuildFile; fileRef = 79A57C470F964548B50B951D /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/sampler.hpp */; };
-		D6A4978BAECD406AB4C41974 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/cameraPerspective.hpp */ = {isa = PBXBuildFile; fileRef = D0ECCFEEB0564A1E92233058 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/cameraPerspective.hpp */; };
-		D800903F24A8429C95054070 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/thread.hpp */ = {isa = PBXBuildFile; fileRef = A9B3F5A61DDA4923A4EECEE8 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/thread.hpp */; };
-		D82ADDD62EB745E192244AC8 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/math.hpp */ = {isa = PBXBuildFile; fileRef = 4BC2E0D423774FD79100A140 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/math.hpp */; };
-		D9C5511A59F94286B4B00A82 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/camera.hpp */ = {isa = PBXBuildFile; fileRef = 24DB5A3DD75741A2BD46CBD1 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/camera.hpp */; };
-		DA09438952204D3884E3F0CD /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/main.cpp */ = {isa = PBXBuildFile; fileRef = FD62151F346B43EFB5F64CFB /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/main.cpp */; };
-		DAED8B6079054EAC82BFA9C9 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/BRDF.cpp */ = {isa = PBXBuildFile; fileRef = C2BFD2A7DF1E4470B724BF4D /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/BRDF.cpp */; };
-		DC212F65551243369A93DA1B /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/accelerators.hpp */ = {isa = PBXBuildFile; fileRef = 299E4627CCD04A9C8AEB6E22 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/accelerators.hpp */; };
-		E17516C86FC443B68B65490B /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/intersection.cpp */ = {isa = PBXBuildFile; fileRef = 7FD9C4F150564C5B929FC120 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/intersection.cpp */; };
-		E42DF91182B143B2A0706694 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/variables.cpp */ = {isa = PBXBuildFile; fileRef = EC9A91B90621443D8555AF7E /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/variables.cpp */; };
-		ECC4B3CA439D412997F500F4 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transformedPrimitive.cpp */ = {isa = PBXBuildFile; fileRef = FD935BA4D2CA444FB0D60B30 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transformedPrimitive.cpp */; };
-		EE5067E2B5CE4AA989B69556 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/memory.hpp */ = {isa = PBXBuildFile; fileRef = DEEC592F1CB94D17932B3F3E /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/memory.hpp */; };
-		EEED32F442B146B2B30EB074 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/math.cpp */ = {isa = PBXBuildFile; fileRef = 66ECF90DBC674D228EE1F156 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/math.cpp */; };
-		F30D8A909D794605AD8617D8 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/vector.hpp */ = {isa = PBXBuildFile; fileRef = 9EA5EB7797164E33A9669E5B /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/vector.hpp */; };
-		F426CBE7D4C84462A5E70790 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/material.hpp */ = {isa = PBXBuildFile; fileRef = F5E611AD94FB442EA7E4F912 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/material.hpp */; };
-		F59CEB706EA44B3FAD0C2030 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/DisneyBSDF.hpp */ = {isa = PBXBuildFile; fileRef = 68D74F3447E34E258D327DDD /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/DisneyBSDF.hpp */; };
-		FB57D892E3C244BFA50BB073 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/variables.hpp */ = {isa = PBXBuildFile; fileRef = 40D898D841EF485FB1BF39AD /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/variables.hpp */; };
+		011B43ACCE944351AE26ED1D /* sample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02C22CF7544A4C7187D23F7D /* sample.cpp */; };
+		062D83BF29E24774BFD46AF7 /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56C87DEAFFD5433A90E2EBE5 /* texture.cpp */; };
+		11EDF584B028468190AF3725 /* aggregate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60B9875064BE4C30B3699F70 /* aggregate.cpp */; };
+		16A56F92651F491C900904C3 /* primitive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53D45CC93AD949A8B43D07E6 /* primitive.cpp */; };
+		1AB3FC13B3904632B3D523FB /* objParameters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE3E28D1AFC7466E9D985481 /* objParameters.cpp */; };
+		28F29B7C164B4BFFA644DAEA /* attenuation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED77AF5C67A8411AB366C98D /* attenuation.cpp */; };
+		2B045B651D5C426E8CB8290E /* point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27ABD4BFA6B047ADB7D61BC6 /* point.cpp */; };
+		481B8D5AAD0042539303E65E /* pointLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3571BB66F6BB41488B2579C2 /* pointLight.cpp */; };
+		51159DBD311A48D6BCC3C0C3 /* color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 829E1DBF9CEB46A1AA79D449 /* color.cpp */; };
+		600FC306C5314E359DA52BBB /* thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3ED381031BD94B73BD81C7FA /* thread.cpp */; };
+		60DCB32A35DD4BA8B6C19E7B /* film.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B107C306E00B4EAEB47B7D97 /* film.cpp */; };
+		69BFC6CDE2B54201B00F0B61 /* geometricPrimitive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 702EE336AB6C47D49967594E /* geometricPrimitive.cpp */; };
+		6F1D98556A834B0385F5FC35 /* cameraPerspective.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02359B59176348FEB132874C /* cameraPerspective.cpp */; };
+		7005C4F37C474AF9A0D4CF6A /* ray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EBA9BCCE127441D8AEF5E3A /* ray.cpp */; };
+		72A1153C7FFB47C7A15D330C /* triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1BF43B274AE45CFBD4B7D65 /* triangle.cpp */; };
+		72DA46989FDD44DC94EF97CD /* normal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F38EE4AA07E14D648C41DC1A /* normal.cpp */; };
+		73FA577BBA9B4FD9B0CC9B00 /* accelerators.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7AA70518CFA403CA340415C /* accelerators.cpp */; };
+		7649444FD09A4AD3BCEA9CEC /* readCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4574E3372314E3498134688 /* readCommand.cpp */; };
+		78159CBA9AC7439CBDFB9CBF /* shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C1E2D2D79494E69A582B41C /* shape.cpp */; };
+		85DEFAB4841141B89A7B4E5F /* material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7B4895005C4541B29253E070 /* material.cpp */; };
+		884334B767234DE39B1FC5A2 /* transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E457FEEFCFA4FA79519FDAC /* transform.cpp */; };
+		88A66747587C41FCBEB24EDD /* DisneyBSDF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 110CCF2132D84686A67BCDA2 /* DisneyBSDF.cpp */; };
+		96E5F1355C944ED9AAE74533 /* camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56CC9DD708A04FE7BDD5095D /* camera.cpp */; };
+		9F2AF573036B42BEAD65E68A /* matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADA52AA43DD24C17A5B003E2 /* matrix.cpp */; };
+		A4E4573D45684D779DF797FB /* raytrace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 345F50794F0046589D8B0AA3 /* raytrace.cpp */; };
+		A52093CC2A94F5E100A9E3CA /* reflectedRay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A52093CA2A94F5E100A9E3CA /* reflectedRay.cpp */; };
+		A81A5AC2BA814EAE92A6BE07 /* localGeo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F2BB85E1E8648E3ABF46C3B /* localGeo.cpp */; };
+		AA12581DBDE1468B9968973F /* testing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7DA5BBAE602436F9DA3B689 /* testing.cpp */; };
+		AC9C805A91B8418FA2ABF1C8 /* lights.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EFDAD2300242CFA96A7C4F /* lights.cpp */; };
+		ACD46EA315D44DF8B9A4EBB8 /* imageManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10472206930E462F92C20FD4 /* imageManager.cpp */; };
+		B9FC6908DB8F4BCFAD68C2C1 /* sphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F5F096DCEB74617AFAD7412 /* sphere.cpp */; };
+		BAF84B19530D4EB8B5104288 /* scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 824B98F6CC9A43E4B518D8A5 /* scene.cpp */; };
+		C0985060E9084099969DE3CC /* directionalLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23B3E4BB5FBF46E39A9D37C2 /* directionalLight.cpp */; };
+		C7010BC2D9C44077B92AE9E9 /* vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D9DA14D5F3946E7A3ABE2BE /* vector.cpp */; };
+		CD7A6750BC7444AE95472FDD /* memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09F6C2686E6441EA9A69A3C6 /* memory.cpp */; };
+		D2BAA146BC80442D94F6FC65 /* transformationStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54C22DDFD307460D8D599E7B /* transformationStack.cpp */; };
+		D576A902B7664B78B1814B75 /* sampler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87B27A5DB0FF42B09EBA9F87 /* sampler.cpp */; };
+		DA09438952204D3884E3F0CD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD62151F346B43EFB5F64CFB /* main.cpp */; };
+		DAED8B6079054EAC82BFA9C9 /* BRDF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2BFD2A7DF1E4470B724BF4D /* BRDF.cpp */; };
+		E17516C86FC443B68B65490B /* intersection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9C4F150564C5B929FC120 /* intersection.cpp */; };
+		E42DF91182B143B2A0706694 /* variables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC9A91B90621443D8555AF7E /* variables.cpp */; };
+		ECC4B3CA439D412997F500F4 /* transformedPrimitive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD935BA4D2CA444FB0D60B30 /* transformedPrimitive.cpp */; };
+		EEED32F442B146B2B30EB074 /* math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66ECF90DBC674D228EE1F156 /* math.cpp */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXBuildStyle section */
-		00185DBF91694A6A843C9050 /* Debug */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Debug;
-		};
-		4641FC2BBFDB4690BEA3A9C4 /* Release */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Release;
-		};
-		73B12BC27461404ABBEBF87C /* MinSizeRel */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = MinSizeRel;
-		};
-		A86E50277C8743FDB34FB429 /* RelWithDebInfo */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = RelWithDebInfo;
-		};
-/* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
 		40CED97CE9254B8684E17B46 /* PBXContainerItemProxy */ = {
@@ -177,93 +104,95 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02359B59176348FEB132874C /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/cameraPerspective.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cameraPerspective.cpp; path = src/rendering/cameraPerspective.cpp; sourceTree = SOURCE_ROOT; };
-		02C22CF7544A4C7187D23F7D /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/sample.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sample.cpp; path = src/rendering/sample.cpp; sourceTree = SOURCE_ROOT; };
-		09F6C2686E6441EA9A69A3C6 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/memory.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = memory.cpp; path = src/utils/memory.cpp; sourceTree = SOURCE_ROOT; };
-		10472206930E462F92C20FD4 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/imageManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imageManager.cpp; path = src/rendering/imageManager.cpp; sourceTree = SOURCE_ROOT; };
-		110CCF2132D84686A67BCDA2 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/DisneyBSDF.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DisneyBSDF.cpp; path = src/colors/DisneyBSDF.cpp; sourceTree = SOURCE_ROOT; };
-		1357269016D74501BBE462ED /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/directionalLight.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = directionalLight.hpp; path = src/lights/directionalLight.hpp; sourceTree = SOURCE_ROOT; };
-		1C990BCA7B374C91B5351254 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/raytrace.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = raytrace.hpp; path = src/rendering/raytrace.hpp; sourceTree = SOURCE_ROOT; };
-		1D82DFEE3B4A43CB9DFE99CE /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/texture.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = texture.hpp; path = src/colors/texture.hpp; sourceTree = SOURCE_ROOT; };
-		1EBA9BCCE127441D8AEF5E3A /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/ray.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ray.cpp; path = src/rendering/ray.cpp; sourceTree = SOURCE_ROOT; };
-		23B3E4BB5FBF46E39A9D37C2 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/directionalLight.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = directionalLight.cpp; path = src/lights/directionalLight.cpp; sourceTree = SOURCE_ROOT; };
-		23FEE37D2DBF478CB7CBB91C /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/sphere.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = sphere.hpp; path = src/geometry/sphere.hpp; sourceTree = SOURCE_ROOT; };
-		24DB5A3DD75741A2BD46CBD1 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/camera.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = camera.hpp; path = src/rendering/camera.hpp; sourceTree = SOURCE_ROOT; };
-		27ABD4BFA6B047ADB7D61BC6 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/point.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = point.cpp; path = src/utils/point.cpp; sourceTree = SOURCE_ROOT; };
-		299E4627CCD04A9C8AEB6E22 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/accelerators.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = accelerators.hpp; path = src/utils/accelerators.hpp; sourceTree = SOURCE_ROOT; };
+		02359B59176348FEB132874C /* cameraPerspective.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cameraPerspective.cpp; path = src/rendering/cameraPerspective.cpp; sourceTree = SOURCE_ROOT; };
+		02C22CF7544A4C7187D23F7D /* sample.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sample.cpp; path = src/rendering/sample.cpp; sourceTree = SOURCE_ROOT; };
+		09F6C2686E6441EA9A69A3C6 /* memory.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = memory.cpp; path = src/utils/memory.cpp; sourceTree = SOURCE_ROOT; };
+		10472206930E462F92C20FD4 /* imageManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imageManager.cpp; path = src/rendering/imageManager.cpp; sourceTree = SOURCE_ROOT; };
+		110CCF2132D84686A67BCDA2 /* DisneyBSDF.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DisneyBSDF.cpp; path = src/colors/DisneyBSDF.cpp; sourceTree = SOURCE_ROOT; };
+		1357269016D74501BBE462ED /* directionalLight.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = directionalLight.hpp; path = src/lights/directionalLight.hpp; sourceTree = SOURCE_ROOT; };
+		1C990BCA7B374C91B5351254 /* raytrace.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = raytrace.hpp; path = src/rendering/raytrace.hpp; sourceTree = SOURCE_ROOT; };
+		1D82DFEE3B4A43CB9DFE99CE /* texture.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = texture.hpp; path = src/colors/texture.hpp; sourceTree = SOURCE_ROOT; };
+		1EBA9BCCE127441D8AEF5E3A /* ray.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ray.cpp; path = src/rendering/ray.cpp; sourceTree = SOURCE_ROOT; };
+		23B3E4BB5FBF46E39A9D37C2 /* directionalLight.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = directionalLight.cpp; path = src/lights/directionalLight.cpp; sourceTree = SOURCE_ROOT; };
+		23FEE37D2DBF478CB7CBB91C /* sphere.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = sphere.hpp; path = src/geometry/sphere.hpp; sourceTree = SOURCE_ROOT; };
+		24DB5A3DD75741A2BD46CBD1 /* camera.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = camera.hpp; path = src/rendering/camera.hpp; sourceTree = SOURCE_ROOT; };
+		27ABD4BFA6B047ADB7D61BC6 /* point.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = point.cpp; path = src/utils/point.cpp; sourceTree = SOURCE_ROOT; };
+		299E4627CCD04A9C8AEB6E22 /* accelerators.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = accelerators.hpp; path = src/utils/accelerators.hpp; sourceTree = SOURCE_ROOT; };
 		29EAFF1939424093A96F7FDA /* UCSDRayTracer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = UCSDRayTracer; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F2BB85E1E8648E3ABF46C3B /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/localGeo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = localGeo.cpp; path = src/geometry/localGeo.cpp; sourceTree = SOURCE_ROOT; };
-		33387910718A47398711BF9D /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/testing.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = testing.hpp; path = src/utils/testing.hpp; sourceTree = SOURCE_ROOT; };
-		345F50794F0046589D8B0AA3 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/raytrace.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = raytrace.cpp; path = src/rendering/raytrace.cpp; sourceTree = SOURCE_ROOT; };
-		3571BB66F6BB41488B2579C2 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/pointLight.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = pointLight.cpp; path = src/lights/pointLight.cpp; sourceTree = SOURCE_ROOT; };
-		38FFB89A96B14B069E41CDE5 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/scene.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = scene.hpp; path = src/utils/scene.hpp; sourceTree = SOURCE_ROOT; };
-		3C1E2D2D79494E69A582B41C /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/shape.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = shape.cpp; path = src/geometry/shape.cpp; sourceTree = SOURCE_ROOT; };
-		3E2E61F09FFA43998D0AA8BB /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/color.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = color.hpp; path = src/colors/color.hpp; sourceTree = SOURCE_ROOT; };
-		3ED381031BD94B73BD81C7FA /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/thread.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = thread.cpp; path = src/utils/thread.cpp; sourceTree = SOURCE_ROOT; };
-		40D898D841EF485FB1BF39AD /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/variables.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = variables.hpp; path = src/utils/variables.hpp; sourceTree = SOURCE_ROOT; };
-		4947B7FFDEE141B5875DAA02 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/BRDF.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = BRDF.hpp; path = src/colors/BRDF.hpp; sourceTree = SOURCE_ROOT; };
-		4BC2E0D423774FD79100A140 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/math.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = math.hpp; path = src/utils/math.hpp; sourceTree = SOURCE_ROOT; };
-		4D96DA32BD4F4C3793900D2F /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/lights.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = lights.hpp; path = src/lights/lights.hpp; sourceTree = SOURCE_ROOT; };
-		4F5F096DCEB74617AFAD7412 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/sphere.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sphere.cpp; path = src/geometry/sphere.cpp; sourceTree = SOURCE_ROOT; };
-		52CBEEE6993A4C37AC185D0D /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/CImg.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CImg.h; path = src/CImg.h; sourceTree = SOURCE_ROOT; };
-		53D45CC93AD949A8B43D07E6 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/primitive.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = primitive.cpp; path = src/geometry/primitive.cpp; sourceTree = SOURCE_ROOT; };
-		53EFDAD2300242CFA96A7C4F /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/lights.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = lights.cpp; path = src/lights/lights.cpp; sourceTree = SOURCE_ROOT; };
-		54C22DDFD307460D8D599E7B /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transformationStack.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = transformationStack.cpp; path = src/utils/transformationStack.cpp; sourceTree = SOURCE_ROOT; };
-		56C87DEAFFD5433A90E2EBE5 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/texture.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = texture.cpp; path = src/colors/texture.cpp; sourceTree = SOURCE_ROOT; };
-		56CC9DD708A04FE7BDD5095D /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/camera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = camera.cpp; path = src/rendering/camera.cpp; sourceTree = SOURCE_ROOT; };
-		591F15AFCDCA455193B53D86 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		5B2200A6ADBC415C9E8765D5 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/geometricPrimitive.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = geometricPrimitive.hpp; path = src/geometry/geometricPrimitive.hpp; sourceTree = SOURCE_ROOT; };
-		5B2AB8E512EA4F50ACEBCD90 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/point.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = point.hpp; path = src/utils/point.hpp; sourceTree = SOURCE_ROOT; };
-		60B9875064BE4C30B3699F70 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/aggregate.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = aggregate.cpp; path = src/geometry/aggregate.cpp; sourceTree = SOURCE_ROOT; };
-		66ECF90DBC674D228EE1F156 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/math.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = math.cpp; path = src/utils/math.cpp; sourceTree = SOURCE_ROOT; };
-		67FB8E6D489645F1BE284626 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transformationStack.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = transformationStack.hpp; path = src/utils/transformationStack.hpp; sourceTree = SOURCE_ROOT; };
-		68D74F3447E34E258D327DDD /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/DisneyBSDF.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = DisneyBSDF.hpp; path = src/colors/DisneyBSDF.hpp; sourceTree = SOURCE_ROOT; };
-		690121798E8647438EA14745 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/ray.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = ray.hpp; path = src/rendering/ray.hpp; sourceTree = SOURCE_ROOT; };
-		702EE336AB6C47D49967594E /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/geometricPrimitive.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = geometricPrimitive.cpp; path = src/geometry/geometricPrimitive.cpp; sourceTree = SOURCE_ROOT; };
-		7650CAC9D00B485AAB7E32C8 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/objParameters.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = objParameters.hpp; path = src/rendering/objParameters.hpp; sourceTree = SOURCE_ROOT; };
-		79A57C470F964548B50B951D /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/sampler.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = sampler.hpp; path = src/rendering/sampler.hpp; sourceTree = SOURCE_ROOT; };
-		7A6702A06CF94C8F9B68E294 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transform.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = transform.hpp; path = src/utils/transform.hpp; sourceTree = SOURCE_ROOT; };
-		7B4895005C4541B29253E070 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/material.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = material.cpp; path = src/colors/material.cpp; sourceTree = SOURCE_ROOT; };
-		7FD9C4F150564C5B929FC120 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/intersection.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = intersection.cpp; path = src/rendering/intersection.cpp; sourceTree = SOURCE_ROOT; };
-		8120E308ECAC4136AC862237 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/pointLight.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = pointLight.hpp; path = src/lights/pointLight.hpp; sourceTree = SOURCE_ROOT; };
-		824B98F6CC9A43E4B518D8A5 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/scene.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = scene.cpp; path = src/utils/scene.cpp; sourceTree = SOURCE_ROOT; };
-		829E1DBF9CEB46A1AA79D449 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/color.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = color.cpp; path = src/colors/color.cpp; sourceTree = SOURCE_ROOT; };
-		876398CCC04846DE87E33734 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/intersection.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = intersection.hpp; path = src/rendering/intersection.hpp; sourceTree = SOURCE_ROOT; };
-		87B27A5DB0FF42B09EBA9F87 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/sampler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sampler.cpp; path = src/rendering/sampler.cpp; sourceTree = SOURCE_ROOT; };
-		896E775DB5BB4BE59E43311E /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/imageManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = imageManager.hpp; path = src/rendering/imageManager.hpp; sourceTree = SOURCE_ROOT; };
-		8A9D865C2F3B4A5FB1AC0FF9 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transformedPrimitive.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = transformedPrimitive.hpp; path = src/utils/transformedPrimitive.hpp; sourceTree = SOURCE_ROOT; };
-		8D9DA14D5F3946E7A3ABE2BE /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/vector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector.cpp; path = src/utils/vector.cpp; sourceTree = SOURCE_ROOT; };
-		8E457FEEFCFA4FA79519FDAC /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transform.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = transform.cpp; path = src/utils/transform.cpp; sourceTree = SOURCE_ROOT; };
-		8EDB86FA9B134B27AB3461F2 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/aggregate.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = aggregate.hpp; path = src/geometry/aggregate.hpp; sourceTree = SOURCE_ROOT; };
-		9417A6E173F64FEC99E01003 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/localGeo.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = localGeo.hpp; path = src/geometry/localGeo.hpp; sourceTree = SOURCE_ROOT; };
-		9CCF818C8B054BDAACF16828 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/film.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = film.hpp; path = src/rendering/film.hpp; sourceTree = SOURCE_ROOT; };
-		9EA5EB7797164E33A9669E5B /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/vector.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = vector.hpp; path = src/utils/vector.hpp; sourceTree = SOURCE_ROOT; };
-		A349DB65EA384953A84B4F86 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/attenuation.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = attenuation.hpp; path = src/lights/attenuation.hpp; sourceTree = SOURCE_ROOT; };
-		A67BAC850EA24480AA7F3AB5 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		A9B3F5A61DDA4923A4EECEE8 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/thread.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = thread.hpp; path = src/utils/thread.hpp; sourceTree = SOURCE_ROOT; };
-		ADA52AA43DD24C17A5B003E2 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/matrix.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = matrix.cpp; path = src/utils/matrix.cpp; sourceTree = SOURCE_ROOT; };
-		B107C306E00B4EAEB47B7D97 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/film.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = film.cpp; path = src/rendering/film.cpp; sourceTree = SOURCE_ROOT; };
-		C2BFD2A7DF1E4470B724BF4D /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/BRDF.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BRDF.cpp; path = src/colors/BRDF.cpp; sourceTree = SOURCE_ROOT; };
-		C7C850FB9E98408FA14E8F0E /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/matrix.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = matrix.hpp; path = src/utils/matrix.hpp; sourceTree = SOURCE_ROOT; };
-		C7DA5BBAE602436F9DA3B689 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/testing.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = testing.cpp; path = src/utils/testing.cpp; sourceTree = SOURCE_ROOT; };
-		C915D13131F148E8AB4AC75F /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/shape.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = shape.hpp; path = src/geometry/shape.hpp; sourceTree = SOURCE_ROOT; };
-		CF82733F076F4778BE7EF6A2 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/primitive.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = primitive.hpp; path = src/geometry/primitive.hpp; sourceTree = SOURCE_ROOT; };
-		D0ECCFEEB0564A1E92233058 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/cameraPerspective.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = cameraPerspective.hpp; path = src/rendering/cameraPerspective.hpp; sourceTree = SOURCE_ROOT; };
-		D355C943223242528E571BDC /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = readCommand.hpp; path = src/utils/readCommand.hpp; sourceTree = SOURCE_ROOT; };
-		D36FCA8E12ED41B1A5D98DD3 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/sample.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = sample.hpp; path = src/rendering/sample.hpp; sourceTree = SOURCE_ROOT; };
-		DD9DC3887F0A4EFDAC75DC76 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/triangle.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = triangle.hpp; path = src/geometry/triangle.hpp; sourceTree = SOURCE_ROOT; };
-		DE3E28D1AFC7466E9D985481 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/objParameters.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = objParameters.cpp; path = src/rendering/objParameters.cpp; sourceTree = SOURCE_ROOT; };
-		DEEC592F1CB94D17932B3F3E /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/memory.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = memory.hpp; path = src/utils/memory.hpp; sourceTree = SOURCE_ROOT; };
-		E1BF43B274AE45CFBD4B7D65 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/triangle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = triangle.cpp; path = src/geometry/triangle.cpp; sourceTree = SOURCE_ROOT; };
-		E4574E3372314E3498134688 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = readCommand.cpp; path = src/utils/readCommand.cpp; sourceTree = SOURCE_ROOT; };
-		E7AA70518CFA403CA340415C /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/accelerators.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = accelerators.cpp; path = src/utils/accelerators.cpp; sourceTree = SOURCE_ROOT; };
-		EC9A91B90621443D8555AF7E /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/variables.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = variables.cpp; path = src/utils/variables.cpp; sourceTree = SOURCE_ROOT; };
-		ED77AF5C67A8411AB366C98D /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/attenuation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = attenuation.cpp; path = src/lights/attenuation.cpp; sourceTree = SOURCE_ROOT; };
-		EF680CC04E8D4E468404EB72 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/normal.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = normal.hpp; path = src/utils/normal.hpp; sourceTree = SOURCE_ROOT; };
-		F38EE4AA07E14D648C41DC1A /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/normal.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = normal.cpp; path = src/utils/normal.cpp; sourceTree = SOURCE_ROOT; };
-		F5E611AD94FB442EA7E4F912 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/material.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = material.hpp; path = src/colors/material.hpp; sourceTree = SOURCE_ROOT; };
-		FD62151F346B43EFB5F64CFB /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
-		FD935BA4D2CA444FB0D60B30 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transformedPrimitive.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = transformedPrimitive.cpp; path = src/utils/transformedPrimitive.cpp; sourceTree = SOURCE_ROOT; };
+		2F2BB85E1E8648E3ABF46C3B /* localGeo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = localGeo.cpp; path = src/geometry/localGeo.cpp; sourceTree = SOURCE_ROOT; };
+		33387910718A47398711BF9D /* testing.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = testing.hpp; path = src/utils/testing.hpp; sourceTree = SOURCE_ROOT; };
+		345F50794F0046589D8B0AA3 /* raytrace.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = raytrace.cpp; path = src/rendering/raytrace.cpp; sourceTree = SOURCE_ROOT; };
+		3571BB66F6BB41488B2579C2 /* pointLight.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = pointLight.cpp; path = src/lights/pointLight.cpp; sourceTree = SOURCE_ROOT; };
+		38FFB89A96B14B069E41CDE5 /* scene.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = scene.hpp; path = src/utils/scene.hpp; sourceTree = SOURCE_ROOT; };
+		3C1E2D2D79494E69A582B41C /* shape.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = shape.cpp; path = src/geometry/shape.cpp; sourceTree = SOURCE_ROOT; };
+		3E2E61F09FFA43998D0AA8BB /* color.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = color.hpp; path = src/colors/color.hpp; sourceTree = SOURCE_ROOT; };
+		3ED381031BD94B73BD81C7FA /* thread.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = thread.cpp; path = src/utils/thread.cpp; sourceTree = SOURCE_ROOT; };
+		40D898D841EF485FB1BF39AD /* variables.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = variables.hpp; path = src/utils/variables.hpp; sourceTree = SOURCE_ROOT; };
+		4947B7FFDEE141B5875DAA02 /* BRDF.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = BRDF.hpp; path = src/colors/BRDF.hpp; sourceTree = SOURCE_ROOT; };
+		4BC2E0D423774FD79100A140 /* math.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = math.hpp; path = src/utils/math.hpp; sourceTree = SOURCE_ROOT; };
+		4D96DA32BD4F4C3793900D2F /* lights.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = lights.hpp; path = src/lights/lights.hpp; sourceTree = SOURCE_ROOT; };
+		4F5F096DCEB74617AFAD7412 /* sphere.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sphere.cpp; path = src/geometry/sphere.cpp; sourceTree = SOURCE_ROOT; };
+		52CBEEE6993A4C37AC185D0D /* CImg.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CImg.h; path = src/CImg.h; sourceTree = SOURCE_ROOT; };
+		53D45CC93AD949A8B43D07E6 /* primitive.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = primitive.cpp; path = src/geometry/primitive.cpp; sourceTree = SOURCE_ROOT; };
+		53EFDAD2300242CFA96A7C4F /* lights.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = lights.cpp; path = src/lights/lights.cpp; sourceTree = SOURCE_ROOT; };
+		54C22DDFD307460D8D599E7B /* transformationStack.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = transformationStack.cpp; path = src/utils/transformationStack.cpp; sourceTree = SOURCE_ROOT; };
+		56C87DEAFFD5433A90E2EBE5 /* texture.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = texture.cpp; path = src/colors/texture.cpp; sourceTree = SOURCE_ROOT; };
+		56CC9DD708A04FE7BDD5095D /* camera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = camera.cpp; path = src/rendering/camera.cpp; sourceTree = SOURCE_ROOT; };
+		591F15AFCDCA455193B53D86 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5B2200A6ADBC415C9E8765D5 /* geometricPrimitive.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = geometricPrimitive.hpp; path = src/geometry/geometricPrimitive.hpp; sourceTree = SOURCE_ROOT; };
+		5B2AB8E512EA4F50ACEBCD90 /* point.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = point.hpp; path = src/utils/point.hpp; sourceTree = SOURCE_ROOT; };
+		60B9875064BE4C30B3699F70 /* aggregate.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = aggregate.cpp; path = src/geometry/aggregate.cpp; sourceTree = SOURCE_ROOT; };
+		66ECF90DBC674D228EE1F156 /* math.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = math.cpp; path = src/utils/math.cpp; sourceTree = SOURCE_ROOT; };
+		67FB8E6D489645F1BE284626 /* transformationStack.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = transformationStack.hpp; path = src/utils/transformationStack.hpp; sourceTree = SOURCE_ROOT; };
+		68D74F3447E34E258D327DDD /* DisneyBSDF.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = DisneyBSDF.hpp; path = src/colors/DisneyBSDF.hpp; sourceTree = SOURCE_ROOT; };
+		690121798E8647438EA14745 /* ray.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = ray.hpp; path = src/rendering/ray.hpp; sourceTree = SOURCE_ROOT; };
+		702EE336AB6C47D49967594E /* geometricPrimitive.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = geometricPrimitive.cpp; path = src/geometry/geometricPrimitive.cpp; sourceTree = SOURCE_ROOT; };
+		7650CAC9D00B485AAB7E32C8 /* objParameters.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = objParameters.hpp; path = src/rendering/objParameters.hpp; sourceTree = SOURCE_ROOT; };
+		79A57C470F964548B50B951D /* sampler.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = sampler.hpp; path = src/rendering/sampler.hpp; sourceTree = SOURCE_ROOT; };
+		7A6702A06CF94C8F9B68E294 /* transform.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = transform.hpp; path = src/utils/transform.hpp; sourceTree = SOURCE_ROOT; };
+		7B4895005C4541B29253E070 /* material.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = material.cpp; path = src/colors/material.cpp; sourceTree = SOURCE_ROOT; };
+		7FD9C4F150564C5B929FC120 /* intersection.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = intersection.cpp; path = src/rendering/intersection.cpp; sourceTree = SOURCE_ROOT; };
+		8120E308ECAC4136AC862237 /* pointLight.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = pointLight.hpp; path = src/lights/pointLight.hpp; sourceTree = SOURCE_ROOT; };
+		824B98F6CC9A43E4B518D8A5 /* scene.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = scene.cpp; path = src/utils/scene.cpp; sourceTree = SOURCE_ROOT; };
+		829E1DBF9CEB46A1AA79D449 /* color.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = color.cpp; path = src/colors/color.cpp; sourceTree = SOURCE_ROOT; };
+		876398CCC04846DE87E33734 /* intersection.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = intersection.hpp; path = src/rendering/intersection.hpp; sourceTree = SOURCE_ROOT; };
+		87B27A5DB0FF42B09EBA9F87 /* sampler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sampler.cpp; path = src/rendering/sampler.cpp; sourceTree = SOURCE_ROOT; };
+		896E775DB5BB4BE59E43311E /* imageManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = imageManager.hpp; path = src/rendering/imageManager.hpp; sourceTree = SOURCE_ROOT; };
+		8A9D865C2F3B4A5FB1AC0FF9 /* transformedPrimitive.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = transformedPrimitive.hpp; path = src/utils/transformedPrimitive.hpp; sourceTree = SOURCE_ROOT; };
+		8D9DA14D5F3946E7A3ABE2BE /* vector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector.cpp; path = src/utils/vector.cpp; sourceTree = SOURCE_ROOT; };
+		8E457FEEFCFA4FA79519FDAC /* transform.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = transform.cpp; path = src/utils/transform.cpp; sourceTree = SOURCE_ROOT; };
+		8EDB86FA9B134B27AB3461F2 /* aggregate.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = aggregate.hpp; path = src/geometry/aggregate.hpp; sourceTree = SOURCE_ROOT; };
+		9417A6E173F64FEC99E01003 /* localGeo.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = localGeo.hpp; path = src/geometry/localGeo.hpp; sourceTree = SOURCE_ROOT; };
+		9CCF818C8B054BDAACF16828 /* film.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = film.hpp; path = src/rendering/film.hpp; sourceTree = SOURCE_ROOT; };
+		9EA5EB7797164E33A9669E5B /* vector.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = vector.hpp; path = src/utils/vector.hpp; sourceTree = SOURCE_ROOT; };
+		A349DB65EA384953A84B4F86 /* attenuation.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = attenuation.hpp; path = src/lights/attenuation.hpp; sourceTree = SOURCE_ROOT; };
+		A52093CA2A94F5E100A9E3CA /* reflectedRay.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = reflectedRay.cpp; path = src/rendering/reflectedRay.cpp; sourceTree = "<group>"; };
+		A52093CB2A94F5E100A9E3CA /* reflectedRay.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = reflectedRay.hpp; path = src/rendering/reflectedRay.hpp; sourceTree = "<group>"; };
+		A67BAC850EA24480AA7F3AB5 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A9B3F5A61DDA4923A4EECEE8 /* thread.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = thread.hpp; path = src/utils/thread.hpp; sourceTree = SOURCE_ROOT; };
+		ADA52AA43DD24C17A5B003E2 /* matrix.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = matrix.cpp; path = src/utils/matrix.cpp; sourceTree = SOURCE_ROOT; };
+		B107C306E00B4EAEB47B7D97 /* film.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = film.cpp; path = src/rendering/film.cpp; sourceTree = SOURCE_ROOT; };
+		C2BFD2A7DF1E4470B724BF4D /* BRDF.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BRDF.cpp; path = src/colors/BRDF.cpp; sourceTree = SOURCE_ROOT; };
+		C7C850FB9E98408FA14E8F0E /* matrix.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = matrix.hpp; path = src/utils/matrix.hpp; sourceTree = SOURCE_ROOT; };
+		C7DA5BBAE602436F9DA3B689 /* testing.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = testing.cpp; path = src/utils/testing.cpp; sourceTree = SOURCE_ROOT; };
+		C915D13131F148E8AB4AC75F /* shape.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = shape.hpp; path = src/geometry/shape.hpp; sourceTree = SOURCE_ROOT; };
+		CF82733F076F4778BE7EF6A2 /* primitive.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = primitive.hpp; path = src/geometry/primitive.hpp; sourceTree = SOURCE_ROOT; };
+		D0ECCFEEB0564A1E92233058 /* cameraPerspective.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = cameraPerspective.hpp; path = src/rendering/cameraPerspective.hpp; sourceTree = SOURCE_ROOT; };
+		D355C943223242528E571BDC /* readCommand.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = readCommand.hpp; path = src/utils/readCommand.hpp; sourceTree = SOURCE_ROOT; };
+		D36FCA8E12ED41B1A5D98DD3 /* sample.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = sample.hpp; path = src/rendering/sample.hpp; sourceTree = SOURCE_ROOT; };
+		DD9DC3887F0A4EFDAC75DC76 /* triangle.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = triangle.hpp; path = src/geometry/triangle.hpp; sourceTree = SOURCE_ROOT; };
+		DE3E28D1AFC7466E9D985481 /* objParameters.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = objParameters.cpp; path = src/rendering/objParameters.cpp; sourceTree = SOURCE_ROOT; };
+		DEEC592F1CB94D17932B3F3E /* memory.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = memory.hpp; path = src/utils/memory.hpp; sourceTree = SOURCE_ROOT; };
+		E1BF43B274AE45CFBD4B7D65 /* triangle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = triangle.cpp; path = src/geometry/triangle.cpp; sourceTree = SOURCE_ROOT; };
+		E4574E3372314E3498134688 /* readCommand.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = readCommand.cpp; path = src/utils/readCommand.cpp; sourceTree = SOURCE_ROOT; };
+		E7AA70518CFA403CA340415C /* accelerators.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = accelerators.cpp; path = src/utils/accelerators.cpp; sourceTree = SOURCE_ROOT; };
+		EC9A91B90621443D8555AF7E /* variables.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = variables.cpp; path = src/utils/variables.cpp; sourceTree = SOURCE_ROOT; };
+		ED77AF5C67A8411AB366C98D /* attenuation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = attenuation.cpp; path = src/lights/attenuation.cpp; sourceTree = SOURCE_ROOT; };
+		EF680CC04E8D4E468404EB72 /* normal.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = normal.hpp; path = src/utils/normal.hpp; sourceTree = SOURCE_ROOT; };
+		F38EE4AA07E14D648C41DC1A /* normal.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = normal.cpp; path = src/utils/normal.cpp; sourceTree = SOURCE_ROOT; };
+		F5E611AD94FB442EA7E4F912 /* material.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = material.hpp; path = src/colors/material.hpp; sourceTree = SOURCE_ROOT; };
+		FD62151F346B43EFB5F64CFB /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		FD935BA4D2CA444FB0D60B30 /* transformedPrimitive.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = transformedPrimitive.cpp; path = src/utils/transformedPrimitive.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,36 +209,36 @@
 		049AC4F084444BFF90F9E8AC /* utils */ = {
 			isa = PBXGroup;
 			children = (
-				E7AA70518CFA403CA340415C /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/accelerators.cpp */,
-				299E4627CCD04A9C8AEB6E22 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/accelerators.hpp */,
-				66ECF90DBC674D228EE1F156 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/math.cpp */,
-				4BC2E0D423774FD79100A140 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/math.hpp */,
-				ADA52AA43DD24C17A5B003E2 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/matrix.cpp */,
-				C7C850FB9E98408FA14E8F0E /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/matrix.hpp */,
-				09F6C2686E6441EA9A69A3C6 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/memory.cpp */,
-				DEEC592F1CB94D17932B3F3E /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/memory.hpp */,
-				F38EE4AA07E14D648C41DC1A /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/normal.cpp */,
-				EF680CC04E8D4E468404EB72 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/normal.hpp */,
-				27ABD4BFA6B047ADB7D61BC6 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/point.cpp */,
-				5B2AB8E512EA4F50ACEBCD90 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/point.hpp */,
-				E4574E3372314E3498134688 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp */,
-				D355C943223242528E571BDC /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.hpp */,
-				824B98F6CC9A43E4B518D8A5 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/scene.cpp */,
-				38FFB89A96B14B069E41CDE5 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/scene.hpp */,
-				C7DA5BBAE602436F9DA3B689 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/testing.cpp */,
-				33387910718A47398711BF9D /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/testing.hpp */,
-				3ED381031BD94B73BD81C7FA /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/thread.cpp */,
-				A9B3F5A61DDA4923A4EECEE8 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/thread.hpp */,
-				8E457FEEFCFA4FA79519FDAC /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transform.cpp */,
-				7A6702A06CF94C8F9B68E294 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transform.hpp */,
-				54C22DDFD307460D8D599E7B /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transformationStack.cpp */,
-				67FB8E6D489645F1BE284626 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transformationStack.hpp */,
-				FD935BA4D2CA444FB0D60B30 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transformedPrimitive.cpp */,
-				8A9D865C2F3B4A5FB1AC0FF9 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transformedPrimitive.hpp */,
-				EC9A91B90621443D8555AF7E /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/variables.cpp */,
-				40D898D841EF485FB1BF39AD /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/variables.hpp */,
-				8D9DA14D5F3946E7A3ABE2BE /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/vector.cpp */,
-				9EA5EB7797164E33A9669E5B /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/vector.hpp */,
+				E7AA70518CFA403CA340415C /* accelerators.cpp */,
+				299E4627CCD04A9C8AEB6E22 /* accelerators.hpp */,
+				66ECF90DBC674D228EE1F156 /* math.cpp */,
+				4BC2E0D423774FD79100A140 /* math.hpp */,
+				ADA52AA43DD24C17A5B003E2 /* matrix.cpp */,
+				C7C850FB9E98408FA14E8F0E /* matrix.hpp */,
+				09F6C2686E6441EA9A69A3C6 /* memory.cpp */,
+				DEEC592F1CB94D17932B3F3E /* memory.hpp */,
+				F38EE4AA07E14D648C41DC1A /* normal.cpp */,
+				EF680CC04E8D4E468404EB72 /* normal.hpp */,
+				27ABD4BFA6B047ADB7D61BC6 /* point.cpp */,
+				5B2AB8E512EA4F50ACEBCD90 /* point.hpp */,
+				E4574E3372314E3498134688 /* readCommand.cpp */,
+				D355C943223242528E571BDC /* readCommand.hpp */,
+				824B98F6CC9A43E4B518D8A5 /* scene.cpp */,
+				38FFB89A96B14B069E41CDE5 /* scene.hpp */,
+				C7DA5BBAE602436F9DA3B689 /* testing.cpp */,
+				33387910718A47398711BF9D /* testing.hpp */,
+				3ED381031BD94B73BD81C7FA /* thread.cpp */,
+				A9B3F5A61DDA4923A4EECEE8 /* thread.hpp */,
+				8E457FEEFCFA4FA79519FDAC /* transform.cpp */,
+				7A6702A06CF94C8F9B68E294 /* transform.hpp */,
+				54C22DDFD307460D8D599E7B /* transformationStack.cpp */,
+				67FB8E6D489645F1BE284626 /* transformationStack.hpp */,
+				FD935BA4D2CA444FB0D60B30 /* transformedPrimitive.cpp */,
+				8A9D865C2F3B4A5FB1AC0FF9 /* transformedPrimitive.hpp */,
+				EC9A91B90621443D8555AF7E /* variables.cpp */,
+				40D898D841EF485FB1BF39AD /* variables.hpp */,
+				8D9DA14D5F3946E7A3ABE2BE /* vector.cpp */,
+				9EA5EB7797164E33A9669E5B /* vector.hpp */,
 			);
 			name = utils;
 			sourceTree = "<group>";
@@ -317,16 +246,16 @@
 		0F676DCA92E842168A5D97E6 /* colors */ = {
 			isa = PBXGroup;
 			children = (
-				C2BFD2A7DF1E4470B724BF4D /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/BRDF.cpp */,
-				4947B7FFDEE141B5875DAA02 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/BRDF.hpp */,
-				110CCF2132D84686A67BCDA2 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/DisneyBSDF.cpp */,
-				68D74F3447E34E258D327DDD /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/DisneyBSDF.hpp */,
-				829E1DBF9CEB46A1AA79D449 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/color.cpp */,
-				3E2E61F09FFA43998D0AA8BB /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/color.hpp */,
-				7B4895005C4541B29253E070 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/material.cpp */,
-				F5E611AD94FB442EA7E4F912 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/material.hpp */,
-				56C87DEAFFD5433A90E2EBE5 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/texture.cpp */,
-				1D82DFEE3B4A43CB9DFE99CE /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/texture.hpp */,
+				C2BFD2A7DF1E4470B724BF4D /* BRDF.cpp */,
+				4947B7FFDEE141B5875DAA02 /* BRDF.hpp */,
+				110CCF2132D84686A67BCDA2 /* DisneyBSDF.cpp */,
+				68D74F3447E34E258D327DDD /* DisneyBSDF.hpp */,
+				829E1DBF9CEB46A1AA79D449 /* color.cpp */,
+				3E2E61F09FFA43998D0AA8BB /* color.hpp */,
+				7B4895005C4541B29253E070 /* material.cpp */,
+				F5E611AD94FB442EA7E4F912 /* material.hpp */,
+				56C87DEAFFD5433A90E2EBE5 /* texture.cpp */,
+				1D82DFEE3B4A43CB9DFE99CE /* texture.hpp */,
 			);
 			name = colors;
 			sourceTree = "<group>";
@@ -334,14 +263,14 @@
 		1736F3165C364817BA947121 /* lights */ = {
 			isa = PBXGroup;
 			children = (
-				ED77AF5C67A8411AB366C98D /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/attenuation.cpp */,
-				A349DB65EA384953A84B4F86 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/attenuation.hpp */,
-				23B3E4BB5FBF46E39A9D37C2 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/directionalLight.cpp */,
-				1357269016D74501BBE462ED /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/directionalLight.hpp */,
-				53EFDAD2300242CFA96A7C4F /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/lights.cpp */,
-				4D96DA32BD4F4C3793900D2F /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/lights.hpp */,
-				3571BB66F6BB41488B2579C2 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/pointLight.cpp */,
-				8120E308ECAC4136AC862237 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/pointLight.hpp */,
+				ED77AF5C67A8411AB366C98D /* attenuation.cpp */,
+				A349DB65EA384953A84B4F86 /* attenuation.hpp */,
+				23B3E4BB5FBF46E39A9D37C2 /* directionalLight.cpp */,
+				1357269016D74501BBE462ED /* directionalLight.hpp */,
+				53EFDAD2300242CFA96A7C4F /* lights.cpp */,
+				4D96DA32BD4F4C3793900D2F /* lights.hpp */,
+				3571BB66F6BB41488B2579C2 /* pointLight.cpp */,
+				8120E308ECAC4136AC862237 /* pointLight.hpp */,
 			);
 			name = lights;
 			sourceTree = "<group>";
@@ -356,7 +285,7 @@
 		4181374DA18D4889802A5C36 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				FD62151F346B43EFB5F64CFB /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/main.cpp */,
+				FD62151F346B43EFB5F64CFB /* main.cpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
@@ -364,7 +293,7 @@
 		5D2A379120104A23B33B7142 /* Header Files */ = {
 			isa = PBXGroup;
 			children = (
-				52CBEEE6993A4C37AC185D0D /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/CImg.h */,
+				52CBEEE6993A4C37AC185D0D /* CImg.h */,
 			);
 			name = "Header Files";
 			sourceTree = "<group>";
@@ -372,26 +301,26 @@
 		963B3671F74A42D18148CD6E /* rendering */ = {
 			isa = PBXGroup;
 			children = (
-				56CC9DD708A04FE7BDD5095D /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/camera.cpp */,
-				24DB5A3DD75741A2BD46CBD1 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/camera.hpp */,
-				02359B59176348FEB132874C /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/cameraPerspective.cpp */,
-				D0ECCFEEB0564A1E92233058 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/cameraPerspective.hpp */,
-				B107C306E00B4EAEB47B7D97 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/film.cpp */,
-				9CCF818C8B054BDAACF16828 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/film.hpp */,
-				10472206930E462F92C20FD4 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/imageManager.cpp */,
-				896E775DB5BB4BE59E43311E /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/imageManager.hpp */,
-				7FD9C4F150564C5B929FC120 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/intersection.cpp */,
-				876398CCC04846DE87E33734 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/intersection.hpp */,
-				DE3E28D1AFC7466E9D985481 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/objParameters.cpp */,
-				7650CAC9D00B485AAB7E32C8 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/objParameters.hpp */,
-				1EBA9BCCE127441D8AEF5E3A /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/ray.cpp */,
-				690121798E8647438EA14745 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/ray.hpp */,
-				345F50794F0046589D8B0AA3 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/raytrace.cpp */,
-				1C990BCA7B374C91B5351254 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/raytrace.hpp */,
-				02C22CF7544A4C7187D23F7D /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/sample.cpp */,
-				D36FCA8E12ED41B1A5D98DD3 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/sample.hpp */,
-				87B27A5DB0FF42B09EBA9F87 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/sampler.cpp */,
-				79A57C470F964548B50B951D /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/sampler.hpp */,
+				56CC9DD708A04FE7BDD5095D /* camera.cpp */,
+				24DB5A3DD75741A2BD46CBD1 /* camera.hpp */,
+				02359B59176348FEB132874C /* cameraPerspective.cpp */,
+				D0ECCFEEB0564A1E92233058 /* cameraPerspective.hpp */,
+				B107C306E00B4EAEB47B7D97 /* film.cpp */,
+				9CCF818C8B054BDAACF16828 /* film.hpp */,
+				10472206930E462F92C20FD4 /* imageManager.cpp */,
+				896E775DB5BB4BE59E43311E /* imageManager.hpp */,
+				7FD9C4F150564C5B929FC120 /* intersection.cpp */,
+				876398CCC04846DE87E33734 /* intersection.hpp */,
+				DE3E28D1AFC7466E9D985481 /* objParameters.cpp */,
+				7650CAC9D00B485AAB7E32C8 /* objParameters.hpp */,
+				1EBA9BCCE127441D8AEF5E3A /* ray.cpp */,
+				690121798E8647438EA14745 /* ray.hpp */,
+				345F50794F0046589D8B0AA3 /* raytrace.cpp */,
+				1C990BCA7B374C91B5351254 /* raytrace.hpp */,
+				02C22CF7544A4C7187D23F7D /* sample.cpp */,
+				D36FCA8E12ED41B1A5D98DD3 /* sample.hpp */,
+				87B27A5DB0FF42B09EBA9F87 /* sampler.cpp */,
+				79A57C470F964548B50B951D /* sampler.hpp */,
 			);
 			name = rendering;
 			sourceTree = "<group>";
@@ -406,7 +335,7 @@
 				E2521801024F4BB7BA9670E5 /* geometry */,
 				963B3671F74A42D18148CD6E /* rendering */,
 				049AC4F084444BFF90F9E8AC /* utils */,
-				591F15AFCDCA455193B53D86 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/CMakeLists.txt */,
+				591F15AFCDCA455193B53D86 /* CMakeLists.txt */,
 			);
 			name = UCSDRayTracer;
 			sourceTree = "<group>";
@@ -415,7 +344,7 @@
 			isa = PBXGroup;
 			children = (
 				E9A8F5795B844FC2B7919A03 /* CMake Rules */,
-				A67BAC850EA24480AA7F3AB5 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/CMakeLists.txt */,
+				A67BAC850EA24480AA7F3AB5 /* CMakeLists.txt */,
 			);
 			name = ALL_BUILD;
 			sourceTree = "<group>";
@@ -431,20 +360,20 @@
 		E2521801024F4BB7BA9670E5 /* geometry */ = {
 			isa = PBXGroup;
 			children = (
-				60B9875064BE4C30B3699F70 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/aggregate.cpp */,
-				8EDB86FA9B134B27AB3461F2 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/aggregate.hpp */,
-				702EE336AB6C47D49967594E /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/geometricPrimitive.cpp */,
-				5B2200A6ADBC415C9E8765D5 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/geometricPrimitive.hpp */,
-				2F2BB85E1E8648E3ABF46C3B /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/localGeo.cpp */,
-				9417A6E173F64FEC99E01003 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/localGeo.hpp */,
-				53D45CC93AD949A8B43D07E6 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/primitive.cpp */,
-				CF82733F076F4778BE7EF6A2 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/primitive.hpp */,
-				3C1E2D2D79494E69A582B41C /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/shape.cpp */,
-				C915D13131F148E8AB4AC75F /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/shape.hpp */,
-				4F5F096DCEB74617AFAD7412 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/sphere.cpp */,
-				23FEE37D2DBF478CB7CBB91C /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/sphere.hpp */,
-				E1BF43B274AE45CFBD4B7D65 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/triangle.cpp */,
-				DD9DC3887F0A4EFDAC75DC76 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/triangle.hpp */,
+				60B9875064BE4C30B3699F70 /* aggregate.cpp */,
+				8EDB86FA9B134B27AB3461F2 /* aggregate.hpp */,
+				702EE336AB6C47D49967594E /* geometricPrimitive.cpp */,
+				5B2200A6ADBC415C9E8765D5 /* geometricPrimitive.hpp */,
+				2F2BB85E1E8648E3ABF46C3B /* localGeo.cpp */,
+				9417A6E173F64FEC99E01003 /* localGeo.hpp */,
+				53D45CC93AD949A8B43D07E6 /* primitive.cpp */,
+				CF82733F076F4778BE7EF6A2 /* primitive.hpp */,
+				3C1E2D2D79494E69A582B41C /* shape.cpp */,
+				C915D13131F148E8AB4AC75F /* shape.hpp */,
+				4F5F096DCEB74617AFAD7412 /* sphere.cpp */,
+				23FEE37D2DBF478CB7CBB91C /* sphere.hpp */,
+				E1BF43B274AE45CFBD4B7D65 /* triangle.cpp */,
+				DD9DC3887F0A4EFDAC75DC76 /* triangle.hpp */,
 			);
 			name = geometry;
 			sourceTree = "<group>";
@@ -452,6 +381,8 @@
 		E69C2DF5493E46038455B8FC = {
 			isa = PBXGroup;
 			children = (
+				A52093CA2A94F5E100A9E3CA /* reflectedRay.cpp */,
+				A52093CB2A94F5E100A9E3CA /* reflectedRay.hpp */,
 				966DDE4DEEC349749E3CC353 /* UCSDRayTracer */,
 				A7341B96AE9C4BC8BD721802 /* ALL_BUILD */,
 				ACE39C6763E240AB9F097D1E /* Products */,
@@ -492,20 +423,16 @@
 		D8CA7009BF454FE2BC2DEEE6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 			};
 			buildConfigurationList = 9DD15B03996F46E694BA06F2 /* Build configuration list for PBXProject "UCSDRayTracer" */;
-			buildSettings = {
-			};
-			buildStyles = (
-				00185DBF91694A6A843C9050 /* Debug */,
-				4641FC2BBFDB4690BEA3A9C4 /* Release */,
-				73B12BC27461404ABBEBF87C /* MinSizeRel */,
-				A86E50277C8743FDB34FB429 /* RelWithDebInfo */,
-			);
 			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
 			mainGroup = E69C2DF5493E46038455B8FC;
 			projectDirPath = "/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer";
 			projectRoot = "";
@@ -518,21 +445,6 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3C0110FC8322DE7E50886E21 = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# shell script goes here
-exit 0";
-			showEnvVarsInLog = 0;
-		};
 		6B01A42ACD9E20A762D9C989 /* Generate CMakeFiles/ZERO_CHECK */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -543,42 +455,11 @@ exit 0";
 			);
 			name = "Generate CMakeFiles/ZERO_CHECK";
 			outputPaths = (
-"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode/CMakeFiles/ZERO_CHECK"			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e
-if test \"$CONFIGURATION\" = \"Debug\"; then :
-  cd \"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode\"
-  make -f /Users/brendanmulcahey/Library/Mobile\\ Documents/com~apple~CloudDocs/Self\\ Learning/RayTracerClean/UCSDRayTracer/buildXcode/CMakeScripts/ReRunCMake.make
-fi
-if test \"$CONFIGURATION\" = \"Release\"; then :
-  cd \"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode\"
-  make -f /Users/brendanmulcahey/Library/Mobile\\ Documents/com~apple~CloudDocs/Self\\ Learning/RayTracerClean/UCSDRayTracer/buildXcode/CMakeScripts/ReRunCMake.make
-fi
-if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
-  cd \"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode\"
-  make -f /Users/brendanmulcahey/Library/Mobile\\ Documents/com~apple~CloudDocs/Self\\ Learning/RayTracerClean/UCSDRayTracer/buildXcode/CMakeScripts/ReRunCMake.make
-fi
-if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
-  cd \"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode\"
-  make -f /Users/brendanmulcahey/Library/Mobile\\ Documents/com~apple~CloudDocs/Self\\ Learning/RayTracerClean/UCSDRayTracer/buildXcode/CMakeScripts/ReRunCMake.make
-fi
-";
-			showEnvVarsInLog = 0;
-		};
-		9B50530E35CC49C82C2FACCF = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
+				"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode/CMakeFiles/ZERO_CHECK",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# shell script goes here
-exit 0";
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd \"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode\"\n  make -f /Users/brendanmulcahey/Library/Mobile\\ Documents/com~apple~CloudDocs/Self\\ Learning/RayTracerClean/UCSDRayTracer/buildXcode/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd \"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode\"\n  make -f /Users/brendanmulcahey/Library/Mobile\\ Documents/com~apple~CloudDocs/Self\\ Learning/RayTracerClean/UCSDRayTracer/buildXcode/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd \"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode\"\n  make -f /Users/brendanmulcahey/Library/Mobile\\ Documents/com~apple~CloudDocs/Self\\ Learning/RayTracerClean/UCSDRayTracer/buildXcode/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd \"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode\"\n  make -f /Users/brendanmulcahey/Library/Mobile\\ Documents/com~apple~CloudDocs/Self\\ Learning/RayTracerClean/UCSDRayTracer/buildXcode/CMakeScripts/ReRunCMake.make\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		EE3610CE1CE359610564545B /* Generate CMakeFiles/ALL_BUILD */ = {
@@ -591,27 +472,11 @@ exit 0";
 			);
 			name = "Generate CMakeFiles/ALL_BUILD";
 			outputPaths = (
-"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode/CMakeFiles/ALL_BUILD"			);
+				"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode/CMakeFiles/ALL_BUILD",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e
-if test \"$CONFIGURATION\" = \"Debug\"; then :
-  cd \"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode\"
-  echo Build\\ all\\ projects
-fi
-if test \"$CONFIGURATION\" = \"Release\"; then :
-  cd \"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode\"
-  echo Build\\ all\\ projects
-fi
-if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
-  cd \"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode\"
-  echo Build\\ all\\ projects
-fi
-if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
-  cd \"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode\"
-  echo Build\\ all\\ projects
-fi
-";
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd \"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode\"\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd \"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode\"\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd \"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode\"\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd \"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode\"\n  echo Build\\ all\\ projects\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -621,48 +486,49 @@ fi
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAED8B6079054EAC82BFA9C9 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/BRDF.cpp */,
-				88A66747587C41FCBEB24EDD /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/DisneyBSDF.cpp */,
-				51159DBD311A48D6BCC3C0C3 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/color.cpp */,
-				85DEFAB4841141B89A7B4E5F /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/material.cpp */,
-				062D83BF29E24774BFD46AF7 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors/texture.cpp */,
-				11EDF584B028468190AF3725 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/aggregate.cpp */,
-				69BFC6CDE2B54201B00F0B61 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/geometricPrimitive.cpp */,
-				A81A5AC2BA814EAE92A6BE07 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/localGeo.cpp */,
-				16A56F92651F491C900904C3 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/primitive.cpp */,
-				78159CBA9AC7439CBDFB9CBF /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/shape.cpp */,
-				B9FC6908DB8F4BCFAD68C2C1 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/sphere.cpp */,
-				72A1153C7FFB47C7A15D330C /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry/triangle.cpp */,
-				28F29B7C164B4BFFA644DAEA /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/attenuation.cpp */,
-				C0985060E9084099969DE3CC /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/directionalLight.cpp */,
-				AC9C805A91B8418FA2ABF1C8 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/lights.cpp */,
-				481B8D5AAD0042539303E65E /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/lights/pointLight.cpp */,
-				DA09438952204D3884E3F0CD /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/main.cpp */,
-				96E5F1355C944ED9AAE74533 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/camera.cpp */,
-				6F1D98556A834B0385F5FC35 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/cameraPerspective.cpp */,
-				60DCB32A35DD4BA8B6C19E7B /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/film.cpp */,
-				ACD46EA315D44DF8B9A4EBB8 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/imageManager.cpp */,
-				E17516C86FC443B68B65490B /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/intersection.cpp */,
-				1AB3FC13B3904632B3D523FB /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/objParameters.cpp */,
-				7005C4F37C474AF9A0D4CF6A /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/ray.cpp */,
-				A4E4573D45684D779DF797FB /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/raytrace.cpp */,
-				011B43ACCE944351AE26ED1D /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/sample.cpp */,
-				D576A902B7664B78B1814B75 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering/sampler.cpp */,
-				73FA577BBA9B4FD9B0CC9B00 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/accelerators.cpp */,
-				EEED32F442B146B2B30EB074 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/math.cpp */,
-				9F2AF573036B42BEAD65E68A /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/matrix.cpp */,
-				CD7A6750BC7444AE95472FDD /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/memory.cpp */,
-				72DA46989FDD44DC94EF97CD /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/normal.cpp */,
-				2B045B651D5C426E8CB8290E /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/point.cpp */,
-				7649444FD09A4AD3BCEA9CEC /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/readCommand.cpp */,
-				BAF84B19530D4EB8B5104288 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/scene.cpp */,
-				AA12581DBDE1468B9968973F /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/testing.cpp */,
-				600FC306C5314E359DA52BBB /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/thread.cpp */,
-				884334B767234DE39B1FC5A2 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transform.cpp */,
-				D2BAA146BC80442D94F6FC65 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transformationStack.cpp */,
-				ECC4B3CA439D412997F500F4 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/transformedPrimitive.cpp */,
-				E42DF91182B143B2A0706694 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/variables.cpp */,
-				C7010BC2D9C44077B92AE9E9 /* /Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils/vector.cpp */,
+				DAED8B6079054EAC82BFA9C9 /* BRDF.cpp in Sources */,
+				88A66747587C41FCBEB24EDD /* DisneyBSDF.cpp in Sources */,
+				51159DBD311A48D6BCC3C0C3 /* color.cpp in Sources */,
+				85DEFAB4841141B89A7B4E5F /* material.cpp in Sources */,
+				062D83BF29E24774BFD46AF7 /* texture.cpp in Sources */,
+				11EDF584B028468190AF3725 /* aggregate.cpp in Sources */,
+				69BFC6CDE2B54201B00F0B61 /* geometricPrimitive.cpp in Sources */,
+				A81A5AC2BA814EAE92A6BE07 /* localGeo.cpp in Sources */,
+				16A56F92651F491C900904C3 /* primitive.cpp in Sources */,
+				78159CBA9AC7439CBDFB9CBF /* shape.cpp in Sources */,
+				B9FC6908DB8F4BCFAD68C2C1 /* sphere.cpp in Sources */,
+				72A1153C7FFB47C7A15D330C /* triangle.cpp in Sources */,
+				28F29B7C164B4BFFA644DAEA /* attenuation.cpp in Sources */,
+				C0985060E9084099969DE3CC /* directionalLight.cpp in Sources */,
+				AC9C805A91B8418FA2ABF1C8 /* lights.cpp in Sources */,
+				481B8D5AAD0042539303E65E /* pointLight.cpp in Sources */,
+				DA09438952204D3884E3F0CD /* main.cpp in Sources */,
+				A52093CC2A94F5E100A9E3CA /* reflectedRay.cpp in Sources */,
+				96E5F1355C944ED9AAE74533 /* camera.cpp in Sources */,
+				6F1D98556A834B0385F5FC35 /* cameraPerspective.cpp in Sources */,
+				60DCB32A35DD4BA8B6C19E7B /* film.cpp in Sources */,
+				ACD46EA315D44DF8B9A4EBB8 /* imageManager.cpp in Sources */,
+				E17516C86FC443B68B65490B /* intersection.cpp in Sources */,
+				1AB3FC13B3904632B3D523FB /* objParameters.cpp in Sources */,
+				7005C4F37C474AF9A0D4CF6A /* ray.cpp in Sources */,
+				A4E4573D45684D779DF797FB /* raytrace.cpp in Sources */,
+				011B43ACCE944351AE26ED1D /* sample.cpp in Sources */,
+				D576A902B7664B78B1814B75 /* sampler.cpp in Sources */,
+				73FA577BBA9B4FD9B0CC9B00 /* accelerators.cpp in Sources */,
+				EEED32F442B146B2B30EB074 /* math.cpp in Sources */,
+				9F2AF573036B42BEAD65E68A /* matrix.cpp in Sources */,
+				CD7A6750BC7444AE95472FDD /* memory.cpp in Sources */,
+				72DA46989FDD44DC94EF97CD /* normal.cpp in Sources */,
+				2B045B651D5C426E8CB8290E /* point.cpp in Sources */,
+				7649444FD09A4AD3BCEA9CEC /* readCommand.cpp in Sources */,
+				BAF84B19530D4EB8B5104288 /* scene.cpp in Sources */,
+				AA12581DBDE1468B9968973F /* testing.cpp in Sources */,
+				600FC306C5314E359DA52BBB /* thread.cpp in Sources */,
+				884334B767234DE39B1FC5A2 /* transform.cpp in Sources */,
+				D2BAA146BC80442D94F6FC65 /* transformationStack.cpp in Sources */,
+				ECC4B3CA439D412997F500F4 /* transformedPrimitive.cpp in Sources */,
+				E42DF91182B143B2A0706694 /* variables.cpp in Sources */,
+				C7010BC2D9C44077B92AE9E9 /* vector.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,17 +561,20 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_LDFLAGS = " $(inherited)";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = Debug;
 		};
@@ -717,17 +586,20 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_LDFLAGS = " $(inherited)";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = MinSizeRel;
 		};
@@ -739,17 +611,20 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_LDFLAGS = " $(inherited)";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = RelWithDebInfo;
 		};
@@ -761,17 +636,20 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_LDFLAGS = " $(inherited)";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = RelWithDebInfo;
 		};
@@ -785,19 +663,46 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'cimg_use_jpeg=1'","'cimg_use_png=1'","$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'cimg_use_jpeg=1'",
+					"'cimg_use_png=1'",
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors\"","\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry\"","\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering\"","\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils\"","\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src\"",/opt/homebrew/include,/usr/X11R6/include,/Library/Frameworks/Mono.framework/Headers,"$(inherited)");
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors\"",
+					"\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry\"",
+					"\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering\"",
+					"\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils\"",
+					"\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src\"",
+					/opt/homebrew/include,
+					/usr/X11R6/include,
+					/Library/Frameworks/Mono.framework/Headers,
+					"$(inherited)",
+				);
 				INSTALL_PATH = "";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/opt/homebrew/lib/libX11.dylib,/opt/homebrew/lib/libXext.dylib,/opt/homebrew/lib/libjpeg.dylib,/opt/homebrew/lib/libpng.dylib,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libz.tbd,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++17'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/opt/homebrew/lib/libX11.dylib,
+					/opt/homebrew/lib/libXext.dylib,
+					/opt/homebrew/lib/libjpeg.dylib,
+					/opt/homebrew/lib/libpng.dylib,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libz.tbd,
+					"$(inherited)",
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = UCSDRayTracer;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = MinSizeRel;
 		};
@@ -818,17 +723,20 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_LDFLAGS = " $(inherited)";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = Debug;
 		};
@@ -840,17 +748,20 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_LDFLAGS = " $(inherited)";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = MinSizeRel;
 		};
@@ -862,17 +773,20 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_LDFLAGS = " $(inherited)";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = Release;
 		};
@@ -895,19 +809,43 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'cimg_use_jpeg=1'","'cimg_use_png=1'","$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'cimg_use_jpeg=1'",
+					"'cimg_use_png=1'",
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors\"","\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry\"","\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering\"","\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils\"","\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src\"",/opt/homebrew/include,/usr/X11R6/include,/Library/Frameworks/Mono.framework/Headers,"$(inherited)");
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors\"",
+					"\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry\"",
+					"\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering\"",
+					"\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils\"",
+					"\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src\"",
+					/opt/homebrew/include,
+					/usr/X11R6/include,
+					/Library/Frameworks/Mono.framework/Headers,
+					"$(inherited)",
+				);
 				INSTALL_PATH = "";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/opt/homebrew/lib/libX11.dylib,/opt/homebrew/lib/libXext.dylib,/opt/homebrew/lib/libjpeg.dylib,/opt/homebrew/lib/libpng.dylib,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libz.tbd,"$(inherited)");
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/opt/homebrew/lib/libX11.dylib,
+					/opt/homebrew/lib/libXext.dylib,
+					/opt/homebrew/lib/libjpeg.dylib,
+					/opt/homebrew/lib/libpng.dylib,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libz.tbd,
+					"$(inherited)",
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = UCSDRayTracer;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = Debug;
 		};
@@ -928,17 +866,20 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_LDFLAGS = " $(inherited)";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = Release;
 		};
@@ -952,19 +893,46 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'cimg_use_jpeg=1'","'cimg_use_png=1'","$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'cimg_use_jpeg=1'",
+					"'cimg_use_png=1'",
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors\"","\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry\"","\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering\"","\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils\"","\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src\"",/opt/homebrew/include,/usr/X11R6/include,/Library/Frameworks/Mono.framework/Headers,"$(inherited)");
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors\"",
+					"\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry\"",
+					"\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering\"",
+					"\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils\"",
+					"\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src\"",
+					/opt/homebrew/include,
+					/usr/X11R6/include,
+					/Library/Frameworks/Mono.framework/Headers,
+					"$(inherited)",
+				);
 				INSTALL_PATH = "";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/opt/homebrew/lib/libX11.dylib,/opt/homebrew/lib/libXext.dylib,/opt/homebrew/lib/libjpeg.dylib,/opt/homebrew/lib/libpng.dylib,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libz.tbd,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++17'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/opt/homebrew/lib/libX11.dylib,
+					/opt/homebrew/lib/libXext.dylib,
+					/opt/homebrew/lib/libjpeg.dylib,
+					/opt/homebrew/lib/libpng.dylib,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libz.tbd,
+					"$(inherited)",
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = UCSDRayTracer;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = Release;
 		};
@@ -978,19 +946,46 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'cimg_use_jpeg=1'","'cimg_use_png=1'","$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'cimg_use_jpeg=1'",
+					"'cimg_use_png=1'",
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors\"","\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry\"","\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering\"","\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils\"","\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src\"",/opt/homebrew/include,/usr/X11R6/include,/Library/Frameworks/Mono.framework/Headers,"$(inherited)");
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/colors\"",
+					"\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/geometry\"",
+					"\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/rendering\"",
+					"\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src/utils\"",
+					"\"/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/src\"",
+					/opt/homebrew/include,
+					/usr/X11R6/include,
+					/Library/Frameworks/Mono.framework/Headers,
+					"$(inherited)",
+				);
 				INSTALL_PATH = "";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/opt/homebrew/lib/libX11.dylib,/opt/homebrew/lib/libXext.dylib,/opt/homebrew/lib/libjpeg.dylib,/opt/homebrew/lib/libpng.dylib,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libz.tbd,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++17'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/opt/homebrew/lib/libX11.dylib,
+					/opt/homebrew/lib/libXext.dylib,
+					/opt/homebrew/lib/libjpeg.dylib,
+					/opt/homebrew/lib/libpng.dylib,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libz.tbd,
+					"$(inherited)",
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = UCSDRayTracer;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/brendanmulcahey/Library/Mobile Documents/com~apple~CloudDocs/Self Learning/RayTracerClean/UCSDRayTracer/buildXcode";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = RelWithDebInfo;
 		};

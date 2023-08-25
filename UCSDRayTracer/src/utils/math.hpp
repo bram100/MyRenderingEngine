@@ -145,6 +145,23 @@ template <typename V, typename N>
 
 template <typename V, typename N>
 //float is 0 or 1 for when v is length 3
+    V vectorVectorSub(const V& v, const N& n) {
+        
+        V resultV;
+        
+        resultV.x = v.x - n.x;
+        resultV.y = v.y - n.y;
+        resultV.z = v.z - n.z;
+       // transformedV.w = v.x * m.m[0][3] + v.y * m.m[1][3] + v.z * m.m[2][3] + v.w * m.m[3][3];
+
+        return resultV;
+
+    }
+
+
+
+template <typename V, typename N>
+//float is 0 or 1 for when v is length 3
     V vectorVectorMultiply(const V& v, const N& n) {
         
         V resultV;

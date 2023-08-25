@@ -129,6 +129,9 @@ class vector3 {
     };
 
     
+    friend vector3<T> operator*(T scalar, const vector3& vector3) {
+        return ::vector3<T>(scalar * vector3.x, scalar * vector3.y, scalar * vector3.z);
+    }
     
     operator vector3<float>*() const {
             return new vector3(x, y, z);

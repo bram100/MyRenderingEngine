@@ -55,7 +55,7 @@ std::shared_ptr<Material> materialParsed = std::make_shared<Material>();
 int countingj = 0;
 
 float w, h;
-int maxDepth;
+int maxDepth = 5;
 bool animatedBool = false;
 
 bool lightExists;
@@ -70,7 +70,7 @@ static transformCache transformCache;
 transformation currentTransform;
 transformation currentTransformInverse;
 
-vector3<float> curAttenuation;
+vector3<float> curAttenuation(1.f, 0.f, 0.f);
 
 int curTransformIndex;
 
@@ -171,6 +171,7 @@ void readfile(const char* fileName)
                     
                     params.addOneVector3F("position", positionXYZ);
                     params.addOneColor3("color", colorRGB);
+                   // params.addOneVector3F("attenuation", attenuationConst);
 
                     lightExists = true;
 
@@ -188,7 +189,7 @@ void readfile(const char* fileName)
 
                     params.addOneVector3F("position", positionXYZ);
                     params.addOneColor3("color", colorRGB);
-
+                    params.addOneVector3F("attenuation", curAttenuation);
                     lightExists = true;
                     
                     makeLights(cmd, &defaultLightTransform, params);

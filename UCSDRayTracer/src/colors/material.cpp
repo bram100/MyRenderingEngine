@@ -12,7 +12,6 @@
 #include "camera.hpp"
 
 #include <cmath> //pow
-
 extern Camera camera;
 
 void getBRDF(localGeo& local, BRDF* brdf) {
@@ -61,7 +60,7 @@ color3 Material::shading(const localGeo& intersection, const ray& lightRay, cons
 
 color3 Material::shadingShadows(const localGeo& intersection, const ray& lightRay, const color3& lightColor){
     
-    vector3<int> attenuation(0,0,0);
+    //vector3<int> attenuation(0,0,0);
     color3 finalColor;
     
     auto normalizeLight =  normalize(lightRay.lookAt);
@@ -75,13 +74,9 @@ color3 Material::shadingShadows(const localGeo& intersection, const ray& lightRa
     
     finalColor += diffuseComponent;
 
-    
-    
-    
-    
-    
     //'vector3 viewerDirection = normalize(cameraPosition - surfacePoint);
-//Shading is almost like in previous homeworks, except attenuation for point light source and eyepos which was previously zero. Initially variable eyepos equals to camera position, after re- flection it should be point of reflection. So, eyepos is ray start point.
+    
+    //Shading is almost like in previous homeworks, except attenuation for point light source and eyepos which was previously zero. Initially variable eyepos equals to camera position, after re- flection it should be point of reflection. So, eyepos is ray start point.
     
     //halfEdge == halfAngle???
     
@@ -101,9 +96,15 @@ color3 Material::shadingShadows(const localGeo& intersection, const ray& lightRa
     //(max of dot product, 0)^ shineness
     //float shineness = std::pow(fmax(dotProduct, 0.f), std::pow(cosine,  aBRDF.shininess));
     
+    
+    //o think here
     float shineness = std::pow(fmax(dotProduct, 0.f),  aBRDF.shininess);
 
+    
     color3 specularComponent = aBRDF.specular * shineness;
+    
+    
+ 
     
    // color3 specularComponent = aBRDF.specular * pow(fmax(normalizeNormal, halfEdge), aBRDF.shininess );
 
@@ -146,7 +147,7 @@ sum over all lights
         
 
  sum (attenuation * (surfaceNormal + specular))
-I = A + E + ∑ ( 𝑉 * (L / (c0 + c1 * r + c2 * r^2))) * ((D max(N • L, 0) + S max (N • H, 0)^s))
+I = A + E + ∑  𝑉 * (L / (c0 + c1 * r + c2 * r^2))) * ((D max(N • L, 0) + S max (N • H, 0)^s) + SIr
 
 I = color3 intensity
 A = color3 ambient
@@ -159,4 +160,10 @@ D = color3 diffuse
 S = color3 specular
 N = normal surfaceNormal
 H = the half-angle (what????)
+ 
+ 
+ 
+ 
+ I = KˇA + KˇE + ∑  𝑉ˇi * L^i  ((K max(L • N, 0) + K max (H • N, 0)^s) + KIr
+
 */

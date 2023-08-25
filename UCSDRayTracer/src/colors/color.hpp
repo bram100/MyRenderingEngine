@@ -69,7 +69,18 @@ class color3
             return color3(r * vec.x, g * vec.y, b * vec.z);
         }
 
-    
+    void normalize() {
+        int maxComponent = std::max(std::max(r, g), b);
+
+        if (maxComponent > 255) {
+            float scale = 255.0f / maxComponent;
+            r = static_cast<int>(r * scale);
+            g = static_cast<int>(g * scale);
+            b = static_cast<int>(b * scale);
+        }
+    }
+
+
 
     
         color3& operator+=(const color3& other) {
@@ -78,6 +89,14 @@ class color3
             b += other.b;
             return *this;
         }
+    
+    color3& operator+(const color3& other) {
+        r = r + other.r;
+        g = g + other.g;
+        b = b + other.b;
+        
+        return *this;
+    }
 
 
 };
