@@ -55,7 +55,7 @@ std::shared_ptr<Material> materialParsed = std::make_shared<Material>();
 int countingj = 0;
 
 float w, h;
-int maxDepth = 5;
+int maxDepth =  5;
 bool animatedBool = false;
 
 bool lightExists;

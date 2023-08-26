@@ -28,6 +28,7 @@ public:
     
     
     const vector3<float>& getAttenuation() const {
+        
            return attenuation;
        }
 

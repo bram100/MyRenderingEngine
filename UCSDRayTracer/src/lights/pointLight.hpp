@@ -51,7 +51,7 @@ public:
 private:
     vector3<float> lightPos;
     color3 lightColor;
-    vector3<float> attenuation; // constant, linear, quadratic
+    //vector3<float> attenuation; // constant, linear, quadratic
     transformation lightToWorld;
 };
 

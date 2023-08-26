@@ -25,6 +25,7 @@
 #include <cmath>
 bool isThereIntersect = false;
 
+int dividing;
 color3 redcolor(255.f, 0, 0);
 color3 holdingColor;
 int counting = 0;
@@ -137,10 +138,13 @@ void trace(ray& ray, int depth, color3 *exitColor3) {
                 //directional lights
                 else{
                     attenuationFloat = 1;
+                    
                 }
           
                 *exitColor3 += (currentMaterial->shadingShadows(closestIntersect.localGeo, lightRay, lightColor)) * attenuationFloat;// *  currentAttenuation;
+                if (attenuationFloat != 1) {
                     
+                }
                 
             }
             
@@ -149,12 +153,11 @@ void trace(ray& ray, int depth, color3 *exitColor3) {
     }
     
     if (depth == 0){
-        depth0Color = *exitColor3;
-        depth0Color.normalize();
+        //depth0Color = *exitColor3;
+
     }
+    
     if (hitAnything == true) {
-        
-        
         if (depth < maxDepth) {
             
             reflectRay = createReflectRay(closestIntersect.localGeo, ray);
@@ -166,17 +169,20 @@ void trace(ray& ray, int depth, color3 *exitColor3) {
             
             globalColor += ( currentMaterial->aBRDF.specular * tempColor);
             globalColor.normalize();
+            dividing++;
+
         }
         
         
     }
-    *exitColor3 = depth0Color ;
-    exitColor3->normalize();
+    *exitColor3;// = depth0Color ;
 
-            
-        *exitColor3 +=  color3(globalColor.r/5, globalColor.g/5, globalColor.b/5);
+    color3 fuck =color3(globalColor.r/dividing, globalColor.g/dividing, globalColor.b/dividing);
+    fuck.normalize();
+    *exitColor3 +=  fuck;
     
-
+    
+    dividing = 0;
 };
 
 
