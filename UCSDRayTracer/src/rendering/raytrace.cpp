@@ -55,13 +55,21 @@ void trace(ray& ray, int depth, color3 *exitColor3) {
     hitAnything = false;
     closestTHit = std::numeric_limits<float>::infinity();
 
-    if (depth > maxDepth) {
+    exitColor3->r = 0.f;
+    exitColor3->g = 0.f;
+    exitColor3->b = 0.f;
+
+    
+    if (depth >= 5) {
 
         exitColor3->r = 0.f;
         exitColor3->g = 0.f;
         exitColor3->b = 0.f;
+        
+        return;
     }
      
+    //intersection testing between camera and object
     //for (int i = 0; i < scene.geometricPrimitives.size(); ++i) {
     for (const auto& p : scene.geometricPrimitivesVec){
         
@@ -73,14 +81,13 @@ void trace(ray& ray, int depth, color3 *exitColor3) {
         
         //multiply transfor
         
+        //if no intersect, make color black
+        //this can probably be
         //p->applyTransformationToObject(transformationFromStack);
-        if (!p->intersect(ray, &tHit, &currentIntersect)) {
-            exitColor3->r = 0.f;
-            exitColor3->g = 0.f;
-            exitColor3->b = 0.f;
-            
-        }
-        else {
+        
+        
+        if (p->intersect(ray, &tHit, &currentIntersect)) {
+
             hitAnything = true;
             
             if (tHit < closestTHit) {
@@ -96,9 +103,9 @@ void trace(ray& ray, int depth, color3 *exitColor3) {
             
         }
         }
-   
+
         bool inShadow = false;
-    
+
     if (hitAnything) {
         
         for (const auto& l : scene.lightsVec){
@@ -117,6 +124,7 @@ void trace(ray& ray, int depth, color3 *exitColor3) {
                 }
                 
             }
+            
             //no shape intersect, thus visslible
             *exitColor3 += currentMaterial->ambient;
             *exitColor3 += currentMaterial->aBRDF.emission;
@@ -134,6 +142,9 @@ void trace(ray& ray, int depth, color3 *exitColor3) {
                     float L = 1; //lightRay.lookAt
                     attenuationFloat =  L / (cVector.x + cVector.y * r + cVector.z * std::pow(r, 2));
                     
+                    if (depth > 0) {
+                        
+                    }
                 }
                 //directional lights
                 else{
@@ -141,21 +152,16 @@ void trace(ray& ray, int depth, color3 *exitColor3) {
                     
                 }
           
-                *exitColor3 += (currentMaterial->shadingShadows(closestIntersect.localGeo, lightRay, lightColor)) * attenuationFloat;// *  currentAttenuation;
+                *exitColor3 += (currentMaterial->shadingShadows(closestIntersect.localGeo, lightRay, lightColor)) ;//* attenuationFloat;// *  currentAttenuation;
                 if (attenuationFloat != 1) {
                     
                 }
                 
             }
-            
         }
         
     }
     
-    if (depth == 0){
-        //depth0Color = *exitColor3;
-
-    }
     
     if (hitAnything == true) {
         if (depth < maxDepth) {
@@ -167,7 +173,10 @@ void trace(ray& ray, int depth, color3 *exitColor3) {
             color3 tempColor(0, 0, 0);
             trace(reflectRay, depth, &tempColor);
             
-            globalColor += ( currentMaterial->aBRDF.specular * tempColor);
+            //tempColor.r/dividing
+            globalColor += ( currentMaterial->aBRDF.specular * tempColor  * attenuationFloat);
+            
+            
             globalColor.normalize();
             dividing++;
 
@@ -178,6 +187,7 @@ void trace(ray& ray, int depth, color3 *exitColor3) {
     *exitColor3;// = depth0Color ;
 
     color3 fuck =color3(globalColor.r/dividing, globalColor.g/dividing, globalColor.b/dividing);
+    
     fuck.normalize();
     *exitColor3 +=  fuck;
     
