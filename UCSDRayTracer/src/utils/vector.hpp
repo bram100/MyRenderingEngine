@@ -124,6 +124,7 @@ class vector3 {
         };
     
     
+    
     vector3<T> operator-(const point3<T> &object) const {
         return vector3(x - object.x, y - object.y, z - object.z);
     };

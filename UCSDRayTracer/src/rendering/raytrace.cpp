@@ -54,18 +54,11 @@ int countingf;
 void trace(ray& ray, int depth, color3 *exitColor3) {
     hitAnything = false;
     closestTHit = std::numeric_limits<float>::infinity();
+    bool inShadow = false;
 
-    exitColor3->r = 0.f;
-    exitColor3->g = 0.f;
-    exitColor3->b = 0.f;
-
-    
+    //color comes in as black
+    //if depth test exists, just return
     if (depth >= 5) {
-
-        exitColor3->r = 0.f;
-        exitColor3->g = 0.f;
-        exitColor3->b = 0.f;
-        
         return;
     }
      
@@ -95,16 +88,12 @@ void trace(ray& ray, int depth, color3 *exitColor3) {
                 closestTHit = tHit;
 
                 closestIntersect = currentIntersect;
-
                 
                 currentMaterial = currentIntersect.primitive->getMaterial();
 
             }
-            
+}
         }
-        }
-
-        bool inShadow = false;
 
     if (hitAnything) {
         
@@ -152,17 +141,15 @@ void trace(ray& ray, int depth, color3 *exitColor3) {
                     
                 }
           
-                *exitColor3 += (currentMaterial->shadingShadows(closestIntersect.localGeo, lightRay, lightColor)) ;//* attenuationFloat;// *  currentAttenuation;
+                *exitColor3 += (currentMaterial->shadingShadows(closestIntersect.localGeo, lightRay, lightColor))  * attenuationFloat;// *  currentAttenuation;
                 if (attenuationFloat != 1) {
                     
                 }
                 
             }
         }
-        
     }
-    
-    
+
     if (hitAnything == true) {
         if (depth < maxDepth) {
             
@@ -174,19 +161,23 @@ void trace(ray& ray, int depth, color3 *exitColor3) {
             trace(reflectRay, depth, &tempColor);
             
             //tempColor.r/dividing
-            globalColor += ( currentMaterial->aBRDF.specular * tempColor  * attenuationFloat);
             
+            vector3<float> specularColorReduction = vector3<float>(currentMaterial->aBRDF.specular.r/255, currentMaterial->aBRDF.specular.g/255, currentMaterial->aBRDF.specular.b)/255;
+            
+            vector3<int> meow =  vector3<int>(specularColorReduction.x * tempColor.r, specularColorReduction.y * tempColor.g, specularColorReduction.z * tempColor.b);
+            
+            
+            globalColor += color3( meow.x, meow.y, meow.z);//  * attenuationFloat);
             
             globalColor.normalize();
             dividing++;
 
         }
         
-        
     }
     *exitColor3;// = depth0Color ;
 
-    color3 fuck =color3(globalColor.r/dividing, globalColor.g/dividing, globalColor.b/dividing);
+    color3 fuck =color3(globalColor.r, globalColor.g, globalColor.b);
     
     fuck.normalize();
     *exitColor3 +=  fuck;

@@ -70,7 +70,7 @@ static transformCache transformCache;
 transformation currentTransform;
 transformation currentTransformInverse;
 
-vector3<float> curAttenuation(0.f, 0.f, 1.f);
+vector3<float> curAttenuation(1.f, 0.f, 0.f);
 
 int curTransformIndex;
 

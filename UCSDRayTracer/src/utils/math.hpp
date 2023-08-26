@@ -17,7 +17,13 @@
 const double pi = std::acos(-1);
 const float kEpsilon = 1e-6f; //almost zero 
 
+
+
+
+
+
 class math {
+    
 public:
     bool solveQuadratic(const float &a, const float &b, const float &c, float &x0, float &x1);
 
@@ -50,6 +56,7 @@ template <typename V, typename M>
         return transformedV;
 
     }
+
 
 template <typename V, typename M>
 //float is 0 or 1 for when v is length 3

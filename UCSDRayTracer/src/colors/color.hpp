@@ -69,6 +69,9 @@ class color3
             return color3(r * vec.x, g * vec.y, b * vec.z);
         }
 
+
+   
+
     void normalize() {
         int maxComponent = std::max(std::max(r, g), b);
 
